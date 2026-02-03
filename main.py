@@ -271,21 +271,21 @@ def select_deck():
         due_str = str(info['due']).rjust(max_due_digits)
         total_str = str(info['total']).rjust(max_total_digits)
         print(f"  {i:2d}. {info['name']}{name_padding}    Due: {due_str}    Total: {total_str}")
-    print(f"  {len(deck_names) + 1:2d}. Exit")
+    print("\nType 'exit' to exit")
     
     while True:
         try:
-            choice = input(f"\nSelect deck (1-{len(deck_names) + 1}): ").strip()
+            choice = input(f"\nSelect deck (1-{len(deck_names)}, or 'exit'): ").strip().lower()
+            if choice == 'exit':
+                return None
             choice = int(choice)
             if 1 <= choice <= len(deck_names):
                 selected_deck = deck_names[choice - 1]
                 return selected_deck
-            elif choice == len(deck_names) + 1:
-                return None
             else:
-                print(f"Please enter a number between 1 and {len(deck_names) + 1}.")
+                print(f"Please enter a number between 1 and {len(deck_names)}, or 'exit'.")
         except ValueError:
-            print("Please enter a valid number.")
+            print(f"Please enter a valid number between 1 and {len(deck_names)}, or 'exit'.")
         except KeyboardInterrupt:
             print("\nExiting...")
             return None
