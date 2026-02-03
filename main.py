@@ -91,14 +91,14 @@ def review_session(cards, filepath):
     review_cards = get_cards_for_review(cards, today)
     
     if not review_cards:
-        print("\n" + "=" * 50)
+        print("\n" + "=" * 60)
         print("No cards due for review!")
-        print("=" * 50)
+        print("=" * 60)
         return
     
-    print("\n" + "=" * 50)
+    print("\n" + "=" * 60)
     print(f"Starting review session - {len(review_cards)} card(s) ready")
-    print("=" * 50)
+    print("=" * 60)
     print("\nInstructions:")
     print("  - Press Enter to see the definition")
     print("  - Rate the card: 1=Hard/Repeat, 2=Medium-Hard, 3=Medium, 4=Easy")
@@ -118,10 +118,10 @@ def review_session(cards, filepath):
         current_card = review_cards[0]
         cards_remaining = len(review_cards)
         
-        print("-" * 50)
+        print("-" * 60)
         print(f"{cards_remaining} card(s) remaining")
         print(f"Term: {current_card.term}")
-        print("-" * 50)
+        print("-" * 60)
         
         # Wait for user to press Enter to see definition
         input("Press Enter to reveal definition...")
@@ -203,20 +203,20 @@ def review_session(cards, filepath):
         print()
     
     # Session complete message
-    print("\n" + "=" * 50)
+    print("\n" + "=" * 60)
     if cards_completed == initial_card_count:
         print("Excellent! All cards completed for this session!")
     elif cards_completed > 0:
         print(f"Session complete! {cards_completed} card(s) mastered!")
     else:
         print("Session paused. Progress saved!")
-    print("=" * 50)
+    print("=" * 60)
     print(f"  Cards completed: {cards_completed} / {initial_card_count}")
     print(f"  Total reviews: {total_reviews}")
     if cards_completed < initial_card_count:
         remaining = initial_card_count - cards_completed
         print(f"  Cards remaining: {remaining}")
-    print("=" * 50)
+    print("=" * 60)
 
 
 def get_available_decks():
@@ -264,14 +264,14 @@ def select_deck():
     max_due_digits = max(len(str(info['due'])) for info in deck_info) if deck_info else 0
     max_total_digits = max(len(str(info['total'])) for info in deck_info) if deck_info else 0
     
-    # Show deck selection with formatted columns
+    # Show deck selection with formatted columns (right-aligned numbers)
     print("\nAvailable decks:")
     for i, info in enumerate(deck_info, 1):
         name_padding = ' ' * (max_name_len - len(info['name']))
-        due_padding = ' ' * (max_due_digits - len(str(info['due'])))
-        total_padding = ' ' * (max_total_digits - len(str(info['total'])))
-        print(f"  {i}. {info['name']}{name_padding}    Due: {due_padding}{info['due']}    Total: {total_padding}{info['total']}")
-    print(f"  {len(deck_names) + 1}. Exit")
+        due_str = str(info['due']).rjust(max_due_digits)
+        total_str = str(info['total']).rjust(max_total_digits)
+        print(f"  {i:2d}. {info['name']}{name_padding}    Due: {due_str}    Total: {total_str}")
+    print(f"  {len(deck_names) + 1:2d}. Exit")
     
     while True:
         try:
@@ -321,9 +321,9 @@ def main():
     # Sync all decks from text files on startup
     sync_all_decks()
     
-    print("\n" + "=" * 50)
+    print("\n" + "=" * 60)
     print("Flashcard Program")
-    print("=" * 50)
+    print("=" * 60)
     
     while True:
         try:

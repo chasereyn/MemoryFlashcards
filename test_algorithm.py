@@ -115,9 +115,9 @@ def test_multiple_ratings_before_4():
 
 
 if __name__ == "__main__":
-    print("=" * 50)
+    print("=" * 60)
     print("Testing Spaced Repetition Algorithm")
-    print("=" * 50)
+    print("=" * 60)
     print()
     
     try:
@@ -127,9 +127,9 @@ if __name__ == "__main__":
         test_priority_sorting()
         test_multiple_ratings_before_4()
         
-        print("=" * 50)
+        print("=" * 60)
         print("All tests passed!")
-        print("=" * 50)
+        print("=" * 60)
     except AssertionError as e:
         print(f"FAILED: {e}")
     except Exception as e:

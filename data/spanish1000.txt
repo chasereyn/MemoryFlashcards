@@ -470,7 +470,7 @@ year
 el año
 
 jacket
-la chaqueta
+la chamorra
 
 shy
 tímido
@@ -1256,7 +1256,7 @@ cat
 el gato
 
 waiter
-el camarero
+el mesero
 
 jungle
 la selva
@@ -1849,7 +1849,7 @@ anteayer
 carrot
 la zanahoria
 
-food
+food (nourishment)
 el alimento
 
 red-haired
@@ -2019,9 +2019,6 @@ pero
 
 already
 ya
-
-to return
-regresar
 
 this
 este
@@ -2575,7 +2572,7 @@ tratar
 to choose
 escoger
 
-to return
+to return (an item)
 devolver
 
 to stop

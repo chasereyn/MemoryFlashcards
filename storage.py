@@ -135,9 +135,7 @@ def sync_all_decks():
         print("No text files found in data/ directory.")
         return
     
-    print("\n" + "=" * 50)
-    print("Syncing decks from text files...")
-    print("=" * 50)
+    print("\nSyncing decks from text files...")
     
     total_preserved = 0
     total_added = 0
@@ -149,12 +147,7 @@ def sync_all_decks():
         
         try:
             preserved, added, removed = sync_deck_from_text(text_path, deck_name)
-            
-            print(f"\n{deck_name}:")
-            print(f"  Preserved: {preserved} cards")
-            print(f"  Added: {added} cards")
-            print(f"  Removed: {removed} cards")
-            
+
             total_preserved += preserved
             total_added += added
             total_removed += removed
@@ -163,12 +156,10 @@ def sync_all_decks():
             print(f"\nError syncing {deck_name}: {e}")
             continue
     
-    print("\n" + "=" * 50)
     print("Sync complete!")
     print(f"Total preserved: {total_preserved} cards")
     print(f"Total added: {total_added} cards")
     print(f"Total removed: {total_removed} cards")
-    print("=" * 50)
 
 
 def get_last_session_date(filepath: str) -> Optional[str]:
