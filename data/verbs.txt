@@ -1,0 +1,216 @@
+I have
+yo tengo
+
+you have
+tú tienes
+
+he has
+él tiene
+
+we have
+nosotros tenemos
+
+they have
+ellos tienen
+
+you guys have
+ustedes tienen
+
+I had
+yo tuve
+
+you had
+tú tuviste
+
+he had
+él tuvo
+
+we had
+nosotros tuvimos
+
+they had
+ellos tuvieron
+
+you guys had
+ustedes tuvieron
+
+I go
+yo voy
+
+you go
+tú vas
+
+he goes
+él va
+
+we go
+nosotros vamos
+
+they go
+ellos van
+
+you guys go
+ustedes van
+
+I went
+yo fui
+
+you went
+tú fuiste
+
+he went
+él fue
+
+we went
+nosotros fuimos
+
+they went
+ellos fueron
+
+you guys went
+ustedes fueron
+
+I talk
+yo hablo
+
+you talk
+tú hablas
+
+he talks
+él habla
+
+we talk
+nosotros hablamos
+
+they talk
+ellos hablan
+
+you guys talk
+ustedes hablan
+
+I talked
+yo hablé
+
+you talked
+tú hablaste
+
+he talked
+él habló
+
+we talked
+nosotros hablamos
+
+they talked
+ellos hablaron
+
+you guys talked
+ustedes hablaron
+
+I eat
+yo como
+
+you eat
+tú comes
+
+he eats
+él come
+
+we eat
+nosotros comemos
+
+they eat
+ellos comen
+
+you guys eat
+ustedes comen
+
+I ate
+yo comí
+
+you ate
+tú comiste
+
+he ate
+él comió
+
+we ate
+nosotros comimos
+
+they ate
+ellos comieron
+
+you guys ate
+ustedes comieron
+
+I live
+yo vivo
+
+you live
+tú vives
+
+he lives
+él vive
+
+we live
+nosotros vivimos
+
+they live
+ellos viven
+
+you guys live
+ustedes viven
+
+I lived
+yo viví
+
+you lived
+tú viviste
+
+he lived
+él vivió
+
+we lived
+nosotros vivimos
+
+they lived
+ellos vivieron
+
+you guys lived
+ustedes vivieron
+
+I give
+yo doy
+
+you give
+tú das
+
+he gives
+él da
+
+we give
+nosotros damos
+
+they give
+ellos dan
+
+you guys give
+ustedes dan
+
+I gave
+yo di
+
+you gave
+tú diste
+
+he gave
+él dio
+
+we gave
+nosotros dimos
+
+they gave
+ellos dieron
+
+you guys gave
+ustedes dieron
+

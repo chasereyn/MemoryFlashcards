@@ -136,7 +136,7 @@ pagar
 good night
 buenas noches
 
-then
+therefore
 entonces
 
 Hey!
@@ -220,7 +220,7 @@ volver
 young
 joven
 
-countryside
+field / countryside
 el campo
 
 music
@@ -246,9 +246,6 @@ el café
 
 big
 grande
-
-to be
-estar
 
 to put
 poner
@@ -373,9 +370,6 @@ la mesa
 a lot of
 mucho
 
-company
-la empresa
-
 bag
 la bolsa
 
@@ -387,9 +381,6 @@ alguno
 
 pollution
 la contaminación
-
-to be
-ser
 
 to know someone
 conocer
@@ -421,13 +412,13 @@ la casa
 chair
 la silla
 
-happy
+pleased
 contento
 
 hardworking
 trabajador
 
-fish
+fish (food)
 el pescado
 
 actor
@@ -533,6 +524,9 @@ wardrobe
 el armario
 
 T-shirt
+la playera
+
+shirt
 la camiseta
 
 intelligent
@@ -541,7 +535,7 @@ inteligente
 theater
 el teatro
 
-teacher
+professor
 el profesor
 
 prize
@@ -589,7 +583,7 @@ qué
 woman
 la mujer
 
-game
+game (match, event)
 el partido
 
 street
@@ -694,7 +688,7 @@ porque
 to take a bath
 bañarse
 
-short
+short (height)
 bajo
 
 to cook
@@ -721,7 +715,7 @@ la medianoche
 morning
 la mañana
 
-time
+the time
 la hora
 
 century
@@ -767,12 +761,12 @@ mouth
 la boca
 
 car
-el coche
+el coche / el carro
 
 ugly
 feo
 
-to save
+to save money
 ahorrar
 
 to go shopping
@@ -820,7 +814,7 @@ el director
 sport
 el deporte
 
-competition
+contest
 el concurso
 
 bookstore
@@ -832,7 +826,7 @@ la bebida
 tomato
 el tomate
 
-to work
+to work (function)
 funcionar
 
 concert
@@ -850,7 +844,7 @@ el lugar
 to work
 trabajar
 
-too
+too much
 demasiado
 
 to prefer
@@ -934,8 +928,8 @@ la nariz
 grandfather
 el abuelo
 
-interesting
-interesante
+How interesting!
+Qué interesante!
 
 friend
 el amigo
@@ -952,7 +946,7 @@ el ojo
 egg
 el huevo
 
-painting
+painting (art or materials)
 la pintura
 
 firefighter
@@ -1014,9 +1008,6 @@ moreno
 
 to discuss
 discutir
-
-bad
-malo
 
 easy
 fácil
@@ -1159,7 +1150,7 @@ despertarse
 to help
 ayudar
 
-old
+old (age)
 viejo
 
 to sell
@@ -1273,7 +1264,7 @@ la guerra
 orange
 la naranja
 
-no
+none
 ninguno
 
 custom (tradition)
@@ -1330,7 +1321,7 @@ la verdura
 technology
 la tecnología
 
-café
+cafeteria
 la cafetería
 
 to give
@@ -1363,7 +1354,7 @@ en
 however
 sin embargo
 
-to want
+to desire
 desear
 
 to break
@@ -1375,7 +1366,7 @@ cambiar
 strong
 fuerte
 
-happy
+cheerful
 alegre
 
 thin
@@ -1396,7 +1387,7 @@ barato
 floor
 el piso
 
-shirt
+shirt (nice, dress shirt)
 la camisa
 
 to ski
@@ -1618,9 +1609,6 @@ veinte
 to listen to
 escuchar
 
-to drive
-conducir
-
 to close
 cerrar
 
@@ -1711,7 +1699,7 @@ la vida
 cereal
 el cereal
 
-short
+short (length)
 corto
 
 niece
@@ -1844,7 +1832,7 @@ fair
 justo
 
 the day before yesterday
-anteayer
+antier
 
 carrot
 la zanahoria
@@ -1903,6 +1891,9 @@ el clima
 telephone
 el teléfono
 
+phone
+celular
+
 metro
 el metro
 
@@ -1910,7 +1901,7 @@ where
 dónde
 
 company
-la compañía
+la empresa
 
 map
 el mapa
@@ -1946,7 +1937,7 @@ shoe
 el zapato
 
 hairdresser
-el peluquero
+la estilista
 
 boot
 la bota
@@ -2191,9 +2182,6 @@ enamorarse
 corn
 el maíz
 
-computer
-el ordenador
-
 design
 el diseño
 
@@ -2269,7 +2257,7 @@ histórico
 night
 la noche
 
-game
+game (casual, board)
 el juego
 
 video game
@@ -2341,8 +2329,8 @@ preparar
 worse
 peor
 
-room
-la habitación
+double room
+habitación doble
 
 to develop
 desarrollar
@@ -2470,9 +2458,6 @@ si
 and
 y
 
-well
-pues
-
 to seem
 parecer
 
@@ -2524,8 +2509,8 @@ la pronunciación
 room
 el cuarto
 
-doctor
-el doctor
+doctor (medical)
+el medico
 
 weather
 el tiempo
@@ -2572,13 +2557,19 @@ tratar
 to choose
 escoger
 
+to select
+elegir
+
 to return (an item)
 devolver
 
-to stop
+to stop (moving)
 parar
 
-to throw
+to throw (force, permanent)
+tirar
+
+to toss (place, pour)
 echar
 
 to feel
@@ -2749,7 +2740,7 @@ el alemán
 finger
 el dedo
 
-children
+children (of mine)
 los hijos
 
 to celebrate
@@ -2764,7 +2755,7 @@ dañar
 ear
 la oreja
 
-healthy
+healthy (food, lifestyle)
 saludable
 
 luggage
@@ -2785,7 +2776,7 @@ el gobierno
 elevator
 el ascensor
 
-to stop
+to stop (doing something)
 dejar de
 
 sociable
@@ -2833,7 +2824,7 @@ el programa
 plant
 la planta
 
-salesperson
+vendor
 el vendedor
 
 to take out the trash
@@ -2994,3 +2985,768 @@ ahora
 
 to manage
 dirigir
+
+Camel
+El Camello
+
+Battery
+La pila
+
+Eyelashes
+Pestañas
+
+Dividers
+Separadores
+
+Shape
+La forma
+
+Size
+El tamaño
+
+Firmly
+Fijamente
+
+To give a hand
+Echar la mano
+
+Hole
+el hoyo
+
+water park
+parque aquatico
+
+stapler
+engrapadora
+
+staples
+grapas
+
+rocket
+el cohete
+
+tissue / hankerchief
+el pañuelo
+
+envelope
+el sobre
+
+toilet
+el inodoro
+
+engine
+el motor
+
+screwdriver
+el destornillador
+
+screw
+el tornillo
+
+zip tie
+el precinto
+
+I don't care
+No me importa
+
+You sure?
+Seguro?
+
+What an adventure!
+Que aventura!
+
+Permission
+Permiso
+
+Flip Flops / sandals
+Chanclas
+
+Can I get it to go please?
+Me lo puede poner para llevar por favor?
+
+rooster
+el gallo
+
+newsletter
+boletín
+
+content 
+contenido
+
+entertainment
+entretenimiento
+
+the climate crisis
+la crisis climatica
+
+the crypto market
+el mercado crypto
+
+Latin America
+Hispanoamérica
+
+reports
+reportajes
+
+reviews
+reseñas
+
+Throughout our content...
+A través de nuestro contenido...
+
+to benefit
+beneficiar
+
+to affect
+afectar
+
+to interact (people)
+convivir
+
+the future looks bright
+el futuro pinta brillante
+
+our present
+nuestro ahora
+
+Thanks for joining our community
+Gracias por unirte a nuestra comunidad
+
+to stay up to date
+estar al día
+
+issues
+los temas
+
+to change (modify)
+modificar
+
+creator
+la creadora
+
+biweekly
+quincenal
+
+journalism
+periodismo
+
+reflections
+reflexiones
+
+readings
+las lecturas
+
+Thanks for subscribing
+Gracias por suscribirte
+
+From now on...
+A partir de hoy...
+
+I'm left wanting more
+Me quedo con ganas de más
+
+archive
+el archivo
+
+to take a look
+echar un vistazo
+
+coworkers
+compis de trabajo
+
+family friends
+familiares
+
+I'd be delighted
+Me hará mucha ilusión
+
+to continue to grow
+seguir creciendo
+
+dumb / foolish
+Necio
+
+deaf
+sordo
+
+political party
+partido politico
+
+mouthwash
+el enjuague bucal
+
+sink
+el lavabo
+
+loose
+flojo
+
+mallet
+el mazo
+
+pestle and mortar
+molcajete con el tejolote
+
+mousepad
+el tapete para el mouse
+
+this is just a little moment
+esto es un ratito nada mas
+
+hammer
+el martillo
+
+microphone
+el micrófono
+
+barely
+apenas
+
+well done!
+bien hecho!
+
+toy
+juguete
+
+flea market
+mercadillo
+
+of course!
+por supuesto!
+
+good job!
+buen trabajo!
+
+oats
+la avena
+
+lazyness
+flojera
+
+branches
+las ramas
+
+droplet
+la gota de agua
+
+to spill
+derramar
+
+dental floss
+el hilo dental
+
+river basin
+la cuenca
+
+dongle
+el dongle
+
+investment portfolio
+la cartera de acciones
+
+idiom
+el modismo
+
+saying
+el dicho
+
+bunsen burner
+mechero bunsen
+
+headboard
+cabecera
+
+printer
+impresora
+
+spatula
+la paleta
+
+walnut
+la nuez
+
+peanut
+el cacahuate
+
+almond
+la almendra
+
+stay hydrated!
+mantente hidratado
+
+wood
+la madera
+
+concrete
+el concreto
+
+Stand up straight!
+Párate derecho!
+
+faucet
+llave de agua
+
+hand towel
+la toalla de mano
+
+fingernails
+las uñas
+
+leftovers
+las sobras
+
+server (networking)
+servidor
+
+amps
+los amperios
+
+volts
+voltios
+
+outlet
+la toma
+
+extension cord
+cable de extensión
+
+crate
+cajón
+
+crane (construction)
+la grúa
+
+headphones
+audífonos
+
+door handle
+la manija
+
+to freeze
+congelar
+
+to defrost
+descongelar
+
+turn signals
+direccionales
+
+chocolate chip cookie
+galleta con chispas de chocolate
+
+thunder
+el trueno
+
+lightning
+relámpago
+
+pig
+el puerco
+
+air vent
+rejila de ventilación
+
+to combust
+quemarse
+
+combustion
+la combustión
+
+he is about 20 years old
+es de unos 20 años
+
+He has a lot of talent
+Tiene mucho talento
+
+A piece of advice...
+Un buen consejo...
+
+It's none of your busines
+No es cosa tuya
+
+afterlife
+la vida futura
+
+Never again
+Nunca jamás
+
+10 minutes ago
+hace 10 minutos
+
+a long time ago
+hace mucho tiempo
+
+in the fresh air
+al aire libre
+
+I agree
+estoy de acuerdo
+
+it will be alright
+saldrá bien
+
+Almighty God
+El todopoderoso
+
+I work full time as a ...
+trabajo a tiempo completo como...
+
+I asked him for money
+le pedí dinero
+
+Do you have rooms available?
+¿Tienes habitaciones disponibles?
+
+Don't be sad!
+¡No estés triste!
+
+language barrier
+barrera lingüística
+
+I've never been to Spain
+no he estado en España
+
+Calm down!
+¡Cálmate!
+
+Can you hear me?
+¿Me oyes?
+
+bracelet
+la pulsera
+
+hen
+la gallina
+
+I owe you one
+Te debo una
+
+hazards
+intermetentes
+
+hips
+las caderas
+
+indoor plans
+planes a cubierto
+
+bald
+calvo
+
+That's how it's done!
+Asi se hace!
+
+How about at 9?
+Como a las 9?
+
+You feel it?
+Te sientes?
+
+It seems...
+Se ve...
+
+dough
+la masa
+
+Woohoo!!
+Orale!!
+
+strawberry
+la fresa
+
+crab
+el cangrejo
+
+beard
+la barba
+
+to gift
+regalar
+
+dry
+seco
+
+invoice
+la factura
+
+to bark
+ladrar
+
+cloudy
+nublado
+
+son-in-law
+el yerno
+
+to fail
+fallar
+
+burner
+el mechero
+
+sweat
+el sudor
+
+to put up with
+aguantar
+
+smell
+el olor
+
+to joke
+bromea
+
+I appreciate it
+Te lo agradezco
+
+Thank you so much
+Muchisimas gracias
+
+good morning
+buenos dias
+
+good afternoon
+buenas tardes
+
+good evening
+buenas noches
+
+how are you? (formal)
+como esta usted?
+
+What's up
+Que tal?
+
+What's your name? (informal)
+Cómo te llamas?
+
+What's your name? (formal)
+Cómo se llama?
+
+Where are you from?
+De dónde eres?
+
+Repeat, please
+Repite por favor
+
+Excuse me
+Disculpe
+
+Slower please
+Mas despacio por favor
+
+Where is the station?
+Dónde está la estación?
+
+Straight ahead
+Todo recto
+
+To the right
+A la derecha
+
+To the left
+A la izquierda
+
+How much does it cost?
+Cuánto cuesta?
+
+How long does it take?
+Cuánto tiempo tarda?
+
+What time does it open?
+A qué hora abre?
+
+What time does it close?
+A qué hora cierra?
+
+What time is it?
+Qué hora es?
+
+Can you help me (formal)
+Me puede ayudar?
+
+A table for two, please
+Una mesa para dos, por favor
+
+Can you bring me the menu please?
+Me puede traer el menu por favor?
+
+What do you recommend?
+Qué recomienda?
+
+I would like...
+Me gustaría...
+
+For me, a beer please
+Para mí, una cerveza por favor
+
+No ice please
+Sin hielo por favor
+
+the bill, please
+la cuenta, por favor
+
+Is service included?
+Está incluido el servicio?
+
+It's very good
+Esta muy bueno
+
+Enjoy your meal!
+Buen provecho
+
+Cheers!
+Salud!
+
+Bless you!
+Salud!
+
+I don't like it
+No me gusta
+
+How awful!
+Qué horror
+
+How beautiful!
+Qué bonito!
+
+Awesome!
+Genial!
+
+I'm thirsty
+Tengo sed
+
+More or less
+más o menos
+
+What a nice day!
+Qué lindo día
+
+I'm very sorry
+Lo siento mucho
+
+No problem
+No hay problema
+
+How delicious!
+Qué rico!
+
+I want to buy this
+Quiero comprar esto
+
+Do you have this in another size?
+Tienen eso en otra talla?
+
+I'm medium size
+Soy talla mediana
+
+Where is an ATM?
+Dónde hay un cajero automatico?
+
+To the airport please
+Al aeropuerto por favor
+
+Stop here please
+Pare aqui por favor
+
+How much is the ticket?
+Cuánto es el boleto
+
+Help!
+Ayuda!
+
+Call the police
+Llame a la policía
+
+I need a doctor
+Necesito un médico
+
+I lost my passport
+Perdí mi pasaporte
+
+Where is the embassy?
+Dónde está la embajada?
+
+Seeya!
+Chao!
+
+Goodbye!
+Adiós
+
+Have a good trip!
+Buen viaje!
+
+Have a good day
+Que tenga un buen día
+
+Good luck!
+Buena suerte!
+
+Take care!
+Con cuidado!
+
+Have fun!
+Que lo pases bien!
+
+right now
+ahora mismo
+
+How cool!
+Que padre!
+
+I disagree
+No estoy de acuerdo
+
+Felicidades!
+Congradulations!
+
+sounds good!
+suena bien!
+
+working hard
+trabajando duro
+
+wrinkles
+arrugas
+
+to cough
+toser
+
+to hiccup
+dar hipo
+
+I'm always on your side!
+Siempre estoy de tu lado!
+
+wireless
+inalámbrico
+
+dusty
+polvoso
+
+greed
+avarica
+
+He would appreciate that!
+Él lo apreciaría!
+
+I knew it!
+Ya lo sabía
+
+Welcome to beautiful sunny Orlando!
+Bienvenido al Orlando bien soleado y chido!
+
+It's always easy driving here
+Aqui siempre se maneja fácil
+
+Steering wheel
+el volante
+
+gear shifter
+la palancia de cambios
+
+a light cold
+la gripe
+
+a strong flu
+el gripe
