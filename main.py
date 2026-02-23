@@ -319,9 +319,9 @@ def main():
     """Main entry point."""
     ensure_data_directory()
     
-    # Generate verbs flashcards from verbs.tsv before syncing
+    # Generate verbs flashcards from verbs.csv before syncing
     try:
-        generate_verbs_flashcards("verbs.tsv", "data/verbs.txt")
+        generate_verbs_flashcards("verbs.csv", "data/verbs.txt")
     except Exception as e:
         print(f"\nError generating verbs flashcards: {e}")
         import sys

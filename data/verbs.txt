@@ -1,216 +1,294 @@
-I have
-yo tengo
-
-you have
-tú tienes
-
-he has
-él tiene
-
-we have
-nosotros tenemos
-
-they have
-ellos tienen
-
-you guys have
-ustedes tienen
-
-I had
-yo tuve
-
-you had
-tú tuviste
-
-he had
-él tuvo
-
-we had
-nosotros tuvimos
-
-they had
-ellos tuvieron
-
-you guys had
-ustedes tuvieron
-
 I go
-yo voy
+voy
 
 you go
-tú vas
+vas
 
 he goes
-él va
+va
+
+it goes
+va
 
 we go
-nosotros vamos
+vamos
 
 they go
-ellos van
+van
 
 you guys go
-ustedes van
+van
 
 I went
-yo fui
+fui
 
 you went
-tú fuiste
+fuiste
 
 he went
-él fue
+fue
+
+it went
+fue
 
 we went
-nosotros fuimos
+fuimos
 
 they went
-ellos fueron
+fueron
 
 you guys went
-ustedes fueron
-
-I talk
-yo hablo
-
-you talk
-tú hablas
-
-he talks
-él habla
-
-we talk
-nosotros hablamos
-
-they talk
-ellos hablan
-
-you guys talk
-ustedes hablan
-
-I talked
-yo hablé
-
-you talked
-tú hablaste
-
-he talked
-él habló
-
-we talked
-nosotros hablamos
-
-they talked
-ellos hablaron
-
-you guys talked
-ustedes hablaron
-
-I eat
-yo como
-
-you eat
-tú comes
-
-he eats
-él come
-
-we eat
-nosotros comemos
-
-they eat
-ellos comen
-
-you guys eat
-ustedes comen
-
-I ate
-yo comí
-
-you ate
-tú comiste
-
-he ate
-él comió
-
-we ate
-nosotros comimos
-
-they ate
-ellos comieron
-
-you guys ate
-ustedes comieron
-
-I live
-yo vivo
-
-you live
-tú vives
-
-he lives
-él vive
-
-we live
-nosotros vivimos
-
-they live
-ellos viven
-
-you guys live
-ustedes viven
-
-I lived
-yo viví
-
-you lived
-tú viviste
-
-he lived
-él vivió
-
-we lived
-nosotros vivimos
-
-they lived
-ellos vivieron
-
-you guys lived
-ustedes vivieron
+fueron
 
 I give
-yo doy
+doy
 
 you give
-tú das
+das
 
 he gives
-él da
+da
+
+it gives
+da
 
 we give
-nosotros damos
+damos
 
 they give
-ellos dan
+dan
 
 you guys give
-ustedes dan
+dan
 
 I gave
-yo di
+di
 
 you gave
-tú diste
+diste
 
 he gave
-él dio
+dio
+
+it gave
+dio
 
 we gave
-nosotros dimos
+dimos
 
 they gave
-ellos dieron
+dieron
 
 you guys gave
-ustedes dieron
+dieron
+
+I do
+hago
+
+you do
+haces
+
+he does
+hace
+
+it does
+hace
+
+we do
+hacemos
+
+they do
+hacen
+
+you guys do
+hacen
+
+I did
+hice
+
+you did
+hiciste
+
+he did
+hizo
+
+it did
+hizo
+
+we did
+hicimos
+
+they did
+hicieron
+
+you guys did
+hicieron
+
+I have
+tengo
+
+you have
+tienes
+
+he has
+tiene
+
+it has
+tiene
+
+we have
+tenemos
+
+they have
+tienen
+
+you guys have
+tienen
+
+I had
+tuve
+
+you had
+tuviste
+
+he had
+tuvo
+
+it had
+tuvo
+
+we had
+tuvimos
+
+they had
+tuvieron
+
+you guys had
+tuvieron
+
+I talk
+hablo
+
+you talk
+hablas
+
+he talks
+habla
+
+it talks
+habla
+
+we talk
+hablamos
+
+they talk
+hablan
+
+you guys talk
+hablan
+
+I talked
+hablé
+
+you talked
+hablaste
+
+he talked
+habló
+
+it talked
+habló
+
+we talked
+hablamos
+
+they talked
+hablaron
+
+you guys talked
+hablaron
+
+I eat
+como
+
+you eat
+comes
+
+he eats
+come
+
+it eats
+come
+
+we eat
+comemos
+
+they eat
+comen
+
+you guys eat
+comen
+
+I ate
+comí
+
+you ate
+comiste
+
+he ate
+comió
+
+it ate
+comió
+
+we ate
+comimos
+
+they ate
+comieron
+
+you guys ate
+comieron
+
+I live
+vivo
+
+you live
+vives
+
+he lives
+vive
+
+it lives
+vive
+
+we live
+vivimos
+
+they live
+viven
+
+you guys live
+viven
+
+I lived
+viví
+
+you lived
+viviste
+
+he lived
+vivió
+
+it lived
+vivió
+
+we lived
+vivimos
+
+they lived
+vivieron
+
+you guys lived
+vivieron
 
