@@ -56,19 +56,48 @@ def conjugate_spanish_preterite(verb: str, verb_type: str, provided_conjugations
     return conjugations
 
 
-def format_english_present(person_index: int, verb_data: dict) -> str:
-    """Format English phrase for present tense."""
-    pronouns = ["I", "you", "he", "it", "we", "they", "you guys"]
-    pronoun = pronouns[person_index]
+def get_gerund_form(verb_data: dict) -> str:
+    """Get gerund (-ing) form of verb, using CSV field or auto-generating."""
+    # Check if en_gerund is provided in CSV
+    en_gerund = verb_data.get('en_gerund', '').strip()
+    if en_gerund:
+        return en_gerund
     
+    # Auto-generate from base verb
     definition = verb_data.get('definition', '').strip()
     base_verb = definition.replace('to ', '').strip() if definition.startswith('to ') else definition.strip()
     
-    if person_index in [2, 3]:  # 3rd person singular (he or it)
-        en_3rd_person = verb_data.get('en_3rd_person', '').strip()
-        return f"{pronoun} {en_3rd_person}" if en_3rd_person else f"{pronoun} {base_verb}s"
+    # Simple rules for generating -ing form
+    if base_verb.endswith('e'):
+        # Drop final 'e' and add 'ing' (e.g., live -> living)
+        return base_verb[:-1] + 'ing'
     else:
-        return f"{pronoun} {base_verb}"
+        # Just add 'ing' (e.g., eat -> eating, talk -> talking)
+        return base_verb + 'ing'
+
+
+def format_english_present(person_index: int, verb_data: dict) -> str:
+    """Format English phrase for present tense using present progressive with contractions."""
+    pronouns = ["I", "you", "he", "it", "we", "they", "you guys"]
+    pronoun = pronouns[person_index]
+    
+    gerund = get_gerund_form(verb_data)
+    
+    # Use contractions for all except "you guys are"
+    if person_index == 0:  # I
+        return f"I'm {gerund}"
+    elif person_index == 1:  # you
+        return f"you're {gerund}"
+    elif person_index == 2:  # he
+        return f"he's {gerund}"
+    elif person_index == 3:  # it
+        return f"it's {gerund}"
+    elif person_index == 4:  # we
+        return f"we're {gerund}"
+    elif person_index == 5:  # they
+        return f"they're {gerund}"
+    else:  # you guys (person_index == 6)
+        return f"you guys are {gerund}"
 
 
 def format_english_preterite(person_index: int, verb_data: dict) -> str:
@@ -151,6 +180,7 @@ def generate_verbs_flashcards(csv_path: str, output_path: str) -> None:
                 'verb': verb,
                 'definition': definition,
                 'en_3rd_person': row.get('en_3rd_person', '').strip(),
+                'en_gerund': row.get('en_gerund', '').strip(),
                 'en_past': row.get('en_past', '').strip(),
                 'es_present': row.get('es_present', '').strip(),
                 'es_preterite': row.get('es_preterite', '').strip()

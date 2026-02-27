@@ -91,9 +91,6 @@ morado
 bed
 la cama
 
-to see
-ver
-
 artist
 el/la artista
 
@@ -169,29 +166,11 @@ el color
 silver
 la plata
 
-to do
-hacer
-
-to say
-decir
-
-to want
-querer
-
-to speak
-hablar
-
 boyfriend
 el novio
 
 movie theater
 el cine
-
-to have
-tener
-
-to ask for
-pedir
 
 to take
 tomar
@@ -208,15 +187,6 @@ rico
 calm
 tranquilo
 
-to go
-ir
-
-to eat
-comer
-
-to return
-volver
-
 young
 joven
 
@@ -225,9 +195,6 @@ el campo
 
 music
 la música
-
-to know
-saber
 
 to start
 empezar
@@ -246,12 +213,6 @@ el café
 
 big
 grande
-
-to put
-poner
-
-to live
-vivir
 
 to get up
 levantarse
@@ -703,7 +664,7 @@ el tiempo
 hour
 la hora
 
-date
+the date
 la fecha
 
 noon
@@ -1129,8 +1090,8 @@ llevar
 when
 cuando
 
-because of
-por
+because of that...
+por eso...
 
 to learn
 aprender
@@ -1146,9 +1107,6 @@ caminar
 
 to wake up
 despertarse
-
-to help
-ayudar
 
 old (age)
 viejo
@@ -1291,8 +1249,11 @@ la toalla
 flower
 la flor
 
-hot
+spicy
 picante
+
+hot
+caliente
 
 to vacuum
 pasar la aspiradora
@@ -1324,20 +1285,11 @@ la tecnología
 cafeteria
 la cafetería
 
-to give
-dar
-
-to bring
-traer
-
-for
-para
-
 to open
 abrir
 
 to call
-llamar
+marcar
 
 to teach
 enseñar
@@ -1447,14 +1399,14 @@ sano
 cough
 la tos
 
+chef
+chef
+
 square
 la plaza
 
 basketball
 el baloncesto
-
-to have a good time
-pasarlo bien
 
 kid
 el chico
@@ -1468,7 +1420,7 @@ detrás de
 bus
 el autobús
 
-cook
+the cook
 el cocinero
 
 to exercise
@@ -1888,7 +1840,7 @@ el contador
 climate
 el clima
 
-telephone
+landline
 el teléfono
 
 phone
@@ -1949,7 +1901,7 @@ grandparents
 los abuelos
 
 performance
-la actuación
+el rendimiento
 
 shoe store
 la zapatería
@@ -1960,8 +1912,8 @@ las matemáticas
 free time
 el tiempo libre
 
-dance
-la danza
+a dance
+un baile
 
 important
 importante
@@ -2122,8 +2074,8 @@ el consejo
 knife
 el cuchillo
 
-excuse me
-perdón
+sorry!
+perdón!
 
 road
 la carretera
@@ -2271,9 +2223,6 @@ sacar
 
 to have fun
 divertirse
-
-well
-bien
 
 to achieve
 lograr
@@ -2437,9 +2386,6 @@ tanto
 so
 tan
 
-to have (aux)
-haber
-
 nice to meet you
 mucho gusto
 
@@ -2458,6 +2404,9 @@ si
 and
 y
 
+to look (appear)
+verse
+
 to seem
 parecer
 
@@ -2470,7 +2419,7 @@ disfrutar
 to go down
 bajar
 
-to attend
+to attend (an event)
 asistir
 
 to fit
@@ -2653,8 +2602,8 @@ legal
 to encourage
 animar
 
-scared
-asustado
+to be scared
+tener miedo
 
 nap
 la siesta
@@ -2935,8 +2884,11 @@ aquí
 to wash
 lavar
 
-to love
+to really like
 encantar
+
+to love
+amar
 
 to lend
 prestar
@@ -2956,7 +2908,7 @@ la palabra
 hopefully
 ojalá
 
-to understand
+to understand fully
 comprender
 
 to ask
@@ -3083,7 +3035,7 @@ the crypto market
 el mercado crypto
 
 Latin America
-Hispanoamérica
+Latinoamérica
 
 reports
 reportajes
@@ -3292,7 +3244,7 @@ la toalla de mano
 fingernails
 las uñas
 
-leftovers
+scraps
 las sobras
 
 server (networking)
@@ -3539,7 +3491,7 @@ Where is the station?
 Dónde está la estación?
 
 Straight ahead
-Todo recto
+Todo derecho
 
 To the right
 A la derecha
@@ -3697,8 +3649,8 @@ Que padre!
 I disagree
 No estoy de acuerdo
 
+Congratulations!
 Felicidades!
-Congradulations!
 
 sounds good!
 suena bien!
@@ -3750,3 +3702,132 @@ la gripe
 
 a strong flu
 el gripe
+
+to lean
+inclinarse
+
+shelves
+los estantes
+
+to the rest of...
+del resto de...
+
+...and it was inevitable
+...y fue inevitable
+
+unforgettable
+inolvidable
+
+we're dating
+estamos saliendo
+
+leftovers
+lo que quedo de ayer
+
+to have roots in
+tener raices en
+
+to be hungry
+tener hambre
+
+long sleeve
+manga larga
+
+short sleeve
+manga corta
+
+floor plans
+los planos
+
+fugitive
+fugitivo
+
+in the short term...
+a corto plazo
+
+to slip
+resbalarse
+
+You're not gonna believe it!
+No vas a creerlo!
+
+Guess what!
+Adivida qué!
+
+thoughtful
+atento
+
+considerate
+considerado
+
+deep in thought
+pensativo
+
+to slip away
+escabullirse
+
+to undertake
+emprender
+
+peacock
+pavo real
+
+to empty my wallet
+vaciar la cartera
+
+unpleasant
+deagradable
+
+aesthetic
+la estética
+
+warehouse
+almacen
+
+That's enough!
+Ya estuvo!
+
+Stop it!
+Párate
+
+Want a bite?
+Quieres probar?
+
+You like?
+Le entras?
+
+mutual
+mutua
+
+theme
+el tema
+
+to exhaust
+agotar
+
+to use up
+agotar
+
+plugged in
+enchufado
+
+to plug in
+enchufar
+
+to make money
+ganar dinero
+
+I got scared
+Me asusté
+
+The way you dance
+tu baile
+
+I was minding my own business when...
+Estaba en las mías cuando...
+
+How was everything?
+Cómo estuvo todo?
+
+How was your day?
+Cómo estuvo tu día?

@@ -1,22 +1,22 @@
-I go
+I'm going
 voy
 
-you go
+you're going
 vas
 
-he goes
+he's going
 va
 
-it goes
+it's going
 va
 
-we go
+we're going
 vamos
 
-they go
+they're going
 van
 
-you guys go
+you guys are going
 van
 
 I went
@@ -40,25 +40,109 @@ fueron
 you guys went
 fueron
 
-I give
+I'm seeing
+veo
+
+you're seeing
+ves
+
+he's seeing
+ve
+
+it's seeing
+ve
+
+we're seeing
+vemos
+
+they're seeing
+ven
+
+you guys are seeing
+ven
+
+I saw
+vi
+
+you saw
+viste
+
+he saw
+vio
+
+it saw
+vio
+
+we saw
+vimos
+
+they saw
+vieron
+
+you guys saw
+vieron
+
+I'm saying
+digo
+
+you're saying
+dices
+
+he's saying
+dices
+
+it's saying
+dices
+
+we're saying
+dices
+
+they're saying
+dices
+
+you guys are saying
+dices
+
+I said
+dije
+
+you said
+dijiste
+
+he said
+dijo
+
+it said
+dijo
+
+we said
+dijimos
+
+they said
+dijeron
+
+you guys said
+dijeron
+
+I'm giving
 doy
 
-you give
+you're giving
 das
 
-he gives
+he's giving
 da
 
-it gives
+it's giving
 da
 
-we give
+we're giving
 damos
 
-they give
+they're giving
 dan
 
-you guys give
+you guys are giving
 dan
 
 I gave
@@ -82,25 +166,67 @@ dieron
 you guys gave
 dieron
 
-I do
+I'm knowing
+sé
+
+you're knowing
+sabes
+
+he's knowing
+sabe
+
+it's knowing
+sabe
+
+we're knowing
+sabemos
+
+they're knowing
+saben
+
+you guys are knowing
+saben
+
+I knew
+supe
+
+you knew
+supiste
+
+he knew
+supo
+
+it knew
+supo
+
+we knew
+supimos
+
+they knew
+supieron
+
+you guys knew
+supieron
+
+I'm doing
 hago
 
-you do
+you're doing
 haces
 
-he does
+he's doing
 hace
 
-it does
+it's doing
 hace
 
-we do
+we're doing
 hacemos
 
-they do
+they're doing
 hacen
 
-you guys do
+you guys are doing
 hacen
 
 I did
@@ -124,25 +250,25 @@ hicieron
 you guys did
 hicieron
 
-I have
+I'm having
 tengo
 
-you have
+you're having
 tienes
 
-he has
+he's having
 tiene
 
-it has
+it's having
 tiene
 
-we have
+we're having
 tenemos
 
-they have
+they're having
 tienen
 
-you guys have
+you guys are having
 tienen
 
 I had
@@ -166,25 +292,25 @@ tuvieron
 you guys had
 tuvieron
 
-I talk
+I'm talking
 hablo
 
-you talk
+you're talking
 hablas
 
-he talks
+he's talking
 habla
 
-it talks
+it's talking
 habla
 
-we talk
+we're talking
 hablamos
 
-they talk
+they're talking
 hablan
 
-you guys talk
+you guys are talking
 hablan
 
 I talked
@@ -208,25 +334,25 @@ hablaron
 you guys talked
 hablaron
 
-I eat
+I'm eating
 como
 
-you eat
+you're eating
 comes
 
-he eats
+he's eating
 come
 
-it eats
+it's eating
 come
 
-we eat
+we're eating
 comemos
 
-they eat
+they're eating
 comen
 
-you guys eat
+you guys are eating
 comen
 
 I ate
@@ -250,25 +376,25 @@ comieron
 you guys ate
 comieron
 
-I live
+I'm living
 vivo
 
-you live
+you're living
 vives
 
-he lives
+he's living
 vive
 
-it lives
+it's living
 vive
 
-we live
+we're living
 vivimos
 
-they live
+they're living
 viven
 
-you guys live
+you guys are living
 viven
 
 I lived
