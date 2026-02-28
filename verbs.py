@@ -3,9 +3,26 @@ import os
 from typing import List, Tuple, Optional
 
 
+# Reflexive pronouns by person: yo, tú, él/ella, nosotros, ellos/ustedes
+REFLEXIVE_PRONOUNS = ['me', 'te', 'se', 'nos', 'se', 'se']
+
+
+def is_reflexive_verb(verb: str) -> bool:
+    """Return True if verb ends in 'se' (e.g., irse, lavarse)."""
+    return verb.lower().strip().endswith('se')
+
+
+def get_reflexive_base_verb(verb: str) -> str:
+    """Strip reflexive 'se' from verb (e.g., irse → ir). Only call for reflexive verbs."""
+    return verb[:-2].strip()
+
+
 def get_verb_type(verb: str) -> str:
-    """Determine verb type based on ending: 'ar', 'er', or 'ir'."""
+    """Determine verb type based on ending: 'ar', 'er', or 'ir'.
+    For reflexive verbs (ending in 'se'), use the base verb."""
     verb_lower = verb.lower().strip()
+    if is_reflexive_verb(verb_lower):
+        verb_lower = get_reflexive_base_verb(verb_lower).lower()
     if verb_lower.endswith('ar'):
         return 'ar'
     elif verb_lower.endswith('er'):
@@ -143,12 +160,20 @@ def format_english_preterite(person_index: int, verb_data: dict) -> str:
     return f"{pronoun} {verb_form}"
 
 
+def add_reflexive_pronoun(conjugation: str, spanish_idx: int) -> str:
+    """Prepend reflexive pronoun to conjugation (me, te, se, nos, se, se)."""
+    return f"{REFLEXIVE_PRONOUNS[spanish_idx]} {conjugation}"
+
+
 def generate_flashcards_for_verb(verb_data: dict) -> List[Tuple[str, str]]:
     """Generate 14 flashcards for a verb (7 present + 7 preterite)."""
     verb = verb_data.get('verb', '').strip()
     if not verb:
         return []
     
+    is_reflexive = is_reflexive_verb(verb)
+    # For reflexive verbs, use base verb for conjugation (irse → ir)
+    conjugation_verb = get_reflexive_base_verb(verb) if is_reflexive else verb
     verb_type = get_verb_type(verb)
     flashcards = []
     
@@ -159,19 +184,25 @@ def generate_flashcards_for_verb(verb_data: dict) -> List[Tuple[str, str]]:
     preterite_list = es_preterite.split() if es_preterite else None
     
     # Generate present tense flashcards (7 cards)
-    present_conjugations = conjugate_spanish_present(verb, verb_type, present_list)
+    present_conjugations = conjugate_spanish_present(conjugation_verb, verb_type, present_list)
     # Map: 0=I, 1=you, 2=he, 3=it, 4=we, 5=they, 6=you guys
     # Spanish: 0=yo, 1=tú, 2=él, 3=nosotros, 4=ellos, 5=ustedes
     spanish_map = [0, 1, 2, 2, 3, 4, 4]  # it uses same as he, you guys uses same as they
     for i in range(7):
         spanish_idx = spanish_map[i]
-        flashcards.append((format_english_present(i, verb_data), present_conjugations[spanish_idx]))
+        spanish_text = present_conjugations[spanish_idx]
+        if is_reflexive:
+            spanish_text = add_reflexive_pronoun(spanish_text, spanish_idx)
+        flashcards.append((format_english_present(i, verb_data), spanish_text))
     
     # Generate preterite tense flashcards (7 cards)
-    preterite_conjugations = conjugate_spanish_preterite(verb, verb_type, preterite_list)
+    preterite_conjugations = conjugate_spanish_preterite(conjugation_verb, verb_type, preterite_list)
     for i in range(7):
         spanish_idx = spanish_map[i]
-        flashcards.append((format_english_preterite(i, verb_data), preterite_conjugations[spanish_idx]))
+        spanish_text = preterite_conjugations[spanish_idx]
+        if is_reflexive:
+            spanish_text = add_reflexive_pronoun(spanish_text, spanish_idx)
+        flashcards.append((format_english_preterite(i, verb_data), spanish_text))
     
     return flashcards
 
