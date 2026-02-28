@@ -40,6 +40,48 @@ fueron
 you guys went
 fueron
 
+I'm leaving
+me voy
+
+you're leaving
+te vas
+
+he's leaving
+se va
+
+it's leaving
+se va
+
+we're leaving
+nos vamos
+
+they're leaving
+se van
+
+you guys are leaving
+se van
+
+I left
+me fui
+
+you left
+te fuiste
+
+he left
+se fue
+
+it left
+se fue
+
+we left
+nos fuimos
+
+they left
+se fueron
+
+you guys left
+se fueron
+
 I see
 veo
 
@@ -131,10 +173,10 @@ you're putting
 pones
 
 he's putting
-pones
+pone
 
 it's putting
-pones
+pone
 
 we're putting
 ponemos
