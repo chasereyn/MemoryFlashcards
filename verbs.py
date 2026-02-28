@@ -76,28 +76,55 @@ def get_gerund_form(verb_data: dict) -> str:
         return base_verb + 'ing'
 
 
-def format_english_present(person_index: int, verb_data: dict) -> str:
-    """Format English phrase for present tense using present progressive with contractions."""
+def get_base_verb(verb_data: dict) -> str:
+    """Get base verb form (without 'to ') from definition."""
+    definition = verb_data.get('definition', '').strip()
+    return definition.replace('to ', '').strip() if definition.startswith('to ') else definition.strip()
+
+
+def format_english_present_simple(person_index: int, verb_data: dict) -> str:
+    """Format English phrase for present tense using simple present (e.g., 'he knows')."""
     pronouns = ["I", "you", "he", "it", "we", "they", "you guys"]
     pronoun = pronouns[person_index]
     
+    base_verb = get_base_verb(verb_data)
+    en_3rd = verb_data.get('en_3rd_person', '').strip()
+    
+    # he, she, it use 3rd person singular form
+    if person_index in (2, 3) and en_3rd:
+        verb_form = en_3rd
+    else:
+        verb_form = base_verb
+    
+    return f"{pronoun} {verb_form}"
+
+
+def format_english_present_progressive(person_index: int, verb_data: dict) -> str:
+    """Format English phrase for present tense using present progressive (e.g., 'he's eating')."""
     gerund = get_gerund_form(verb_data)
     
-    # Use contractions for all except "you guys are"
-    if person_index == 0:  # I
+    if person_index == 0:
         return f"I'm {gerund}"
-    elif person_index == 1:  # you
+    elif person_index == 1:
         return f"you're {gerund}"
-    elif person_index == 2:  # he
+    elif person_index == 2:
         return f"he's {gerund}"
-    elif person_index == 3:  # it
+    elif person_index == 3:
         return f"it's {gerund}"
-    elif person_index == 4:  # we
+    elif person_index == 4:
         return f"we're {gerund}"
-    elif person_index == 5:  # they
+    elif person_index == 5:
         return f"they're {gerund}"
     else:  # you guys (person_index == 6)
         return f"you guys are {gerund}"
+
+
+def format_english_present(person_index: int, verb_data: dict) -> str:
+    """Format English phrase for present tense. Uses es_present_style: 'simple' or 'progressive' (default)."""
+    style = verb_data.get('es_present_style', '').strip().lower()
+    if style == 'simple':
+        return format_english_present_simple(person_index, verb_data)
+    return format_english_present_progressive(person_index, verb_data)
 
 
 def format_english_preterite(person_index: int, verb_data: dict) -> str:
@@ -183,7 +210,8 @@ def generate_verbs_flashcards(csv_path: str, output_path: str) -> None:
                 'en_gerund': row.get('en_gerund', '').strip(),
                 'en_past': row.get('en_past', '').strip(),
                 'es_present': row.get('es_present', '').strip(),
-                'es_preterite': row.get('es_preterite', '').strip()
+                'es_preterite': row.get('es_preterite', '').strip(),
+                'es_present_style': row.get('es_present_style', '').strip(),
             }
             
             verb_flashcards = generate_flashcards_for_verb(verb_data)

@@ -22,9 +22,6 @@ el abrigo
 gray
 gris
 
-to walk
-andar
-
 delicious
 delicioso
 
@@ -349,8 +346,8 @@ conocer
 to sleep
 dormir
 
-should
-deber
+obligation
+un deber
 
 after
 después
@@ -1979,7 +1976,7 @@ birthday
 el cumpleaños
 
 lazy
-perezoso
+flojo
 
 ready
 listo
@@ -2074,7 +2071,7 @@ el consejo
 knife
 el cuchillo
 
-sorry!
+sorry my bad!
 perdón!
 
 road
@@ -2403,9 +2400,6 @@ si
 
 and
 y
-
-to look (appear)
-verse
 
 to seem
 parecer
@@ -3782,7 +3776,7 @@ aesthetic
 la estética
 
 warehouse
-almacen
+el almacén
 
 That's enough!
 Ya estuvo!
@@ -3820,8 +3814,8 @@ ganar dinero
 I got scared
 Me asusté
 
-The way you dance
-tu baile
+I love your moves!
+Me encanta tu baile!
 
 I was minding my own business when...
 Estaba en las mías cuando...
@@ -3831,3 +3825,63 @@ Cómo estuvo todo?
 
 How was your day?
 Cómo estuvo tu día?
+
+stain
+la mancha
+
+bruise
+el moretón
+
+a cut
+un corte
+
+How do you spell it?
+Cómo se escribe eso?
+
+Spell it!
+Escríbelo!
+
+stars and stripes
+estrellas y barras
+
+corkboard
+el tablón de corcho
+
+vanilla
+la vainilla
+
+cajun seasoning
+el sazón cajún
+
+chipotle peppers
+los chiles chipotle
+
+Your turn!
+Tu turno!
+
+distinguished
+distinguido
+
+very good indeed!
+muy bien indeed!
+
+that makes me happy!
+eso me hace feliz
+
+meal prep is done!
+ya terminé el meal prep
+
+sand castle
+castillo de arena
+
+poem
+poema
+
+corpse
+cadáver
+
+riots
+revueltas
+
+activists
+activistas

@@ -40,25 +40,25 @@ fueron
 you guys went
 fueron
 
-I'm seeing
+I see
 veo
 
-you're seeing
+you see
 ves
 
-he's seeing
+he sees
 ve
 
-it's seeing
+it sees
 ve
 
-we're seeing
+we see
 vemos
 
-they're seeing
+they see
 ven
 
-you guys are seeing
+you guys see
 ven
 
 I saw
@@ -82,26 +82,26 @@ vieron
 you guys saw
 vieron
 
-I'm saying
+I say
 digo
 
-you're saying
+you say
 dices
 
-he's saying
-dices
+he says
+dice
 
-it's saying
-dices
+it says
+dice
 
-we're saying
-dices
+we say
+decimos
 
-they're saying
-dices
+they say
+dicen
 
-you guys are saying
-dices
+you guys say
+dicen
 
 I said
 dije
@@ -124,25 +124,67 @@ dijeron
 you guys said
 dijeron
 
-I'm giving
+I'm putting
+pongo
+
+you're putting
+pones
+
+he's putting
+pones
+
+it's putting
+pones
+
+we're putting
+ponemos
+
+they're putting
+ponen
+
+you guys are putting
+ponen
+
+I put
+puse
+
+you put
+pusiste
+
+he put
+puso
+
+it put
+puso
+
+we put
+pusimos
+
+they put
+pusieron
+
+you guys put
+pusieron
+
+I give
 doy
 
-you're giving
+you give
 das
 
-he's giving
+he gives
 da
 
-it's giving
+it gives
 da
 
-we're giving
+we give
 damos
 
-they're giving
+they give
 dan
 
-you guys are giving
+you guys give
 dan
 
 I gave
@@ -166,25 +208,25 @@ dieron
 you guys gave
 dieron
 
-I'm knowing
+I know
 sé
 
-you're knowing
+you know
 sabes
 
-he's knowing
+he knows
 sabe
 
-it's knowing
+it knows
 sabe
 
-we're knowing
+we know
 sabemos
 
-they're knowing
+they know
 saben
 
-you guys are knowing
+you guys know
 saben
 
 I knew
@@ -250,25 +292,25 @@ hicieron
 you guys did
 hicieron
 
-I'm having
+I have
 tengo
 
-you're having
+you have
 tienes
 
-he's having
+he has
 tiene
 
-it's having
+it has
 tiene
 
-we're having
+we have
 tenemos
 
-they're having
+they have
 tienen
 
-you guys are having
+you guys have
 tienen
 
 I had
