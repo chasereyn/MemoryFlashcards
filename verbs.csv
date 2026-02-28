@@ -1,11 +1,12 @@
-verb,definition,en_3rd_person,en_gerund,en_past,es_present,es_preterite
-ir,to go,goes,going,went,voy vas va vamos van,fui fuiste fue fuimos fueron
-ver,to see,sees,seeing,saw,veo ves ve vemos ven,vi viste vio vimos vieron
-decir,to say,says,saying,said,digo dices dices dices dices decimos dicen,dije dijiste dijo dijimos dijeron
-dar,to give,gives,giving,gave,doy das da damos dan,di diste dio dimos dieron
-saber,to know,knows,knowing,knew,sé sabes sabe sabemos saben,supe supiste supo supimos supieron
-hacer,to do,does,doing,did,hago haces hace hacemos hacen,hice hiciste hizo hicimos hicieron
-tener,to have,has,having,had,tengo tienes tiene tenemos tienen,tuve tuviste tuvo tuvimos tuvieron
-hablar,to talk,talks,talking,talked,,,
-comer,to eat,eats,eating,ate,,,
-vivir,to live,lives,living,lived,,,
+verb,definition,en_3rd_person,en_gerund,en_past,es_present,es_preterite,es_present_style
+ir,to go,goes,going,went,voy vas va vamos van,fui fuiste fue fuimos fueron,progressive
+ver,to see,sees,seeing,saw,veo ves ve vemos ven,vi viste vio vimos vieron,simple
+decir,to say,says,saying,said,digo dices dice decimos dicen,dije dijiste dijo dijimos dijeron,simple
+poner,to put,puts,putting,put,pongo pones pones ponemos ponen,puse pusiste puso pusimos pusieron,progressive
+dar,to give,gives,giving,gave,doy das da damos dan,di diste dio dimos dieron,simple
+saber,to know,knows,knowing,knew,sé sabes sabe sabemos saben,supe supiste supo supimos supieron,simple
+hacer,to do,does,doing,did,hago haces hace hacemos hacen,hice hiciste hizo hicimos hicieron,progressive
+tener,to have,has,having,had,tengo tienes tiene tenemos tienen,tuve tuviste tuvo tuvimos tuvieron,simple
+hablar,to talk,talks,talking,talked,,,progressive
+comer,to eat,eats,eating,ate,,,progressive
+vivir,to live,lives,living,lived,,,progressive
