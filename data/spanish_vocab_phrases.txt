@@ -100,9 +100,6 @@ el país
 to stay
 quedarse
 
-to arrive
-llegar
-
 butter
 la mantequilla
 
@@ -345,9 +342,6 @@ conocer
 
 to sleep
 dormir
-
-obligation
-un deber
 
 after
 después
@@ -2380,9 +2374,6 @@ lejos
 so much
 tanto
 
-so
-tan
-
 nice to meet you
 mucho gusto
 
@@ -2596,7 +2587,7 @@ legal
 to encourage
 animar
 
-to be scared
+to be afraid
 tener miedo
 
 nap
@@ -3193,7 +3184,7 @@ la cartera de acciones
 idiom
 el modismo
 
-saying
+a saying
 el dicho
 
 bunsen burner
@@ -3821,10 +3812,10 @@ I was minding my own business when...
 Estaba en las mías cuando...
 
 How was everything?
-Cómo estuvo todo?
+Cómo fue todo?
 
 How was your day?
-Cómo estuvo tu día?
+Cómo te fue hoy?
 
 stain
 la mancha
@@ -3939,3 +3930,189 @@ las persianas
 
 nightstand
 la mesita de noche
+
+You've got it already!
+Vas de gane!
+
+sock
+el calcentín
+
+long sock
+la calceta
+
+stocking
+la calceta
+
+scrambled eggs
+huevos revueltos
+
+nursery
+el vivero
+
+workout
+entrenamiento
+
+drunk
+borracho
+
+wax
+la cera
+
+jar
+el frasco
+
+fine arts
+las bellas artes
+
+they seem
+se ven
+
+rocking chair
+la mecedora
+
+parade
+desfile
+
+The other two are coming along
+Las otras dos en el camino las arreglamos
+
+obligation
+obligación
+
+tires
+los neumáticos
+
+my stomach is grumbling
+tengo el estómago gruñendo
+
+handwritten
+escrito a mano
+
+tantrum
+berrinche
+
+spongecake
+el bizcocho
+
+texting
+mensajeando
+
+dragon
+el dragón
+
+to contribute
+aportar
+
+slowly
+lentamente
+
+humble
+humilde
+
+to suffer from
+padecer
+
+danger
+el peligro
+
+god
+el dios
+
+grass
+la hierba
+
+on top
+encima
+
+to brush
+cepillarse
+
+view
+la vista
+
+to reject
+rechazar
+
+to beg
+rogar
+
+retired
+jubilado
+
+tensions
+tensiones
+
+dense
+denso
+
+railroad crossing
+cruce de ferrocarril
+
+flora & fauna
+flora & fauna
+
+tow away zone
+zona de remolque
+
+no parking
+no estacionarse
+
+railroad
+ferrocarril
+
+parking lot
+estacionamiento
+
+ladybug
+mariqueta
+
+puzzle piece
+pieza de rompecabezas
+
+crumbs
+migajas
+
+mexican accent
+acento mexicano
+
+I can't wait to...
+Tengo muchas ganas de
+
+not even...
+ni siquiera...
+
+What? (in conversation)
+Como?
+
+What? (on phone)
+Mande?
+
+I'm about to study
+Estoy a punto de estudiar
+
+I haven't gotten to...
+Me hace falta...
+
+running shoes
+deportivos
+
+slippers
+zapatillas
+
+let me think about it
+déjame pensarlo
+
+I didn't realize
+NO me di cuenta
+
+I got used to it
+Me acostumbré
+
+I forgot
+se me olvidó
+
+what do you think?
+Cómo lo piensas?
+
+bankrupcy
+la quiebra

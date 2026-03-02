@@ -292,6 +292,48 @@ supieron
 you guys knew
 supieron
 
+I'm asking
+pido
+
+you're asking
+pides
+
+he's asking
+pide
+
+it's asking
+pide
+
+we're asking
+pedimos
+
+they're asking
+piden
+
+you guys are asking
+piden
+
+I asked
+pedí
+
+you asked
+pediste
+
+he asked
+pidió
+
+it asked
+pidió
+
+we asked
+pedimos
+
+they asked
+pidieron
+
+you guys asked
+pidieron
+
 I'm doing
 hago
 
@@ -376,46 +418,130 @@ tuvieron
 you guys had
 tuvieron
 
-I'm talking
+I'm bringing
+traigo
+
+you're bringing
+traes
+
+he's bringing
+trae
+
+it's bringing
+trae
+
+we're bringing
+traemos
+
+they're bringing
+traen
+
+you guys are bringing
+traen
+
+I brought
+traje
+
+you brought
+trajiste
+
+he brought
+trajo
+
+it brought
+trajo
+
+we brought
+trajimos
+
+they brought
+trajeron
+
+you guys brought
+trajeron
+
+I'm arriving
+llego
+
+you're arriving
+llegas
+
+he's arriving
+llega
+
+it's arriving
+llega
+
+we're arriving
+llegamos
+
+they're arriving
+llegan
+
+you guys are arriving
+llegan
+
+I arrived
+llegué
+
+you arrived
+llegaste
+
+he arrived
+llegó
+
+it arrived
+llegó
+
+we arrived
+llegamos
+
+they arrived
+llegaron
+
+you guys arrived
+llegaron
+
+I'm speaking
 hablo
 
-you're talking
+you're speaking
 hablas
 
-he's talking
+he's speaking
 habla
 
-it's talking
+it's speaking
 habla
 
-we're talking
+we're speaking
 hablamos
 
-they're talking
+they're speaking
 hablan
 
-you guys are talking
+you guys are speaking
 hablan
 
-I talked
+I spoke
 hablé
 
-you talked
+you spoke
 hablaste
 
-he talked
+he spoke
 habló
 
-it talked
+it spoke
 habló
 
-we talked
+we spoke
 hablamos
 
-they talked
+they spoke
 hablaron
 
-you guys talked
+you guys spoke
 hablaron
 
 I'm eating
