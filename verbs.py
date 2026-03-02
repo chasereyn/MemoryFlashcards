@@ -1,254 +1,223 @@
 import csv
+import json
 import os
 from typing import List, Tuple, Optional
 
 
-# Reflexive pronouns by person: yo, tú, él/ella, nosotros, ellos/ustedes
-REFLEXIVE_PRONOUNS = ['me', 'te', 'se', 'nos', 'se', 'se']
+# Map for 7 English persons: I, you, he, it, we, they, you guys
+# Spanish persons: yo, tu, ud, nosotros, uds (Latin American - uds for both they and you guys)
+SPANISH_PERSON_KEYS = ['yo', 'tu', 'ud', 'nosotros', 'uds']
+ENGLISH_PRONOUNS = ["I", "you", "he", "it", "we", "they", "you guys"]
+SPANISH_MAP = [0, 1, 2, 2, 3, 4, 4]  # it=he, you guys=they
 
 
-def is_reflexive_verb(verb: str) -> bool:
-    """Return True if verb ends in 'se' (e.g., irse, lavarse)."""
-    return verb.lower().strip().endswith('se')
+def load_verb_json(verb: str, verbs_dir: str = "verbs") -> Optional[dict]:
+    """
+    Load verb data from verbs/{verb}.json.
+    Returns None if file doesn't exist.
+    """
+    path = os.path.join(verbs_dir, f"{verb}.json")
+    if not os.path.exists(path):
+        return None
+    try:
+        with open(path, 'r', encoding='utf-8') as f:
+            return json.load(f)
+    except (json.JSONDecodeError, OSError) as e:
+        print(f"Warning: Could not load {path}: {e}")
+        return None
 
 
-def get_reflexive_base_verb(verb: str) -> str:
-    """Strip reflexive 'se' from verb (e.g., irse → ir). Only call for reflexive verbs."""
-    return verb[:-2].strip()
+def _get_english_base(json_data: dict) -> str:
+    """Get base verb form from English infinitive (e.g., 'to go' -> 'go')."""
+    inf = json_data.get('english', {}).get('infinitivo', '') or json_data.get('infinitivo', '')
+    if isinstance(inf, str):
+        inf = inf.strip()
+        if inf.startswith('to '):
+            return inf[3:].strip()
+        return inf
+    return ''
 
 
-def get_verb_type(verb: str) -> str:
-    """Determine verb type based on ending: 'ar', 'er', or 'ir'.
-    For reflexive verbs (ending in 'se'), use the base verb."""
-    verb_lower = verb.lower().strip()
-    if is_reflexive_verb(verb_lower):
-        verb_lower = get_reflexive_base_verb(verb_lower).lower()
-    if verb_lower.endswith('ar'):
-        return 'ar'
-    elif verb_lower.endswith('er'):
-        return 'er'
-    elif verb_lower.endswith('ir'):
-        return 'ir'
+def _derive_3rd_person(base: str) -> str:
+    """Derive 3rd person singular from base (e.g., 'go' -> 'goes'). Simple rules."""
+    if not base:
+        return ''
+    if base.endswith(('s', 'x', 'z', 'ch', 'sh')):
+        return base + 'es'
+    if base.endswith('y') and len(base) > 1 and base[-2] not in 'aeiou':
+        return base[:-1] + 'ies'
+    return base + 's'
+
+
+def _derive_simple_past(base: str) -> str:
+    """Derive simple past from base (e.g., 'talk' -> 'talked'). Simple rules."""
+    if not base:
+        return ''
+    if base.endswith('e'):
+        return base + 'd'
+    if base.endswith('y') and len(base) > 1 and base[-2] not in 'aeiou':
+        return base[:-1] + 'ied'
+    if len(base) >= 2 and base[-1] in 'bdgmnprt' and base[-2] in 'aeiou':
+        return base + base[-1] + 'ed'
+    return base + 'ed'
+
+
+def _get_gerund(json_data: dict) -> str:
+    """Get English gerund from JSON."""
+    return (json_data.get('english', {}).get('gerundio', '') or '').strip()
+
+
+def _get_3rd_person(json_data: dict, prefs: dict) -> str:
+    """Get 3rd person singular - from JSON, override, or derive."""
+    from_json = (json_data.get('english', {}) or {}).get('thirdPersonSingular', '').strip()
+    if from_json:
+        return from_json
+    override = prefs.get('en_3rd_person', '').strip()
+    if override:
+        return override
+    base = _get_english_base(json_data)
+    return _derive_3rd_person(base)
+
+
+def _get_simple_past(json_data: dict, prefs: dict) -> str:
+    """Get simple past - from override, JSON, or derive."""
+    override = prefs.get('en_past', '').strip()
+    if override:
+        return override
+    # Try to parse from english.indicativo.preterito (e.g., "I went" -> "went")
+    preterito_desc = (json_data.get('english', {}).get('indicativo', {}) or {}).get('preterito', '')
+    if isinstance(preterito_desc, str) and preterito_desc.strip().lower().startswith('i '):
+        parts = preterito_desc.strip().split(None, 1)
+        if len(parts) == 2:
+            return parts[1].strip()
+    base = _get_english_base(json_data)
+    return _derive_simple_past(base)
+
+
+def _get_spanish_conjugation(json_data: dict, tense: str, person_key: str) -> str:
+    """Get Spanish conjugation from indicativo.presente or indicativo.preterito."""
+    try:
+        indicativo = json_data.get('indicativo', {})
+        tense_data = indicativo.get(tense, {})
+        return (tense_data.get(person_key, '') or '').strip()
+    except (AttributeError, TypeError):
+        return ''
+
+
+def format_english_present_simple(person_index: int, json_data: dict, prefs: dict) -> str:
+    """Format English present simple (e.g., 'he knows')."""
+    pronoun = ENGLISH_PRONOUNS[person_index]
+    base = _get_english_base(json_data)
+    if person_index in (2, 3):  # he, it
+        verb_form = _get_3rd_person(json_data, prefs)
     else:
-        raise ValueError(f"Unknown verb type for '{verb}'")
-
-
-def conjugate_spanish_present(verb: str, verb_type: str, provided_conjugations: Optional[List[str]]) -> List[str]:
-    """Generate 6 Spanish present tense conjugations."""
-    if provided_conjugations and len(provided_conjugations) >= 5:
-        conjugations = provided_conjugations[:5]
-        conjugations.append(conjugations[4])  # Duplicate ellos for ustedes
-        return conjugations
-    
-    # Standard conjugation rules
-    verb_stem = verb[:-2]
-    if verb_type == 'ar':
-        endings = ['o', 'as', 'a', 'amos', 'an']
-    elif verb_type == 'er':
-        endings = ['o', 'es', 'e', 'emos', 'en']
-    else:  # ir
-        endings = ['o', 'es', 'e', 'imos', 'en']
-    
-    conjugations = [verb_stem + ending for ending in endings]
-    conjugations.append(conjugations[4])  # Duplicate ellos for ustedes
-    return conjugations
-
-
-def conjugate_spanish_preterite(verb: str, verb_type: str, provided_conjugations: Optional[List[str]]) -> List[str]:
-    """Generate 6 Spanish preterite tense conjugations."""
-    if provided_conjugations and len(provided_conjugations) >= 5:
-        conjugations = provided_conjugations[:5]
-        conjugations.append(conjugations[4])  # Duplicate ellos for ustedes
-        return conjugations
-    
-    # Standard conjugation rules
-    verb_stem = verb[:-2]
-    if verb_type == 'ar':
-        endings = ['é', 'aste', 'ó', 'amos', 'aron']
-    else:  # er or ir
-        endings = ['í', 'iste', 'ió', 'imos', 'ieron']
-    
-    conjugations = [verb_stem + ending for ending in endings]
-    conjugations.append(conjugations[4])  # Duplicate ellos for ustedes
-    return conjugations
-
-
-def get_gerund_form(verb_data: dict) -> str:
-    """Get gerund (-ing) form of verb, using CSV field or auto-generating."""
-    # Check if en_gerund is provided in CSV
-    en_gerund = verb_data.get('en_gerund', '').strip()
-    if en_gerund:
-        return en_gerund
-    
-    # Auto-generate from base verb
-    definition = verb_data.get('definition', '').strip()
-    base_verb = definition.replace('to ', '').strip() if definition.startswith('to ') else definition.strip()
-    
-    # Simple rules for generating -ing form
-    if base_verb.endswith('e'):
-        # Drop final 'e' and add 'ing' (e.g., live -> living)
-        return base_verb[:-1] + 'ing'
-    else:
-        # Just add 'ing' (e.g., eat -> eating, talk -> talking)
-        return base_verb + 'ing'
-
-
-def get_base_verb(verb_data: dict) -> str:
-    """Get base verb form (without 'to ') from definition."""
-    definition = verb_data.get('definition', '').strip()
-    return definition.replace('to ', '').strip() if definition.startswith('to ') else definition.strip()
-
-
-def format_english_present_simple(person_index: int, verb_data: dict) -> str:
-    """Format English phrase for present tense using simple present (e.g., 'he knows')."""
-    pronouns = ["I", "you", "he", "it", "we", "they", "you guys"]
-    pronoun = pronouns[person_index]
-    
-    base_verb = get_base_verb(verb_data)
-    en_3rd = verb_data.get('en_3rd_person', '').strip()
-    
-    # he, she, it use 3rd person singular form
-    if person_index in (2, 3) and en_3rd:
-        verb_form = en_3rd
-    else:
-        verb_form = base_verb
-    
+        verb_form = base
     return f"{pronoun} {verb_form}"
 
 
-def format_english_present_progressive(person_index: int, verb_data: dict) -> str:
-    """Format English phrase for present tense using present progressive (e.g., 'he's eating')."""
-    gerund = get_gerund_form(verb_data)
-    
+def format_english_present_progressive(person_index: int, json_data: dict, prefs: dict) -> str:
+    """Format English present progressive (e.g., 'he's eating')."""
+    gerund = _get_gerund(json_data)
+    if not gerund:
+        base = _get_english_base(json_data)
+        gerund = base + 'ing' if not base.endswith('e') else base[:-1] + 'ing'
+    pronoun = ENGLISH_PRONOUNS[person_index]
     if person_index == 0:
         return f"I'm {gerund}"
-    elif person_index == 1:
+    if person_index == 1:
         return f"you're {gerund}"
-    elif person_index == 2:
-        return f"he's {gerund}"
-    elif person_index == 3:
-        return f"it's {gerund}"
-    elif person_index == 4:
+    if person_index in (2, 3):
+        return f"he's {gerund}" if person_index == 2 else f"it's {gerund}"
+    if person_index == 4:
         return f"we're {gerund}"
-    elif person_index == 5:
-        return f"they're {gerund}"
-    else:  # you guys (person_index == 6)
-        return f"you guys are {gerund}"
+    return f"they're {gerund}" if person_index == 5 else f"you guys are {gerund}"
 
 
-def format_english_present(person_index: int, verb_data: dict) -> str:
-    """Format English phrase for present tense. Uses es_present_style: 'simple' or 'progressive' (default)."""
-    style = verb_data.get('es_present_style', '').strip().lower()
+def format_english_present(person_index: int, json_data: dict, prefs: dict) -> str:
+    """Format English present - simple or progressive based on es_present_style."""
+    style = prefs.get('es_present_style', 'progressive').strip().lower()
     if style == 'simple':
-        return format_english_present_simple(person_index, verb_data)
-    return format_english_present_progressive(person_index, verb_data)
+        return format_english_present_simple(person_index, json_data, prefs)
+    return format_english_present_progressive(person_index, json_data, prefs)
 
 
-def format_english_preterite(person_index: int, verb_data: dict) -> str:
-    """Format English phrase for preterite tense."""
-    pronouns = ["I", "you", "he", "it", "we", "they", "you guys"]
-    pronoun = pronouns[person_index]
-    
-    en_past = verb_data.get('en_past', '').strip()
-    if en_past:
-        return f"{pronoun} {en_past}"
-    
-    # Fallback: add -ed
-    definition = verb_data.get('definition', '').strip()
-    base_verb = definition.replace('to ', '').strip() if definition.startswith('to ') else definition.strip()
-    verb_form = base_verb + 'd' if base_verb.endswith('e') else base_verb + 'ed'
+def format_english_preterite(person_index: int, json_data: dict, prefs: dict) -> str:
+    """Format English preterite (e.g., 'I went')."""
+    pronoun = ENGLISH_PRONOUNS[person_index]
+    verb_form = _get_simple_past(json_data, prefs)
     return f"{pronoun} {verb_form}"
 
 
-def add_reflexive_pronoun(conjugation: str, spanish_idx: int) -> str:
-    """Prepend reflexive pronoun to conjugation (me, te, se, nos, se, se)."""
-    return f"{REFLEXIVE_PRONOUNS[spanish_idx]} {conjugation}"
-
-
-def generate_flashcards_for_verb(verb_data: dict) -> List[Tuple[str, str]]:
-    """Generate 14 flashcards for a verb (7 present + 7 preterite)."""
-    verb = verb_data.get('verb', '').strip()
-    if not verb:
-        return []
-    
-    is_reflexive = is_reflexive_verb(verb)
-    # For reflexive verbs, use base verb for conjugation (irse → ir)
-    conjugation_verb = get_reflexive_base_verb(verb) if is_reflexive else verb
-    verb_type = get_verb_type(verb)
+def generate_flashcards_for_verb(json_data: dict, prefs: dict) -> List[Tuple[str, str]]:
+    """
+    Generate 14 flashcards for a verb (7 present + 7 preterite).
+    Spanish conjugations from JSON; English from JSON + prefs.
+    """
     flashcards = []
-    
-    # Parse Spanish conjugations (space-separated)
-    es_present = verb_data.get('es_present', '').strip()
-    es_preterite = verb_data.get('es_preterite', '').strip()
-    present_list = es_present.split() if es_present else None
-    preterite_list = es_preterite.split() if es_preterite else None
-    
-    # Generate present tense flashcards (7 cards)
-    present_conjugations = conjugate_spanish_present(conjugation_verb, verb_type, present_list)
-    # Map: 0=I, 1=you, 2=he, 3=it, 4=we, 5=they, 6=you guys
-    # Spanish: 0=yo, 1=tú, 2=él, 3=nosotros, 4=ellos, 5=ustedes
-    spanish_map = [0, 1, 2, 2, 3, 4, 4]  # it uses same as he, you guys uses same as they
+
+    # Present tense (7 cards)
     for i in range(7):
-        spanish_idx = spanish_map[i]
-        spanish_text = present_conjugations[spanish_idx]
-        if is_reflexive:
-            spanish_text = add_reflexive_pronoun(spanish_text, spanish_idx)
-        flashcards.append((format_english_present(i, verb_data), spanish_text))
-    
-    # Generate preterite tense flashcards (7 cards)
-    preterite_conjugations = conjugate_spanish_preterite(conjugation_verb, verb_type, preterite_list)
+        spanish_key = SPANISH_PERSON_KEYS[SPANISH_MAP[i]]
+        spanish = _get_spanish_conjugation(json_data, 'presente', spanish_key)
+        if not spanish:
+            continue
+        english = format_english_present(i, json_data, prefs)
+        flashcards.append((english, spanish))
+
+    # Preterite tense (7 cards)
     for i in range(7):
-        spanish_idx = spanish_map[i]
-        spanish_text = preterite_conjugations[spanish_idx]
-        if is_reflexive:
-            spanish_text = add_reflexive_pronoun(spanish_text, spanish_idx)
-        flashcards.append((format_english_preterite(i, verb_data), spanish_text))
-    
+        spanish_key = SPANISH_PERSON_KEYS[SPANISH_MAP[i]]
+        spanish = _get_spanish_conjugation(json_data, 'preterito', spanish_key)
+        if not spanish:
+            continue
+        english = format_english_preterite(i, json_data, prefs)
+        flashcards.append((english, spanish))
+
     return flashcards
 
 
-def generate_verbs_flashcards(csv_path: str, output_path: str) -> None:
-    """Read verbs.csv and generate flashcards, writing to output_path."""
+def generate_verbs_flashcards(csv_path: str, output_path: str, verbs_dir: str = "verbs") -> None:
+    """
+    Read verbs.csv (settings: verb, es_present_style) and generate flashcards
+    from verbs/*.json. Writes to output_path.
+    """
     if not os.path.exists(csv_path):
         raise FileNotFoundError(f"Verbs CSV file not found: {csv_path}")
-    
-    # Ensure output directory exists
+
     output_dir = os.path.dirname(output_path)
     if output_dir and not os.path.exists(output_dir):
         os.makedirs(output_dir, exist_ok=True)
-    
+
     flashcards = []
-    
+    skipped = []
+
     with open(csv_path, 'r', encoding='utf-8') as f:
         reader = csv.DictReader(f)
-        
-        # Validate required columns
-        required_columns = ['verb', 'definition']
-        if not all(col in reader.fieldnames for col in required_columns):
-            raise ValueError(f"CSV missing required columns. Expected: {required_columns}, Found: {reader.fieldnames}")
-        
+        if 'verb' not in (reader.fieldnames or []):
+            raise ValueError(f"CSV must have 'verb' column. Found: {reader.fieldnames}")
+
         for row in reader:
             verb = row.get('verb', '').strip()
-            definition = row.get('definition', '').strip()
-            
-            if not verb or not definition:
+            if not verb:
                 continue
-            
-            verb_data = {
-                'verb': verb,
-                'definition': definition,
+
+            prefs = {
+                'es_present_style': row.get('es_present_style', 'progressive').strip(),
                 'en_3rd_person': row.get('en_3rd_person', '').strip(),
-                'en_gerund': row.get('en_gerund', '').strip(),
                 'en_past': row.get('en_past', '').strip(),
-                'es_present': row.get('es_present', '').strip(),
-                'es_preterite': row.get('es_preterite', '').strip(),
-                'es_present_style': row.get('es_present_style', '').strip(),
             }
-            
-            verb_flashcards = generate_flashcards_for_verb(verb_data)
-            flashcards.extend(verb_flashcards)
-    
-    # Write flashcards to output file
+
+            json_data = load_verb_json(verb, verbs_dir)
+            if json_data is None:
+                skipped.append(verb)
+                continue
+
+            verb_cards = generate_flashcards_for_verb(json_data, prefs)
+            flashcards.extend(verb_cards)
+
+    if skipped:
+        print(f"Warning: No JSON found for verb(s): {', '.join(skipped)}")
+
     with open(output_path, 'w', encoding='utf-8') as f:
         for english, spanish in flashcards:
             f.write(f"{english}\n{spanish}\n\n")

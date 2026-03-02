@@ -1,13 +1,16 @@
-verb,definition,en_3rd_person,en_gerund,en_past,es_present,es_preterite,es_present_style
-ir,to go,goes,going,went,voy vas va vamos van,fui fuiste fue fuimos fueron,progressive
-irse,to leave,leaves,leaving,left,voy vas va vamos van,fui fuiste fue fuimos fueron,progressive
-ver,to see,sees,seeing,saw,veo ves ve vemos ven,vi viste vio vimos vieron,simple
-decir,to say,says,saying,said,digo dices dice decimos dicen,dije dijiste dijo dijimos dijeron,simple
-poner,to put,puts,putting,put,pongo pones pone ponemos ponen,puse pusiste puso pusimos pusieron,progressive
-dar,to give,gives,giving,gave,doy das da damos dan,di diste dio dimos dieron,simple
-saber,to know,knows,knowing,knew,sé sabes sabe sabemos saben,supe supiste supo supimos supieron,simple
-hacer,to do,does,doing,did,hago haces hace hacemos hacen,hice hiciste hizo hicimos hicieron,progressive
-tener,to have,has,having,had,tengo tienes tiene tenemos tienen,tuve tuviste tuvo tuvimos tuvieron,simple
-hablar,to talk,talks,talking,talked,,,progressive
-comer,to eat,eats,eating,ate,,,progressive
-vivir,to live,lives,living,lived,,,progressive
+verb,es_present_style
+ir,progressive
+irse,progressive
+ver,simple
+decir,simple
+poner,progressive
+dar,simple
+saber,simple
+pedir,progressive
+hacer,progressive
+tener,simple
+traer,progressive
+llegar,progressive
+hablar,progressive
+comer,progressive
+vivir,progressive
