@@ -1,6 +1,7 @@
 import csv
 import json
 import os
+import random
 from typing import List, Tuple, Optional
 
 
@@ -148,6 +149,52 @@ def format_english_preterite(person_index: int, json_data: dict, prefs: dict) ->
     return f"{pronoun} {verb_form}"
 
 
+def get_llevar_gerund_subjects(verb: str, count: int = 2) -> List[int]:
+    """Return `count` person indices (0-6) deterministically based on verb."""
+    rng = random.Random(verb)
+    return rng.sample(range(7), count)
+
+
+def format_english_llevar_gerund(person_index: int, json_data: dict, prefs: dict) -> str:
+    """Format English present perfect continuous (e.g., 'I've been doing')."""
+    gerund = _get_gerund(json_data)
+    if not gerund:
+        base = _get_english_base(json_data)
+        gerund = base + 'ing' if not base.endswith('e') else base[:-1] + 'ing'
+    if person_index == 0:
+        return f"I've been {gerund}"
+    if person_index == 1:
+        return f"you've been {gerund}"
+    if person_index in (2, 3):
+        return f"he's been {gerund}" if person_index == 2 else f"it's been {gerund}"
+    if person_index == 4:
+        return f"we've been {gerund}"
+    return f"they've been {gerund}" if person_index == 5 else f"you guys have been {gerund}"
+
+
+def generate_llevar_gerund_cards(
+    verb: str,
+    json_data: dict,
+    prefs: dict,
+    llevar_data: dict,
+) -> List[Tuple[str, str]]:
+    """Generate 2 llevar + gerund flashcards per verb (deterministic subject selection)."""
+    subjects = get_llevar_gerund_subjects(verb, 2)
+    cards = []
+    spanish_gerund = (json_data.get('gerundio', '') or '').strip()
+    if not spanish_gerund:
+        return cards
+    for person_index in subjects:
+        spanish_key = SPANISH_PERSON_KEYS[SPANISH_MAP[person_index]]
+        llevar_conj = _get_spanish_conjugation(llevar_data, 'presente', spanish_key)
+        if not llevar_conj:
+            continue
+        spanish = f"{llevar_conj} {spanish_gerund}"
+        english = format_english_llevar_gerund(person_index, json_data, prefs)
+        cards.append((english, spanish))
+    return cards
+
+
 def generate_flashcards_for_verb(json_data: dict, prefs: dict) -> List[Tuple[str, str]]:
     """
     Generate 14 flashcards for a verb (7 present + 7 preterite).
@@ -191,6 +238,10 @@ def generate_verbs_flashcards(csv_path: str, output_path: str, verbs_dir: str = 
     flashcards = []
     skipped = []
 
+    llevar_data = load_verb_json("llevar", verbs_dir)
+    if not llevar_data:
+        print("Warning: llevar.json not found; skipping llevar + gerund cards.")
+
     with open(csv_path, 'r', encoding='utf-8') as f:
         reader = csv.DictReader(f)
         if 'verb' not in (reader.fieldnames or []):
@@ -214,6 +265,10 @@ def generate_verbs_flashcards(csv_path: str, output_path: str, verbs_dir: str = 
 
             verb_cards = generate_flashcards_for_verb(json_data, prefs)
             flashcards.extend(verb_cards)
+
+            if llevar_data:
+                llevar_cards = generate_llevar_gerund_cards(verb, json_data, prefs, llevar_data)
+                flashcards.extend(llevar_cards)
 
     if skipped:
         print(f"Warning: No JSON found for verb(s): {', '.join(skipped)}")
