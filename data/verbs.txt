@@ -40,6 +40,12 @@ fueron
 you guys went
 fueron
 
+it's been going
+lleva yendo
+
+I've been going
+llevo yendo
+
 I'm leaving
 me voy
 
@@ -81,6 +87,12 @@ se fueron
 
 you guys left
 se fueron
+
+we've been leaving
+llevamos yéndose
+
+I've been leaving
+llevo yéndose
 
 I see
 veo
@@ -124,6 +136,12 @@ vieron
 you guys saw
 vieron
 
+he's been seeing
+lleva viendo
+
+I've been seeing
+llevo viendo
+
 I say
 digo
 
@@ -165,6 +183,12 @@ dijeron
 
 you guys said
 dijeron
+
+they've been saying
+llevan diciendo
+
+he's been saying
+lleva diciendo
 
 I'm putting
 pongo
@@ -208,6 +232,12 @@ pusieron
 you guys put
 pusieron
 
+it's been putting
+lleva poniendo
+
+I've been putting
+llevo poniendo
+
 I give
 doy
 
@@ -249,6 +279,12 @@ dieron
 
 you guys gave
 dieron
+
+you guys have been giving
+llevan dando
+
+it's been giving
+lleva dando
 
 I know
 sé
@@ -292,6 +328,12 @@ supieron
 you guys knew
 supieron
 
+he's been knowing
+lleva sabiendo
+
+I've been knowing
+llevo sabiendo
+
 I'm asking
 pido
 
@@ -333,6 +375,60 @@ pidieron
 
 you guys asked
 pidieron
+
+we've been asking
+llevamos pidiendo
+
+I've been asking
+llevo pidiendo
+
+I'm coming
+vengo
+
+you're coming
+vienes
+
+he's coming
+viene
+
+it's coming
+viene
+
+we're coming
+venimos
+
+they're coming
+vienen
+
+you guys are coming
+vienen
+
+I came
+vine
+
+you came
+viniste
+
+he came
+vino
+
+it came
+vino
+
+we came
+vinimos
+
+they came
+vinieron
+
+you guys came
+vinieron
+
+it's been coming
+lleva viniendo
+
+I've been coming
+llevo viniendo
 
 I'm doing
 hago
@@ -376,6 +472,12 @@ hicieron
 you guys did
 hicieron
 
+you guys have been doing
+llevan haciendo
+
+you've been doing
+llevas haciendo
+
 I have
 tengo
 
@@ -417,6 +519,12 @@ tuvieron
 
 you guys had
 tuvieron
+
+it's been having
+lleva teniendo
+
+he's been having
+lleva teniendo
 
 I'm bringing
 traigo
@@ -460,6 +568,12 @@ trajeron
 you guys brought
 trajeron
 
+you guys have been bringing
+llevan trayendo
+
+they've been bringing
+llevan trayendo
+
 I'm arriving
 llego
 
@@ -501,6 +615,12 @@ llegaron
 
 you guys arrived
 llegaron
+
+it's been arriving
+lleva llegando
+
+we've been arriving
+llevamos llegando
 
 I'm speaking
 hablo
@@ -544,6 +664,12 @@ hablaron
 you guys spoke
 hablaron
 
+I've been speaking
+llevo hablando
+
+we've been speaking
+llevamos hablando
+
 I'm eating
 como
 
@@ -586,6 +712,12 @@ comieron
 you guys ate
 comieron
 
+we've been eating
+llevamos comiendo
+
+he's been eating
+lleva comiendo
+
 I'm living
 vivo
 
@@ -627,4 +759,10 @@ vivieron
 
 you guys lived
 vivieron
+
+you guys have been living
+llevan viviendo
+
+he's been living
+lleva viviendo
 

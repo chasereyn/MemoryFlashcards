@@ -427,7 +427,7 @@ la historia
 bank
 el banco
 
-environment
+environment (natural)
 el medio ambiente
 
 police officer
@@ -612,9 +612,6 @@ la lámpara
 
 river
 el río
-
-to take
-llevar
 
 to get
 conseguir
@@ -2104,8 +2101,11 @@ la estrella
 stadium
 el estadio
 
-pepper
+pepper (from shaker)
 la pimienta
+
+bell pepper
+el pimiento
 
 to invite
 invitar
@@ -2729,7 +2729,7 @@ news
 las noticias
 
 path
-el sendero
+el camino
 
 tidy
 ordenado
@@ -4061,7 +4061,7 @@ railroad
 ferrocarril
 
 parking lot
-estacionamiento
+el estacionamiento
 
 ladybug
 mariqueta
@@ -4087,9 +4087,6 @@ Como?
 What? (on phone)
 Mande?
 
-I'm about to study
-Estoy a punto de estudiar
-
 I haven't gotten to...
 Me hace falta...
 
@@ -4103,7 +4100,7 @@ let me think about it
 déjame pensarlo
 
 I didn't realize
-NO me di cuenta
+No me di cuenta
 
 I got used to it
 Me acostumbré
@@ -4116,3 +4113,24 @@ Cómo lo piensas?
 
 bankrupcy
 la quiebra
+
+environment (setting)
+entorno
+
+speaker
+el altavoz
+
+archived
+archivo
+
+an exploit
+la hazaña
+
+to exploit
+explotar
+
+to expel
+expulsar
+
+...for real
+..de veras
