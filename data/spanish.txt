@@ -349,9 +349,6 @@ después
 to tell
 contar
 
-nice
-simpático
-
 small
 pequeño
 
@@ -1030,6 +1027,9 @@ el pez
 in front of
 delante de
 
+across from
+enfrente de
+
 center
 el centro
 
@@ -1380,9 +1380,6 @@ solicitar
 
 armchair
 el sillón
-
-healthy
-sano
 
 cough
 la tos
@@ -2683,7 +2680,7 @@ dañar
 ear
 la oreja
 
-healthy (food, lifestyle)
+healthy
 saludable
 
 luggage
@@ -3118,8 +3115,8 @@ molcajete con el tejolote
 mousepad
 el tapete para el mouse
 
-this is just a little moment
-esto es un ratito nada mas
+a special moment
+un ratito
 
 hammer
 el martillo
@@ -4041,9 +4038,6 @@ cruce de ferrocarril
 
 flora & fauna
 flora & fauna
-
-tow away zone
-zona de remolque
 
 no parking
 no estacionarse
