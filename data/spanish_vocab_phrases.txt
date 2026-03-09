@@ -1594,9 +1594,6 @@ manejar
 to repeat
 repetir
 
-to leave
-irse
-
 notebook
 el cuaderno
 
@@ -1825,7 +1822,7 @@ el problema
 accountant
 el contador
 
-climate
+weather
 el clima
 
 landline
@@ -2446,9 +2443,6 @@ el cuarto
 doctor (medical)
 el medico
 
-weather
-el tiempo
-
 according to
 según
 
@@ -2841,9 +2835,6 @@ clásico
 
 menu
 el menú
-
-that
-que
 
 to hope
 esperar
@@ -4134,3 +4125,12 @@ expulsar
 
 ...for real
 ..de veras
+
+sunblock
+el bloqueador
+
+that will happen
+eso pasará
+
+certain areas
+ciertos temas
