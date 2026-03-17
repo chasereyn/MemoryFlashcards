@@ -1,768 +1,540 @@
-I'm going
-voy
-
-you're going
-vas
-
-he's going
-va
-
-it's going
-va
-
-we're going
-vamos
-
-they're going
-van
-
-you guys are going
-van
-
 I went
 fui
-
-you went
-fuiste
 
 he went
 fue
 
-it went
-fue
-
-we went
-fuimos
-
-they went
-fueron
-
-you guys went
-fueron
-
-it's been going
-lleva yendo
-
-I've been going
-llevo yendo
-
-I'm leaving
-me voy
-
-you're leaving
-te vas
-
-he's leaving
-se va
-
-it's leaving
-se va
-
-we're leaving
-nos vamos
-
-they're leaving
-se van
-
-you guys are leaving
-se van
-
 I left
 me fui
-
-you left
-te fuiste
 
 he left
 se fue
 
-it left
-se fue
-
-we left
-nos fuimos
-
-they left
-se fueron
-
-you guys left
-se fueron
-
-we've been leaving
-llevamos yéndose
-
-I've been leaving
-llevo yéndose
-
-I see
-veo
-
-you see
-ves
-
-he sees
-ve
-
-it sees
-ve
-
-we see
-vemos
-
-they see
-ven
-
-you guys see
-ven
-
 I saw
 vi
-
-you saw
-viste
 
 he saw
 vio
 
-it saw
-vio
-
-we saw
-vimos
-
-they saw
-vieron
-
-you guys saw
-vieron
-
-he's been seeing
-lleva viendo
-
-I've been seeing
-llevo viendo
-
-I say
-digo
-
-you say
-dices
-
-he says
-dice
-
-it says
-dice
-
-we say
-decimos
-
-they say
-dicen
-
-you guys say
-dicen
-
 I said
 dije
-
-you said
-dijiste
 
 he said
 dijo
 
-it said
-dijo
-
-we said
-dijimos
-
-they said
-dijeron
-
-you guys said
-dijeron
-
-they've been saying
-llevan diciendo
-
-he's been saying
-lleva diciendo
-
-I'm putting
-pongo
-
-you're putting
-pones
-
-he's putting
-pone
-
-it's putting
-pone
-
-we're putting
-ponemos
-
-they're putting
-ponen
-
-you guys are putting
-ponen
-
 I put
 puse
-
-you put
-pusiste
 
 he put
 puso
 
-it put
-puso
-
-we put
-pusimos
-
-they put
-pusieron
-
-you guys put
-pusieron
-
-it's been putting
-lleva poniendo
-
-I've been putting
-llevo poniendo
-
-I give
-doy
-
-you give
-das
-
-he gives
-da
-
-it gives
-da
-
-we give
-damos
-
-they give
-dan
-
-you guys give
-dan
-
 I gave
 di
-
-you gave
-diste
 
 he gave
 dio
 
-it gave
-dio
-
-we gave
-dimos
-
-they gave
-dieron
-
-you guys gave
-dieron
-
-you guys have been giving
-llevan dando
-
-it's been giving
-lleva dando
-
-I know
-sé
-
-you know
-sabes
-
-he knows
-sabe
-
-it knows
-sabe
-
-we know
-sabemos
-
-they know
-saben
-
-you guys know
-saben
-
 I knew
 supe
-
-you knew
-supiste
 
 he knew
 supo
 
-it knew
-supo
-
-we knew
-supimos
-
-they knew
-supieron
-
-you guys knew
-supieron
-
-he's been knowing
-lleva sabiendo
-
-I've been knowing
-llevo sabiendo
-
-I'm asking
-pido
-
-you're asking
-pides
-
-he's asking
-pide
-
-it's asking
-pide
-
-we're asking
-pedimos
-
-they're asking
-piden
-
-you guys are asking
-piden
-
 I asked
 pedí
-
-you asked
-pediste
 
 he asked
 pidió
 
-it asked
-pidió
-
-we asked
-pedimos
-
-they asked
-pidieron
-
-you guys asked
-pidieron
-
-we've been asking
-llevamos pidiendo
-
-I've been asking
-llevo pidiendo
-
-I'm coming
-vengo
-
-you're coming
-vienes
-
-he's coming
-viene
-
-it's coming
-viene
-
-we're coming
-venimos
-
-they're coming
-vienen
-
-you guys are coming
-vienen
-
 I came
 vine
-
-you came
-viniste
 
 he came
 vino
 
-it came
-vino
-
-we came
-vinimos
-
-they came
-vinieron
-
-you guys came
-vinieron
-
-it's been coming
-lleva viniendo
-
-I've been coming
-llevo viniendo
-
-I'm doing
-hago
-
-you're doing
-haces
-
-he's doing
-hace
-
-it's doing
-hace
-
-we're doing
-hacemos
-
-they're doing
-hacen
-
-you guys are doing
-hacen
-
 I did
 hice
-
-you did
-hiciste
 
 he did
 hizo
 
-it did
-hizo
-
-we did
-hicimos
-
-they did
-hicieron
-
-you guys did
-hicieron
-
-you guys have been doing
-llevan haciendo
-
-you've been doing
-llevas haciendo
-
-I have
-tengo
-
-you have
-tienes
-
-he has
-tiene
-
-it has
-tiene
-
-we have
-tenemos
-
-they have
-tienen
-
-you guys have
-tienen
-
 I had
 tuve
-
-you had
-tuviste
 
 he had
 tuvo
 
-it had
-tuvo
-
-we had
-tuvimos
-
-they had
-tuvieron
-
-you guys had
-tuvieron
-
-it's been having
-lleva teniendo
-
-he's been having
-lleva teniendo
-
-I'm bringing
-traigo
-
-you're bringing
-traes
-
-he's bringing
-trae
-
-it's bringing
-trae
-
-we're bringing
-traemos
-
-they're bringing
-traen
-
-you guys are bringing
-traen
-
 I brought
 traje
-
-you brought
-trajiste
 
 he brought
 trajo
 
-it brought
-trajo
-
-we brought
-trajimos
-
-they brought
-trajeron
-
-you guys brought
-trajeron
-
-you guys have been bringing
-llevan trayendo
-
-they've been bringing
-llevan trayendo
-
-I'm arriving
-llego
-
-you're arriving
-llegas
-
-he's arriving
-llega
-
-it's arriving
-llega
-
-we're arriving
-llegamos
-
-they're arriving
-llegan
-
-you guys are arriving
-llegan
-
 I arrived
 llegué
-
-you arrived
-llegaste
 
 he arrived
 llegó
 
-it arrived
-llegó
-
-we arrived
-llegamos
-
-they arrived
-llegaron
-
-you guys arrived
-llegaron
-
-it's been arriving
-lleva llegando
-
-we've been arriving
-llevamos llegando
-
-I'm speaking
-hablo
-
-you're speaking
-hablas
-
-he's speaking
-habla
-
-it's speaking
-habla
-
-we're speaking
-hablamos
-
-they're speaking
-hablan
-
-you guys are speaking
-hablan
-
 I spoke
 hablé
-
-you spoke
-hablaste
 
 he spoke
 habló
 
-it spoke
-habló
-
-we spoke
-hablamos
-
-they spoke
-hablaron
-
-you guys spoke
-hablaron
-
-I've been speaking
-llevo hablando
-
-we've been speaking
-llevamos hablando
-
-I'm eating
-como
-
-you're eating
-comes
-
-he's eating
-come
-
-it's eating
-come
-
-we're eating
-comemos
-
-they're eating
-comen
-
-you guys are eating
-comen
-
 I ate
 comí
-
-you ate
-comiste
 
 he ate
 comió
 
-it ate
-comió
-
-we ate
-comimos
-
-they ate
-comieron
-
-you guys ate
-comieron
-
-we've been eating
-llevamos comiendo
-
-he's been eating
-lleva comiendo
-
-I'm living
-vivo
-
-you're living
-vives
-
-he's living
-vive
-
-it's living
-vive
-
-we're living
-vivimos
-
-they're living
-viven
-
-you guys are living
-viven
-
 I lived
 viví
-
-you lived
-viviste
 
 he lived
 vivió
 
-it lived
-vivió
+I was
+fui
 
-we lived
-vivimos
+he was
+fue
 
-they lived
-vivieron
+I chose
+escogí
 
-you guys lived
-vivieron
+he chose
+escogió
 
-you guys have been living
-llevan viviendo
+I was
+estuve
 
-he's been living
-lleva viviendo
+he was
+estuvo
+
+I began
+empecé
+
+he began
+empezó
+
+I wanted
+quise
+
+he wanted
+quiso
+
+I read
+leí
+
+he read
+leyó
+
+I played
+jugué
+
+he played
+jugó
+
+I left
+salí
+
+he left
+salió
+
+I slept
+dormí
+
+he slept
+durmió
+
+I returned
+volví
+
+he returned
+volvió
+
+I thought
+pensé
+
+he thought
+pensó
+
+I followed
+seguí
+
+he followed
+siguió
+
+I knew
+conocí
+
+he knew
+conoció
+
+I drove
+manejé
+
+he drove
+manejó
+
+I heard
+oí
+
+he heard
+oyó
+
+I served
+serví
+
+he served
+sirvió
+
+I elected
+elegí
+
+he elected
+eligió
+
+I watched
+miré
+
+he watched
+miró
+
+I listened to
+escuché
+
+he listened to
+escuchó
+
+I helped
+ayudé
+
+he helped
+ayudó
+
+I reached
+alcancé
+
+he reached
+alcanzó
+
+I searched for
+busqué
+
+he searched for
+buscó
+
+I learned
+aprendí
+
+he learned
+aprendió
+
+I seemed
+parecí
+
+he seemed
+pareció
+
+I understood
+entendí
+
+he understood
+entendió
+
+I hurt, pain, ached
+dolí
+
+he hurt, pain, ached
+dolió
+
+I permitted
+permití
+
+he permitted
+permitió
+
+I received
+recibí
+
+he received
+recibió
+
+I opened
+abrí
+
+he opened
+abrió
+
+I bought
+compré
+
+he bought
+compró
+
+I threw
+tiré
+
+he threw
+tiró
+
+I threw
+eché
+
+he threw
+echó
+
+I directed
+dirigí
+
+he directed
+dirigió
+
+I built
+construí
+
+he built
+construyó
+
+I believed
+creí
+
+he believed
+creyó
+
+I demanded
+exigí
+
+he demanded
+exigió
+
+I felt
+sentí
+
+he felt
+sintió
+
+I died
+morí
+
+he died
+murió
+
+I got
+conseguí
+
+he got
+consiguió
+
+I stayed
+quedé
+
+he stayed
+quedó
+
+I took
+tomé
+
+he took
+tomó
+
+I worked
+trabajé
+
+he worked
+trabajó
+
+I called
+llamé
+
+he called
+llamó
+
+I smelled
+olí
+
+he smelled
+olió
+
+I left
+dejé
+
+he left
+dejó
+
+I went up
+subí
+
+he went up
+subió
+
+I remembered
+recordé
+
+he remembered
+recordó
+
+I won
+gané
+
+he won
+ganó
+
+I insisted
+insistí
+
+he insisted
+insistió
+
+I suffered
+sufrí
+
+he suffered
+sufrió
+
+I explained
+expliqué
+
+he explained
+explicó
+
+I repented
+me arrepentí
+
+he repented
+se arrepintió
+
+I ordered
+mandé
+
+he ordered
+mandó
+
+I marked
+marqué
+
+he marked
+marcó
+
+I added
+añadí
+
+he added
+añadió
+
+I touched
+toqué
+
+he touched
+tocó
+
+I put on
+me puse
+
+he put on
+se puso
+
+I stayed
+me quedé
+
+he stayed
+se quedó
+
+I went to sleep
+me dormí
+
+he went to sleep
+se durmió
+
+I felt
+me sentí
+
+he felt
+se sintió
+
+I got dressed
+me vestí
+
+he got dressed
+se vistió
+
+I forgot
+me olvidé
+
+he forgot
+se olvidó
+
+I woke up
+me desperté
+
+he woke up
+se despertó
+
+I got up
+me levanté
+
+he got up
+se levantó
+
+I went to bed
+me acosté
+
+he went to bed
+se acostó
+
+I took a shower
+me duché
+
+he took a shower
+se duchó
+
+I took a bath
+me bañé
+
+he took a bath
+se bañó
+
+I washed up
+me lavé
+
+he washed up
+se lavó
+
+I combed my hair
+me peiné
+
+he combed my hair
+se peinó
+
+I shaved
+me afeité
+
+he shaved
+se afeitó
+
+I had fun
+me divertí
+
+he had fun
+se divirtió
+
+I got angry
+me enojé
+
+he got angry
+se enojó
+
+I was glad
+me alegré
+
+he was glad
+se alegró
+
+I approached
+me acerqué
+
+he approached
+se acercó
 

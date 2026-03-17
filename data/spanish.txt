@@ -118,6 +118,9 @@ poder
 to pick up
 recoger
 
+to collect
+recoger
+
 to come
 venir
 
@@ -1111,7 +1114,7 @@ la hija
 to remember
 recordar
 
-kind
+nice
 amable
 
 hotel
@@ -1156,7 +1159,7 @@ el cuello
 why
 por qué
 
-present
+a present
 el regalo
 
 suddenly
@@ -1333,17 +1336,14 @@ la camisa
 to ski
 esquiar
 
-to comb one's hair
-peinarse
+to comb your hair
+cepillarse el pelo
 
 to fall asleep
 dormirse
 
 suitcase
 la maleta
-
-or
-o
 
 window
 la ventana
@@ -2069,7 +2069,7 @@ bad
 mal
 
 pen
-el bolígrafo
+la pluma
 
 garlic
 el ajo
@@ -3185,7 +3185,7 @@ printer
 impresora
 
 spatula
-la paleta
+la palita
 
 walnut
 la nuez
@@ -3440,7 +3440,7 @@ how are you? (formal)
 como esta usted?
 
 What's up
-Que tal?
+Que onda?
 
 What's your name? (informal)
 Cómo te llamas?
@@ -4218,3 +4218,243 @@ meter la pata
 
 don't put up with that shit (don't take the crumbs)
 no seas migajero
+
+helicopter
+el helicóptero
+
+to train
+entrenar
+
+to throw up (idiom)
+devolver el estomago
+
+knight
+caballero
+
+grass
+el pasto
+
+banch
+la banca
+
+jetski
+el moto acuático
+
+thick skin
+piel dura
+
+slogan
+eslogan
+
+fist
+puño
+
+wash cloth
+el paño
+
+don't remind me!
+No me lo recuerdes!
+
+electrified
+electrificado
+
+weeds
+las malas hierbas
+
+blowdryer
+el secador de pelo
+
+to blowdry
+secarse el pelo
+
+asset
+el activo
+
+liability
+el pasivo
+
+income
+los ingresos
+
+expense
+el gasto
+
+cash flow
+flujo de caja
+
+I'm cold
+tengo frío
+
+compared with...
+comparado con...
+
+Write it down please!
+¡Escríbalo, por favor!
+
+Would you write that down?
+puede escribirlo, por favor
+
+the worst
+lo peor
+
+Are you with me?
+¿me sigues?
+
+Do you follow me?
+¿me sigues?
+
+whose is it?
+¿de quién es?
+
+it's windy
+hace viento
+
+it's weird
+es raro
+
+you're welcome
+de nada
+
+way of life
+modo de vida
+
+to be at war
+estar en guerra
+
+flamethrower
+la lanzallamas
+
+flame
+la llama
+
+lighter
+encendedor
+
+butane
+butano
+
+to consult
+consultar
+
+time flies!
+el tiempo vuela!
+
+to melt
+derretir
+
+heartbeat
+latido
+
+body language
+lenguaje corporal
+
+serie
+serie
+
+narrator
+narrador
+
+district
+distrito
+
+a cruise
+un crucero
+
+to beat
+latar
+
+I'm not used to it
+no estoy acostumbrado
+
+food coma
+mal de puerco
+
+we're working on it!
+en eso estamos!
+
+I'm working on it!
+en eso estoy!
+
+to add spice
+agregar más salsa
+
+makeup
+el maquillaje
+
+placemat
+individual
+
+makes sense
+eso tiene sentido
+
+tablecloth
+el mantel
+
+hint
+la pista
+
+matching outfits
+outfits combinados
+
+regardless of....
+a pesar de...
+
+nickname
+el apodo
+
+to put someone to sleep
+dormir a alguien
+
+notorious
+notorio
+
+not only...but also
+no solo...sino tambíen
+
+orders (customer orders)
+pedidos
+
+contracts
+contratos
+
+billing account
+cuenta de cobro
+
+expense analytics
+analítica de gastos
+
+to match
+coincidir
+
+tell your family I said hi!
+Dile a tu familia que los saludo!
+
+to take off
+despegar
+
+to land
+aterrizar
+
+marriage
+el casamiento
+
+It gave me a food coma
+Me dio el mal de puerco
+
+a third wheel
+un mal mercio
+
+exactly!
+justo!
+
+lolipop
+la paleta
+
+goat
+la cabra
+
+goat milk
+leche de cabra
+
+goat cheese
+queso de cabra
