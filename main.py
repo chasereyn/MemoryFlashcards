@@ -14,7 +14,7 @@ from spaced_repetition import (
     reset_daily_flags,
     get_today,
 )
-from verbs import generate_verbs_flashcards
+from verbs import generate_preterite_13_flashcards
 import random
 
 
@@ -319,9 +319,9 @@ def main():
     """Main entry point."""
     ensure_data_directory()
     
-    # Generate verbs flashcards from verbs.csv before syncing
+    # Generate verbs flashcards from verbs.txt before syncing
     try:
-        generate_verbs_flashcards("verbs.csv", "data/verbs.txt")
+        generate_preterite_13_flashcards("verbs.txt", "data/verbs.txt")
     except Exception as e:
         print(f"\nError generating verbs flashcards: {e}")
         import sys

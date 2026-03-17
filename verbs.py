@@ -12,20 +12,27 @@ ENGLISH_PRONOUNS = ["I", "you", "he", "it", "we", "they", "you guys"]
 SPANISH_MAP = [0, 1, 2, 2, 3, 4, 4]  # it=he, you guys=they
 
 
+def _verb_json_filename(verb: str) -> str:
+    """Resolve verb to JSON filename (handles ñ→n for filesystem compatibility)."""
+    return verb.replace('ñ', 'n').replace('á', 'a').replace('é', 'e').replace('í', 'i').replace('ó', 'o').replace('ú', 'u')
+
+
 def load_verb_json(verb: str, verbs_dir: str = "verbs") -> Optional[dict]:
     """
     Load verb data from verbs/{verb}.json.
     Returns None if file doesn't exist.
+    Handles ñ/accents in verb names (e.g. bañarse -> banyarse.json, añadir -> anyadir.json).
     """
-    path = os.path.join(verbs_dir, f"{verb}.json")
-    if not os.path.exists(path):
-        return None
-    try:
-        with open(path, 'r', encoding='utf-8') as f:
-            return json.load(f)
-    except (json.JSONDecodeError, OSError) as e:
-        print(f"Warning: Could not load {path}: {e}")
-        return None
+    for candidate in [verb, _verb_json_filename(verb)]:
+        path = os.path.join(verbs_dir, f"{candidate}.json")
+        if os.path.exists(path):
+            try:
+                with open(path, 'r', encoding='utf-8') as f:
+                    return json.load(f)
+            except (json.JSONDecodeError, OSError) as e:
+                print(f"Warning: Could not load {path}: {e}")
+                return None
+    return None
 
 
 def _get_english_base(json_data: dict) -> str:
@@ -272,6 +279,83 @@ def generate_verbs_flashcards(csv_path: str, output_path: str, verbs_dir: str = 
 
     if skipped:
         print(f"Warning: No JSON found for verb(s): {', '.join(skipped)}")
+
+    with open(output_path, 'w', encoding='utf-8') as f:
+        for english, spanish in flashcards:
+            f.write(f"{english}\n{spanish}\n\n")
+
+
+def _get_english_preterite_1st(json_data: dict) -> str:
+    """Get English 1st person preterite (e.g. 'I went') from JSON."""
+    preterito = (json_data.get('english', {}).get('indicativo', {}) or {}).get('preterito', '')
+    if isinstance(preterito, str) and preterito.strip().lower().startswith('i '):
+        return preterito.strip()
+    # Fallback: build from infinitive
+    base = _get_english_base(json_data)
+    past = _derive_simple_past(base)
+    return f"I {past}" if past else ''
+
+
+def _english_preterite_1st_to_3rd(english_1st: str) -> str:
+    """Convert 'I went' to 'he went'."""
+    s = english_1st.strip()
+    if s.lower().startswith('i '):
+        return 'he ' + s[2:]
+    return s
+
+
+def generate_preterite_13_flashcards(
+    verbs_path: str,
+    output_path: str,
+    verbs_dir: str = "verbs",
+) -> None:
+    """
+    Generate preterite 1st/3rd person flashcards from a verb list.
+    Cards: English shown -> user answers Spanish.
+    Format: 2 cards per verb (I went -> fui, he went -> fue).
+    """
+    if not os.path.exists(verbs_path):
+        raise FileNotFoundError(f"Verbs list not found: {verbs_path}")
+
+    output_dir = os.path.dirname(output_path)
+    if output_dir and not os.path.exists(output_dir):
+        os.makedirs(output_dir, exist_ok=True)
+
+    # Read verb list (one per line, dedupe, skip blanks)
+    with open(verbs_path, 'r', encoding='utf-8') as f:
+        verbs = []
+        seen = set()
+        for line in f:
+            verb = line.strip()
+            if verb and verb not in seen:
+                verbs.append(verb)
+                seen.add(verb)
+
+    flashcards = []
+    skipped = []
+
+    for verb in verbs:
+        json_data = load_verb_json(verb, verbs_dir)
+        if json_data is None:
+            skipped.append(verb)
+            continue
+
+        spanish_yo = _get_spanish_conjugation(json_data, 'preterito', 'yo')
+        spanish_ud = _get_spanish_conjugation(json_data, 'preterito', 'ud')
+        english_1st = _get_english_preterite_1st(json_data)
+        english_3rd = _english_preterite_1st_to_3rd(english_1st)
+
+        if not spanish_yo or not spanish_ud or not english_1st:
+            skipped.append(verb)
+            continue
+
+        # Card 1: I went -> fui
+        flashcards.append((english_1st, spanish_yo))
+        # Card 2: he went -> fue
+        flashcards.append((english_3rd, spanish_ud))
+
+    if skipped:
+        print(f"Warning: No JSON or missing preterite for verb(s): {', '.join(skipped)}")
 
     with open(output_path, 'w', encoding='utf-8') as f:
         for english, spanish in flashcards:
