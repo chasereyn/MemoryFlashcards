@@ -297,11 +297,15 @@ def _get_english_preterite_1st(json_data: dict) -> str:
 
 
 def _english_preterite_1st_to_3rd(english_1st: str) -> str:
-    """Convert 'I went' to 'he went'."""
+    """Convert 'I went' to 'he went'. For reflexives, also shifts possessives: 'my' -> 'his', 'myself' -> 'himself'."""
     s = english_1st.strip()
-    if s.lower().startswith('i '):
-        return 'he ' + s[2:]
-    return s
+    if not s.lower().startswith('i '):
+        return s
+    result = 'he ' + s[2:]
+    # Shift 1st-person reflexives/possessives to 3rd person
+    result = result.replace(' my ', ' his ')
+    result = result.replace(' myself', ' himself')
+    return result
 
 
 def generate_preterite_13_flashcards(
@@ -351,8 +355,8 @@ def generate_preterite_13_flashcards(
 
         # Card 1: I went -> fui
         flashcards.append((english_1st, spanish_yo))
-        # Card 2: he went -> fue
-        flashcards.append((english_3rd, spanish_ud))
+        # Card 2: he went -> él fue
+        flashcards.append((english_3rd, f"él {spanish_ud}"))
 
     if skipped:
         print(f"Warning: No JSON or missing preterite for verb(s): {', '.join(skipped)}")

@@ -165,31 +165,31 @@
   },
   "english": {
     "note": "Cambio radical: o > ue > u. Note: The nonreflexive form of this verb, dormir, means to sleep.",
-    "infinitivo": "to go to sleep, fall asleep",
-    "gerundio": "going to sleep",
-    "participioPasado": "asleep, gone to sleep",
+    "infinitivo": "to fall asleep",
+    "gerundio": "falling asleep",
+    "participioPasado": "fallen asleep",
     "indicativo": {
-      "presente": "I go to sleep, am going to sleep",
-      "futuro": "I will go to sleep",
-      "imperfecto": "I was going to sleep, used to go to sleep, went to sleep",
-      "preterito": "I went to sleep",
-      "condicional": "I would go to sleep",
-      "presentePerfecto": "I have gone to sleep",
-      "futuroPerfecto": "I will have gone to sleep",
-      "pluscuamperfecto": "I had gone to sleep",
-      "preteritoAnterior": "I had gone to sleep",
-      "condicionalPerfecto": "I would have gone to sleep"
+      "presente": "I fall asleep, am falling asleep",
+      "futuro": "I will fall asleep",
+      "imperfecto": "I was falling asleep, used to fall asleep, fell asleep",
+      "preterito": "I fell asleep",
+      "condicional": "I would fall asleep",
+      "presentePerfecto": "I have fallen asleep",
+      "futuroPerfecto": "I will have fallen asleep",
+      "pluscuamperfecto": "I had fallen asleep",
+      "preteritoAnterior": "I had fallen asleep",
+      "condicionalPerfecto": "I would have fallen asleep"
     },
     "subjuntivo": {
-      "presente": "I go to sleep, am going to sleep",
-      "imperfecto": "I went to sleep, was going to sleep",
-      "futuro": "I will go to sleep",
-      "presentePerfecto": "I have gone to sleep, went to sleep",
-      "futuroPerfecto": "I will have gone to sleep",
-      "pluscuamperfecto": "I had gone to sleep"
+      "presente": "I fall asleep, am falling asleep",
+      "imperfecto": "I fell asleep, was falling asleep",
+      "futuro": "I will fall asleep",
+      "presentePerfecto": "I have fallen asleep, fell asleep",
+      "futuroPerfecto": "I will have fallen asleep",
+      "pluscuamperfecto": "I had fallen asleep"
     },
-    "afirmativo": "Go to sleep!",
-    "negativo": "Don't go to sleep!"
+    "afirmativo": "Fall asleep!",
+    "negativo": "Don't fall asleep!"
   },
   "attribution": "Fred Jehle"
 }

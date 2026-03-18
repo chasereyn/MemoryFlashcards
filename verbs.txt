@@ -37,7 +37,6 @@ ayudar
 alcanzar
 buscar
 aprender
-parecer
 entender
 doler
 permitir
@@ -58,7 +57,6 @@ tomar
 trabajar
 llamar
 oler
-dejar
 subir
 recordar
 ganar

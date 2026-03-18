@@ -165,31 +165,31 @@
   },
   "english": {
     "note": "",
-    "infinitivo": "to throw, cast, fling, hurl, pitch, toss",
-    "gerundio": "throwing",
-    "participioPasado": "thrown",
+    "infinitivo": "to toss",
+    "gerundio": "tossing",
+    "participioPasado": "tossed",
     "indicativo": {
-      "presente": "I throw, am throwing",
-      "futuro": "I will throw",
-      "imperfecto": "I was throwing, used to throw, threw",
-      "preterito": "I threw",
-      "condicional": "I would throw",
-      "presentePerfecto": "I have thrown",
-      "futuroPerfecto": "I will have thrown",
-      "pluscuamperfecto": "I had thrown",
-      "preteritoAnterior": "I had thrown",
-      "condicionalPerfecto": "I would have thrown"
+      "presente": "I toss, am tossing",
+      "futuro": "I will toss",
+      "imperfecto": "I was tossing, used to toss, tossed",
+      "preterito": "I tossed",
+      "condicional": "I would toss",
+      "presentePerfecto": "I have tossed",
+      "futuroPerfecto": "I will have tossed",
+      "pluscuamperfecto": "I had tossed",
+      "preteritoAnterior": "I had tossed",
+      "condicionalPerfecto": "I would have tossed"
     },
     "subjuntivo": {
-      "presente": "I throw, am throwing",
-      "imperfecto": "I threw, was throwing",
-      "futuro": "I will throw",
-      "presentePerfecto": "I have thrown, threw",
-      "futuroPerfecto": "I will have thrown",
-      "pluscuamperfecto": "I had thrown"
+      "presente": "I toss, am tossing",
+      "imperfecto": "I tossed, was tossing",
+      "futuro": "I will toss",
+      "presentePerfecto": "I have tossed, tossed",
+      "futuroPerfecto": "I will have tossed",
+      "pluscuamperfecto": "I had tossed"
     },
-    "afirmativo": "Throw!",
-    "negativo": "Don't throw!"
+    "afirmativo": "Toss!",
+    "negativo": "Don't toss!"
   },
   "attribution": "Fred Jehle"
 }
