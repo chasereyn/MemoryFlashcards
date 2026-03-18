@@ -2908,7 +2908,7 @@ allá
 now
 ahora
 
-to manage
+to direct
 dirigir
 
 Camel
@@ -3700,9 +3700,6 @@ lo que quedo de ayer
 to have roots in
 tener raices en
 
-to be hungry
-tener hambre
-
 long sleeve
 manga larga
 
@@ -3744,9 +3741,6 @@ emprender
 
 peacock
 pavo real
-
-to empty my wallet
-vaciar la cartera
 
 unpleasant
 deagradable
@@ -3961,8 +3955,8 @@ la mecedora
 parade
 desfile
 
-The other two are coming along
-Las otras dos en el camino las arreglamos
+They're coming along
+En el camino las arreglamos
 
 obligation
 obligación
@@ -4250,7 +4244,7 @@ fist
 puño
 
 wash cloth
-el paño
+el trapito
 
 don't remind me!
 No me lo recuerdes!
@@ -4458,3 +4452,78 @@ leche de cabra
 
 goat cheese
 queso de cabra
+
+to upload
+subir
+
+american flag
+bandera gringa
+
+trash can
+el bote de basura
+
+no harm no foul
+sin daña sin falta
+
+damage
+el daño
+
+fly safe!
+vuela seguro!
+
+the whole 9 yards
+todo el paquete
+
+If you give a mouse a cookie...
+Si le das una galleta a un ratón
+
+perseverance
+perseverancia
+
+gang
+la pandilla
+
+I went driving
+fui a manejar
+
+my crew (of friends)
+mi banda
+
+risky business
+negocios arriesgado
+
+I'll let you go!
+Te dejo libre!
+
+Infinite vibes
+vibes infinitos
+
+trash bag
+bolsa de basura
+
+I'm in charge of that
+Yo me encargo de eso
+
+recruitment (military)
+reclutamiento
+
+recruitment (hiring)
+la contratación
+
+I'll let you know
+Te aviso
+
+I'm hungry
+Tengo hambre
+
+I'm starving!
+Me muero de hambre!
+
+I'm famished!
+estoy en las ultimas!
+
+to demand
+exigir
+
+to drug
+drogar

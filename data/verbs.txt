@@ -2,539 +2,539 @@ I went
 fui
 
 he went
-fue
+él fue
 
 I left
 me fui
 
 he left
-se fue
+él se fue
 
 I saw
 vi
 
 he saw
-vio
+él vio
 
 I said
 dije
 
 he said
-dijo
+él dijo
 
 I put
 puse
 
 he put
-puso
+él puso
 
 I gave
 di
 
 he gave
-dio
+él dio
 
 I knew
 supe
 
 he knew
-supo
+él supo
 
 I asked
 pedí
 
 he asked
-pidió
+él pidió
 
 I came
 vine
 
 he came
-vino
+él vino
 
 I did
 hice
 
 he did
-hizo
+él hizo
 
 I had
 tuve
 
 he had
-tuvo
+él tuvo
 
 I brought
 traje
 
 he brought
-trajo
+él trajo
 
 I arrived
 llegué
 
 he arrived
-llegó
+él llegó
 
 I spoke
 hablé
 
 he spoke
-habló
+él habló
 
 I ate
 comí
 
 he ate
-comió
+él comió
 
 I lived
 viví
 
 he lived
-vivió
+él vivió
 
 I was
 fui
 
 he was
-fue
+él fue
 
 I chose
 escogí
 
 he chose
-escogió
+él escogió
 
 I was
 estuve
 
 he was
-estuvo
+él estuvo
 
 I began
 empecé
 
 he began
-empezó
+él empezó
 
 I wanted
 quise
 
 he wanted
-quiso
+él quiso
 
 I read
 leí
 
 he read
-leyó
+él leyó
 
 I played
 jugué
 
 he played
-jugó
+él jugó
 
-I left
+I went out
 salí
 
-he left
-salió
+he went out
+él salió
 
 I slept
 dormí
 
 he slept
-durmió
+él durmió
 
 I returned
 volví
 
 he returned
-volvió
+él volvió
 
 I thought
 pensé
 
 he thought
-pensó
+él pensó
 
 I followed
 seguí
 
 he followed
-siguió
+él siguió
 
 I knew
 conocí
 
 he knew
-conoció
+él conoció
 
 I drove
 manejé
 
 he drove
-manejó
+él manejó
 
 I heard
 oí
 
 he heard
-oyó
+él oyó
 
 I served
 serví
 
 he served
-sirvió
+él sirvió
 
 I elected
 elegí
 
 he elected
-eligió
+él eligió
 
 I watched
 miré
 
 he watched
-miró
+él miró
 
 I listened to
 escuché
 
 he listened to
-escuchó
+él escuchó
 
 I helped
 ayudé
 
 he helped
-ayudó
+él ayudó
 
 I reached
 alcancé
 
 he reached
-alcanzó
+él alcanzó
 
 I searched for
 busqué
 
 he searched for
-buscó
+él buscó
 
 I learned
 aprendí
 
 he learned
-aprendió
+él aprendió
 
 I seemed
 parecí
 
 he seemed
-pareció
+él pareció
 
 I understood
 entendí
 
 he understood
-entendió
+él entendió
 
 I hurt, pain, ached
 dolí
 
 he hurt, pain, ached
-dolió
+él dolió
 
 I permitted
 permití
 
 he permitted
-permitió
+él permitió
 
 I received
 recibí
 
 he received
-recibió
+él recibió
 
 I opened
 abrí
 
 he opened
-abrió
+él abrió
 
 I bought
 compré
 
 he bought
-compró
+él compró
 
 I threw
 tiré
 
 he threw
-tiró
+él tiró
 
-I threw
+I tossed
 eché
 
-he threw
-echó
+he tossed
+él echó
 
 I directed
 dirigí
 
 he directed
-dirigió
+él dirigió
 
 I built
 construí
 
 he built
-construyó
+él construyó
 
 I believed
 creí
 
 he believed
-creyó
+él creyó
 
 I demanded
 exigí
 
 he demanded
-exigió
+él exigió
 
 I felt
 sentí
 
 he felt
-sintió
+él sintió
 
 I died
 morí
 
 he died
-murió
+él murió
 
 I got
 conseguí
 
 he got
-consiguió
+él consiguió
 
 I stayed
 quedé
 
 he stayed
-quedó
+él quedó
 
 I took
 tomé
 
 he took
-tomó
+él tomó
 
 I worked
 trabajé
 
 he worked
-trabajó
+él trabajó
 
 I called
 llamé
 
 he called
-llamó
+él llamó
 
 I smelled
 olí
 
 he smelled
-olió
+él olió
 
 I left
 dejé
 
 he left
-dejó
+él dejó
 
 I went up
 subí
 
 he went up
-subió
+él subió
 
 I remembered
 recordé
 
 he remembered
-recordó
+él recordó
 
 I won
 gané
 
 he won
-ganó
+él ganó
 
 I insisted
 insistí
 
 he insisted
-insistió
+él insistió
 
 I suffered
 sufrí
 
 he suffered
-sufrió
+él sufrió
 
 I explained
 expliqué
 
 he explained
-explicó
+él explicó
 
 I repented
 me arrepentí
 
 he repented
-se arrepintió
+él se arrepintió
 
 I ordered
 mandé
 
 he ordered
-mandó
+él mandó
 
 I marked
 marqué
 
 he marked
-marcó
+él marcó
 
 I added
 añadí
 
 he added
-añadió
+él añadió
 
 I touched
 toqué
 
 he touched
-tocó
+él tocó
 
 I put on
 me puse
 
 he put on
-se puso
+él se puso
 
 I stayed
 me quedé
 
 he stayed
-se quedó
+él se quedó
 
-I went to sleep
+I fell asleep
 me dormí
 
-he went to sleep
-se durmió
+he fell asleep
+él se durmió
 
 I felt
 me sentí
 
 he felt
-se sintió
+él se sintió
 
 I got dressed
 me vestí
 
 he got dressed
-se vistió
+él se vistió
 
 I forgot
 me olvidé
 
 he forgot
-se olvidó
+él se olvidó
 
 I woke up
 me desperté
 
 he woke up
-se despertó
+él se despertó
 
 I got up
 me levanté
 
 he got up
-se levantó
+él se levantó
 
 I went to bed
 me acosté
 
 he went to bed
-se acostó
+él se acostó
 
 I took a shower
 me duché
 
 he took a shower
-se duchó
+él se duchó
 
 I took a bath
 me bañé
 
 he took a bath
-se bañó
+él se bañó
 
 I washed up
 me lavé
 
 he washed up
-se lavó
+él se lavó
 
 I combed my hair
 me peiné
 
-he combed my hair
-se peinó
+he combed his hair
+él se peinó
 
 I shaved
 me afeité
 
 he shaved
-se afeitó
+él se afeitó
 
 I had fun
 me divertí
 
 he had fun
-se divirtió
+él se divirtió
 
 I got angry
 me enojé
 
 he got angry
-se enojó
+él se enojó
 
 I was glad
 me alegré
 
 he was glad
-se alegró
+él se alegró
 
 I approached
 me acerqué
 
 he approached
-se acercó
+él se acercó
 

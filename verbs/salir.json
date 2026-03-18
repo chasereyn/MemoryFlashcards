@@ -165,31 +165,31 @@
   },
   "english": {
     "note": "Formas irregulares: salgo, salga, salgas, etc. Radical irregular en el futuro y condicional: saldr-. Mandato familiar singular irregular: sal.",
-    "infinitivo": "to leave, go out",
-    "gerundio": "leaving",
-    "participioPasado": "left",
+    "infinitivo": "to go out",
+    "gerundio": "going out",
+    "participioPasado": "gone out",
     "indicativo": {
-      "presente": "I leave, am leaving",
-      "futuro": "I will leave",
-      "imperfecto": "I was leaving, used to leave, left",
-      "preterito": "I left",
-      "condicional": "I would leave",
-      "presentePerfecto": "I have left, left",
-      "futuroPerfecto": "I will have left",
-      "pluscuamperfecto": "I had left",
-      "preteritoAnterior": "I had left",
-      "condicionalPerfecto": "I would have left"
+      "presente": "I go out, am going out",
+      "futuro": "I will go out",
+      "imperfecto": "I was going out, used to go out, went out",
+      "preterito": "I went out",
+      "condicional": "I would go out",
+      "presentePerfecto": "I have gone out",
+      "futuroPerfecto": "I will have gone out",
+      "pluscuamperfecto": "I had gone out",
+      "preteritoAnterior": "I had gone out",
+      "condicionalPerfecto": "I would have gone out"
     },
     "subjuntivo": {
-      "presente": "I leave, am leaving",
-      "imperfecto": "I left, was leaving",
-      "futuro": "I will leave",
-      "presentePerfecto": "I have left, left",
-      "futuroPerfecto": "I will have left",
-      "pluscuamperfecto": "I had left"
+      "presente": "I go out, am going out",
+      "imperfecto": "I went out, was going out",
+      "futuro": "I will go out",
+      "presentePerfecto": "I have gone out, went out",
+      "futuroPerfecto": "I will have gone out",
+      "pluscuamperfecto": "I had gone out"
     },
-    "afirmativo": "Leave!",
-    "negativo": "Don't leave!"
+    "afirmativo": "Go out!",
+    "negativo": "Don't go out!"
   },
   "attribution": "Fred Jehle"
 }
