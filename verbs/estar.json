@@ -165,31 +165,31 @@
   },
   "english": {
     "note": "Irregular en el presente de indicativo (estoy, estás, etc.) y el presente de subjuntivo (esté, estés, etc.). Radical fuerte en el pretérito: estuv-. Note: To express identiy, or a quality or characteristic (rather than a temporary state), use the verb ser.",
-    "infinitivo": "to be (e.g., health, location, state)",
-    "gerundio": "being",
+    "infinitivo": "to be (estar)",
+    "gerundio": "being (estar)",
     "participioPasado": "been",
     "indicativo": {
-      "presente": "I am",
-      "futuro": "I will be",
-      "imperfecto": "I was, used to be",
-      "preterito": "I was",
-      "condicional": "I would be",
-      "presentePerfecto": "I have been",
-      "futuroPerfecto": "I will have been",
-      "pluscuamperfecto": "I had been",
-      "preteritoAnterior": "I had been",
-      "condicionalPerfecto": "I would have been"
+      "presente": "I am (estar)",
+      "futuro": "I will be (estar)",
+      "imperfecto": "I was (estar)",
+      "preterito": "I was (estar)",
+      "condicional": "I would be (estar)",
+      "presentePerfecto": "I have been (estar)",
+      "futuroPerfecto": "I will have been (estar)",
+      "pluscuamperfecto": "I had been (estar)",
+      "preteritoAnterior": "I had been (estar)",
+      "condicionalPerfecto": "I would have been (estar)"
     },
     "subjuntivo": {
-      "presente": "I am",
-      "imperfecto": "I was, were",
-      "futuro": "I will be",
-      "presentePerfecto": "I have been, was",
-      "futuroPerfecto": "I will have been",
-      "pluscuamperfecto": "I had been"
+      "presente": "I am (estar)",
+      "imperfecto": "I was (estar)",
+      "futuro": "I will be (estar)",
+      "presentePerfecto": "I have been (estar)",
+      "futuroPerfecto": "I will have been (estar)",
+      "pluscuamperfecto": "I had been (estar)"
     },
-    "afirmativo": "Be!",
-    "negativo": "Don't be!"
+    "afirmativo": "Be! (estar)",
+    "negativo": "Don't be! (estar)"
   },
   "attribution": "Fred Jehle"
 }

@@ -165,31 +165,31 @@
   },
   "english": {
     "note": "Irregular en el presente de indicativo (soy, eres, etc.), el imperfecto de indicativo (era, eras, etc.) y el pretérito (fui, fuiste, etc.). Radical irregular en el presente de subjuntivo: se-. Mandato singular familiar irregular: sé. Note: To express location or a temporary state or condition, use the verb estar.",
-    "infinitivo": "to be (identity, quality)",
-    "gerundio": "being",
+    "infinitivo": "to be (ser)",
+    "gerundio": "being (ser)",
     "participioPasado": "been",
     "indicativo": {
-      "presente": "I am",
-      "futuro": "I will be",
-      "imperfecto": "I used to be, was",
-      "preterito": "I was",
-      "condicional": "I would be",
-      "presentePerfecto": "I have been",
-      "futuroPerfecto": "I will have been",
-      "pluscuamperfecto": "I had been",
-      "preteritoAnterior": "I had been",
-      "condicionalPerfecto": "I would have been"
+      "presente": "I am (ser)",
+      "futuro": "I will be (ser)",
+      "imperfecto": "I was (ser)",
+      "preterito": "I was (ser)",
+      "condicional": "I would be (ser)",
+      "presentePerfecto": "I have been (ser)",
+      "futuroPerfecto": "I will have been (ser)",
+      "pluscuamperfecto": "I had been (ser)",
+      "preteritoAnterior": "I had been (ser)",
+      "condicionalPerfecto": "I would have been (ser)"
     },
     "subjuntivo": {
-      "presente": "I am",
-      "imperfecto": "I was, was being",
-      "futuro": "I will be",
-      "presentePerfecto": "I have been, was",
-      "futuroPerfecto": "I will have been",
-      "pluscuamperfecto": "I had been"
+      "presente": "I am (ser)",
+      "imperfecto": "I was (ser)",
+      "futuro": "I will be (ser)",
+      "presentePerfecto": "I have been (ser)",
+      "futuroPerfecto": "I will have been (ser)",
+      "pluscuamperfecto": "I had been (ser)"
     },
-    "afirmativo": "Be!",
-    "negativo": "Don't be!"
+    "afirmativo": "Be! (ser)",
+    "negativo": "Don't be! (ser)"
   },
   "attribution": "Fred Jehle"
 }

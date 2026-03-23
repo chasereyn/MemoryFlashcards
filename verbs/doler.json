@@ -165,13 +165,13 @@
   },
   "english": {
     "note": "Cambio radical: o > ue cuando se acentúa. Note: This is an intransitive verb which is normally used only in the third peson, in a construcion like that used for the verb gustar: ¿ Dónde te duele? = Where does it hurt (you)? Me duelen los pies = My feet hurt. Use lastimar for to hurt in the sense of to harm, injure someone or something.",
-    "infinitivo": "to hurt, pain, ache",
+    "infinitivo": "to hurt",
     "gerundio": "hurting",
     "participioPasado": "hurt",
     "indicativo": {
-      "presente": "it hurts, is hurting",
+      "presente": "it hurts",
       "futuro": "it will hurt",
-      "imperfecto": "it was hurting, used to hurt, hurt",
+      "imperfecto": "it hurt",
       "preterito": "it hurt",
       "condicional": "it would hurt",
       "presentePerfecto": "it has hurt",
@@ -181,10 +181,10 @@
       "condicionalPerfecto": "it would have hurt"
     },
     "subjuntivo": {
-      "presente": "it hurts, is hurting",
-      "imperfecto": "it hurt, was hurting",
+      "presente": "it hurts",
+      "imperfecto": "it hurt",
       "futuro": "it will hurt",
-      "presentePerfecto": "it has hurt, hurt",
+      "presentePerfecto": "it has hurt",
       "futuroPerfecto": "it will have hurt",
       "pluscuamperfecto": "it had hurt"
     },

@@ -164,32 +164,32 @@
     "uds": "no marquen"
   },
   "english": {
-    "note": "Cambio ortográfico: c > qu delante de e.",
-    "infinitivo": "to mark, stamp, to show, indicate; to dial (e.g., a phone)",
-    "gerundio": "marking",
-    "participioPasado": "marked",
+    "note": "Cambio ortográfico: c > qu delante de e. Used for calling on the phone (marcar un número = to dial/call).",
+    "infinitivo": "to call",
+    "gerundio": "calling",
+    "participioPasado": "called",
     "indicativo": {
-      "presente": "I mark, am marking",
-      "futuro": "I will mark",
-      "imperfecto": "I was marking, used to mark, marked",
-      "preterito": "I marked",
-      "condicional": "I would mark",
-      "presentePerfecto": "I have marked",
-      "futuroPerfecto": "I will have marked",
-      "pluscuamperfecto": "I had marked",
-      "preteritoAnterior": "I had marked",
-      "condicionalPerfecto": "I would have marked"
+      "presente": "I call",
+      "futuro": "I will call",
+      "imperfecto": "I was calling",
+      "preterito": "I called",
+      "condicional": "I would call",
+      "presentePerfecto": "I have called",
+      "futuroPerfecto": "I will have called",
+      "pluscuamperfecto": "I had called",
+      "preteritoAnterior": "I had called",
+      "condicionalPerfecto": "I would have called"
     },
     "subjuntivo": {
-      "presente": "I mark, am marking",
-      "imperfecto": "I marked, was marking",
-      "futuro": "I will mark",
-      "presentePerfecto": "I have marked, marked",
-      "futuroPerfecto": "I will have marked",
-      "pluscuamperfecto": "I had marked"
+      "presente": "I call",
+      "imperfecto": "I called",
+      "futuro": "I will call",
+      "presentePerfecto": "I have called",
+      "futuroPerfecto": "I will have called",
+      "pluscuamperfecto": "I had called"
     },
-    "afirmativo": "Mark!",
-    "negativo": "Don't mark!"
+    "afirmativo": "Call!",
+    "negativo": "Don't call!"
   },
   "attribution": "Fred Jehle"
 }

@@ -1,3 +1,6 @@
+preterite-yo: 0
+preterite-el: 1
+
 ir
 irse
 ver
@@ -49,13 +52,10 @@ dirigir
 construir
 creer
 exigir
-sentir
 morir
 conseguir
-quedar
 tomar
 trabajar
-llamar
 oler
 subir
 recordar
@@ -80,7 +80,7 @@ acostarse
 ducharse
 banyarse
 lavarse
-peinarse
+cepillar
 afeitarse
 divertirse
 enojarse
