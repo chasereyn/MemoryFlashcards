@@ -165,31 +165,31 @@
   },
   "english": {
     "note": "Formas irregulares: conozco, conozca, conozcas, etc.",
-    "infinitivo": "to know (people, places)",
-    "gerundio": "knowing",
-    "participioPasado": "known",
+    "infinitivo": "to meet",
+    "gerundio": "meeting",
+    "participioPasado": "met",
     "indicativo": {
-      "presente": "I know",
-      "futuro": "I will know",
-      "imperfecto": "I used to know, knew",
-      "preterito": "I knew",
-      "condicional": "I would know",
-      "presentePerfecto": "I have known",
-      "futuroPerfecto": "I will have known",
-      "pluscuamperfecto": "I had known",
-      "preteritoAnterior": "I had known",
-      "condicionalPerfecto": "I would have known"
+      "presente": "I meet",
+      "futuro": "I will meet",
+      "imperfecto": "I used to meet, met",
+      "preterito": "I met",
+      "condicional": "I would meet",
+      "presentePerfecto": "I have met",
+      "futuroPerfecto": "I will have met",
+      "pluscuamperfecto": "I had met",
+      "preteritoAnterior": "I had met",
+      "condicionalPerfecto": "I would have met"
     },
     "subjuntivo": {
-      "presente": "I know",
-      "imperfecto": "I knew, was knowing",
-      "futuro": "I will know",
-      "presentePerfecto": "I have known, knew",
-      "futuroPerfecto": "I will have known",
-      "pluscuamperfecto": "I had known"
+      "presente": "I meet",
+      "imperfecto": "I met, was meeting",
+      "futuro": "I will meet",
+      "presentePerfecto": "I have met, met",
+      "futuroPerfecto": "I will have met",
+      "pluscuamperfecto": "I had met"
     },
-    "afirmativo": "Know!",
-    "negativo": "Don't know!"
+    "afirmativo": "Meet!",
+    "negativo": "Don't meet!"
   },
   "attribution": "Fred Jehle"
 }

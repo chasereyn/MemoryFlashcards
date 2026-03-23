@@ -285,6 +285,43 @@ def generate_verbs_flashcards(csv_path: str, output_path: str, verbs_dir: str = 
             f.write(f"{english}\n{spanish}\n\n")
 
 
+VALID_FLAGS = frozenset({"preterite-yo", "preterite-el"})
+
+
+def _parse_verbs_file_with_flags(verbs_path: str) -> Tuple[dict, List[str]]:
+    """
+    Parse verbs.txt: read optional flags at top (key: 0|1), then verb list.
+    Returns (flags_dict, verb_list). Unknown flags ignored. Missing flags default to 1.
+    """
+    flags: dict = {}
+    verbs: List[str] = []
+    seen = set()
+    in_flags = True
+
+    with open(verbs_path, 'r', encoding='utf-8') as f:
+        for line in f:
+            stripped = line.strip()
+            if not stripped:
+                if in_flags:
+                    in_flags = False
+                continue
+
+            if in_flags and ':' in stripped:
+                parts = stripped.split(':', 1)
+                key = parts[0].strip()
+                val = parts[1].strip()
+                if key in VALID_FLAGS and val in ('0', '1'):
+                    flags[key] = int(val)
+                continue
+
+            in_flags = False
+            if stripped not in seen:
+                verbs.append(stripped)
+                seen.add(stripped)
+
+    return flags, verbs
+
+
 def _get_english_preterite_1st(json_data: dict) -> str:
     """Get English 1st person preterite (e.g. 'I went') from JSON."""
     preterito = (json_data.get('english', {}).get('indicativo', {}) or {}).get('preterito', '')
@@ -325,15 +362,9 @@ def generate_preterite_13_flashcards(
     if output_dir and not os.path.exists(output_dir):
         os.makedirs(output_dir, exist_ok=True)
 
-    # Read verb list (one per line, dedupe, skip blanks)
-    with open(verbs_path, 'r', encoding='utf-8') as f:
-        verbs = []
-        seen = set()
-        for line in f:
-            verb = line.strip()
-            if verb and verb not in seen:
-                verbs.append(verb)
-                seen.add(verb)
+    flags, verbs = _parse_verbs_file_with_flags(verbs_path)
+    gen_yo = flags.get("preterite-yo", 1)
+    gen_el = flags.get("preterite-el", 1)
 
     flashcards = []
     skipped = []
@@ -353,10 +384,10 @@ def generate_preterite_13_flashcards(
             skipped.append(verb)
             continue
 
-        # Card 1: I went -> fui
-        flashcards.append((english_1st, spanish_yo))
-        # Card 2: he went -> él fue
-        flashcards.append((english_3rd, f"él {spanish_ud}"))
+        if gen_yo:
+            flashcards.append((english_1st, spanish_yo))
+        if gen_el:
+            flashcards.append((english_3rd, f"él {spanish_ud}"))
 
     if skipped:
         print(f"Warning: No JSON or missing preterite for verb(s): {', '.join(skipped)}")

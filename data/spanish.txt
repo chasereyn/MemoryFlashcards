@@ -196,7 +196,7 @@ la música
 to start
 empezar
 
-on
+on (on top of)
 sobre
 
 to hurt
@@ -929,7 +929,7 @@ to touch
 tocar
 
 still
-todavía
+aún / todavía
 
 besides
 además
@@ -2443,20 +2443,11 @@ el medico
 according to
 según
 
-from
-de
-
-of
-de
-
 to complain
 quejarse
 
 with you
 contigo
-
-who
-quien
 
 to sit
 sentarse
@@ -2469,9 +2460,6 @@ pasar
 
 to translate
 traducir
-
-to clean
-limpiar
 
 to happen
 pasar
@@ -2497,23 +2485,11 @@ tirar
 to toss (place, pour)
 echar
 
-to feel
-sentir
-
 to take away
 quitar
 
 to turn in
 entregar
-
-you're welcome
-de nada
-
-please
-por favor
-
-to
-a
 
 things
 las cosas
@@ -2526,12 +2502,6 @@ la prisa
 
 up
 arriba
-
-idea
-la idea
-
-mango
-el mango
 
 wave
 la ola
@@ -2556,9 +2526,6 @@ el propósito
 
 lost
 perdido
-
-list
-la lista
 
 China
 la China
@@ -2923,8 +2890,8 @@ Pestañas
 Dividers
 Separadores
 
-Shape
-La forma
+shape
+la forma
 
 Size
 El tamaño
@@ -2935,7 +2902,7 @@ Fijamente
 To give a hand
 Echar la mano
 
-Hole
+hole
 el hoyo
 
 water park
@@ -3115,9 +3082,6 @@ molcajete con el tejolote
 mousepad
 el tapete para el mouse
 
-a special moment
-un ratito
-
 hammer
 el martillo
 
@@ -3277,6 +3241,9 @@ quemarse
 combustion
 la combustión
 
+about
+en
+
 he is about 20 years old
 es de unos 20 años
 
@@ -3419,7 +3386,7 @@ smell
 el olor
 
 to joke
-bromea
+bromear
 
 I appreciate it
 Te lo agradezco
@@ -3827,7 +3794,7 @@ cajun seasoning
 el sazón cajún
 
 chipotle peppers
-los chiles chipotle
+los chipotles
 
 Your turn!
 Tu turno!
@@ -4000,9 +3967,6 @@ el peligro
 god
 el dios
 
-grass
-la hierba
-
 on top
 encima
 
@@ -4043,13 +4007,13 @@ parking lot
 el estacionamiento
 
 ladybug
-mariqueta
+la mariqueta
 
 puzzle piece
-pieza de rompecabezas
+la pieza de rompecabezas
 
 crumbs
-migajas
+las migajas
 
 mexican accent
 acento mexicano
@@ -4112,7 +4076,7 @@ to expel
 expulsar
 
 ...for real
-..de veras
+...de veras
 
 sunblock
 el bloqueador
@@ -4228,7 +4192,7 @@ caballero
 grass
 el pasto
 
-banch
+bench
 la banca
 
 jetski
@@ -4243,8 +4207,8 @@ eslogan
 fist
 puño
 
-wash cloth
-el trapito
+washcloth
+el paño
 
 don't remind me!
 No me lo recuerdes!
@@ -4256,10 +4220,10 @@ weeds
 las malas hierbas
 
 blowdryer
-el secador de pelo
+el secador de cabello
 
 to blowdry
-secarse el pelo
+secarse el cabello
 
 asset
 el activo
@@ -4337,12 +4301,12 @@ to melt
 derretir
 
 heartbeat
-latido
+el latido
 
 body language
 lenguaje corporal
 
-serie
+series
 serie
 
 narrator
@@ -4358,7 +4322,7 @@ to beat
 latar
 
 I'm not used to it
-no estoy acostumbrado
+no lo estoy acostumbrado
 
 food coma
 mal de puerco
@@ -4376,7 +4340,7 @@ makeup
 el maquillaje
 
 placemat
-individual
+el individual
 
 makes sense
 eso tiene sentido
@@ -4412,7 +4376,10 @@ contracts
 contratos
 
 billing account
-cuenta de cobro
+la cuenta de cobro
+
+bank account
+la cuenta
 
 expense analytics
 analítica de gastos
@@ -4436,7 +4403,7 @@ It gave me a food coma
 Me dio el mal de puerco
 
 a third wheel
-un mal mercio
+un mal tercio
 
 exactly!
 justo!
@@ -4486,16 +4453,16 @@ la pandilla
 I went driving
 fui a manejar
 
-my crew (of friends)
+the boys
 mi banda
 
 risky business
-negocios arriesgado
+los negocios arriesgados
 
 I'll let you go!
 Te dejo libre!
 
-Infinite vibes
+infinite vibes
 vibes infinitos
 
 trash bag
@@ -4527,3 +4494,102 @@ exigir
 
 to drug
 drogar
+
+aztec culture
+la cultura azteca
+
+hostel
+el hostal
+
+brothal
+el burdel
+
+waterfall
+la cascada
+
+daring
+atrevido
+
+cooooool!
+cooooool!
+
+my babies!
+mis chiquis los dos!
+
+jewish
+judió
+
+japanese
+japonés
+
+to tear down
+desmantelar
+
+...especially these days
+...sobre todo hoy en día
+
+around the house
+por la casa
+
+pentagon
+pentágono
+
+edge
+el borde
+
+polygon
+polígono
+
+hexagon
+hexágono
+
+triangle
+triángulo
+
+right triangle
+triángulo rectángulo
+
+nostril
+la fosa nasal
+
+I would never let this happen
+jamás permitiría que esto pasara
+
+We don't keep kosher
+No comemos kosher
+
+They are a Korean band
+Son una banda coreana
+
+America can really only have two political parties
+USA realmente solo puede tener dos partidos politicos
+
+What are you trying to imply?
+A qué te refieres con eso?
+
+Dog food
+Comida para perros
+
+It's all about pattern recognition
+Todo se trata de reconocimiento de patrones
+
+I like a dark beer
+Me gusta la cerveza oscura
+
+My uncle has a kegerator
+Mi tio tiene un kegerator
+
+Beer dispenser
+Dispensador para la cerveza
+
+He has Irish heritage
+Tiene herencia Irlandesa
+
+Me myself and I
+Yo mismo
+
+We still need to watch Up together
+Aún nos falta ver Up juntos
+
+I still need to go to the bank
+Aún me falta ir al banco

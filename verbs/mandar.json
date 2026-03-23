@@ -165,31 +165,31 @@
   },
   "english": {
     "note": "",
-    "infinitivo": "to order (give an order); to send",
-    "gerundio": "ordering",
-    "participioPasado": "ordered",
+    "infinitivo": "to send",
+    "gerundio": "sending",
+    "participioPasado": "sent",
     "indicativo": {
-      "presente": "I order, am ordering",
-      "futuro": "I will order",
-      "imperfecto": "I was ordering, used to order, ordered",
-      "preterito": "I ordered",
-      "condicional": "I would order",
-      "presentePerfecto": "I have ordered",
-      "futuroPerfecto": "I will have ordered",
-      "pluscuamperfecto": "I had ordered",
-      "preteritoAnterior": "I had ordered",
-      "condicionalPerfecto": "I would have ordered"
+      "presente": "I send",
+      "futuro": "I will send",
+      "imperfecto": "I was sending",
+      "preterito": "I sent",
+      "condicional": "I would send",
+      "presentePerfecto": "I have sent",
+      "futuroPerfecto": "I will have sent",
+      "pluscuamperfecto": "I had sent",
+      "preteritoAnterior": "I had sent",
+      "condicionalPerfecto": "I would have sent"
     },
     "subjuntivo": {
-      "presente": "I order, am ordering",
-      "imperfecto": "I ordered, was ordering",
-      "futuro": "I will order",
-      "presentePerfecto": "I have ordered, ordered",
-      "futuroPerfecto": "I will have ordered",
-      "pluscuamperfecto": "I had ordered"
+      "presente": "I send",
+      "imperfecto": "I sent",
+      "futuro": "I will send",
+      "presentePerfecto": "I have sent",
+      "futuroPerfecto": "I will have sent",
+      "pluscuamperfecto": "I had sent"
     },
-    "afirmativo": "Order!",
-    "negativo": "Don't order!"
+    "afirmativo": "Send!",
+    "negativo": "Don't send!"
   },
   "attribution": "Fred Jehle"
 }
