@@ -1,254 +1,515 @@
+I went
+fui
+
 he went
 él fue
+
+I left
+me fui
 
 he left
 él se fue
 
+I saw
+vi
+
 he saw
 él vio
+
+I said
+dije
 
 he said
 él dijo
 
+I put
+puse
+
 he put
 él puso
+
+I gave
+di
 
 he gave
 él dio
 
+I knew
+supe
+
 he knew
 él supo
+
+I asked
+pedí
 
 he asked
 él pidió
 
+I came
+vine
+
 he came
 él vino
+
+I did
+hice
 
 he did
 él hizo
 
+I had
+tuve
+
 he had
 él tuvo
+
+I brought
+traje
 
 he brought
 él trajo
 
+I arrived
+llegué
+
 he arrived
 él llegó
+
+I spoke
+hablé
 
 he spoke
 él habló
 
+I ate
+comí
+
 he ate
 él comió
+
+I lived
+viví
 
 he lived
 él vivió
 
+I was (ser)
+fui
+
 he was (ser)
 él fue
+
+I chose
+escogí
 
 he chose
 él escogió
 
+I was (estar)
+estuve
+
 he was (estar)
 él estuvo
+
+I began
+empecé
 
 he began
 él empezó
 
+I wanted
+quise
+
 he wanted
 él quiso
+
+I read
+leí
 
 he read
 él leyó
 
+I played
+jugué
+
 he played
 él jugó
+
+I went out
+salí
 
 he went out
 él salió
 
+I slept
+dormí
+
 he slept
 él durmió
+
+I returned
+volví
 
 he returned
 él volvió
 
+I thought
+pensé
+
 he thought
 él pensó
+
+I followed
+seguí
 
 he followed
 él siguió
 
+I met
+conocí
+
 he met
 él conoció
+
+I drove
+manejé
 
 he drove
 él manejó
 
+I heard
+oí
+
 he heard
 él oyó
+
+I served
+serví
 
 he served
 él sirvió
 
+I elected
+elegí
+
 he elected
 él eligió
+
+I watched
+miré
 
 he watched
 él miró
 
+I listened to
+escuché
+
 he listened to
 él escuchó
+
+I helped
+ayudé
 
 he helped
 él ayudó
 
+I reached
+alcancé
+
 he reached
 él alcanzó
+
+I fell
+caí
+
+he fell
+él cayó
+
+I searched for
+busqué
 
 he searched for
 él buscó
 
+I learned
+aprendí
+
 he learned
 él aprendió
+
+I understood
+entendí
 
 he understood
 él entendió
 
+I hurted
+dolí
+
 he hurted
 él dolió
+
+I permitted
+permití
 
 he permitted
 él permitió
 
+I received
+recibí
+
 he received
 él recibió
+
+I opened
+abrí
 
 he opened
 él abrió
 
+I bought
+compré
+
 he bought
 él compró
+
+I threw
+tiré
 
 he threw
 él tiró
 
+I tossed
+eché
+
 he tossed
 él echó
+
+I directed
+dirigí
 
 he directed
 él dirigió
 
+I built
+construí
+
 he built
 él construyó
+
+I believed
+creí
 
 he believed
 él creyó
 
+I demanded
+exigí
+
 he demanded
 él exigió
+
+I died
+morí
 
 he died
 él murió
 
+I got
+conseguí
+
 he got
 él consiguió
+
+I took
+tomé
 
 he took
 él tomó
 
+I worked
+trabajé
+
 he worked
 él trabajó
+
+I smelled
+olí
 
 he smelled
 él olió
 
+I went up
+subí
+
 he went up
 él subió
+
+I remembered
+recordé
 
 he remembered
 él recordó
 
+I won
+gané
+
 he won
 él ganó
+
+I insisted
+insistí
 
 he insisted
 él insistió
 
+I suffered
+sufrí
+
 he suffered
 él sufrió
+
+I explained
+expliqué
 
 he explained
 él explicó
 
+I repented
+me arrepentí
+
 he repented
 él se arrepintió
+
+I sent
+mandé
 
 he sent
 él mandó
 
+I called
+marqué
+
 he called
 él marcó
+
+I added
+añadí
 
 he added
 él añadió
 
+I touched
+toqué
+
 he touched
 él tocó
+
+I put on
+me puse
 
 he put on
 él se puso
 
+I stayed
+me quedé
+
 he stayed
 él se quedó
+
+I fell asleep
+me dormí
 
 he fell asleep
 él se durmió
 
+I felt
+me sentí
+
 he felt
 él se sintió
+
+I got dressed
+me vestí
 
 he got dressed
 él se vistió
 
+I forgot
+me olvidé
+
 he forgot
 él se olvidó
+
+I woke up
+me desperté
 
 he woke up
 él se despertó
 
+I got up
+me levanté
+
 he got up
 él se levantó
+
+I went to bed
+me acosté
 
 he went to bed
 él se acostó
 
+I took a shower
+me duché
+
 he took a shower
 él se duchó
+
+I took a bath
+me bañé
 
 he took a bath
 él se bañó
 
+I washed up
+me lavé
+
 he washed up
 él se lavó
+
+I brushed
+cepillé
 
 he brushed
 él cepilló
 
+I shaved
+me afeité
+
 he shaved
 él se afeitó
+
+I had fun
+me divertí
 
 he had fun
 él se divirtió
 
+I got angry
+me enojé
+
 he got angry
 él se enojó
 
+I was glad
+me alegré
+
 he was glad
 él se alegró
+
+I approached
+me acerqué
 
 he approached
 él se acercó

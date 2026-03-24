@@ -520,17 +520,11 @@ viajar
 then
 luego
 
-to drink
-beber
-
 sad
 triste
 
 to end
 terminar
-
-what
-qué
 
 woman
 la mujer
@@ -579,9 +573,6 @@ el padre
 
 rice
 el arroz
-
-chicken
-el pollo
 
 price
 el precio
@@ -682,14 +673,8 @@ nadie
 to need
 necesitar
 
-bread
-el pan
-
 door
 la puerta
-
-city
-la ciudad
 
 expensive
 caro
@@ -988,9 +973,6 @@ el árbol
 dangerous
 peligroso
 
-class
-la clase
-
 garden
 el jardín
 
@@ -1162,9 +1144,6 @@ por qué
 a present
 el regalo
 
-suddenly
-de repente
-
 newspaper
 el periódico
 
@@ -1176,15 +1155,6 @@ sucio
 
 oil
 el aceite
-
-boss
-el jefe
-
-apple
-la manzana
-
-to explain
-explicar
 
 screen
 la pantalla
@@ -1206,9 +1176,6 @@ la entrevista
 
 girl
 la chica
-
-war
-la guerra
 
 orange
 la naranja
@@ -1249,9 +1216,6 @@ caliente
 to vacuum
 pasar la aspiradora
 
-family
-la familia
-
 under
 debajo de
 
@@ -1276,9 +1240,6 @@ la tecnología
 cafeteria
 la cafetería
 
-to open
-abrir
-
 to call
 marcar
 
@@ -1290,9 +1251,6 @@ hasta
 
 to receive
 recibir
-
-in
-en
 
 however
 sin embargo
@@ -1350,12 +1308,6 @@ la ventana
 
 during
 durante
-
-new
-nuevo
-
-body
-el cuerpo
 
 tie
 la corbata
@@ -1549,9 +1501,6 @@ escuchar
 to close
 cerrar
 
-to serve
-servir
-
 to begin
 comenzar
 
@@ -1560,9 +1509,6 @@ lo siento
 
 to go for a walk
 dar un paseo
-
-love
-el amor
 
 to answer
 contestar
@@ -1581,9 +1527,6 @@ la sala
 
 alone
 solo
-
-heart
-el corazón
 
 to drive
 manejar
@@ -1615,9 +1558,6 @@ la cita
 to practice
 practicar
 
-who
-quién
-
 less
 menos
 
@@ -1626,9 +1566,6 @@ el baño
 
 land
 la tierra
-
-life
-la vida
 
 cereal
 el cereal
@@ -1777,12 +1714,6 @@ el alimento
 red-haired
 pelirrojo
 
-fork
-el tenedor
-
-when
-cuándo
-
 employee
 el empleado
 
@@ -1807,9 +1738,6 @@ cuánto
 to reduce
 reducir
 
-train
-el tren
-
 hat
 el sombrero
 
@@ -1830,9 +1758,6 @@ celular
 
 metro
 el metro
-
-where
-dónde
 
 company
 la empresa
@@ -2326,20 +2251,11 @@ regatear
 to record
 grabar
 
-to surprise
-sorprender
-
 close to
 cerca de
 
 before
 antes de
-
-no
-no
-
-yes
-sí
 
 turkey
 el pavo
@@ -2349,12 +2265,6 @@ pesado
 
 each
 cada
-
-my
-mi
-
-all
-todo
 
 there
 allí
@@ -2379,15 +2289,6 @@ aunque
 
 while
 mientras
-
-if
-si
-
-and
-y
-
-to seem
-parecer
 
 to have lunch
 almorzar
@@ -4018,8 +3919,8 @@ las migajas
 mexican accent
 acento mexicano
 
-I can't wait to...
-Tengo muchas ganas de
+I really feel like...
+Tengo muchas ganas de...
 
 not even...
 ni siquiera...
@@ -4044,6 +3945,9 @@ déjame pensarlo
 
 I didn't realize
 No me di cuenta
+
+I realized...
+me di cuenta...
 
 I got used to it
 Me acostumbré
@@ -4474,9 +4378,6 @@ Yo me encargo de eso
 recruitment (military)
 reclutamiento
 
-recruitment (hiring)
-la contratación
-
 I'll let you know
 Te aviso
 
@@ -4593,3 +4494,57 @@ Aún nos falta ver Up juntos
 
 I still need to go to the bank
 Aún me falta ir al banco
+
+poultry
+el pollo
+
+the first half
+la primera parte
+
+the second half
+la segunda parte
+
+How's the hiring process going?
+Como va el proceso de contratación
+
+I'll surprise you when you least expect it!
+Te voy a sorprender cuando menos te lo esperes
+
+My dad used to be part of the armed forces
+Mi papá servía en las fuerzas armadas
+
+the military
+el ejército
+
+I contribute to my 401K
+Contribuyo a mi 401K
+
+retirement
+jubilación
+
+Rice and lentils is a cheap meal
+Arroz con lentejas es una comida barata
+
+You learn best when you're forced to learn
+Aprendes mejor cuando te obligan a aprender
+
+He came out of nowhere
+Salió de la nada
+
+He appeared suddenly
+Apareció de repente
+
+I had to spit out my gum
+Tuve que escupir mi chicle
+
+What cut of meat is it?
+Qué corte es?
+
+rosebud
+el pimpollo
+
+he didn't even try
+ni siquiera no intentó
+
+I feel like eating tacos
+tengo ganas de comer los tacos

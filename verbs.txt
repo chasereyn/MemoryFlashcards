@@ -1,4 +1,4 @@
-preterite-yo: 0
+preterite-yo: 1
 preterite-el: 1
 
 ir
@@ -38,6 +38,7 @@ mirar
 escuchar
 ayudar
 alcanzar
+caer
 buscar
 aprender
 entender

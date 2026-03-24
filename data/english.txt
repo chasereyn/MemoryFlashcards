@@ -135,3 +135,33 @@ anomaly
 
 The test results showed something unusual.
 The test results showed an anomaly.
+
+pleasant and agreeable in character; friendly and suited to one's company
+congenial
+
+The committee room felt warm and welcoming during the discussion.
+The committee room felt congenial during the discussion.
+
+skill in achieving one's ends by deceit or evasive cleverness
+cunning
+
+The thief relied on clever tricks rather than on force.
+The thief relied on cunning rather than on force.
+
+deceitfulness in speech or conduct; double-dealing
+duplicity
+
+His polite apology did not erase the fact that he had lied to us.
+His polite apology did not erase his duplicity.
+
+a person or thing regarded as a perfect example of a quality
+paragon
+
+Among the interns, she stood out as the ideal role model.
+Among the interns, she was a paragon of professionalism.
+
+betrayal of trust; treacherous action
+treachery
+
+The king saw the secret alliance as a stab in the back.
+The king saw the secret alliance as treachery.
