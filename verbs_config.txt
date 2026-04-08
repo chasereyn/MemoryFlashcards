@@ -1,0 +1,4 @@
+preterite-yo: 0
+preterite-el: 0
+llevar: 0
+questions: 1

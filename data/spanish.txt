@@ -37,12 +37,6 @@ negro
 white
 blanco
 
-blue
-azul
-
-red
-rojo
-
 blanket
 la manta
 
@@ -70,14 +64,8 @@ anaranjado
 to earn
 ganar
 
-to fall
-caer
-
 to go out
 salir
-
-to finish
-acabar
 
 to send
 enviar
@@ -85,17 +73,11 @@ enviar
 purple
 morado
 
-bed
-la cama
-
 artist
 el/la artista
 
 tasty
 sabroso
-
-country
-el país
 
 to stay
 quedarse
@@ -111,9 +93,6 @@ apagar
 
 desk
 el escritorio
-
-to be able to
-poder
 
 to pick up
 recoger
@@ -388,12 +367,6 @@ nunca
 schedule
 el horario
 
-yesterday
-ayer
-
-today
-hoy
-
 tomorrow
 mañana
 
@@ -405,12 +378,6 @@ antes
 
 last night
 anoche
-
-day
-el día
-
-year
-el año
 
 jacket
 la chamorra
@@ -447,9 +414,6 @@ buscar
 
 to read
 leer
-
-always
-siempre
 
 good
 bueno
@@ -629,7 +593,7 @@ to take a bath
 bañarse
 
 short (height)
-bajo
+chaparro
 
 to cook
 cocinar
@@ -1018,9 +982,6 @@ enfrente de
 center
 el centro
 
-old
-antiguo
-
 soccer
 el fútbol
 
@@ -1099,23 +1060,14 @@ recordar
 nice
 amable
 
-hotel
-el hotel
-
 breakfast
 el desayuno
-
-dog
-el perro
 
 to draw
 dibujar
 
 to fall
 caerse
-
-hospital
-el hospital
 
 man
 el hombre
@@ -1755,9 +1707,6 @@ el teléfono
 
 phone
 celular
-
-metro
-el metro
 
 company
 la empresa
@@ -2470,9 +2419,6 @@ morder
 translation
 la traducción
 
-to pursue
-perseguir
-
 demanding
 exigente
 
@@ -2662,7 +2608,7 @@ investigar
 novel
 la novela
 
-guide
+a guide
 el/la guía
 
 play
@@ -3018,9 +2964,6 @@ las ramas
 
 droplet
 la gota de agua
-
-to spill
-derramar
 
 dental floss
 el hilo dental
@@ -3443,7 +3386,7 @@ Stop here please
 Pare aqui por favor
 
 How much is the ticket?
-Cuánto es el boleto
+Cuánto cuesta el boleto
 
 Help!
 Ayuda!
@@ -4226,7 +4169,7 @@ to beat
 latar
 
 I'm not used to it
-no lo estoy acostumbrado
+no me acostumbré
 
 food coma
 mal de puerco
@@ -4261,9 +4204,6 @@ outfits combinados
 regardless of....
 a pesar de...
 
-nickname
-el apodo
-
 to put someone to sleep
 dormir a alguien
 
@@ -4297,8 +4237,8 @@ Dile a tu familia que los saludo!
 to take off
 despegar
 
-to land
-aterrizar
+The plane landed
+El avion se aterrizó
 
 marriage
 el casamiento
@@ -4454,7 +4394,7 @@ nostril
 la fosa nasal
 
 I would never let this happen
-jamás permitiría que esto pasara
+nunca permitiría que esto pasara
 
 We don't keep kosher
 No comemos kosher
@@ -4505,12 +4445,12 @@ the second half
 la segunda parte
 
 How's the hiring process going?
-Como va el proceso de contratación
+Como va el proceso de contratación?
 
 I'll surprise you when you least expect it!
 Te voy a sorprender cuando menos te lo esperes
 
-My dad used to be part of the armed forces
+My father served in the armed forces
 Mi papá servía en las fuerzas armadas
 
 the military
@@ -4520,7 +4460,7 @@ I contribute to my 401K
 Contribuyo a mi 401K
 
 retirement
-jubilación
+la jubilación
 
 Rice and lentils is a cheap meal
 Arroz con lentejas es una comida barata
@@ -4548,3 +4488,207 @@ ni siquiera no intentó
 
 I feel like eating tacos
 tengo ganas de comer los tacos
+
+squirrel
+la ardilla
+
+spanish-speaking
+hispanohablante
+
+feel me whispering in your ear
+siente que estoy al oído susurrando
+
+I took her with me
+Me la llevé
+
+To lock up
+Encerrar
+
+Sway
+el vaivén
+
+I wonder what will happen
+Me pregunto qué pasará
+
+They put up a notice
+Pusieron un aviso
+
+Marigolds
+Caléndulas
+
+I went all out!
+Lo di todo
+
+Don't pretend you don't like it!
+No finjas que no te gusta
+
+roman aqueducts
+aqueductos romanos
+
+Ireland has old castles
+Irlanda tiene castillos antiguos
+
+Don't waste that!
+No desperdicies eso!
+
+banana peel
+la cáscara
+
+boys chase girls
+los chicos persiguen a las chicas
+
+dairy products
+productos lácteos
+
+The Roman Empire
+El Imperio Romano
+
+It's not very effective
+No es muy efectivo
+
+I knew you would love it!
+Sabía que te iba a encantar!
+
+I don't know if I can
+No sé si puedo
+
+My sister licks all the frosting off the cupcakes
+Mi hermana lame todo el frosting de los cupcakes
+
+Oh well
+Ya ni modo
+
+Whatever
+Ya ni modo
+
+It is what it is
+Es lo que hay
+
+I killed it
+Lo maté
+
+Windshield
+La parabrisas
+
+I hit my ankle
+Me golpeé el tobillo
+
+Put a bow on the present
+Ponle un lazo al regalo
+
+I like your bowtie
+Me gusta tu pajarita
+
+This is why we have ants
+Y por eso tenemos hormigas
+
+The roof is caving in
+El techo se está cayendo
+
+This is what happens when you don't go to the gym
+Esto es lo que pasa cuando no vas al gym
+
+Copper
+Cobre
+
+Graffiti
+Grafiti
+
+If you went back 1000 years and did this, you'd start a religion. or be burned alive
+Si volvieras 1000 años atrás y hicieras esto, empezarías una religión… o te quemarían vivo
+
+Is that polite to say?
+¿Es correcto decir eso?
+
+Give me a minute
+Dame un momento
+
+A blind person
+Un invidente
+
+What are you wearing?
+Qué llevas puesto?
+
+Kid (little goat)
+La chiva
+
+Don't spill the water
+No derrames el agua
+
+Jellyfish
+La medusa
+
+I know you too well!
+Te conozco mosco!
+
+How do I say it?
+Cómo lo digo?
+
+I don't know if I'm explaining myself well
+No sé si me explico
+
+soon
+pronto
+
+There's something in my eye
+Me pica el ojo
+
+phenomenon
+fenómeno
+
+belly button
+el ombligo
+
+metaphor
+metáfora
+
+It's a lot of pressure
+Es mucha presión
+
+I blew up that toilet
+Le exploté ese baño
+
+That's correct!
+Eso es correcto!
+
+That's incorrect
+Eso es incorrecto
+
+That's wrong
+Eso está mal
+
+Something's wrong
+Algo está mal
+
+There's an error
+Hay un error
+
+That outfit is in style
+Ese outfit está de moda
+
+No excuses!
+Sin excusas!
+
+Sacred
+Sagrado
+
+To interrupt
+Interrumpir
+
+To disrupt
+Disrumpir
+
+He was fired from work
+Lo despidieron del trabajo
+
+Rabbits are associated with the moon
+Los conejos están asociados con la luna
+
+Don't leave without an unbrella or you're going to end up soaking wet
+No salgas sin paraguas o vas a terminar echando sopa
+
+Respect your elders
+Respeta a tus mayores
+
+That girl is really sassy, she talked back to the teacher
+Esa niña es muy fresca, le contestó mal a la maestra.
