@@ -184,10 +184,19 @@ def format_english_preterite(person_index: int, json_data: dict, prefs: dict) ->
     return f"{pronoun} {verb_form}"
 
 
-def get_llevar_gerund_subjects(verb: str, count: int = 2) -> List[int]:
-    """Return `count` person indices (0-6) deterministically based on verb."""
-    rng = random.Random(verb)
-    return rng.sample(range(7), count)
+def sample_person_indices(
+    verb_lemma: str, namespace: str, count: int = 2
+) -> List[int]:
+    """
+    Deterministic pseudo-random English person indices (0-6) for verb drills.
+    `namespace` separates modes so e.g. llevar and questions pick different subjects
+    for the same lemma (more variety).
+    """
+    rng = random.Random(f"{namespace}\t{verb_lemma}")
+    n = min(max(count, 0), 7)
+    if n == 0:
+        return []
+    return rng.sample(range(7), n)
 
 
 def format_english_llevar_gerund(person_index: int, json_data: dict, prefs: dict) -> str:
@@ -214,7 +223,7 @@ def generate_llevar_gerund_cards(
     llevar_data: dict,
 ) -> List[Tuple[str, str]]:
     """Generate 2 llevar + gerund flashcards per verb (deterministic subject selection)."""
-    subjects = get_llevar_gerund_subjects(verb, 2)
+    subjects = sample_person_indices(verb, "llevar", 2)
     cards = []
     spanish_gerund = (json_data.get('gerundio', '') or '').strip()
     if not spanish_gerund:
@@ -475,11 +484,11 @@ def generate_question_preterite_flashcards(
 ) -> List[Tuple[str, str]]:
     """
     Preterite question drills: English question -> Spanish ¿…(WH)… preterite?
-    Uses 7 English personas / Spanish persons via SPANISH_MAP.
+    Two personas per verb, chosen deterministically (namespace separate from llevar).
     Empty WH-choice: yes/no questions only (¿fuiste?).
     """
     cards: List[Tuple[str, str]] = []
-    for i in range(7):
+    for i in sample_person_indices(verb_lemma, "questions", 2):
         sk = SPANISH_PERSON_KEYS[SPANISH_MAP[i]]
         conj = _get_spanish_conjugation(json_data, "preterito", sk)
         if not conj:

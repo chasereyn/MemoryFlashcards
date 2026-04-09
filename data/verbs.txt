@@ -1,218 +1,62 @@
 Where did I go?
 ¿adónde fui?
 
-Where did you go?
-¿adónde fuiste?
-
-Where did he go?
-¿adónde fue?
-
-Where did it go?
-¿adónde fue?
-
-Where did we go?
-¿adónde fuimos?
-
 Where did they go?
 ¿adónde fueron?
-
-Where did you guys go?
-¿adónde fueron?
-
-When did I leave?
-¿cuándo me fui?
-
-When did you leave?
-¿cuándo te fuiste?
-
-When did he leave?
-¿cuándo se fue?
 
 When did it leave?
 ¿cuándo se fue?
 
-When did we leave?
-¿cuándo nos fuimos?
-
-When did they leave?
-¿cuándo se fueron?
-
-When did you guys leave?
-¿cuándo se fueron?
-
-What did I see?
-¿qué vi?
-
-What did you see?
-¿qué viste?
-
-What did he see?
-¿qué vio?
+When did I leave?
+¿cuándo me fui?
 
 What did it see?
 ¿qué vio?
 
-What did we see?
-¿qué vimos?
-
-What did they see?
-¿qué vieron?
-
-What did you guys see?
-¿qué vieron?
-
-What did I say?
-¿qué dije?
-
-What did you say?
-¿qué dijiste?
-
-What did he say?
-¿qué dijo?
-
-What did it say?
-¿qué dijo?
-
-What did we say?
-¿qué dijimos?
-
-What did they say?
-¿qué dijeron?
+What did he see?
+¿qué vio?
 
 What did you guys say?
 ¿qué dijeron?
 
-Where did I put?
-¿dónde puse?
-
-Where did you put?
-¿dónde pusiste?
-
-Where did he put?
-¿dónde puso?
-
-Where did it put?
-¿dónde puso?
+What did he say?
+¿qué dijo?
 
 Where did we put?
 ¿dónde pusimos?
 
-Where did they put?
-¿dónde pusieron?
-
 Where did you guys put?
 ¿dónde pusieron?
-
-What did I give?
-¿qué di?
-
-What did you give?
-¿qué diste?
-
-What did he give?
-¿qué dio?
-
-What did it give?
-¿qué dio?
-
-What did we give?
-¿qué dimos?
-
-What did they give?
-¿qué dieron?
 
 What did you guys give?
 ¿qué dieron?
 
-Did I know?
-¿supe?
+What did he give?
+¿qué dio?
 
 Did you know?
 ¿supiste?
 
-Did he know?
-¿supo?
-
-Did it know?
-¿supo?
-
-Did we know?
-¿supimos?
-
 Did they know?
-¿supieron?
-
-Did you guys know?
 ¿supieron?
 
 What did I ask?
 ¿qué pedí?
 
-What did you ask?
-¿qué pediste?
-
-What did he ask?
-¿qué pidió?
-
 What did it ask?
 ¿qué pidió?
-
-What did we ask?
-¿qué pedimos?
-
-What did they ask?
-¿qué pidieron?
-
-What did you guys ask?
-¿qué pidieron?
-
-Where did I come from?
-¿de dónde vine?
-
-Where did you come from?
-¿de dónde viniste?
-
-Where did he come from?
-¿de dónde vino?
-
-Where did it come from?
-¿de dónde vino?
-
-Where did we come from?
-¿de dónde vinimos?
 
 Where did they come from?
 ¿de dónde vinieron?
 
-Where did you guys come from?
-¿de dónde vinieron?
+Where did it come from?
+¿de dónde vino?
 
 What did I do?
 ¿qué hice?
 
-What did you do?
-¿qué hiciste?
-
 What did he do?
 ¿qué hizo?
-
-What did it do?
-¿qué hizo?
-
-What did we do?
-¿qué hicimos?
-
-What did they do?
-¿qué hicieron?
-
-What did you guys do?
-¿qué hicieron?
-
-What did I have?
-¿qué tuve?
-
-What did you have?
-¿qué tuviste?
 
 What did he have?
 ¿qué tuvo?
@@ -220,113 +64,29 @@ What did he have?
 What did it have?
 ¿qué tuvo?
 
-What did we have?
-¿qué tuvimos?
-
-What did they have?
-¿qué tuvieron?
-
-What did you guys have?
-¿qué tuvieron?
-
-What did I bring?
-¿qué traje?
-
-What did you bring?
-¿qué trajiste?
+What did you guys bring?
+¿qué trajeron?
 
 What did he bring?
 ¿qué trajo?
 
-What did it bring?
-¿qué trajo?
-
-What did we bring?
-¿qué trajimos?
-
-What did they bring?
-¿qué trajeron?
-
-What did you guys bring?
-¿qué trajeron?
-
-When did I arrive?
-¿cuándo llegué?
-
 When did you arrive?
 ¿cuándo llegaste?
-
-When did he arrive?
-¿cuándo llegó?
-
-When did it arrive?
-¿cuándo llegó?
-
-When did we arrive?
-¿cuándo llegamos?
-
-When did they arrive?
-¿cuándo llegaron?
 
 When did you guys arrive?
 ¿cuándo llegaron?
 
-Who did I speak with?
-¿con quién hablé?
-
-Who did you speak with?
-¿con quién hablaste?
-
 Who did he speak with?
 ¿con quién habló?
 
-Who did it speak with?
-¿con quién habló?
-
-Who did we speak with?
-¿con quién hablamos?
-
-Who did they speak with?
-¿con quién hablaron?
-
-Who did you guys speak with?
-¿con quién hablaron?
-
-What did I eat?
-¿qué comí?
-
-What did you eat?
-¿qué comiste?
-
-What did he eat?
-¿qué comió?
-
-What did it eat?
-¿qué comió?
+Who did I speak with?
+¿con quién hablé?
 
 What did we eat?
 ¿qué comimos?
 
-What did they eat?
-¿qué comieron?
-
-What did you guys eat?
-¿qué comieron?
-
-Where did I live?
-¿dónde viví?
-
-Where did you live?
-¿dónde viviste?
-
-Where did he live?
-¿dónde vivió?
-
-Where did it live?
-¿dónde vivió?
-
-Where did we live?
-¿dónde vivimos?
+What did you eat?
+¿qué comiste?
 
 Where did they live?
 ¿dónde vivieron?
@@ -334,146 +94,41 @@ Where did they live?
 Where did you guys live?
 ¿dónde vivieron?
 
-How was I?
-¿cómo fui?
-
-How were you?
-¿cómo fuiste?
-
-How was he?
-¿cómo fue?
-
 How was it?
 ¿cómo fue?
 
-How were we?
-¿cómo fuimos?
-
-How were they?
-¿cómo fueron?
-
-How were you guys?
-¿cómo fueron?
-
-What did I choose?
-¿qué escogí?
-
-What did you choose?
-¿qué escogiste?
-
-What did he choose?
-¿qué escogió?
-
-What did it choose?
-¿qué escogió?
-
-What did we choose?
-¿qué escogimos?
+How was I?
+¿cómo fui?
 
 What did they choose?
 ¿qué escogieron?
 
-What did you guys choose?
-¿qué escogieron?
-
-Where was I?
-¿dónde estuve?
-
-Where were you?
-¿dónde estuviste?
-
-Where was he?
-¿dónde estuvo?
+What did you choose?
+¿qué escogiste?
 
 Where was it?
 ¿dónde estuvo?
 
-Where were we?
-¿dónde estuvimos?
-
-Where were they?
-¿dónde estuvieron?
-
 Where were you guys?
 ¿dónde estuvieron?
-
-When did I begin?
-¿cuándo empecé?
-
-When did you begin?
-¿cuándo empezaste?
-
-When did he begin?
-¿cuándo empezó?
-
-When did it begin?
-¿cuándo empezó?
 
 When did we begin?
 ¿cuándo empezamos?
 
-When did they begin?
-¿cuándo empezaron?
-
-When did you guys begin?
-¿cuándo empezaron?
-
-What did I want?
-¿qué quise?
-
-What did you want?
-¿qué quisiste?
-
-What did he want?
-¿qué quiso?
+When did it begin?
+¿cuándo empezó?
 
 What did it want?
 ¿qué quiso?
 
-What did we want?
-¿qué quisimos?
-
-What did they want?
-¿qué quisieron?
-
-What did you guys want?
-¿qué quisieron?
-
-What did I read?
-¿qué leí?
-
-What did you read?
-¿qué leíste?
-
-What did he read?
-¿qué leyó?
-
-What did it read?
-¿qué leyó?
-
-What did we read?
-¿qué leímos?
+What did you want?
+¿qué quisiste?
 
 What did they read?
 ¿qué leyeron?
 
-What did you guys read?
-¿qué leyeron?
-
-Who did I play with?
-¿con quién jugué?
-
-Who did you play with?
-¿con quién jugaste?
-
-Who did he play with?
-¿con quién jugó?
-
-Who did it play with?
-¿con quién jugó?
-
-Who did we play with?
-¿con quién jugamos?
+What did I read?
+¿qué leí?
 
 Who did they play with?
 ¿con quién jugaron?
@@ -481,59 +136,17 @@ Who did they play with?
 Who did you guys play with?
 ¿con quién jugaron?
 
-When did I go out?
-¿cuándo salí?
-
 When did you go out?
 ¿cuándo saliste?
 
-When did he go out?
-¿cuándo salió?
-
-When did it go out?
-¿cuándo salió?
-
-When did we go out?
-¿cuándo salimos?
-
-When did they go out?
-¿cuándo salieron?
-
-When did you guys go out?
-¿cuándo salieron?
-
-Where did I sleep?
-¿dónde dormí?
-
-Where did you sleep?
-¿dónde dormiste?
-
-Where did he sleep?
-¿dónde durmió?
-
-Where did it sleep?
-¿dónde durmió?
-
-Where did we sleep?
-¿dónde dormimos?
+When did I go out?
+¿cuándo salí?
 
 Where did they sleep?
 ¿dónde durmieron?
 
-Where did you guys sleep?
-¿dónde durmieron?
-
-When did I return?
-¿cuándo volví?
-
-When did you return?
-¿cuándo volviste?
-
-When did he return?
-¿cuándo volvió?
-
-When did it return?
-¿cuándo volvió?
+Where did I sleep?
+¿dónde dormí?
 
 When did we return?
 ¿cuándo volvimos?
@@ -541,227 +154,65 @@ When did we return?
 When did they return?
 ¿cuándo volvieron?
 
-When did you guys return?
-¿cuándo volvieron?
-
-What did I think about?
-¿en qué pensé?
+What did you guys think about?
+¿en qué pensaron?
 
 What did you think about?
 ¿en qué pensaste?
 
-What did he think about?
-¿en qué pensó?
-
-What did it think about?
-¿en qué pensó?
-
-What did we think about?
-¿en qué pensamos?
-
-What did they think about?
-¿en qué pensaron?
-
-What did you guys think about?
-¿en qué pensaron?
-
-Did I follow?
-¿seguí?
-
-Did you follow?
-¿seguiste?
-
-Did he follow?
-¿siguió?
-
-Did it follow?
-¿siguió?
-
-Did we follow?
-¿seguimos?
+Did you guys follow?
+¿siguieron?
 
 Did they follow?
 ¿siguieron?
 
-Did you guys follow?
-¿siguieron?
-
-Who did I meet?
-¿a quién conocí?
-
-Who did you meet?
-¿a quién conociste?
-
-Who did he meet?
-¿a quién conoció?
+Who did we meet?
+¿a quién conocimos?
 
 Who did it meet?
 ¿a quién conoció?
 
-Who did we meet?
-¿a quién conocimos?
-
-Who did they meet?
-¿a quién conocieron?
-
-Who did you guys meet?
-¿a quién conocieron?
-
-Where did I drive?
-¿dónde manejé?
-
-Where did you drive?
-¿dónde manejaste?
-
-Where did he drive?
-¿dónde manejó?
+Where did they drive?
+¿dónde manejaron?
 
 Where did it drive?
 ¿dónde manejó?
 
-Where did we drive?
-¿dónde manejamos?
-
-Where did they drive?
-¿dónde manejaron?
-
-Where did you guys drive?
-¿dónde manejaron?
-
-What did I hear?
-¿qué oí?
+What did you guys hear?
+¿qué oyeron?
 
 What did you hear?
 ¿qué oíste?
 
-What did he hear?
-¿qué oyó?
-
-What did it hear?
-¿qué oyó?
-
-What did we hear?
-¿qué oímos?
-
-What did they hear?
-¿qué oyeron?
-
-What did you guys hear?
-¿qué oyeron?
-
 What did I serve?
 ¿qué serví?
-
-What did you serve?
-¿qué serviste?
 
 What did he serve?
 ¿qué sirvió?
 
-What did it serve?
-¿qué sirvió?
-
-What did we serve?
-¿qué servimos?
-
-What did they serve?
-¿qué sirvieron?
-
-What did you guys serve?
-¿qué sirvieron?
-
-What did I elect?
-¿qué elegí?
-
-What did you elect?
-¿qué elegiste?
-
-What did he elect?
-¿qué eligió?
-
-What did it elect?
-¿qué eligió?
+What did they elect?
+¿qué eligieron?
 
 What did we elect?
 ¿qué elegimos?
 
-What did they elect?
-¿qué eligieron?
-
-What did you guys elect?
-¿qué eligieron?
-
-What did I watch?
-¿qué miré?
+What did it watch?
+¿qué miró?
 
 What did you watch?
 ¿qué miraste?
 
-What did he watch?
-¿qué miró?
-
-What did it watch?
-¿qué miró?
-
-What did we watch?
-¿qué miramos?
-
-What did they watch?
-¿qué miraron?
-
-What did you guys watch?
-¿qué miraron?
-
-What did I listen to?
-¿qué escuché?
+What did it listen to?
+¿qué escuchó?
 
 What did you listen to?
 ¿qué escuchaste?
 
-What did he listen to?
-¿qué escuchó?
-
-What did it listen to?
-¿qué escuchó?
-
-What did we listen to?
-¿qué escuchamos?
-
-What did they listen to?
-¿qué escucharon?
-
-What did you guys listen to?
-¿qué escucharon?
-
 Who did I help?
 ¿a quién ayudé?
 
-Who did you help?
-¿a quién ayudaste?
-
-Who did he help?
-¿a quién ayudó?
-
-Who did it help?
-¿a quién ayudó?
-
 Who did we help?
 ¿a quién ayudamos?
-
-Who did they help?
-¿a quién ayudaron?
-
-Who did you guys help?
-¿a quién ayudaron?
-
-What did I reach?
-¿qué alcancé?
-
-What did you reach?
-¿qué alcanzaste?
-
-What did he reach?
-¿qué alcanzó?
 
 What did it reach?
 ¿qué alcanzó?
@@ -769,140 +220,41 @@ What did it reach?
 What did we reach?
 ¿qué alcanzamos?
 
-What did they reach?
-¿qué alcanzaron?
-
-What did you guys reach?
-¿qué alcanzaron?
-
-How did I fall down?
-¿cómo me caí?
+How did we fall down?
+¿cómo nos caímos?
 
 How did you fall down?
 ¿cómo te caíste?
 
-How did he fall down?
-¿cómo se cayó?
-
-How did it fall down?
-¿cómo se cayó?
-
-How did we fall down?
-¿cómo nos caímos?
-
-How did they fall down?
-¿cómo se cayeron?
-
-How did you guys fall down?
-¿cómo se cayeron?
-
-What did I search for?
-¿qué busqué?
-
-What did you search for?
-¿qué buscaste?
-
 What did he search for?
-¿qué buscó?
-
-What did it search for?
 ¿qué buscó?
 
 What did we search for?
 ¿qué buscamos?
 
-What did they search for?
-¿qué buscaron?
-
-What did you guys search for?
-¿qué buscaron?
-
-What did I learn?
-¿qué aprendí?
-
 What did you learn?
 ¿qué aprendiste?
-
-What did he learn?
-¿qué aprendió?
-
-What did it learn?
-¿qué aprendió?
 
 What did we learn?
 ¿qué aprendimos?
 
-What did they learn?
-¿qué aprendieron?
-
-What did you guys learn?
-¿qué aprendieron?
-
-What did I understand?
-¿qué entendí?
+What did it understand?
+¿qué entendió?
 
 What did you understand?
 ¿qué entendiste?
 
-What did he understand?
-¿qué entendió?
-
-What did it understand?
-¿qué entendió?
-
-What did we understand?
-¿qué entendimos?
-
-What did they understand?
-¿qué entendieron?
-
-What did you guys understand?
-¿qué entendieron?
+Where did you hurt?
+¿dónde doliste?
 
 Where did I hurt?
 ¿dónde dolí?
 
-Where did you hurt?
-¿dónde doliste?
-
-Where did he hurt?
-¿dónde dolió?
-
-Where did it hurt?
-¿dónde dolió?
-
-Where did we hurt?
-¿dónde dolimos?
-
-Where did they hurt?
-¿dónde dolieron?
-
-Where did you guys hurt?
-¿dónde dolieron?
-
-What did I permit?
-¿qué permití?
-
 What did you permit?
 ¿qué permitiste?
 
-What did he permit?
-¿qué permitió?
-
-What did it permit?
-¿qué permitió?
-
-What did we permit?
-¿qué permitimos?
-
-What did they permit?
-¿qué permitieron?
-
 What did you guys permit?
 ¿qué permitieron?
-
-What did I receive?
-¿qué recibí?
 
 What did you receive?
 ¿qué recibiste?
@@ -910,299 +262,83 @@ What did you receive?
 What did he receive?
 ¿qué recibió?
 
-What did it receive?
-¿qué recibió?
-
-What did we receive?
-¿qué recibimos?
-
-What did they receive?
-¿qué recibieron?
-
-What did you guys receive?
-¿qué recibieron?
-
-What did I open?
-¿qué abrí?
-
-What did you open?
-¿qué abriste?
+What did we open?
+¿qué abrimos?
 
 What did he open?
 ¿qué abrió?
 
-What did it open?
-¿qué abrió?
-
-What did we open?
-¿qué abrimos?
-
-What did they open?
-¿qué abrieron?
-
-What did you guys open?
-¿qué abrieron?
-
-What did I buy?
-¿qué compré?
-
-What did you buy?
-¿qué compraste?
-
-What did he buy?
-¿qué compró?
+What did we buy?
+¿qué compramos?
 
 What did it buy?
 ¿qué compró?
 
-What did we buy?
-¿qué compramos?
-
-What did they buy?
-¿qué compraron?
-
-What did you guys buy?
-¿qué compraron?
+What did we throw?
+¿qué tiramos?
 
 What did I throw?
 ¿qué tiré?
 
-What did you throw?
-¿qué tiraste?
-
-What did he throw?
-¿qué tiró?
-
-What did it throw?
-¿qué tiró?
-
-What did we throw?
-¿qué tiramos?
-
-What did they throw?
-¿qué tiraron?
-
-What did you guys throw?
-¿qué tiraron?
-
-What did I toss?
-¿qué eché?
-
-What did you toss?
-¿qué echaste?
+What did it toss?
+¿qué echó?
 
 What did he toss?
 ¿qué echó?
 
-What did it toss?
-¿qué echó?
-
-What did we toss?
-¿qué echamos?
-
-What did they toss?
-¿qué echaron?
-
-What did you guys toss?
-¿qué echaron?
-
-Who did I direct?
-¿a quién dirigí?
+Who did he direct?
+¿a quién dirigió?
 
 Who did you direct?
 ¿a quién dirigiste?
 
-Who did he direct?
-¿a quién dirigió?
-
-Who did it direct?
-¿a quién dirigió?
-
-Who did we direct?
-¿a quién dirigimos?
-
-Who did they direct?
-¿a quién dirigieron?
-
-Who did you guys direct?
-¿a quién dirigieron?
+What did it build?
+¿qué construyó?
 
 What did I build?
 ¿qué construí?
 
-What did you build?
-¿qué construiste?
-
-What did he build?
-¿qué construyó?
-
-What did it build?
-¿qué construyó?
-
-What did we build?
-¿qué construimos?
-
-What did they build?
-¿qué construyeron?
-
-What did you guys build?
-¿qué construyeron?
-
-What did I believe?
-¿qué creí?
-
-What did you believe?
-¿qué creíste?
-
-What did he believe?
-¿qué creyó?
+What did they believe?
+¿qué creyeron?
 
 What did it believe?
 ¿qué creyó?
 
-What did we believe?
-¿qué creímos?
-
-What did they believe?
-¿qué creyeron?
-
-What did you guys believe?
-¿qué creyeron?
-
-What did I demand?
-¿qué exigí?
+What did you guys demand?
+¿qué exigieron?
 
 What did you demand?
 ¿qué exigiste?
 
-What did he demand?
-¿qué exigió?
-
-What did it demand?
-¿qué exigió?
-
-What did we demand?
-¿qué exigimos?
-
-What did they demand?
-¿qué exigieron?
-
-What did you guys demand?
-¿qué exigieron?
-
-Did I die?
-¿morí?
+Did it die?
+¿murió?
 
 Did you die?
 ¿moriste?
 
-Did he die?
-¿murió?
-
-Did it die?
-¿murió?
-
-Did we die?
-¿morimos?
-
-Did they die?
-¿murieron?
-
-Did you guys die?
-¿murieron?
+What did they get?
+¿qué consiguieron?
 
 What did I get?
 ¿qué conseguí?
 
-What did you get?
-¿qué conseguiste?
-
-What did he get?
-¿qué consiguió?
-
-What did it get?
-¿qué consiguió?
-
-What did we get?
-¿qué conseguimos?
-
-What did they get?
-¿qué consiguieron?
-
-What did you guys get?
-¿qué consiguieron?
-
-What did I take?
-¿qué tomé?
-
-What did you take?
-¿qué tomaste?
-
 What did he take?
-¿qué tomó?
-
-What did it take?
 ¿qué tomó?
 
 What did we take?
 ¿qué tomamos?
 
-What did they take?
-¿qué tomaron?
-
-What did you guys take?
-¿qué tomaron?
+Where did it work?
+¿dónde trabajó?
 
 Where did I work?
 ¿dónde trabajé?
 
-Where did you work?
-¿dónde trabajaste?
-
-Where did he work?
-¿dónde trabajó?
-
-Where did it work?
-¿dónde trabajó?
-
-Where did we work?
-¿dónde trabajamos?
-
-Where did they work?
-¿dónde trabajaron?
-
-Where did you guys work?
-¿dónde trabajaron?
-
-What did I smell?
-¿qué olí?
-
 What did you smell?
 ¿qué oliste?
 
-What did he smell?
-¿qué olió?
-
 What did it smell?
 ¿qué olió?
-
-What did we smell?
-¿qué olimos?
-
-What did they smell?
-¿qué olieron?
-
-What did you guys smell?
-¿qué olieron?
-
-Where did I go up?
-¿adónde subí?
-
-Where did you go up?
-¿adónde subiste?
-
-Where did he go up?
-¿adónde subió?
 
 Where did it go up?
 ¿adónde subió?
@@ -1210,77 +346,23 @@ Where did it go up?
 Where did we go up?
 ¿adónde subimos?
 
-Where did they go up?
-¿adónde subieron?
-
-Where did you guys go up?
-¿adónde subieron?
-
-What did I remember?
-¿qué recordé?
-
-What did you remember?
-¿qué recordaste?
-
-What did he remember?
-¿qué recordó?
+What did we remember?
+¿qué recordamos?
 
 What did it remember?
 ¿qué recordó?
 
-What did we remember?
-¿qué recordamos?
-
-What did they remember?
-¿qué recordaron?
-
-What did you guys remember?
-¿qué recordaron?
-
-What did I win?
-¿qué gané?
-
-What did you win?
-¿qué ganaste?
+What did they win?
+¿qué ganaron?
 
 What did he win?
 ¿qué ganó?
 
-What did it win?
-¿qué ganó?
-
-What did we win?
-¿qué ganamos?
-
-What did they win?
-¿qué ganaron?
-
-What did you guys win?
-¿qué ganaron?
-
-What did I insist about?
-¿en qué insistí?
-
-What did you insist about?
-¿en qué insististe?
-
-What did he insist about?
-¿en qué insistió?
-
 What did it insist about?
 ¿en qué insistió?
 
-What did we insist about?
-¿en qué insistimos?
-
-What did they insist about?
-¿en qué insistieron?
-
-What did you guys insist about?
-¿en qué insistieron?
-
-What did I suffer?
-¿qué sufrí?
+What did you insist about?
+¿en qué insististe?
 
 What did you suffer?
 ¿qué sufriste?
@@ -1288,230 +370,65 @@ What did you suffer?
 What did he suffer?
 ¿qué sufrió?
 
-What did it suffer?
-¿qué sufrió?
-
-What did we suffer?
-¿qué sufrimos?
-
-What did they suffer?
-¿qué sufrieron?
-
-What did you guys suffer?
-¿qué sufrieron?
-
-What did I explain?
-¿qué expliqué?
+What did they explain?
+¿qué explicaron?
 
 What did you explain?
 ¿qué explicaste?
 
-What did he explain?
-¿qué explicó?
-
-What did it explain?
-¿qué explicó?
-
-What did we explain?
-¿qué explicamos?
-
-What did they explain?
-¿qué explicaron?
-
-What did you guys explain?
-¿qué explicaron?
+What did you guys repent about?
+¿de qué se arrepintieron?
 
 What did I repent about?
 ¿de qué me arrepentí?
 
-What did you repent about?
-¿de qué te arrepentiste?
-
-What did he repent about?
-¿de qué se arrepintió?
-
-What did it repent about?
-¿de qué se arrepintió?
-
-What did we repent about?
-¿de qué nos arrepentimos?
-
-What did they repent about?
-¿de qué se arrepintieron?
-
-What did you guys repent about?
-¿de qué se arrepintieron?
+What did you send?
+¿qué mandaste?
 
 What did I send?
 ¿qué mandé?
 
-What did you send?
-¿qué mandaste?
-
-What did he send?
-¿qué mandó?
-
-What did it send?
-¿qué mandó?
-
-What did we send?
-¿qué mandamos?
-
-What did they send?
-¿qué mandaron?
-
-What did you guys send?
-¿qué mandaron?
+What did you guys call?
+¿qué marcaron?
 
 What did I call?
 ¿qué marqué?
 
-What did you call?
-¿qué marcaste?
-
-What did he call?
-¿qué marcó?
-
-What did it call?
-¿qué marcó?
-
-What did we call?
-¿qué marcamos?
-
-What did they call?
-¿qué marcaron?
-
-What did you guys call?
-¿qué marcaron?
-
-What did I return?
-¿qué devolví?
-
-What did you return?
-¿qué devolviste?
-
-What did he return?
-¿qué devolvió?
+What did they return?
+¿qué devolvieron?
 
 What did it return?
 ¿qué devolvió?
 
-What did we return?
-¿qué devolvimos?
-
-What did they return?
-¿qué devolvieron?
-
-What did you guys return?
-¿qué devolvieron?
-
-What did I add?
-¿qué añadí?
+What did it add?
+¿qué añadió?
 
 What did you add?
 ¿qué añadiste?
 
-What did he add?
-¿qué añadió?
-
-What did it add?
-¿qué añadió?
-
-What did we add?
-¿qué añadimos?
-
-What did they add?
-¿qué añadieron?
-
-What did you guys add?
-¿qué añadieron?
-
-What did I touch?
-¿qué toqué?
-
-What did you touch?
-¿qué tocaste?
-
-What did he touch?
-¿qué tocó?
+What did you guys touch?
+¿qué tocaron?
 
 What did it touch?
 ¿qué tocó?
 
-What did we touch?
-¿qué tocamos?
-
-What did they touch?
-¿qué tocaron?
-
-What did you guys touch?
-¿qué tocaron?
-
-Did I kill?
-¿maté?
-
-Did you kill?
-¿mataste?
-
-Did he kill?
-¿mató?
-
-Did it kill?
-¿mató?
+Did you guys kill?
+¿mataron?
 
 Did we kill?
 ¿matamos?
 
-Did they kill?
-¿mataron?
-
-Did you guys kill?
-¿mataron?
-
-What did I put on?
-¿qué me puse?
-
-What did you put on?
-¿qué te pusiste?
-
-What did he put on?
-¿qué se puso?
-
-What did it put on?
-¿qué se puso?
+What did you guys put on?
+¿qué se pusieron?
 
 What did we put on?
 ¿qué nos pusimos?
 
-What did they put on?
-¿qué se pusieron?
-
-What did you guys put on?
-¿qué se pusieron?
-
 Where did I stay?
 ¿dónde me quedé?
 
-Where did you stay?
-¿dónde te quedaste?
-
-Where did he stay?
-¿dónde se quedó?
-
-Where did it stay?
-¿dónde se quedó?
-
-Where did we stay?
-¿dónde nos quedamos?
-
 Where did they stay?
 ¿dónde se quedaron?
-
-Where did you guys stay?
-¿dónde se quedaron?
-
-When did I fall asleep?
-¿cuándo me dormí?
 
 When did you fall asleep?
 ¿cuándo te dormiste?
@@ -1519,330 +436,93 @@ When did you fall asleep?
 When did he fall asleep?
 ¿cuándo se durmió?
 
-When did it fall asleep?
-¿cuándo se durmió?
-
-When did we fall asleep?
-¿cuándo nos dormimos?
-
-When did they fall asleep?
-¿cuándo se durmieron?
-
-When did you guys fall asleep?
-¿cuándo se durmieron?
-
-How did I feel?
-¿cómo me sentí?
-
-How did you feel?
-¿cómo te sentiste?
+How did we feel?
+¿cómo nos sentimos?
 
 How did he feel?
 ¿cómo se sintió?
 
-How did it feel?
-¿cómo se sintió?
-
-How did we feel?
-¿cómo nos sentimos?
-
-How did they feel?
-¿cómo se sintieron?
-
-How did you guys feel?
-¿cómo se sintieron?
+What did he get dressed?
+¿qué se vistió?
 
 What did I get dressed?
 ¿qué me vestí?
 
-What did you get dressed?
-¿qué te vestiste?
-
-What did he get dressed?
-¿qué se vistió?
-
-What did it get dressed?
-¿qué se vistió?
-
-What did we get dressed?
-¿qué nos vestimos?
-
-What did they get dressed?
-¿qué se vistieron?
-
-What did you guys get dressed?
-¿qué se vistieron?
-
-What did I forget about?
-¿de qué me olvidé?
-
 What did you forget about?
 ¿de qué te olvidaste?
-
-What did he forget about?
-¿de qué se olvidó?
-
-What did it forget about?
-¿de qué se olvidó?
-
-What did we forget about?
-¿de qué nos olvidamos?
-
-What did they forget about?
-¿de qué se olvidaron?
 
 What did you guys forget about?
 ¿de qué se olvidaron?
 
-When did I wake up?
-¿cuándo me desperté?
-
-When did you wake up?
-¿cuándo te despertaste?
-
-When did he wake up?
-¿cuándo se despertó?
+When did you guys wake up?
+¿cuándo se despertaron?
 
 When did it wake up?
 ¿cuándo se despertó?
 
-When did we wake up?
-¿cuándo nos despertamos?
-
-When did they wake up?
-¿cuándo se despertaron?
-
-When did you guys wake up?
-¿cuándo se despertaron?
-
 When did I get up?
 ¿cuándo me levanté?
-
-When did you get up?
-¿cuándo te levantaste?
-
-When did he get up?
-¿cuándo se levantó?
-
-When did it get up?
-¿cuándo se levantó?
-
-When did we get up?
-¿cuándo nos levantamos?
 
 When did they get up?
 ¿cuándo se levantaron?
 
-When did you guys get up?
-¿cuándo se levantaron?
-
-When did I go to bed?
-¿cuándo me acosté?
-
-When did you go to bed?
-¿cuándo te acostaste?
+When did we go to bed?
+¿cuándo nos acostamos?
 
 When did he go to bed?
 ¿cuándo se acostó?
 
-When did it go to bed?
-¿cuándo se acostó?
-
-When did we go to bed?
-¿cuándo nos acostamos?
-
-When did they go to bed?
-¿cuándo se acostaron?
-
-When did you guys go to bed?
-¿cuándo se acostaron?
-
-When did I take a shower?
-¿cuándo me duché?
-
-When did you take a shower?
-¿cuándo te duchaste?
-
-When did he take a shower?
-¿cuándo se duchó?
-
-When did it take a shower?
-¿cuándo se duchó?
+When did they take a shower?
+¿cuándo se ducharon?
 
 When did we take a shower?
 ¿cuándo nos duchamos?
 
-When did they take a shower?
-¿cuándo se ducharon?
-
-When did you guys take a shower?
-¿cuándo se ducharon?
-
-When did I take a bath?
-¿cuándo me bañé?
-
-When did you take a bath?
-¿cuándo te bañaste?
+When did it take a bath?
+¿cuándo se bañó?
 
 When did he take a bath?
 ¿cuándo se bañó?
 
-When did it take a bath?
-¿cuándo se bañó?
-
-When did we take a bath?
-¿cuándo nos bañamos?
-
-When did they take a bath?
-¿cuándo se bañaron?
-
-When did you guys take a bath?
-¿cuándo se bañaron?
-
 What did I wash?
 ¿qué me lavé?
-
-What did you wash?
-¿qué te lavaste?
-
-What did he wash?
-¿qué se lavó?
-
-What did it wash?
-¿qué se lavó?
-
-What did we wash?
-¿qué nos lavamos?
-
-What did they wash?
-¿qué se lavaron?
 
 What did you guys wash?
 ¿qué se lavaron?
 
-What did I brush?
-¿qué cepillé?
-
-What did you brush?
-¿qué cepillaste?
-
-What did he brush?
-¿qué cepilló?
+What did they brush?
+¿qué cepillaron?
 
 What did it brush?
 ¿qué cepilló?
 
-What did we brush?
-¿qué cepillamos?
-
-What did they brush?
-¿qué cepillaron?
-
-What did you guys brush?
-¿qué cepillaron?
-
-When did I shave?
-¿cuándo me afeité?
-
-When did you shave?
-¿cuándo te afeitaste?
-
-When did he shave?
-¿cuándo se afeitó?
-
-When did it shave?
-¿cuándo se afeitó?
-
-When did we shave?
-¿cuándo nos afeitamos?
+When did you guys shave?
+¿cuándo se afeitaron?
 
 When did they shave?
 ¿cuándo se afeitaron?
 
-When did you guys shave?
-¿cuándo se afeitaron?
-
-Where did I have fun?
-¿dónde me divertí?
-
-Where did you have fun?
-¿dónde te divertiste?
-
-Where did he have fun?
-¿dónde se divirtió?
-
 Where did it have fun?
 ¿dónde se divirtió?
-
-Where did we have fun?
-¿dónde nos divertimos?
 
 Where did they have fun?
 ¿dónde se divirtieron?
 
-Where did you guys have fun?
-¿dónde se divirtieron?
+Why did he get angry?
+¿por qué se enojó?
 
 Why did I get angry?
 ¿por qué me enojé?
 
-Why did you get angry?
-¿por qué te enojaste?
-
-Why did he get angry?
-¿por qué se enojó?
-
-Why did it get angry?
-¿por qué se enojó?
-
-Why did we get angry?
-¿por qué nos enojamos?
-
-Why did they get angry?
-¿por qué se enojaron?
-
-Why did you guys get angry?
-¿por qué se enojaron?
-
-What did I be glad about?
-¿de qué me alegré?
-
 What did you be glad about?
 ¿de qué te alegraste?
 
-What did he be glad about?
-¿de qué se alegró?
-
 What did it be glad about?
 ¿de qué se alegró?
-
-What did we be glad about?
-¿de qué nos alegramos?
-
-What did they be glad about?
-¿de qué se alegraron?
-
-What did you guys be glad about?
-¿de qué se alegraron?
-
-Who did I approach?
-¿a quién me acerqué?
 
 Who did you approach?
 ¿a quién te acercaste?
 
 Who did he approach?
 ¿a quién se acercó?
-
-Who did it approach?
-¿a quién se acercó?
-
-Who did we approach?
-¿a quién nos acercamos?
-
-Who did they approach?
-¿a quién se acercaron?
-
-Who did you guys approach?
-¿a quién se acercaron?
 
