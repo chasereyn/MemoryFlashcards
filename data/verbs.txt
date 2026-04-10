@@ -358,6 +358,12 @@ What did they win?
 What did he win?
 ¿qué ganó?
 
+What did you guys put?
+¿qué metieron?
+
+What did I put?
+¿qué metí?
+
 What did it insist about?
 ¿en qué insistió?
 
@@ -387,12 +393,6 @@ What did you send?
 
 What did I send?
 ¿qué mandé?
-
-What did you guys call?
-¿qué marcaron?
-
-What did I call?
-¿qué marqué?
 
 What did they return?
 ¿qué devolvieron?
@@ -484,11 +484,17 @@ When did it take a bath?
 When did he take a bath?
 ¿cuándo se bañó?
 
-What did I wash?
-¿qué me lavé?
+What did you wash?
+¿qué lavaste?
 
-What did you guys wash?
-¿qué se lavaron?
+What did it wash?
+¿qué lavó?
+
+When did I wash?
+¿cuándo me lavé?
+
+When did you guys wash?
+¿cuándo se lavaron?
 
 What did they brush?
 ¿qué cepillaron?

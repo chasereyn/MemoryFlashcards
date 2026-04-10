@@ -1,44 +1,8 @@
-queen
-la reina
-
-goal
-la meta
-
-exercise
-el ejercicio
-
-festival
-el festival
-
-outside
-afuera
-
-to emphasize
-destacar
-
-nor
-ni
-
-to deceive
-engañar
-
-to pass
-aprobar
-
-piano
-el piano
-
-simple
-sencillo
-
 period
 el punto
 
 help
 la ayuda
-
-half
-medio
 
 to suffer
 sufrir
@@ -49,17 +13,8 @@ tener ganas de
 direction
 la dirección
 
-mother-in-law
-la suegra
-
-roof
-el techo
-
 that
 aquella
-
-alcohol
-el alcohol
 
 challenge
 el desafío
@@ -85,12 +40,6 @@ continuar
 only
 único
 
-hen
-la gallina
-
-just
-acabar de
-
 studio
 el estudio
 
@@ -112,32 +61,14 @@ el reto
 to promise
 prometer
 
-shadow
-la sombra
-
 mine
 mío
-
-pleasure
-el placer
-
-father-in-law
-el suegro
-
-mayor
-el alcalde
 
 loose
 flojo
 
-parade
-el desfile
-
 ice
 el hielo
-
-shore
-la orilla
 
 classroom
 el aula
@@ -163,9 +94,6 @@ la sonrisa
 to stand
 soportar
 
-pet
-la mascota
-
 risk
 el riesgo
 
@@ -181,9 +109,6 @@ entrenar
 essential
 imprescindible
 
-perfect
-perfecto
-
 to promote
 fomentar
 
@@ -193,23 +118,11 @@ llevar a cabo
 advantage
 la ventaja
 
-cap
-el gorro
-
 bargain
 la ganga
 
-butterfly
-la mariposa
-
-wealth
-la riqueza
-
 to establish
 establecer
-
-frog
-la rana
 
 to guess
 adivinar
@@ -256,9 +169,6 @@ los deberes
 learning
 el aprendizaje
 
-avocado
-el aguacate
-
 growth
 el crecimiento
 
@@ -280,17 +190,8 @@ reírse
 feature (characteristic)
 el rasgo
 
-childhood
-la niñez
-
-whale
-la ballena
-
 to go for a walk
 dar un paseo
-
-freeway
-la autopista
 
 worker
 el obrero
@@ -298,17 +199,11 @@ el obrero
 robot
 el robot
 
-bolt of lightning
-el relámpago
-
 mature
 maduro
 
 monitor
 el monitor
-
-soldier
-el/la soldado
 
 to repair
 reparar
@@ -334,14 +229,8 @@ la búsqueda
 to exist
 existir
 
-steering wheel
-el volante
-
 debt
 la deuda
-
-thunder
-el trueno
 
 peach
 el durazno
@@ -352,41 +241,17 @@ perdonar
 ever
 alguna vez
 
-pressure
-la presión
-
-Chinese
-chino
-
 education
 la enseñanza
 
 surface
 la superficie
 
-thought
-el pensamiento
-
 complaint
 la queja
 
-sadness
-la tristeza
-
 to found
 fundar
-
-to agree with
-estar de acuerdo
-
-powerful
-poderoso
-
-happiness
-la felicidad
-
-parking lot
-el estacionamiento
 
 announcer
 el locutor
@@ -394,23 +259,14 @@ el locutor
 proposal
 la propuesta
 
-expense
-el gasto
-
 to hide oneself
 esconderse
-
-frozen
-congelado
 
 ball
 el balón
 
 ability
 la habilidad
-
-above all
-sobre todo
 
 to row
 remar
@@ -429,9 +285,6 @@ el salón
 
 to live together
 convivir
-
-ant
-la hormiga
 
 to kidnap
 secuestrar
@@ -453,9 +306,6 @@ el pizarrón
 
 outskirts
 las afueras
-
-great-grandfather
-el bisabuelo
 
 necessary
 necesario
@@ -1564,15 +1414,6 @@ la brújula
 confused
 confundido
 
-across from
-enfrente de
-
-attentive
-atento
-
-Bye!
-¡Chau!
-
 to cultivate
 cultivar
 
@@ -1645,9 +1486,6 @@ el faro
 to take notes
 tomar apuntes
 
-Easter
-la Pascua
-
 darkness
 la oscuridad
 
@@ -1663,9 +1501,6 @@ la realidad
 to require
 requerir
 
-Germany
-Alemania
-
 to risk
 arriesgar
 
@@ -1677,9 +1512,6 @@ el homenaje
 
 typical
 típico
-
-to exploit
-explotar
 
 windshield
 el parabrisas
@@ -2206,17 +2038,11 @@ la curiosidad
 diverse
 diverso
 
-honeymoon
-la luna de miel
-
 careless
 imprudente
 
 adult
 el adulto
-
-human rights
-los derechos humanos
 
 in a bad mood
 de mal humor
@@ -2250,15 +2076,6 @@ la mesita de noche
 
 marketing
 el mercadeo
-
-astronaut
-el/la astronauta
-
-ingredient
-el ingrediente
-
-generation
-la generación
 
 soundtrack
 la banda sonora
@@ -2794,15 +2611,6 @@ reunirse
 left
 la izquierda
 
-to deserve
-merecer
-
-Puerto Rico
-Puerto Rico
-
-to smell
-oler
-
 to attend to
 atender
 
@@ -2812,14 +2620,8 @@ querido
 to correct
 corregir
 
-cloth
-la tela
-
 sense
 el sentido
-
-taco
-el taco
 
 wrong
 equivocado
@@ -3799,35 +3601,20 @@ el antibiótico
 origin
 el origen
 
-blood
-la sangre
-
 studious
 estudioso
 
 experience
 la experiencia
 
-Asia
-Asia
-
-recipe
-la receta
-
 allergy
 la alergia
-
-red wine
-el vino tinto
 
 hockey
 el hockey
 
 specialty
 la especialidad
-
-outside
-fuera
 
 perfume
 el perfume
@@ -4597,9 +4384,6 @@ emocionado
 in love
 enamorado
 
-to bake
-hornear
-
 technician
 el técnico
 
@@ -4621,9 +4405,6 @@ saludar
 to support
 apoyar
 
-fat
-la grasa
-
 back
 la espalda
 
@@ -4639,17 +4420,8 @@ la parada de autobús
 luxurious
 lujoso
 
-available
-disponible
-
-to graduate
-graduarse
-
 to beat
 batir
-
-microwave
-el microondas
 
 childhood
 la infancia
@@ -4662,15 +4434,6 @@ la época
 
 selfish
 egoísta
-
-wild
-salvaje
-
-guilty
-culpable
-
-raw
-crudo
 
 inhabitant
 el habitante
@@ -4707,9 +4470,6 @@ la crítica
 
 to camp
 acampar
-
-umbrella
-el paraguas
 
 meaning
 el significado
@@ -4749,9 +4509,6 @@ el veterinario
 
 foreign
 extranjero
-
-wood
-la madera
 
 to chat
 charlar
@@ -4806,9 +4563,6 @@ el edificio
 
 salty
 salado
-
-toe
-el dedo del pie
 
 sweater
 el suéter
@@ -5692,20 +5446,8 @@ el jarabe
 fire
 el incendio
 
-goat
-la cabra
-
 to plant
 sembrar
-
-to exhaust
-agotar
-
-wallet
-la cartera
-
-leather
-el cuero
 
 to assure
 asegurar
@@ -5724,18 +5466,6 @@ la sudadera
 
 to boil
 hervir
-
-hip
-la cadera
-
-portrait
-el retrato
-
-designer
-el diseñador
-
-loan
-el préstamo
 
 stopover
 la escala
@@ -5809,9 +5539,6 @@ la merienda
 naughty
 travieso
 
-makeup
-el maquillaje
-
 flood
 la inundación
 
@@ -5824,23 +5551,11 @@ la sabiduría
 understanding
 comprensivo
 
-ankle
-el tobillo
-
-glass
-el vidrio
-
 surgeon
 el cirujano
 
 cold
 el resfriado
-
-to spill
-derramar
-
-alarm clock
-el despertador
 
 threat
 la amenaza
@@ -5869,20 +5584,8 @@ el estreno
 tight
 apretado
 
-greenhouse effect
-el efecto invernadero
-
-tool
-la herramienta
-
-global warming
-el calentamiento global
-
 bridge
 el puente
-
-chess
-el ajedrez
 
 daring
 atrevido

@@ -16,6 +16,12 @@ el marrón
 fruit
 la fruta
 
+alcohol
+el alcohol
+
+mayor
+el alcalde
+
 coat
 el abrigo
 
@@ -46,6 +52,9 @@ el desarrollo
 to follow
 seguir
 
+I'm focused
+Estoy concentrado
+
 sure
 seguro
 
@@ -58,7 +67,7 @@ el avión
 to leave
 dejar
 
-orange
+orange (color)
 anaranjado
 
 to earn
@@ -112,6 +121,9 @@ buenas noches
 therefore
 entonces
 
+chess
+el ajedrez
+
 Hey!
 ¡Oye!
 
@@ -126,6 +138,9 @@ la playa
 
 backpack
 la mochila
+
+wallet
+la cartera
 
 wall
 la pared
@@ -337,8 +352,14 @@ la casa
 chair
 la silla
 
+leather
+el cuero
+
 pleased
 contento
+
+toe
+el dedo del pie
 
 hardworking
 trabajador
@@ -439,11 +460,14 @@ la playera
 shirt
 la camiseta
 
-intelligent
+smart
 inteligente
 
 theater
 el teatro
+
+festival
+el festival
 
 professor
 el profesor
@@ -613,6 +637,12 @@ la hora
 century
 el siglo
 
+greenhouse effect
+el efecto invernadero
+
+global warming
+el calentamiento global
+
 people
 la gente
 
@@ -645,6 +675,9 @@ la piscina
 
 mouth
 la boca
+
+outside
+afuera
 
 car
 el coche / el carro
@@ -687,6 +720,9 @@ la leche
 
 mother
 la madre
+
+mother-in-law
+la suegra
 
 stairs
 la escalera
@@ -747,6 +783,9 @@ nadar
 
 to share
 compartir
+
+shadow
+la sombra
 
 foot
 el pie
@@ -1042,11 +1081,23 @@ morir
 daughter
 la hija
 
-to remember
-recordar
-
 nice
 amable
+
+to emphasize
+destacar
+
+nor
+ni
+
+wild
+salvaje
+
+guilty
+culpable
+
+raw
+crudo
 
 breakfast
 el desayuno
@@ -1117,7 +1168,7 @@ la entrevista
 girl
 la chica
 
-orange
+orange (fruit)
 la naranja
 
 none
@@ -1128,6 +1179,9 @@ la costumbre
 
 clean
 limpio
+
+umbrella
+el paraguas
 
 party
 la fiesta
@@ -1341,6 +1395,9 @@ la hamburguesa
 
 sunglasses
 lentes de sol
+
+glass
+el vidrio
 
 literature
 la literatura
@@ -1744,6 +1801,9 @@ el cliente
 grandparents
 los abuelos
 
+perfect
+perfecto
+
 performance
 el rendimiento
 
@@ -1983,6 +2043,9 @@ el maíz
 
 design
 el diseño
+
+designer
+el diseñador
 
 image
 la imagen
@@ -2464,6 +2527,9 @@ el coco
 German
 el alemán
 
+Germany
+Alemania
+
 finger
 el dedo
 
@@ -2511,6 +2577,9 @@ sociable
 
 washing machine
 la lavadora
+
+Chinese
+chino
 
 keyboard
 el teclado
@@ -2605,6 +2674,9 @@ la obra de teatro
 after
 después de
 
+portrait
+el retrato
+
 dentist
 el/la dentista
 
@@ -2647,6 +2719,9 @@ mandar
 east
 el este
 
+Easter
+la Pascua
+
 how
 cómo
 
@@ -2656,8 +2731,8 @@ mostrar
 here
 aquí
 
-to wash
-lavar
+to wash the dishes
+lavar los trastes
 
 to really like
 encantar
@@ -2722,8 +2797,8 @@ La pila
 Eyelashes
 Pestañas
 
-Dividers
-Separadores
+dividers
+los separadores
 
 shape
 la forma
@@ -2778,6 +2853,9 @@ No me importa
 
 You sure?
 Seguro?
+
+avocado
+el aguacate
 
 What an adventure!
 Que aventura!
@@ -2917,6 +2995,9 @@ molcajete con el tejolote
 mousepad
 el tapete para el mouse
 
+microwave
+el microondas
+
 hammer
 el martillo
 
@@ -3049,6 +3130,15 @@ congelar
 to defrost
 descongelar
 
+frozen
+congelado
+
+red wine
+el vino tinto
+
+Asia
+Asia
+
 turn signals
 direccionales
 
@@ -3059,7 +3149,7 @@ thunder
 el trueno
 
 lightning
-relámpago
+el relámpago
 
 pig
 el puerco
@@ -3124,6 +3214,9 @@ Do you have rooms available?
 Don't be sad!
 ¡No estés triste!
 
+sadness
+la tristeza
+
 language barrier
 barrera lingüística
 
@@ -3175,9 +3268,6 @@ la masa
 Woohoo!!
 Orale!!
 
-strawberry
-la fresa
-
 crab
 el cangrejo
 
@@ -3202,6 +3292,9 @@ nublado
 son-in-law
 el yerno
 
+to deserve
+merecer
+
 to fail
 fallar
 
@@ -3220,8 +3313,17 @@ el olor
 to joke
 bromear
 
+simple
+sencillo
+
 I appreciate it
 Te lo agradezco
+
+recipe
+la receta
+
+to graduate
+graduarse
 
 Thank you so much
 Muchisimas gracias
@@ -3237,6 +3339,12 @@ buenas noches
 
 how are you? (formal)
 como esta usted?
+
+whale
+la ballena
+
+childhood
+la niñez
 
 What's up
 Que onda?
@@ -3370,6 +3478,9 @@ Dónde hay un cajero automatico?
 To the airport please
 Al aeropuerto por favor
 
+highway
+la autopista
+
 Stop here please
 Pare aqui por favor
 
@@ -3424,6 +3535,12 @@ No estoy de acuerdo
 Congratulations!
 Felicidades!
 
+powerful
+poderoso
+
+happiness
+la felicidad
+
 sounds good!
 suena bien!
 
@@ -3451,11 +3568,20 @@ polvoso
 greed
 avarica
 
+to deceive
+engañar
+
+to pass
+aprobar
+
 He would appreciate that!
 Él lo apreciaría!
 
 I knew it!
 Ya lo sabía
+
+soldier
+el/la soldado
 
 Welcome to beautiful sunny Orlando!
 Bienvenido al Orlando bien soleado y chido!
@@ -3463,7 +3589,7 @@ Bienvenido al Orlando bien soleado y chido!
 It's always easy driving here
 Aqui siempre se maneja fácil
 
-Steering wheel
+steering wheel
 el volante
 
 gear shifter
@@ -3526,11 +3652,17 @@ Adivida qué!
 thoughtful
 atento
 
+attentive
+atento
+
 considerate
 considerado
 
 deep in thought
 pensativo
+
+a thought
+el pensamiento
 
 to slip away
 escabullirse
@@ -3752,7 +3884,7 @@ rocking chair
 la mecedora
 
 parade
-desfile
+el desfile
 
 They're coming along
 En el camino las arreglamos
@@ -3913,6 +4045,9 @@ expulsar
 ...for real
 ...de veras
 
+blood
+la sangre
+
 sunblock
 el bloqueador
 
@@ -3988,8 +4123,8 @@ pan comido
 It's ON now!!
 ya se armó!!
 
-to be super easy
-estar bien papita
+That's easy!
+está bien papa
 
 to go by the branches (not get to the point)
 irse por las ramas
@@ -4157,7 +4292,7 @@ to beat
 latar
 
 I'm not used to it
-no me acostumbré
+no estoy acostumbrado
 
 food coma
 mal de puerco
@@ -4200,6 +4335,9 @@ notorio
 
 not only...but also
 no solo...sino tambíen
+
+shore
+la orilla
 
 orders (customer orders)
 pedidos
@@ -4252,6 +4390,9 @@ leche de cabra
 goat cheese
 queso de cabra
 
+loan
+el préstamo
+
 to upload
 subir
 
@@ -4264,7 +4405,7 @@ el bote de basura
 no harm no foul
 sin daña sin falta
 
-damage
+the damage
 el daño
 
 fly safe!
@@ -4426,8 +4567,17 @@ Aún me falta ir al banco
 poultry
 el pollo
 
+half
+medio
+
 the first half
 la primera parte
+
+fat (cooking)
+la grasa
+
+to bake
+hornear
 
 the second half
 la segunda parte
@@ -4489,6 +4639,9 @@ siente que estoy al oído susurrando
 I took her with me
 Me la llevé
 
+tool
+la herramienta
+
 To lock up
 Encerrar
 
@@ -4512,6 +4665,9 @@ No finjas que no te gusta
 
 roman aqueducts
 aqueductos romanos
+
+alarm clock
+el despertador
 
 Ireland has old castles
 Irlanda tiene castillos antiguos
@@ -4570,8 +4726,11 @@ Me gusta tu pajarita
 This is why we have ants
 Y por eso tenemos hormigas
 
-The roof is caving in
-El techo se está cayendo
+roof
+el techo
+
+great-grandfather
+el bisabuelo
 
 This is what happens when you don't go to the gym
 Esto es lo que pasa cuando no vas al gym
@@ -4596,6 +4755,9 @@ Un invidente
 
 What are you wearing?
 Qué llevas puesto?
+
+wealth
+la riqueza
 
 Kid (little goat)
 La chiva
@@ -4628,7 +4790,7 @@ belly button
 el ombligo
 
 metaphor
-metáfora
+la metáfora
 
 It's a lot of pressure
 Es mucha presión
@@ -4657,8 +4819,8 @@ Ese outfit está de moda
 No excuses!
 Sin excusas!
 
-Sacred
-Sagrado
+sacred
+sagrado
 
 To interrupt
 Interrumpir
@@ -4678,5 +4840,167 @@ No salgas sin paraguas o vas a terminar echando sopa
 Respect your elders
 Respeta a tus mayores
 
-That girl is really sassy, she talked back to the teacher
-Esa niña es muy fresca, le contestó mal a la maestra.
+That girl is really sassy
+Esa niña es muy fresca
+
+She talked back to the teacher
+Le contestó mal a la maestra
+
+frog
+la rana
+
+pet
+la mascota
+
+I'll remember that!
+Lo recordaré
+
+fiber
+la fibra
+
+diaper
+el pañal
+
+disposable
+descartable
+
+cloth (material)
+la tela
+
+laxatives
+los laxantes
+
+constipation
+estreñimiento
+
+human sacrifice
+sacrificio humano
+
+honeymoon
+la luna de miel
+
+human rights
+los derechos humanos
+
+Who's idea was this?
+De quién fue este idea?
+
+Ron Chernow wrote an excellent biography about Alexander Hamilton, one of the founding fathers of the United States
+Ron Chernow escribió una excelente biografía sobre Alexander Hamilton, uno de los padres fundadores de los Estados Unidos
+
+the founding fathers
+los padres fundadores
+
+I was hoping you would do that
+Esperaba que lo hicieras
+
+wheat
+el trigo
+
+Don't touch the electric lines!
+¡No toques las líneas eléctricas!
+
+dumb
+estupido
+
+In a world of timely things, seek something timeless
+En un mundo de cosas temporales, busca algo eterno
+
+Elige un día que te convenga para venir aquí
+Choose a day that suits you to come here
+
+That's convenient!
+Qué conveniente!
+
+I'm busy admiring you
+Estoy ocupado admirándote
+
+Nothing to thank
+No hay de qué
+
+my pleasure!
+es un placer!
+
+father-in-law
+el suegro
+
+fragile
+frágil
+
+blueberries
+los arándanos azules
+
+strawberries
+las fresas
+
+raspberries
+las frambuesas
+
+blackberries
+las moras
+
+cherries
+las cerezas
+
+cranberries
+los arándanos rojos
+
+Alaska is a very isolated state
+Alaska es un estado muy aislado
+
+Don't talk back to me!
+¡No me contestes mal!
+
+evening
+la nochecita
+
+aircraft carrier
+el portaviones
+
+the best option
+la mejor opción
+
+in summary...
+en resumen...
+
+What do you do?
+A qué te dedicas?
+
+I'm in the zone
+Estoy en la mia
+
+I'm locked in
+Estoy en la mia
+
+Everyone agreed
+Todos estuvieron de acuerdo
+
+I roll with the best
+Ando con los de cien
+
+one step at a time
+paso a paso
+
+one thing at a time
+paso a paso
+
+to grant
+otorgar
+
+queen
+la reina
+
+goal
+la meta
+
+above all...
+sobre todo
+
+astronaut
+el/la astronauta
+
+ingredient
+el ingrediente
+
+generation
+la generación
