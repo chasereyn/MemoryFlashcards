@@ -11,15 +11,6 @@ SPANISH_PERSON_KEYS = ['yo', 'tu', 'ud', 'nosotros', 'uds']
 ENGLISH_PRONOUNS = ["I", "you", "he", "it", "we", "they", "you guys"]
 SPANISH_MAP = [0, 1, 2, 2, 3, 4, 4]  # it=he, you guys=they
 
-# LA 5-person grid for IOP drills (indices match SPANISH_PERSON_KEYS).
-IOP_ENGLISH_SUBJECTS = ("I", "you", "he", "we", "they")
-IOP_ENGLISH_OBJECTS = ("me", "you", "him", "us", "them")
-IOP_SPANISH_CLITICS = ("me", "te", "le", "nos", "les")
-# Preterite English verb between subject and IO object (e.g. decir -> "told").
-IOP_VERB_ENGLISH_PRETERITE = {
-    "decir": "told",
-}
-
 
 def _verb_json_filename(verb: str) -> str:
     """Resolve verb to JSON filename (handles ñ→n for filesystem compatibility)."""
@@ -272,7 +263,7 @@ def generate_verbs_flashcards(csv_path: str, output_path: str, verbs_dir: str = 
     Read verbs.csv (verb, optional WH-choice, optional es_present_style / overrides)
     and generate present+preterite (+ optional llevar) flashcards. Writes to output_path.
 
-    For the full pipeline (config flags, preterite yo/él, questions, IOP), use
+    For the full pipeline (config flags, preterite yo/él, questions), use
     generate_preterite_13_flashcards with verbs_config.txt + verbs.csv.
     """
     if not os.path.exists(csv_path):
@@ -334,7 +325,6 @@ VALID_FLAGS = frozenset({"preterite-yo", "preterite-el", "llevar", "questions"})
 def parse_verbs_config(config_path: str) -> dict:
     """
     Read verbs_config.txt: lines of key: value. Boolean flags use 0/1.
-    Also supports iop: 0 | iop: decir,dar
     Empty lines and # comments skipped.
     """
     flags: dict = {}
@@ -351,12 +341,6 @@ def parse_verbs_config(config_path: str) -> dict:
             key, val = stripped.split(":", 1)
             key = key.strip()
             val = val.strip()
-            if key == "iop":
-                if val.lower() in ("0", ""):
-                    flags["iop"] = []
-                else:
-                    flags["iop"] = [v.strip() for v in val.split(",") if v.strip()]
-                continue
             if key in VALID_FLAGS and val in ("0", "1"):
                 flags[key] = int(val)
     return flags
@@ -506,9 +490,6 @@ def _parse_verbs_file_with_flags(verbs_path: str) -> Tuple[dict, List[str]]:
     Parse verbs.txt: read optional flags at top (key: 0|1), then verb list.
     Returns (flags_dict, verb_list). Unknown flags ignored.
     Missing preterite-yo / preterite-el default to 1; missing llevar defaults to 0.
-
-    Special: iop: 0 disables. iop: decir or iop: decir,dar lists verbs for IOP
-    preterite drills (clitic + conjugated verb). Values are comma-separated.
     """
     flags: dict = {}
     verbs: List[str] = []
@@ -527,12 +508,6 @@ def _parse_verbs_file_with_flags(verbs_path: str) -> Tuple[dict, List[str]]:
                 parts = stripped.split(':', 1)
                 key = parts[0].strip()
                 val = parts[1].strip()
-                if key == "iop":
-                    if val.lower() in ("0", ""):
-                        flags["iop"] = []
-                    else:
-                        flags["iop"] = [v.strip() for v in val.split(",") if v.strip()]
-                    continue
                 if key in VALID_FLAGS and val in ('0', '1'):
                     flags[key] = int(val)
                 continue
@@ -543,37 +518,6 @@ def _parse_verbs_file_with_flags(verbs_path: str) -> Tuple[dict, List[str]]:
                 seen.add(stripped)
 
     return flags, verbs
-
-
-def generate_iop_preterite_flashcards(
-    verb_lemma: str,
-    json_data: dict,
-) -> List[Tuple[str, str]]:
-    """
-    English (subject + irregular/simple past + IO object) -> Spanish (IOP clitic + preterite).
-    One card per (subject, recipient) with distinct persons (same index excluded).
-    """
-    english_mid = IOP_VERB_ENGLISH_PRETERITE.get(verb_lemma)
-    if not english_mid:
-        return []
-
-    cards: List[Tuple[str, str]] = []
-    for s in range(len(SPANISH_PERSON_KEYS)):
-        for r in range(len(SPANISH_PERSON_KEYS)):
-            if s == r:
-                continue
-            conj = _get_spanish_conjugation(
-                json_data, "preterito", SPANISH_PERSON_KEYS[s]
-            )
-            if not conj:
-                continue
-            clitic = IOP_SPANISH_CLITICS[r]
-            spanish = f"{clitic} {conj}"
-            english = (
-                f"{IOP_ENGLISH_SUBJECTS[s]} {english_mid} {IOP_ENGLISH_OBJECTS[r]}"
-            )
-            cards.append((english, spanish))
-    return cards
 
 
 def _get_english_preterite_1st(json_data: dict) -> str:
@@ -610,13 +554,13 @@ def generate_preterite_13_flashcards(
     Build the verbs deck text file.
 
     Preferred layout:
-      - verbs_config.txt — preterite-yo/el, llevar, questions, iop, etc.
+      - verbs_config.txt — preterite-yo/el, llevar, questions, etc.
       - verbs.csv — verb roster and optional WH-choice for question drills.
 
     Legacy layout (if config or csv is missing):
       - verbs.txt — same flags at top, then one verb lemma per line.
 
-    Preterite yo/él, llevar + gerund, questions (preterite), and IOP lists follow flags.
+    Preterite yo/él, llevar + gerund, and questions (preterite) follow flags.
     """
     output_dir = os.path.dirname(output_path)
     if output_dir and not os.path.exists(output_dir):
@@ -702,23 +646,6 @@ def generate_preterite_13_flashcards(
     if skipped_preterite and (gen_yo or gen_el):
         print(
             f"Warning: Missing preterite data for verb(s): {', '.join(skipped_preterite)}"
-        )
-
-    iop_verbs = flags.get("iop", [])
-    unsupported_iop = []
-    for iop_verb in iop_verbs:
-        if iop_verb not in IOP_VERB_ENGLISH_PRETERITE:
-            unsupported_iop.append(iop_verb)
-            continue
-        iop_json = load_verb_json(iop_verb, verbs_dir)
-        if iop_json is None:
-            print(f"Warning: iop list mentions '{iop_verb}' but no JSON found; skipping.")
-            continue
-        flashcards.extend(generate_iop_preterite_flashcards(iop_verb, iop_json))
-    if unsupported_iop:
-        print(
-            "Warning: IOP preterite not implemented for: "
-            f"{', '.join(unsupported_iop)} (add to IOP_VERB_ENGLISH_PRETERITE)"
         )
 
     with open(output_path, 'w', encoding='utf-8') as f:
