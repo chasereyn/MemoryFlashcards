@@ -1,35 +1,11 @@
 period
 el punto
 
-help
-la ayuda
-
-to suffer
-sufrir
-
-to feel like doing something
-tener ganas de
-
-direction
-la dirección
-
 that
 aquella
 
-challenge
-el desafío
-
-chain
-la cadena
-
-road
-la pista
-
 own
 propio
-
-strength
-la fuerza
 
 to toast
 brindar
@@ -46,29 +22,11 @@ el estudio
 to heat
 calentar
 
-to save
-salvar
-
 depressed
 deprimido
 
-camping
-el camping
-
 challenge
 el reto
-
-to promise
-prometer
-
-mine
-mío
-
-loose
-flojo
-
-ice
-el hielo
 
 classroom
 el aula
@@ -93,9 +51,6 @@ la sonrisa
 
 to stand
 soportar
-
-risk
-el riesgo
 
 annoyed
 enfadado
@@ -130,15 +85,6 @@ adivinar
 to influence
 influir
 
-bathtub
-la bañera
-
-tornado
-el tornado
-
-godmother
-la madrina
-
 jealousy
 los celos
 
@@ -163,14 +109,8 @@ pelar
 to convince
 convencer
 
-homework
-los deberes
-
 learning
 el aprendizaje
-
-growth
-el crecimiento
 
 impressive
 impresionante
@@ -190,14 +130,8 @@ reírse
 feature (characteristic)
 el rasgo
 
-to go for a walk
-dar un paseo
-
 worker
 el obrero
-
-robot
-el robot
 
 mature
 maduro
@@ -229,9 +163,6 @@ la búsqueda
 to exist
 existir
 
-debt
-la deuda
-
 peach
 el durazno
 
@@ -246,9 +177,6 @@ la enseñanza
 
 surface
 la superficie
-
-complaint
-la queja
 
 to found
 fundar
@@ -289,36 +217,6 @@ convivir
 to kidnap
 secuestrar
 
-merchant
-el/la comerciante
-
-myth
-el mito
-
-to cure
-curar
-
-to collect
-coleccionar
-
-blackboard
-el pizarrón
-
-outskirts
-las afueras
-
-necessary
-necesario
-
-athletic
-atlético
-
-anxiety
-la ansiedad
-
-stationery store
-la papelería
-
 friendly
 acogedor
 
@@ -334,14 +232,8 @@ pararse
 cohabitation
 la convivencia
 
-cake
-la tarta
-
 fantastic
 fenomenal
-
-drum
-el tambor
 
 surprising
 sorprendente
@@ -364,9 +256,6 @@ expresar
 to get dirty
 ensuciar
 
-congratulations
-enhorabuena
-
 to criticize
 criticar
 
@@ -378,9 +267,6 @@ la mostaza
 
 to affect
 afectar
-
-gastronomy
-la gastronomía
 
 to remove
 eliminar
@@ -394,32 +280,11 @@ colaborar
 to emit
 emitir
 
-great-grandmother
-la bisabuela
-
-X-ray
-la radiografía
-
 to donate
 donar
 
-commercial
-el comercial
-
-hobby
-la afición
-
-to take a walk
-dar una caminata
-
-colony
-la colonia
-
 to examine
 examinar
-
-possible
-posible
 
 toast
 el brindis
@@ -433,17 +298,8 @@ honrado
 to fabricate
 fabricar
 
-tourism
-el turismo
-
 probable
 probable
-
-to skateboard
-andar en patineta
-
-pajamas
-el/la pijama
 
 pedestrian
 el peatón
@@ -456,9 +312,6 @@ laboral
 
 to invent
 inventar
-
-warranty
-la garantía
 
 studies
 los estudios
@@ -478,9 +331,6 @@ honesto
 to install
 instalar
 
-self-portrait
-el autorretrato
-
 optimistic
 optimista
 
@@ -493,44 +343,20 @@ el acceso
 variety
 la variedad
 
-to be in fashion
-estar de moda
-
-flute
-la flauta
-
-massage
-el masaje
-
 semester
 el semestre
 
 environmental
 ambiental
 
-in front of
-frente a
-
 supportive
 solidario
-
-fundamental
-fundamental
-
-gymnastics
-la gimnasia
 
 emotion
 la emoción
 
 enthusiasm
 el entusiasmo
-
-to pack
-hacer las maletas
-
-postcard
-la tarjeta postal
 
 Cuban
 el cubano
@@ -553,17 +379,11 @@ químico
 boarding pass
 la tarjeta de embarque
 
-dictatorship
-la dictadura
-
 research
 la investigación
 
 ruins
 las ruinas
-
-gel
-el gel
 
 uniform
 el uniforme
@@ -2176,12 +1996,6 @@ portarse mal
 to give an injection
 poner una inyección
 
-microwave
-el horno de microondas
-
-surfboard
-la tabla de surf
-
 category
 la categoría
 
@@ -2205,9 +2019,6 @@ cumplir años
 
 sardine
 la sardina
-
-main character
-el personaje principal
 
 infection
 la infección
@@ -2953,9 +2764,6 @@ la comunicación
 community
 la comunidad
 
-hunger
-el hambre
-
 ecology
 la ecología
 
@@ -2964,9 +2772,6 @@ curioso
 
 potato
 la papa
-
-to be cold
-tener frío
 
 precious
 precioso
@@ -2989,17 +2794,11 @@ fresco
 girl
 la niña
 
-tooth
-el diente
-
 fantastic
 fantástico
 
 message
 el mensaje
-
-cold
-frío
 
 modest
 modesto
@@ -3018,9 +2817,6 @@ la memoria
 
 conservation
 la conservación
-
-wine
-el vino
 
 graduation
 la graduación
@@ -3049,24 +2845,6 @@ la acción
 shower
 la ducha
 
-golf
-el golf
-
-insecurity
-la inseguridad
-
-clear
-claro
-
-professional
-profesional
-
-good afternoon
-buenas tardes
-
-traditional
-tradicional
-
 gram
 el gramo
 
@@ -3076,9 +2854,6 @@ el servicio
 region
 la región
 
-to be hungry
-tener hambre
-
 to decide
 decidir
 
@@ -3087,12 +2862,6 @@ la razón
 
 biography
 la biografía
-
-Argentina
-Argentina
-
-accident
-el accidente
 
 to decorate
 decorar
@@ -3115,12 +2884,6 @@ la salsa
 to manipulate
 manipular
 
-temperature
-la temperatura
-
-bicycle
-la bicicleta
-
 car
 el carro
 
@@ -3139,12 +2902,6 @@ la industria
 to vote
 votar
 
-beer
-la cerveza
-
-motorcycle
-la moto
-
 terrible
 terrible
 
@@ -3156,30 +2913,6 @@ el curso
 
 coast
 la costa
-
-electricity
-la electricidad
-
-model
-el/la modelo
-
-operation
-la operación
-
-racism
-el racismo
-
-air
-el aire
-
-past
-el pasado
-
-fire
-el fuego
-
-creative
-creativo
 
 to transmit
 transmitir
@@ -5182,9 +4915,6 @@ el sello
 track and field
 el atletismo
 
-wide
-ancho
-
 to threaten
 amenazar
 
@@ -5196,9 +4926,6 @@ la entrega
 
 essay
 el ensayo
-
-parking lot
-el aparcamiento
 
 science fiction
 la ciencia ficción
@@ -5260,20 +4987,11 @@ la contabilidad
 to turn into
 convertirse en
 
-lobster
-la langosta
-
 exhibition
 la exposición
 
-van
-la camioneta
-
 computing
 la informática
-
-butcher shop
-la carnicería
 
 script (play)
 el guion
@@ -5287,9 +5005,6 @@ el estante
 barely
 apenas
 
-to print
-imprimir
-
 nickname
 el apodo
 
@@ -5302,32 +5017,14 @@ arrancar
 exciting
 emocionante
 
-cotton
-el algodón
-
-deodorant
-desodorante
-
-checking account
-la cuenta corriente
-
 food
 la alimentación
-
-napkin
-la servilleta
 
 American
 estadounidense
 
-old age
-la vejez
-
 requirement
 el requisito
-
-earring
-el arete
 
 camp
 el campamento
@@ -5340,24 +5037,6 @@ el impermeable
 
 chest of drawers
 la cómoda
-
-fan
-el aficionado
-
-link
-el enlace
-
-brochure
-el folleto
-
-knowledge
-el conocimiento
-
-sour
-agrio
-
-sidewalk
-la acera
 
 consumer
 el consumidor
@@ -5385,9 +5064,6 @@ deletrear
 
 playwright
 el dramaturgo
-
-traffic light
-el semáforo
 
 applicant
 el/la aspirante

@@ -328,6 +328,9 @@ alguno
 pollution
 la contaminación
 
+container
+el contenedor
+
 to know someone
 conocer
 
@@ -454,6 +457,15 @@ la mano
 wardrobe
 el armario
 
+cabinet
+el armario
+
+glove box
+la guantera
+
+curio cabinet
+la vitrina
+
 T-shirt
 la playera
 
@@ -531,6 +543,9 @@ el niño
 
 brother
 el hermano
+
+broom
+la escoba
 
 lawyer
 el abogado
@@ -646,6 +661,9 @@ el calentamiento global
 people
 la gente
 
+lobster
+la langosta
+
 handsome
 guapo
 
@@ -679,6 +697,9 @@ la boca
 outside
 afuera
 
+the outskirts
+las afueras
+
 car
 el coche / el carro
 
@@ -693,6 +714,9 @@ ir de compras
 
 cake
 el pastel
+
+birthday cake
+el patel de cumpleaños
 
 comfortable
 cómodo
@@ -729,6 +753,9 @@ la escalera
 
 which
 cuál
+
+direction
+la dirección
 
 director
 el director
@@ -831,6 +858,9 @@ la iglesia
 
 to protect
 proteger
+
+Te lo prometo
+I promise
 
 manager
 el/la gerente
@@ -949,8 +979,17 @@ largo
 dessert
 el postre
 
+poster
+el póster
+
+electric guitar
+la guitarra eléctrica
+
 neighborhood
 el barrio
+
+to print
+imprimir
 
 to improve
 mejorar
@@ -1002,6 +1041,9 @@ el pez
 
 in front of
 delante de
+
+fundamental
+fundamental
 
 across from
 enfrente de
@@ -1080,6 +1122,9 @@ morir
 
 daughter
 la hija
+
+daughter-in-law
+la nuera
 
 nice
 amable
@@ -1213,6 +1258,12 @@ pasar la aspiradora
 under
 debajo de
 
+debt
+la deuda
+
+complaint
+la queja
+
 salad
 la ensalada
 
@@ -1232,7 +1283,7 @@ technology
 la tecnología
 
 cafeteria
-la cafetería
+el comedor
 
 to call
 marcar
@@ -1257,6 +1308,9 @@ romper
 
 to change
 cambiar
+
+challenge
+el desafío
 
 strong
 fuerte
@@ -1525,6 +1579,9 @@ la sala
 alone
 solo
 
+lonely
+solitario
+
 to drive
 manejar
 
@@ -1537,8 +1594,17 @@ el cuaderno
 cousin
 el primo
 
-to skate
-patinar
+self-portrait
+el autorretrato
+
+warranty
+la garantía
+
+to skateboard
+andar en patineta
+
+pajamas
+pijama
 
 test
 la prueba
@@ -1566,6 +1632,12 @@ la tierra
 
 cereal
 el cereal
+
+real
+real
+
+fake
+falso
 
 short (length)
 corto
@@ -1740,6 +1812,9 @@ el sombrero
 
 problem
 el problema
+
+robot
+el robot
 
 accountant
 el contador
@@ -1984,6 +2059,9 @@ perdón!
 road
 la carretera
 
+runway
+la pista
+
 to obtain
 obtener
 
@@ -2031,6 +2109,27 @@ competir
 
 athlete
 el/la deportista
+
+merchant
+el/la comerciante
+
+to cure
+curar
+
+to collect
+coleccionar
+
+necessary
+necesario
+
+athletic
+atlético
+
+anxiety
+la ansiedad
+
+stationery store
+la papelería
 
 blouse
 la blusa
@@ -2110,6 +2209,9 @@ el voluntario
 toothpaste
 la pasta de dientes
 
+tooth
+el diente
+
 product
 el producto
 
@@ -2161,8 +2263,14 @@ el pelo
 happy
 feliz
 
-to save
+to save (store)
 guardar
+
+to save (rescue)
+salvar
+
+camping
+el camping
 
 little
 poco
@@ -2260,6 +2368,9 @@ antes de
 turkey
 el pavo
 
+turkey (female)
+la pava
+
 heavy
 pesado
 
@@ -2349,6 +2460,18 @@ quejarse
 
 with you
 contigo
+
+tiger
+el tigre
+
+deer
+el sierbo
+
+doe
+la sierba
+
+tiger (female)
+la tigresa
 
 to sit
 sentarse
@@ -2449,8 +2572,14 @@ animar
 to be afraid
 tener miedo
 
+main character
+el personaje principal
+
 nap
 la siesta
+
+napkin
+la servilleta
 
 bland
 soso
@@ -2481,6 +2610,24 @@ el pedazo
 
 to push
 empujar
+
+push ups
+los flexiones
+
+squats
+las sentadillas
+
+pull ups
+las dominadas
+
+jumping jacks
+los jumping jacks
+
+surfboard
+la tabla de surf
+
+splits
+los splits
 
 treasure
 el tesoro
@@ -2839,6 +2986,9 @@ el inodoro
 engine
 el motor
 
+motorcycle
+la moto
+
 screwdriver
 el destornillador
 
@@ -2896,6 +3046,12 @@ reportajes
 reviews
 reseñas
 
+myth
+el mito
+
+blackboard
+el pizarrón
+
 Throughout our content...
 A través de nuestro contenido...
 
@@ -2907,6 +3063,30 @@ afectar
 
 to interact (people)
 convivir
+
+electricity
+la electricidad
+
+model
+el/la modelo
+
+operation
+la operación
+
+racism
+el racismo
+
+air
+el aire
+
+past
+el pasado
+
+fire
+el fuego
+
+creative
+creativo
 
 the future looks bright
 el futuro pinta brillante
@@ -2962,11 +3142,17 @@ compis de trabajo
 family friends
 familiares
 
+lightswitch
+el interruptor de luz
+
 I'd be delighted
 Me hará mucha ilusión
 
 to continue to grow
 seguir creciendo
+
+growth
+el crecimiento
 
 dumb / foolish
 Necio
@@ -3045,6 +3231,18 @@ el dongle
 
 investment portfolio
 la cartera de acciones
+
+accident
+el accidente
+
+Argentina
+Argentina
+
+temperature
+la temperatura
+
+bicycle
+la bicicleta
 
 idiom
 el modismo
@@ -3136,6 +3334,12 @@ congelado
 red wine
 el vino tinto
 
+golf
+el golf
+
+insecurity
+la inseguridad
+
 Asia
 Asia
 
@@ -3144,6 +3348,15 @@ direccionales
 
 chocolate chip cookie
 galleta con chispas de chocolate
+
+smart guy (sarcastic)
+chistoso
+
+funny guy (sarcastic)
+chistoso
+
+handmade
+hecho a mano
 
 thunder
 el trueno
@@ -3202,6 +3415,21 @@ saldrá bien
 Almighty God
 El todopoderoso
 
+mare
+la yegua
+
+godfather
+el padrino
+
+godmother
+la madrina
+
+stepfather
+el padrastro
+
+stepmother
+la padrasta
+
 I work full time as a ...
 trabajo a tiempo completo como...
 
@@ -3243,6 +3471,9 @@ intermetentes
 
 hips
 las caderas
+
+chain
+la cadena
 
 indoor plans
 planes a cubierto
@@ -3333,6 +3564,15 @@ buenos dias
 
 good afternoon
 buenas tardes
+
+clear
+claro
+
+professional
+profesional
+
+traditional
+tradicional
 
 good evening
 buenas noches
@@ -3435,6 +3675,9 @@ Salud!
 
 I don't like it
 No me gusta
+
+I didn't like it
+no me gustó
 
 How awful!
 Qué horror
@@ -3610,8 +3853,14 @@ los estantes
 to the rest of...
 del resto de...
 
+rest stop
+la área de descanso
+
 ...and it was inevitable
 ...y fue inevitable
+
+it was alright
+estuvo mas o menos
 
 unforgettable
 inolvidable
@@ -3638,7 +3887,7 @@ fugitive
 fugitivo
 
 in the short term...
-a corto plazo
+a corto plazo...
 
 to slip
 resbalarse
@@ -3649,6 +3898,9 @@ No vas a creerlo!
 Guess what!
 Adivida qué!
 
+guests
+los huespedes
+
 thoughtful
 atento
 
@@ -3657,6 +3909,21 @@ atento
 
 considerate
 considerado
+
+about 30 minutes away
+a unos 30 minutos
+
+lifted truck
+truck levantado
+
+these tortillas are fresh
+estas tortillas están frescas
+
+Oh shit!
+Ay mierda!
+
+sidewalk
+la banqueta
 
 deep in thought
 pensativo
@@ -3748,11 +4015,20 @@ Escríbelo!
 stars and stripes
 estrellas y barras
 
+strength
+la fuerza
+
 corkboard
 el tablón de corcho
 
 vanilla
 la vainilla
+
+van
+la camioneta
+
+butcher shop
+la carnicería
 
 cajun seasoning
 el sazón cajún
@@ -3774,6 +4050,9 @@ eso me hace feliz
 
 meal prep is done!
 ya terminé el meal prep
+
+accent mark
+el tilde
 
 sand castle
 el castillo de arena
@@ -3807,6 +4086,9 @@ el plomero
 
 sheep
 la oveja
+
+ram (male sheep)
+el ovejo
 
 I'm being made fun of!
 Me están tomando el pelo
@@ -3871,6 +4153,15 @@ borracho
 wax
 la cera
 
+gastronomy
+la gastronomía
+
+X-ray
+la radiografía
+
+drum
+el tambor
+
 jar
 el frasco
 
@@ -3924,6 +4215,9 @@ humilde
 
 to suffer from
 padecer
+
+to suffer
+sufrir
 
 danger
 el peligro
@@ -4057,6 +4351,9 @@ eso pasará
 certain areas
 ciertos temas
 
+area (zone)
+la área
+
 confident
 confiado
 
@@ -4077,6 +4374,9 @@ cerradura
 
 padlock
 candado
+
+candles
+las velas
 
 to lock the door
 echar llave la puerta
@@ -4110,6 +4410,15 @@ Echarse a dormir
 
 To fire someone (throw out of a job)
 Echar a alguien del trabajo
+
+to find work
+conseguir trabajo
+
+to get a job
+conseguir trabajo
+
+dish soap
+jabon de trastes
 
 ...I'm just sayin...
 ...yo digo...
@@ -4345,11 +4654,14 @@ pedidos
 contracts
 contratos
 
-billing account
-la cuenta de cobro
+tractor
+el tractor
 
 bank account
 la cuenta
+
+checking account
+la cuenta corriente
 
 expense analytics
 analítica de gastos
@@ -4429,8 +4741,14 @@ fui a manejar
 the boys
 mi banda
 
-risky business
-los negocios arriesgados
+risk
+el riesgo
+
+bathtub
+la bañera
+
+tornado
+el tornado
 
 I'll let you go!
 Te dejo libre!
@@ -4502,22 +4820,34 @@ around the house
 por la casa
 
 pentagon
-pentágono
+el pentágono
 
 edge
 el borde
 
 polygon
-polígono
+el polígono
 
 hexagon
-hexágono
+el hexágono
 
 triangle
-triángulo
+el triángulo
 
 right triangle
-triángulo rectángulo
+el triángulo rectángulo
+
+rectangle
+el rectángulo
+
+oval
+el óvalo
+
+circle
+el círculo
+
+rhombus
+el rombo
 
 nostril
 la fosa nasal
@@ -4621,6 +4951,27 @@ Qué corte es?
 rosebud
 el pimpollo
 
+roses
+las rosas
+
+lilacs
+las lilas
+
+tulips
+los tulipanes
+
+sunflowers
+los girasoles
+
+barley
+la cebada
+
+estate
+propiedad
+
+giraffe
+la jirafa
+
 he didn't even try
 ni siquiera no intentó
 
@@ -4645,7 +4996,7 @@ la herramienta
 To lock up
 Encerrar
 
-Sway
+sway
 el vaivén
 
 I wonder what will happen
@@ -4671,6 +5022,9 @@ el despertador
 
 Ireland has old castles
 Irlanda tiene castillos antiguos
+
+old age
+la vejez
 
 Don't waste that!
 No desperdicies eso!
@@ -4729,8 +5083,23 @@ Y por eso tenemos hormigas
 roof
 el techo
 
+earrings
+los aretes
+
 great-grandfather
 el bisabuelo
+
+commercial
+el comercial
+
+colony
+la colonia
+
+great-grandmother
+la bisabuela
+
+gymnastics
+la gimnasia
 
 This is what happens when you don't go to the gym
 Esto es lo que pasa cuando no vas al gym
@@ -4762,8 +5131,32 @@ la riqueza
 Kid (little goat)
 La chiva
 
+litter
+los desperdicios
+
+arrow
+la flecha
+
+pixels
+los píxeles
+
+speed bump
+el tope
+
 Don't spill the water
 No derrames el agua
+
+link
+el enlace
+
+brochure
+el folleto
+
+knowledge
+el conocimiento
+
+sour
+agrio
 
 Jellyfish
 La medusa
@@ -4816,6 +5209,9 @@ Hay un error
 That outfit is in style
 Ese outfit está de moda
 
+to be in fashion
+estar de moda
+
 No excuses!
 Sin excusas!
 
@@ -4834,8 +5230,8 @@ Lo despidieron del trabajo
 Rabbits are associated with the moon
 Los conejos están asociados con la luna
 
-Don't leave without an unbrella or you're going to end up soaking wet
-No salgas sin paraguas o vas a terminar echando sopa
+soaking wet
+hecho sopa
 
 Respect your elders
 Respeta a tus mayores
@@ -4849,8 +5245,32 @@ Le contestó mal a la maestra
 frog
 la rana
 
+massage
+el masaje
+
+dictatorship
+la dictadura
+
+gel
+el gel
+
+flute
+la flauta
+
+to pack suitcases
+hacer las maletas
+
+postcard
+la tarjeta postal
+
 pet
 la mascota
+
+cotton
+el algodón
+
+deodorant
+desodorante
 
 I'll remember that!
 Lo recordaré
@@ -4863,6 +5283,12 @@ el pañal
 
 disposable
 descartable
+
+tourism
+el turismo
+
+possible
+posible
 
 cloth (material)
 la tela
@@ -4928,7 +5354,7 @@ fragile
 frágil
 
 blueberries
-los arándanos azules
+las moras azules
 
 strawberries
 las fresas
@@ -4943,7 +5369,7 @@ cherries
 las cerezas
 
 cranberries
-los arándanos rojos
+los arándanos
 
 Alaska is a very isolated state
 Alaska es un estado muy aislado
@@ -5004,3 +5430,207 @@ el ingrediente
 
 generation
 la generación
+
+You heard me!
+Me oíste!
+
+Get used to it!
+Acostúmbrate!
+
+vampire
+el vampiro
+
+zombie
+el zombi
+
+grave
+la tumba
+
+graveyard
+el cementerio
+
+cemetary
+cementerio
+
+The cow is sitll mooing
+La vaca todavía está mugiendo
+
+blue (meat)
+azul
+
+rare (meat)
+muy poco hecho
+
+medium rare (meat)
+poco hecho
+
+medium (meat)
+al medio / al punto
+
+medium well (meat)
+tres cuartos
+
+well done (meat)
+bien hecho
+
+overcooked (meat)
+muy bien hecho
+
+Remember to bring your keys!
+¡Recuerda traer tus llaves!
+
+The last thing I want is for...
+Lo último que quiero es que...
+
+Bullseye!
+En el blanco!
+
+What's your blood type?
+¿Cuál es tu tipo de sangre?
+
+promotion
+el ascenso
+
+sponsorship
+sponsorship
+
+alligators
+aligators (de hocico ancho)
+
+crocodiles
+cocodrilos
+
+wide
+ancho
+
+narrow
+estrecho
+
+eyelids
+los párpados
+
+glutes
+glúteos
+
+to return (somewhere)
+regresar
+
+No regrets!
+¡Sin arrepentimientos!
+
+jaw
+la mandíbula
+
+jawline
+la línea de la mandíbula
+
+guilty pleasure
+el gusto culposo
+
+dimples
+los hoyuelos
+
+tablespoon
+la cucharada
+
+teaspoon
+la cucharadita
+
+little spoon
+cucharita
+
+big spoon
+cucharota
+
+bear hug
+abrazote de oso
+
+wild boar
+el jabalí
+
+wild boar (female)
+la jabalina
+
+I'll take it but it offends me
+Lo tomaré pero me ofende
+
+scissors
+las tijeras
+
+at least we've got out health
+al menos tenemos salud
+
+elephant
+elefante
+
+I passed my driving test
+Aprobé el examen de conducir
+
+That movie doesn't deserve its recognition
+Esa película no merece tanto éxito
+
+His team deserves to win the match
+Su equipo mereció ganar el partido
+
+The states in the north of mexico are quite big
+Los estados del norte de México son muy grandes
+
+traffic light
+el semáforo
+
+sawgrass
+hierba sierra
+
+yoga mat
+el tapete
+
+bottle opener
+el abrebotellas
+
+dashcam
+el dashcam
+
+to reload
+recargar
+
+You tempt me!
+Me tientas!
+
+It's your fault!
+Es tu culpa!
+
+Stop distracting me!
+¡Deja de distraerme!
+
+streetlights
+luces de la calle
+
+rear view mirrors
+los retrovisores
+
+to accelerate
+acelerar
+
+to brake
+frenar
+
+brake
+el freno
+
+storage
+el almacenamiento
+
+sports car
+el auto deportivo
+
+Let em do that they want
+Déjalos hacer lo que quieran
+
+sunvisor
+el parasol
+
+People never change
+La gente nunca cambia
+
+spray bottle
+botella con atomizador
