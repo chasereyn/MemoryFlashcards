@@ -53,7 +53,10 @@ to follow
 seguir
 
 I'm focused
-Estoy concentrado
+Ando enfocado
+
+elm trees
+los olmos
 
 sure
 seguro
@@ -598,9 +601,6 @@ la lámpara
 river
 el río
 
-to get
-conseguir
-
 to buy
 comprar
 
@@ -859,8 +859,17 @@ la iglesia
 to protect
 proteger
 
-Te lo prometo
+incidents
+los incidentes
+
+night life
+la vida nocturna
+
+protestas
+las protestas
+
 I promise
+Te lo prometo
 
 manager
 el/la gerente
@@ -915,6 +924,9 @@ el pintor
 
 supermarket
 el supermercado
+
+supply chain
+cadena de suministro
 
 politics
 la política
@@ -1128,9 +1140,6 @@ la nuera
 
 nice
 amable
-
-to emphasize
-destacar
 
 nor
 ni
@@ -1588,6 +1597,18 @@ manejar
 to repeat
 repetir
 
+etiquette
+la etiqueta
+
+Wavy named the cat Lucky
+Wavy le llamó Lucky al gato
+
+lucky
+afortunado
+
+unlucky
+desafortuando
+
 notebook
 el cuaderno
 
@@ -1777,6 +1798,12 @@ antier
 carrot
 la zanahoria
 
+horizon
+el horizonte
+
+Take your time no worries
+Tómate tu tiempo
+
 food (nourishment)
 el alimento
 
@@ -1830,6 +1857,9 @@ celular
 
 company
 la empresa
+
+prejudice
+el prejuicio
 
 map
 el mapa
@@ -2047,11 +2077,23 @@ décimo
 shame
 la vergüenza
 
-advice
-el consejo
-
 knife
 el cuchillo
+
+he is allergic to...
+el es alérgico a...
+
+Talking not allowed
+No se permite hablar
+
+I advise you to leave
+te aconsejo que te vayas
+
+he's afraid of the dark
+Le da miedo la oscuridad
+
+I can't afford it
+Es superior a mis recursos
 
 sorry my bad!
 perdón!
@@ -2156,6 +2198,9 @@ elegant
 elegante
 
 for example
+por ejemplo
+
+for instance
 por ejemplo
 
 medicine
@@ -2395,6 +2440,15 @@ mucho gusto
 happy birthday
 feliz cumpleaños
 
+I would like coffee with milk
+quisiera un café con leche
+
+We'd like to go to...
+Nos gustaría ir a...
+
+Happy new year!
+¡feliz año nuevo!
+
 even though
 aunque
 
@@ -2512,6 +2566,9 @@ echar
 to take away
 quitar
 
+to remove
+quitar
+
 to turn in
 entregar
 
@@ -2574,6 +2631,9 @@ tener miedo
 
 main character
 el personaje principal
+
+character
+el carácter
 
 nap
 la siesta
@@ -2767,6 +2827,9 @@ el programa
 plant
 la planta
 
+to plant
+plantar
+
 vendor
 el vendedor
 
@@ -2874,6 +2937,9 @@ cómo
 
 to show
 mostrar
+
+shovel
+la pala
 
 here
 aquí
@@ -3052,6 +3118,27 @@ el mito
 blackboard
 el pizarrón
 
+whiteboard
+el pizarrón blanco
+
+headstone
+la lápida
+
+an unnamed crater
+un cráter sin nombre
+
+It's an acquired taste
+Es un gusto adquirido
+
+standard
+estándar
+
+You're tough, you'll be fine
+Eres fuerte, estarás bien
+
+All that glitters is not gold
+No es oro todo lo que reluce
+
 Throughout our content...
 A través de nuestro contenido...
 
@@ -3133,8 +3220,11 @@ Me quedo con ganas de más
 archive
 el archivo
 
-to take a look
-echar un vistazo
+Take a look!
+Échale un vistazo
+
+Check it out!
+Échale un vistazo
 
 coworkers
 compis de trabajo
@@ -3217,6 +3307,9 @@ flojera
 branches
 las ramas
 
+brands
+las brands
+
 droplet
 la gota de agua
 
@@ -3256,6 +3349,18 @@ mechero bunsen
 headboard
 cabecera
 
+pig
+el cerdo
+
+sow (female pig)
+la cerda
+
+pork
+el cerdo
+
+Grow up!
+¡Madúrate!
+
 printer
 impresora
 
@@ -3273,6 +3378,9 @@ la almendra
 
 stay hydrated!
 mantente hidratado
+
+dehydrated
+deshidratado
 
 wood
 la madera
@@ -3349,11 +3457,8 @@ direccionales
 chocolate chip cookie
 galleta con chispas de chocolate
 
-smart guy (sarcastic)
-chistoso
-
-funny guy (sarcastic)
-chistoso
+You think you're so funny huh?
+Chistoso eh?
 
 handmade
 hecho a mano
@@ -3387,6 +3492,12 @@ Tiene mucho talento
 
 A piece of advice...
 Un buen consejo...
+
+Where were you born?
+¿Dónde naciste?
+
+I'm just browsing
+Sólo estoy mirando
 
 It's none of your busines
 No es cosa tuya
@@ -3428,7 +3539,7 @@ stepfather
 el padrastro
 
 stepmother
-la padrasta
+la madrasta
 
 I work full time as a ...
 trabajo a tiempo completo como...
@@ -3481,8 +3592,23 @@ planes a cubierto
 bald
 calvo
 
+To stay late
+Quedarse hasta tarde
+
+Cover your ass
+Cubrirte las espaldas
+
+How could I forget that?
+¿Cómo pude olvidar eso?
+
 That's how it's done!
 Asi se hace!
+
+That's the idea
+Esa es la idea
+
+And over time...
+Y con tiempo...
 
 How about at 9?
 Como a las 9?
@@ -3541,8 +3667,8 @@ aguantar
 smell
 el olor
 
-to joke
-bromear
+I'm joking!
+estoy bromeando
 
 simple
 sencillo
@@ -3609,6 +3735,12 @@ Mas despacio por favor
 
 Where is the station?
 Dónde está la estación?
+
+Do you speak a foreign language?
+¿hablas alguna lengua extranjera?
+
+I was speechless
+Me quedé sin habla
 
 Straight ahead
 Todo derecho
@@ -3733,8 +3865,14 @@ Cuánto cuesta el boleto
 Help!
 Ayuda!
 
+When are you coming back?
+¿cuándo volverás?
+
 Call the police
 Llame a la policía
+
+All the best!
+¡Que te vaya bien!
 
 I need a doctor
 Necesito un médico
@@ -3751,8 +3889,20 @@ Chao!
 Goodbye!
 Adiós
 
+when I was little
+cuando era pequeño
+
+when I was a child
+cuando era niño
+
+call me whenever you want
+llámame cuando quieras
+
 Have a good trip!
-Buen viaje!
+¡Buen viaje!
+
+You can keep it
+Te lo puedes quedar
 
 Have a good day
 Que tenga un buen día
@@ -3943,6 +4093,9 @@ pavo real
 unpleasant
 deagradable
 
+agreeable
+agradable
+
 aesthetic
 la estética
 
@@ -4006,8 +4159,20 @@ el moretón
 a cut
 un corte
 
+it's snowing
+está nevando
+
+What sort of car?
+¿qué clase de coche?
+
 How do you spell it?
-Cómo se escribe eso?
+Cómo se escribe?
+
+it smells bad
+¡huele mal!
+
+my head is spinning
+me da vueltas la cabeza
 
 Spell it!
 Escríbelo!
@@ -4327,6 +4492,9 @@ el altavoz
 archived
 archivo
 
+arch
+el arco
+
 an exploit
 la hazaña
 
@@ -4341,6 +4509,9 @@ expulsar
 
 blood
 la sangre
+
+I grew up in a world where...
+Crecí en un mundo donde...
 
 sunblock
 el bloqueador
@@ -4504,6 +4675,9 @@ el secador de cabello
 to blowdry
 secarse el cabello
 
+sector
+el sector
+
 asset
 el activo
 
@@ -4611,6 +4785,9 @@ en eso estamos!
 
 I'm working on it!
 en eso estoy!
+
+I'm with...
+Ando con...
 
 to add spice
 agregar más salsa
@@ -4738,8 +4915,20 @@ la pandilla
 I went driving
 fui a manejar
 
-the boys
-mi banda
+it's still...
+sigue...
+
+we're still...
+seguimos...
+
+I want you to meet the boys
+Quiero que conozcas a los chicos
+
+It sounds like what caramel tastes like
+Suena a lo que sabe el caramelo
+
+Before buying a car, take a look at the engine
+Antes de comprar el carro, échale un vistazo al motor
 
 risk
 el riesgo
@@ -4754,7 +4943,7 @@ I'll let you go!
 Te dejo libre!
 
 infinite vibes
-vibes infinitos
+vibras infinitas
 
 trash bag
 bolsa de basura
@@ -4770,6 +4959,12 @@ Te aviso
 
 I'm hungry
 Tengo hambre
+
+I'm staying at a hotel
+me quedo en el hotel
+
+get well soon!
+¡que te mejores pronto!
 
 I'm starving!
 Me muero de hambre!
@@ -4840,11 +5035,32 @@ el triángulo rectángulo
 rectangle
 el rectángulo
 
+values
+los valores
+
+To move mountains
+Mover montañas
+
+Hearts are aligned
+Los corazones están alineados
+
+fue
+el pelaje
+
+Shared vision
+Visión compartida
+
+logistics
+la logística
+
 oval
 el óvalo
 
 circle
 el círculo
+
+circular
+circular
 
 rhombus
 el rombo
@@ -4873,6 +5089,12 @@ Comida para perros
 It's all about pattern recognition
 Todo se trata de reconocimiento de patrones
 
+What is it about?
+¿De qué se trata?
+
+I'll do whatever you want
+haré lo que quieras
+
 I like a dark beer
 Me gusta la cerveza oscura
 
@@ -4885,8 +5107,8 @@ Dispensador para la cerveza
 He has Irish heritage
 Tiene herencia Irlandesa
 
-Me myself and I
-Yo mismo
+with me myself and I
+contigo mismo
 
 We still need to watch Up together
 Aún nos falta ver Up juntos
@@ -4939,6 +5161,9 @@ Aprendes mejor cuando te obligan a aprender
 He came out of nowhere
 Salió de la nada
 
+pearl
+la perla
+
 He appeared suddenly
 Apareció de repente
 
@@ -4950,6 +5175,9 @@ Qué corte es?
 
 rosebud
 el pimpollo
+
+rose bush
+el rosal
 
 roses
 las rosas
@@ -4977,6 +5205,30 @@ ni siquiera no intentó
 
 I feel like eating tacos
 tengo ganas de comer los tacos
+
+I don't feel like it
+No me da la gana
+
+it fits you perfectly
+te queda perfectamente
+
+It's foggy
+hay niebla
+
+follow me
+sígueme
+
+follow this road
+siga esta carretera
+
+I bought it for $25
+lo compré por 25 dólares
+
+How much did you sell it for?
+¿por cuanto lo vendiste?
+
+I forgot his name
+se me olvidó su nombre
 
 squirrel
 la ardilla
@@ -5061,6 +5313,12 @@ Ya ni modo
 
 It is what it is
 Es lo que hay
+
+What is it?
+¿qué es?
+
+What's the capital of..?
+¿Cual es la capital de...?
 
 I killed it
 Lo maté
@@ -5170,6 +5428,27 @@ Cómo lo digo?
 I don't know if I'm explaining myself well
 No sé si me explico
 
+I don't know
+No lo sé
+
+When does it leave?
+¿a qué hora sale?
+
+Where does it leave from?
+¿de dónde sale?
+
+less than 200$
+menos de 200 dólares
+
+That's life!
+¡así es la vida!
+
+5 days in a row
+5 días seguidos
+
+Time's up!
+se ha acabado el tiempo
+
 soon
 pronto
 
@@ -5214,6 +5493,9 @@ estar de moda
 
 No excuses!
 Sin excusas!
+
+to be in shape
+estar en forma
 
 sacred
 sagrado
@@ -5332,8 +5614,8 @@ estupido
 In a world of timely things, seek something timeless
 En un mundo de cosas temporales, busca algo eterno
 
-Elige un día que te convenga para venir aquí
 Choose a day that suits you to come here
+Elige un día que te convenga para venir aquí
 
 That's convenient!
 Qué conveniente!
@@ -5368,6 +5650,9 @@ las moras
 cherries
 las cerezas
 
+Picture frame
+Marco de foto
+
 cranberries
 los arándanos
 
@@ -5377,17 +5662,41 @@ Alaska es un estado muy aislado
 Don't talk back to me!
 ¡No me contestes mal!
 
-evening
-la nochecita
+in the evening
+por la tardecita
+
+I have fallen
+Me he caído
+
+Is it far?
+¿está lejos?
 
 aircraft carrier
 el portaviones
+
+fast food restaurant
+restaurante de comidas rápidas
 
 the best option
 la mejor opción
 
 in summary...
 en resumen...
+
+So what?
+¿y qué?
+
+Sit down!
+¡siéntate!
+
+in short...
+en resumen...
+
+I'm on your side
+Estoy de parte tuya
+
+What should I do?
+¿qué debería hacer?
 
 What do you do?
 A qué te dedicas?
@@ -5420,13 +5729,13 @@ goal
 la meta
 
 above all...
-sobre todo
+sobre todo...
 
 astronaut
 el/la astronauta
 
-ingredient
-el ingrediente
+ingredients
+los ingredientes
 
 generation
 la generación
@@ -5453,7 +5762,10 @@ cemetary
 cementerio
 
 The cow is sitll mooing
-La vaca todavía está mugiendo
+La vaca sigue mugiendo
+
+to moo
+mugir
 
 blue (meat)
 azul
@@ -5494,6 +5806,9 @@ el ascenso
 sponsorship
 sponsorship
 
+spnsors
+los sponsors
+
 alligators
 aligators (de hocico ancho)
 
@@ -5522,7 +5837,7 @@ jaw
 la mandíbula
 
 jawline
-la línea de la mandíbula
+la línea de mandíbula
 
 guilty pleasure
 el gusto culposo
@@ -5569,7 +5884,7 @@ Aprobé el examen de conducir
 That movie doesn't deserve its recognition
 Esa película no merece tanto éxito
 
-His team deserves to win the match
+His team deserved to win the match
 Su equipo mereció ganar el partido
 
 The states in the north of mexico are quite big
@@ -5579,7 +5894,7 @@ traffic light
 el semáforo
 
 sawgrass
-hierba sierra
+la hierba sierra
 
 yoga mat
 el tapete
@@ -5597,7 +5912,16 @@ You tempt me!
 Me tientas!
 
 It's your fault!
-Es tu culpa!
+Es culpa tuya!
+
+Do me a favor please
+haga me un favor porfa
+
+I don't feel well
+no me siento bien
+
+donations
+los donaciones
 
 Stop distracting me!
 ¡Deja de distraerme!
@@ -5634,3 +5958,16 @@ La gente nunca cambia
 
 spray bottle
 botella con atomizador
+
+Do my eyes deceive me?
+¿Me engañan los ojos?
+
+hopscotch
+el avioncito
+
+Unfortunately the word 'mother-in-law' has a bad connotation in English
+Desafortunadamente, la palabra 'suegra' tiene una mala connotación en Inglés
+
+You get what you pay for
+La calidad se paga
+

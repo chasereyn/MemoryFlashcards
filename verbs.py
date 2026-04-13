@@ -11,6 +11,38 @@ SPANISH_PERSON_KEYS = ['yo', 'tu', 'ud', 'nosotros', 'uds']
 ENGLISH_PRONOUNS = ["I", "you", "he", "it", "we", "they", "you guys"]
 SPANISH_MAP = [0, 1, 2, 2, 3, 4, 4]  # it=he, you guys=they
 
+# Clitic before auxiliary in "nos andamos acostando" (Latin American persons only).
+_REFLEXIVE_CLITIC_BY_KEY = {
+    "yo": "me",
+    "tu": "te",
+    "ud": "se",
+    "nosotros": "nos",
+    "uds": "se",
+}
+
+
+def _is_reflexive_infinitivo(json_data: dict) -> bool:
+    inf = (json_data.get("infinitivo") or "").strip().lower()
+    return inf.endswith(("arse", "erse", "irse"))
+
+
+def _spanish_gerund_for_auxiliary_reflexive(gerund: str) -> str:
+    """
+    Jehle reflexive gerunds end in -se (e.g. acostándose). For
+    clitic + auxiliary + gerund, use the non-reflexive gerund (acostando).
+    """
+    g = gerund.strip()
+    lower = g.lower()
+    if lower.endswith("yéndose"):
+        return g[:-7] + "yendo"
+    if lower.endswith("iéndose"):
+        return g[:-7] + "iendo"
+    if lower.endswith("éndose"):
+        return g[:-6] + "iendo"
+    if lower.endswith("ándose"):
+        return g[:-6] + "ando"
+    return g
+
 
 def _verb_json_filename(verb: str) -> str:
     """Resolve verb to JSON filename (handles ñ→n for filesystem compatibility)."""
@@ -207,25 +239,79 @@ def format_english_llevar_gerund(person_index: int, json_data: dict, prefs: dict
     return f"they've been {gerund}" if person_index == 5 else f"you guys have been {gerund}"
 
 
-def generate_llevar_gerund_cards(
+def format_english_seguir_gerund(person_index: int, json_data: dict, prefs: dict) -> str:
+    """Present progressive + still (e.g. 'he's still eating')."""
+    gerund = _get_gerund(json_data)
+    if not gerund:
+        base = _get_english_base(json_data)
+        gerund = base + 'ing' if not base.endswith('e') else base[:-1] + 'ing'
+    if person_index == 0:
+        return f"I'm still {gerund}"
+    if person_index == 1:
+        return f"you're still {gerund}"
+    if person_index in (2, 3):
+        return f"he's still {gerund}" if person_index == 2 else f"it's still {gerund}"
+    if person_index == 4:
+        return f"we're still {gerund}"
+    if person_index == 5:
+        return f"they're still {gerund}"
+    return f"you guys are still {gerund}"
+
+
+def format_english_andar_gerund(
+    person_index: int, json_data: dict, prefs: dict, *, right_now_first: bool
+) -> str:
+    """Present progressive + 'right now' before or after (e.g. 'right now I'm walking')."""
+    core = format_english_present_progressive(person_index, json_data, prefs)
+    if right_now_first:
+        return f"right now {core}"
+    return f"{core} right now"
+
+
+def generate_auxiliary_gerund_cards(
     verb: str,
     json_data: dict,
     prefs: dict,
-    llevar_data: dict,
+    aux_data: dict,
+    *,
+    aux_lemma: str,
+    english_pattern: str,
 ) -> List[Tuple[str, str]]:
-    """Generate 2 llevar + gerund flashcards per verb (deterministic subject selection)."""
-    subjects = sample_person_indices(verb, "llevar", 2)
-    cards = []
+    """
+    Two flashcards per verb: present auxiliary + main gerund (Spanish), matching English pattern.
+    english_pattern: llevar | seguir | andar
+    """
+    subjects = sample_person_indices(verb, aux_lemma, 2)
+    cards: List[Tuple[str, str]] = []
     spanish_gerund = (json_data.get('gerundio', '') or '').strip()
     if not spanish_gerund:
         return cards
     for person_index in subjects:
         spanish_key = SPANISH_PERSON_KEYS[SPANISH_MAP[person_index]]
-        llevar_conj = _get_spanish_conjugation(llevar_data, 'presente', spanish_key)
-        if not llevar_conj:
+        aux_conj = _get_spanish_conjugation(aux_data, 'presente', spanish_key)
+        if not aux_conj:
             continue
-        spanish = f"{llevar_conj} {spanish_gerund}"
-        english = format_english_llevar_gerund(person_index, json_data, prefs)
+        if _is_reflexive_infinitivo(json_data):
+            clitic = _REFLEXIVE_CLITIC_BY_KEY.get(spanish_key, "")
+            g_span = _spanish_gerund_for_auxiliary_reflexive(spanish_gerund)
+            if clitic:
+                spanish = f"{clitic} {aux_conj} {g_span}"
+            else:
+                spanish = f"{aux_conj} {g_span}"
+        else:
+            spanish = f"{aux_conj} {spanish_gerund}"
+        if english_pattern == "llevar":
+            english = format_english_llevar_gerund(person_index, json_data, prefs)
+        elif english_pattern == "seguir":
+            english = format_english_seguir_gerund(person_index, json_data, prefs)
+        elif english_pattern == "andar":
+            rng = random.Random(f"andar-order\t{aux_lemma}\t{verb}\t{person_index}")
+            right_now_first = rng.choice((True, False))
+            english = format_english_andar_gerund(
+                person_index, json_data, prefs, right_now_first=right_now_first
+            )
+        else:
+            raise ValueError(f"unknown english_pattern: {english_pattern!r}")
         cards.append((english, spanish))
     return cards
 
@@ -258,12 +344,21 @@ def generate_flashcards_for_verb(json_data: dict, prefs: dict) -> List[Tuple[str
     return flashcards
 
 
-def generate_verbs_flashcards(csv_path: str, output_path: str, verbs_dir: str = "verbs") -> None:
+def generate_verbs_flashcards(
+    csv_path: str,
+    output_path: str,
+    verbs_dir: str = "verbs",
+    config_path: str = "verbs_config.txt",
+) -> None:
     """
     Read verbs.csv (verb, optional WH-choice, optional es_present_style / overrides)
-    and generate present+preterite (+ optional llevar) flashcards. Writes to output_path.
+    and generate present+preterite (+ optional llevar/seguir/andar gerund drills).
 
-    For the full pipeline (config flags, preterite yo/él, questions), use
+    Uses verbs_config.txt when present for llevar/seguir/andar flags. If the config
+    file is missing, llevar+gerund cards are still generated when llevar.json exists
+    (legacy behavior); seguir and andar stay off.
+
+    For the full pipeline (preterite yo/él, questions), use
     generate_preterite_13_flashcards with verbs_config.txt + verbs.csv.
     """
     if not os.path.exists(csv_path):
@@ -276,9 +371,26 @@ def generate_verbs_flashcards(csv_path: str, output_path: str, verbs_dir: str = 
     flashcards = []
     skipped = []
 
-    llevar_data = load_verb_json("llevar", verbs_dir)
-    if not llevar_data:
-        print("Warning: llevar.json not found; skipping llevar + gerund cards.")
+    config_exists = os.path.exists(config_path)
+    config_flags = parse_verbs_config(config_path) if config_exists else {}
+
+    def _auxiliary_enabled(aux: str) -> bool:
+        if config_exists:
+            return config_flags.get(aux, 0) == 1
+        return aux == "llevar" and load_verb_json("llevar", verbs_dir) is not None
+
+    auxiliary_data: Dict[str, dict] = {}
+    for aux in GERUND_AUXILIARIES:
+        if not _auxiliary_enabled(aux):
+            continue
+        data = load_verb_json(aux, verbs_dir)
+        if data:
+            auxiliary_data[aux] = data
+        elif config_exists and config_flags.get(aux, 0) == 1:
+            print(
+                f"Warning: {aux}:1 in {config_path} but {aux}.json not found; "
+                f"skipping {aux} cards."
+            )
 
     with open(csv_path, newline="", encoding="utf-8-sig") as f:
         reader = csv.DictReader(f)
@@ -305,11 +417,17 @@ def generate_verbs_flashcards(csv_path: str, output_path: str, verbs_dir: str = 
             verb_cards = generate_flashcards_for_verb(json_data, prefs)
             flashcards.extend(verb_cards)
 
-            if llevar_data:
-                llevar_cards = generate_llevar_gerund_cards(
-                    verb, json_data, prefs, llevar_data
+            for aux_lemma, aux_data in auxiliary_data.items():
+                flashcards.extend(
+                    generate_auxiliary_gerund_cards(
+                        verb,
+                        json_data,
+                        prefs,
+                        aux_data,
+                        aux_lemma=aux_lemma,
+                        english_pattern=aux_lemma,
+                    )
                 )
-                flashcards.extend(llevar_cards)
 
     if skipped:
         print(f"Warning: No JSON found for verb(s): {', '.join(skipped)}")
@@ -319,7 +437,11 @@ def generate_verbs_flashcards(csv_path: str, output_path: str, verbs_dir: str = 
             f.write(f"{english}\n{spanish}\n\n")
 
 
-VALID_FLAGS = frozenset({"preterite-yo", "preterite-el", "llevar", "questions"})
+VALID_FLAGS = frozenset(
+    {"preterite-yo", "preterite-el", "llevar", "seguir", "andar", "questions"}
+)
+
+GERUND_AUXILIARIES = ("llevar", "seguir", "andar")
 
 
 def parse_verbs_config(config_path: str) -> dict:
@@ -593,15 +715,19 @@ def generate_preterite_13_flashcards(
 
     gen_yo = flags.get("preterite-yo", 1)
     gen_el = flags.get("preterite-el", 1)
-    gen_llevar = flags.get("llevar", 0) == 1
     gen_questions = flags.get("questions", 0) == 1
 
-    llevar_data = None
-    if gen_llevar:
-        llevar_data = load_verb_json("llevar", verbs_dir)
-        if not llevar_data:
-            print("Warning: llevar:1 but llevar.json not found; skipping llevar cards.")
-            gen_llevar = False
+    auxiliary_data: Dict[str, dict] = {}
+    for aux in GERUND_AUXILIARIES:
+        if flags.get(aux, 0) != 1:
+            continue
+        data = load_verb_json(aux, verbs_dir)
+        if data:
+            auxiliary_data[aux] = data
+        else:
+            print(
+                f"Warning: {aux}:1 but {aux}.json not found; skipping {aux} cards."
+            )
 
     prefs = {"es_present_style": "progressive"}
 
@@ -629,9 +755,16 @@ def generate_preterite_13_flashcards(
                 if gen_el:
                     flashcards.append((english_3rd, f"él {spanish_ud}"))
 
-        if gen_llevar and llevar_data:
+        for aux_lemma, aux_data in auxiliary_data.items():
             flashcards.extend(
-                generate_llevar_gerund_cards(verb, json_data, prefs, llevar_data)
+                generate_auxiliary_gerund_cards(
+                    verb,
+                    json_data,
+                    prefs,
+                    aux_data,
+                    aux_lemma=aux_lemma,
+                    english_pattern=aux_lemma,
+                )
             )
 
         if gen_questions:
