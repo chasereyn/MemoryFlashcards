@@ -826,6 +826,9 @@ el inglés
 dinner
 la cena
 
+innocent
+inocente
+
 to discover
 descubrir
 
@@ -919,6 +922,12 @@ el bombero
 parents
 los padres
 
+to urinate
+orinar
+
+to pee
+mear
+
 painter
 el pintor
 
@@ -937,17 +946,11 @@ la energía
 to find
 encontrar
 
-to think
-pensar
-
 to be left
 quedar
 
 to touch
 tocar
-
-still
-aún / todavía
 
 besides
 además
@@ -975,6 +978,9 @@ moreno
 
 to discuss
 discutir
+
+cute
+tierno
 
 easy
 fácil
@@ -1036,11 +1042,17 @@ la luz
 lettuce
 la lechuga
 
-to recommend
-recomendar
+straight up...
+pura y dura...
 
 swimming
 la natación
+
+immediately
+de inmediato
+
+piss
+la meada
 
 lake
 el lago
@@ -1320,6 +1332,15 @@ cambiar
 
 challenge
 el desafío
+
+fucking asshole
+hijo de puta
+
+son of a bitch
+hijo de puta
+
+hallway
+el pasadillo
 
 strong
 fuerte
@@ -2641,6 +2662,12 @@ la siesta
 napkin
 la servilleta
 
+illegal
+ilegal
+
+legal
+legal
+
 bland
 soso
 
@@ -2814,6 +2841,9 @@ el conductor
 
 to insist
 insistir
+
+new insights
+nuevas ideas
 
 tuna
 el atún
@@ -3595,8 +3625,8 @@ calvo
 To stay late
 Quedarse hasta tarde
 
-Cover your ass
-Cubrirte las espaldas
+cover your ass
+cúbrete las espaldas
 
 How could I forget that?
 ¿Cómo pude olvidar eso?
@@ -3964,9 +3994,6 @@ avarica
 to deceive
 engañar
 
-to pass
-aprobar
-
 He would appreciate that!
 Él lo apreciaría!
 
@@ -3996,6 +4023,9 @@ el gripe
 
 to lean
 inclinarse
+
+to navigate
+navigar
 
 shelves
 los estantes
@@ -4291,7 +4321,7 @@ las persianas
 nightstand
 la mesita de noche
 
-You've got it already!
+You've got it!
 Vas de gane!
 
 sock
@@ -4590,6 +4620,9 @@ conseguir trabajo
 
 dish soap
 jabon de trastes
+
+That's disgusting!
+Está asqueroso!
 
 ...I'm just sayin...
 ...yo digo...
@@ -5254,6 +5287,9 @@ el vaivén
 I wonder what will happen
 Me pregunto qué pasará
 
+What were you expecting?
+¿Qué esperabas?
+
 They put up a notice
 Pusieron un aviso
 
@@ -5356,6 +5392,12 @@ la colonia
 great-grandmother
 la bisabuela
 
+That's nasty!
+Está asqueroso!
+
+That shit´s nasty!
+Esa mierda está bien asquerosa!
+
 gymnastics
 la gimnasia
 
@@ -5427,6 +5469,9 @@ Cómo lo digo?
 
 I don't know if I'm explaining myself well
 No sé si me explico
+
+plain
+sencillo / normal
 
 I don't know
 No lo sé
@@ -5873,13 +5918,16 @@ scissors
 las tijeras
 
 at least we've got out health
-al menos tenemos salud
+por lo menos tenemos salud
 
 elephant
 elefante
 
 I passed my driving test
 Aprobé el examen de conducir
+
+air conditioner
+aire acondicionado
 
 That movie doesn't deserve its recognition
 Esa película no merece tanto éxito
@@ -5970,4 +6018,52 @@ Desafortunadamente, la palabra 'suegra' tiene una mala connotación en Inglés
 
 You get what you pay for
 La calidad se paga
+
+main avenue
+avenida principal
+
+small successes lead to big successes
+los pequeños éxitos llevan a grandes éxitos
+
+downtown
+el centro
+
+anarchy
+la anarquía
+
+dystopia
+la distopía
+
+baking flour
+la harina
+
+That explains everything!
+¡Eso lo explica todo!
+
+That explains it!
+¡Eso lo explica!
+
+What do you suggest?
+¿Qué sugieres?
+
+It's nowhere close to...
+Ni se acerca a...
+
+pepper spray
+spray de pimienta
+
+management
+administración
+
+womanizer
+el mujeriego
+
+a small town
+una pueblita
+
+your fucking dog
+tu puta perra
+
+don't be an asshole
+no te hagas el pendejo
 
