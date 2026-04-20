@@ -139,6 +139,15 @@ el helado
 beach
 la playa
 
+let's see...
+a ver...
+
+let me see...
+a ver...
+
+we'll see
+vamos a ver
+
 backpack
 la mochila
 
@@ -429,6 +438,9 @@ la actriz
 
 sofa
 el sofá
+
+soft
+suave
 
 to look for
 buscar
@@ -1260,6 +1272,9 @@ la gripe
 
 salesclerk
 el dependiente
+
+it depends on...
+depende de...
 
 towel
 la toalla
@@ -2932,6 +2947,9 @@ el huracán
 factory
 la fábrica
 
+brick
+el ladrillo
+
 architecture
 la arquitectura
 
@@ -2991,6 +3009,9 @@ arreglar
 
 same
 mismo
+
+smooth
+suave
 
 to ring
 sonar
@@ -3171,6 +3192,9 @@ No es oro todo lo que reluce
 
 Throughout our content...
 A través de nuestro contenido...
+
+rough
+áspero
 
 to benefit
 beneficiar
@@ -3571,8 +3595,11 @@ el padrastro
 stepmother
 la madrasta
 
-I work full time as a ...
+I work full-time as a ...
 trabajo a tiempo completo como...
+
+I work part-time as a ...
+trabajo a tiempo parcial como...
 
 I asked him for money
 le pedí dinero
@@ -4464,6 +4491,9 @@ la mariqueta
 
 puzzle piece
 la pieza de rompecabezas
+
+freckles
+las pecas
 
 crumbs
 las migajas
@@ -5482,7 +5512,7 @@ When does it leave?
 Where does it leave from?
 ¿de dónde sale?
 
-less than 200$
+less than $200
 menos de 200 dólares
 
 That's life!
@@ -5505,6 +5535,9 @@ fenómeno
 
 belly button
 el ombligo
+
+button
+el botón
 
 metaphor
 la metáfora
@@ -5714,7 +5747,7 @@ I have fallen
 Me he caído
 
 Is it far?
-¿está lejos?
+¿Está lejos?
 
 aircraft carrier
 el portaviones
@@ -5851,7 +5884,7 @@ el ascenso
 sponsorship
 sponsorship
 
-spnsors
+sponsors
 los sponsors
 
 alligators
@@ -5924,7 +5957,7 @@ elephant
 elefante
 
 I passed my driving test
-Aprobé el examen de conducir
+Aprobé el examen de manejar
 
 air conditioner
 aire acondicionado
@@ -6020,7 +6053,7 @@ You get what you pay for
 La calidad se paga
 
 main avenue
-avenida principal
+la avenida principal
 
 small successes lead to big successes
 los pequeños éxitos llevan a grandes éxitos
@@ -6067,3 +6100,110 @@ tu puta perra
 don't be an asshole
 no te hagas el pendejo
 
+curiosity
+la curiosidad
+
+martial arts
+los artes marciales
+
+I'm in the shade
+Estoy a la sombra
+
+Pick up and drop off
+Recoger y dejar
+
+cabbage
+el repollo
+
+I spent 5 dollars
+Gasté 5 dólares
+
+empathetic
+empático
+
+balloon
+el globo
+
+patio
+el patio
+
+granite
+el granito
+
+That's all I need
+Es todo lo que necesito
+
+tentacles
+los tentáculos
+
+gear (machine)
+el engraje
+
+rope
+la cuerda
+
+scotch tape
+cinta scotch
+
+ear wax
+la cera de los oídos
+
+ridges
+las crestas
+
+grill
+la parrilla
+
+propane
+el propano
+
+infinity
+el infinito
+
+internal
+interno
+
+brittle
+quebradizo
+
+sharp
+afilado
+
+dull
+desafilado
+
+absorbant
+absorbente
+
+rotton eggs
+huevos podridos
+
+perpetual motion
+movimiento perpetuo
+
+to bloom
+florecer
+
+adjustable
+ajustable
+
+spikes
+las puntas
+
+serrated knife
+el cuchilo serrado
+
+serrations
+las serraciones
+
+mental acuity
+la rapidez mental
+
+subtleness
+sutileza
+
+packaging
+las embalajes
+
+balcony
+el balcón
