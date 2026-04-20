@@ -124,6 +124,9 @@ buenas noches
 therefore
 entonces
 
+thermostat
+el termostato
+
 chess
 el ajedrez
 
@@ -640,6 +643,9 @@ cocinar
 late
 tarde
 
+later
+al rato
+
 time
 el tiempo
 
@@ -887,7 +893,7 @@ I promise
 Te lo prometo
 
 manager
-el/la gerente
+el/la manager
 
 singer
 el/la cantante
@@ -1470,6 +1476,9 @@ el aeropuerto
 
 responsible
 responsable
+
+responsiblity
+responsibilidad
 
 office
 la oficina
@@ -2113,8 +2122,8 @@ décimo
 shame
 la vergüenza
 
-knife
-el cuchillo
+knives
+los cuchillos
 
 he is allergic to...
 el es alérgico a...
@@ -3031,35 +3040,23 @@ preguntar
 to avoid
 evitar
 
-to cut
-cortar
-
-letter
-la carta
-
 clock
 el reloj
-
-more
-más
 
 over there
 allá
 
-now
-ahora
-
 to direct
 dirigir
 
-Camel
-El Camello
+camel
+el camello
 
-Battery
-La pila
+battery
+la pila
 
-Eyelashes
-Pestañas
+eyelashes
+las pestañas
 
 dividers
 los separadores
@@ -3410,7 +3407,7 @@ sow (female pig)
 la cerda
 
 pork
-el cerdo
+el puerco
 
 Grow up!
 ¡Madúrate!
@@ -3522,9 +3519,6 @@ el trueno
 
 lightning
 el relámpago
-
-pig
-el puerco
 
 air vent
 rejila de ventilación
@@ -3974,7 +3968,7 @@ Have fun!
 Que lo pases bien!
 
 right now
-ahora mismo
+ahorita mismo
 
 How cool!
 Que padre!
@@ -4567,6 +4561,9 @@ expulsar
 ...for real
 ...de veras
 
+for real?
+neta?
+
 blood
 la sangre
 
@@ -5107,7 +5104,7 @@ Mover montañas
 Hearts are aligned
 Los corazones están alineados
 
-fue
+fur
 el pelaje
 
 Shared vision
@@ -5446,11 +5443,11 @@ Si volvieras 1000 años atrás y hicieras esto, empezarías una religión… o t
 Is that polite to say?
 ¿Es correcto decir eso?
 
-Give me a minute
-Dame un momento
+give me a minute
+ahorita regreso
 
-A blind person
-Un invidente
+a blind person
+el invidente
 
 What are you wearing?
 Qué llevas puesto?
@@ -5506,7 +5503,7 @@ sencillo / normal
 I don't know
 No lo sé
 
-When does it leave?
+What time does it leave?
 ¿a qué hora sale?
 
 Where does it leave from?
@@ -5845,17 +5842,14 @@ La vaca sigue mugiendo
 to moo
 mugir
 
-blue (meat)
+rare (meat)
 azul
 
-rare (meat)
-muy poco hecho
-
 medium rare (meat)
-poco hecho
+termino rojo
 
 medium (meat)
-al medio / al punto
+termino medio
 
 medium well (meat)
 tres cuartos
@@ -5864,7 +5858,10 @@ well done (meat)
 bien hecho
 
 overcooked (meat)
-muy bien hecho
+sobre cocido
+
+burnt
+quemado
 
 Remember to bring your keys!
 ¡Recuerda traer tus llaves!
@@ -6169,6 +6166,9 @@ quebradizo
 sharp
 afilado
 
+to sharpen
+afilar
+
 dull
 desafilado
 
@@ -6207,3 +6207,183 @@ las embalajes
 
 balcony
 el balcón
+
+it went viral
+se vuelve viral
+
+whetstone
+la piedra de afilar
+
+I bet you were...
+Apuesto a que estabas
+
+You were probably expecting...
+Probablemente esperabas
+
+Flip it over!
+Dale la vuelta!
+
+Turn it over!
+Voltéalo!
+
+Get past him!
+Pasalo!
+
+Let me know if there's anything I can do for you
+Avísame si hay algo que pueda hacer por ti
+
+What are you trying to escape from?
+¿De qué estás intentando escapar?
+
+It's a shame that...
+Es una pena que...
+
+hot chocolate
+el chocolate caliente
+
+crunchy
+crujiente
+
+spongy
+esponjoso
+
+yeast
+levadura
+
+Did you have fun?
+¿Te divertiste?
+
+When was your last trip to...
+¿Cuándo fue tu último viaje a...?
+
+That's what I said!
+¡Es lo que dije!
+
+well-fed
+satisfecho
+
+banner
+la bandera
+
+hard hat
+el casco duro
+
+calendar
+el calendario
+
+whiskers
+los bigotes
+
+to pounce
+saltar encima
+
+thumb tacks
+las chinchetas
+
+I'm still making up words
+Sigo inventando palabras
+
+critical thinking
+pensamiento crítico
+
+problem solving
+resolución de problemas
+
+thumb
+el pulgar
+
+index finger
+el dedo índice
+
+middle finger
+el dedo medio
+
+ring finger
+el dedo anular
+
+pinky finger
+el dedo meñique
+
+Did you take notes?
+¿Tomaste notas?
+
+total disaster
+desastre total
+
+angle
+ángulo
+
+expressive
+expresivo
+
+teammates
+compañeros de equipo
+
+to interview
+entrevistar
+
+We just hired a recent grad
+Acabamos de contratar a un recién graduado
+
+technical interview
+entrevista técnica
+
+coding test
+prueba de código
+
+It's hard enough already
+Ya es suficientemente difícil
+
+That's what matters the most!
+¡Eso es lo que más importa!
+
+That's what's most important!
+¡Eso es lo más importante!
+
+to decide
+decidir
+
+onboarding process
+proceso de onboarding
+
+I know you're going to love it!
+¡Sé que te va a encantar!
+
+tune
+la melodía
+
+beat
+el ritmo
+
+rhythm
+el ritmo
+
+toenails
+uñas de los pies
+
+What is the opposite of...
+¿Cuál es el opuesto de...?
+
+board game
+juego de mesa
+
+I left a comment
+Dejé un comentario
+
+You can't be stubborn with your boss
+No puedes ser terco con tu jefe
+
+leader
+líder
+
+my rule is...
+mi regla es...
+
+tv remote
+control remoto
+
+Are you proud of yourself?
+¿Estás orgulloso de ti misma?
+
+I'm proud of myself!
+¡Estoy orgulloso de mí mismo!
