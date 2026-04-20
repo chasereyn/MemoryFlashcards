@@ -1,11 +1,83 @@
-You told you
+I told you
+te dije
+
+I told him
+le dije
+
+I told them
+les dije
+
+I told you guys
+les dije
+
+You told me
 me dijiste
 
 You told him
 le dijiste
 
+You told us
+nos dijiste
+
 You told them
 les dijiste
 
-You told us
-nos dijiste
+He told me
+me dijo
+
+He told you
+te dijo
+
+He told him
+le dijo
+
+He told us
+nos dijo
+
+He told you guys
+les dijo
+
+He told them
+les dijo
+
+We told you
+te dijimos
+
+We told him
+le dijimos
+
+We told them
+les dijimos
+
+We told you guys
+les dijimos
+
+They told me
+me dijieron
+
+They told you
+me dijieron
+
+They told him
+le dijieron
+
+They told us
+nos dijieron
+
+They told them
+les dijieron
+
+They told you guys
+les dijieron
+
+You guys told me
+me dijieron
+
+You guys told him
+le dijieron
+
+You guys told us
+nos dijieron
+
+You guys told them
+les dijieron
