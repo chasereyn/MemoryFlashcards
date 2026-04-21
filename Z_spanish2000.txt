@@ -4,9 +4,6 @@ el punto
 that
 aquella
 
-own
-propio
-
 to toast
 brindar
 
@@ -15,9 +12,6 @@ continuar
 
 only
 único
-
-studio
-el estudio
 
 to heat
 calentar
@@ -31,23 +25,14 @@ el reto
 classroom
 el aula
 
-thief
-el ladrón
-
 leisure
 el ocio
-
-surprise
-la sorpresa
 
 period
 la etapa
 
 to happen
 ocurrir
-
-smile
-la sonrisa
 
 to stand
 soportar
@@ -97,9 +82,6 @@ rizado
 to catch
 atrapar
 
-widowed
-viudo
-
 fair
 la feria
 
@@ -133,15 +115,6 @@ el rasgo
 worker
 el obrero
 
-mature
-maduro
-
-monitor
-el monitor
-
-to repair
-reparar
-
 sign
 el letrero
 
@@ -156,15 +129,6 @@ la nota
 
 shortage
 la escasez
-
-search
-la búsqueda
-
-to exist
-existir
-
-peach
-el durazno
 
 to forgive
 perdonar
@@ -196,14 +160,8 @@ el balón
 ability
 la habilidad
 
-to row
-remar
-
 to get worse
 empeorar
-
-reserved
-reservado
 
 to twist
 torcerse
@@ -211,17 +169,11 @@ torcerse
 living room
 el salón
 
-to live together
-convivir
-
 to kidnap
 secuestrar
 
 friendly
 acogedor
-
-special
-especial
 
 to predict
 predecir
@@ -234,15 +186,6 @@ la convivencia
 
 fantastic
 fenomenal
-
-surprising
-sorprendente
-
-cake shop
-la pastelería
-
-cooked
-cocido
 
 recess
 el recreo
@@ -1780,32 +1723,8 @@ el medioambiente
 sedentary
 sedentario
 
-slipper
-la zapatilla
-
-difficulty
-la dificultad
-
-shell
-la cáscara
-
-heroine
-la heroína
-
 ecotourism
 el ecoturismo
-
-audience
-el auditorio
-
-social sciences
-las ciencias sociales
-
-digital
-digital
-
-mystery
-el misterio
 
 to restrict
 restringir
@@ -1816,35 +1735,11 @@ el melón
 producer
 el productor
 
-Colombian
-el colombiano
-
 to lie down
 tumbarse
 
-occupation
-la ocupación
-
-gallery
-la galería
-
-representative
-el/la representante
-
-to play the piano
-tocar el piano
-
-dynamic
-dinámico
-
-magic
-mágico
-
 establishment
 el establecimiento
-
-immature
-inmaduro
 
 besides
 además de
@@ -1852,35 +1747,14 @@ además de
 to break up with
 romper con
 
-curiosity
-la curiosidad
-
 diverse
 diverso
 
 careless
 imprudente
 
-adult
-el adulto
-
-in a bad mood
-de mal humor
-
-half-brother
-el medio hermano
-
 prose
 la prosa
-
-discipline
-la disciplina
-
-dignity
-la dignidad
-
-Italy
-Italia
 
 length
 la duración
@@ -3025,80 +2899,17 @@ tomar fotos
 incredible
 increíble
 
-fax
-el fax
-
-king
-el rey
-
 destruction
 la destrucción
 
 to consume
 consumir
 
-battery
-la batería
-
-Argentinian
-el argentino
-
-yoga
-el yoga
-
-opportunity
-la oportunidad
-
-blog
-el blog
-
 television
 la televisión
 
-to love
-amar
-
 baby
 el/la bebé
-
-regular
-regular
-
-to describe
-describir
-
-diet
-la dieta
-
-band
-la banda
-
-defect
-el defecto
-
-goodbye
-adiós
-
-to publish
-publicar
-
-box
-la caja
-
-bull
-el toro
-
-normal
-normal
-
-digital camera
-la cámara digital
-
-Russia
-Rusia
-
-to announce
-anunciar
 
 to be hot
 tener calor
@@ -4846,35 +4657,17 @@ la bufanda
 civil servant
 el funcionario
 
-citizen
-el ciudadano
-
 to swallow
 tragar
 
-refrigerator
-el refrigerador
-
-itinerary
-el itinerario
-
-to review
-revisar
-
 to defeat
 vencer
-
-balanced
-equilibrado
 
 to confront
 enfrentar
 
 anger
 el enfado
-
-cash register
-la caja
 
 competition
 la competencia
@@ -4890,15 +4683,6 @@ los dibujos animados
 
 to disappear
 desaparecer
-
-bracelet
-la pulsera
-
-helmet
-el casco
-
-freezer
-el congelador
 
 advertising
 la publicidad
@@ -4933,20 +4717,11 @@ la ciencia ficción
 elderly
 anciano
 
-fountain
-la fuente
-
 computer science
 la computación
 
-stepfather
-el padrastro
-
 business administration
 la administración de empresas
-
-glove
-el guante
 
 rescue
 el rescate
@@ -4972,9 +4747,6 @@ el envase
 to get angry
 enojarse
 
-nightmare
-la pesadilla
-
 coin
 la moneda
 
@@ -4999,12 +4771,6 @@ el guion
 application
 la solicitud
 
-shelf
-el estante
-
-barely
-apenas
-
 nickname
 el apodo
 
@@ -5028,9 +4794,6 @@ el requisito
 
 camp
 el campamento
-
-symptom
-el síntoma
 
 raincoat
 el impermeable
@@ -5071,12 +4834,6 @@ el/la aspirante
 stage
 el escenario
 
-promotion
-el ascenso
-
-discovery
-el descubrimiento
-
 event
 el suceso
 
@@ -5089,20 +4846,8 @@ el retraso
 to lift weights
 levantar pesas
 
-dizzy
-mareado
-
-basement
-el sótano
-
 native
 el/la indígena
-
-box office
-la taquilla
-
-sock
-el calcetín
 
 pork chop
 la chuleta de cerdo
@@ -5113,17 +4858,11 @@ denunciar
 to decrease
 disminuir
 
-to land
-aterrizar
-
 syrup
 el jarabe
 
 fire
 el incendio
-
-to plant
-sembrar
 
 to assure
 asegurar
@@ -5161,29 +4900,17 @@ ensayar
 trust
 la confianza
 
-pillow
-la almohada
-
 measurement
 la medida
 
 city council
 el ayuntamiento
 
-password
-la contraseña
-
 to borrow
 pedir prestado
 
 court
 la cancha
-
-electrician
-el/la electricista
-
-misunderstanding
-el malentendido
 
 store
 el almacén
@@ -5218,12 +4945,6 @@ travieso
 flood
 la inundación
 
-to put up with
-aguantar
-
-wisdom
-la sabiduría
-
 understanding
 comprensivo
 
@@ -5236,12 +4957,6 @@ el resfriado
 threat
 la amenaza
 
-printer
-la impresora
-
-to sneeze
-estornudar
-
 to scuba dive
 bucear
 
@@ -5251,20 +4966,11 @@ el presupuesto
 to be detrimental to
 perjudicar
 
-flight
-el vuelo
-
 premiere
 el estreno
 
 tight
 apretado
-
-bridge
-el puente
-
-daring
-atrevido
 
 to lose weight
 adelgazar

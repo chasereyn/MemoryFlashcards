@@ -475,6 +475,9 @@ la mano
 wardrobe
 el armario
 
+gloves
+los guantes
+
 cabinet
 el armario
 
@@ -543,6 +546,15 @@ la mujer
 
 game (match, event)
 el partido
+
+mature
+maduro
+
+to repair
+reparar
+
+the search
+la búsqueda
 
 street
 la calle
@@ -850,6 +862,9 @@ inocente
 to discover
 descubrir
 
+discovery
+el descubrimiento
+
 sister
 la hermana
 
@@ -1003,6 +1018,9 @@ tierno
 easy
 fácil
 
+symptom
+el síntoma
+
 to have breakfast
 desayunar
 
@@ -1101,6 +1119,12 @@ la enfermedad
 
 advertisement
 el anuncio
+
+refrigerator
+el refrigerador
+
+citizen
+el ciudadano
 
 soda
 el refresco
@@ -1285,8 +1309,44 @@ depende de...
 towel
 la toalla
 
+heroine
+la heroína
+
+audience
+el auditorio
+
+social sciences
+las ciencias sociales
+
+digital
+digital
+
+the mystery
+el misterio
+
+difficulty
+la dificultad
+
+shell
+la cáscara
+
+Colombian
+el colombiano
+
 flower
 la flor
+
+occupation
+la ocupación
+
+gallery
+la galería
+
+dynamic
+dinámico
+
+magic
+mágico
 
 spicy
 picante
@@ -3010,6 +3070,12 @@ encantar
 to love
 amar
 
+Argentinian
+el argentino
+
+blog
+el blog
+
 to lend
 prestar
 
@@ -3487,6 +3553,12 @@ congelar
 to defrost
 descongelar
 
+freezer
+el congelador
+
+helmet
+el casco
+
 frozen
 congelado
 
@@ -3618,6 +3690,9 @@ Calm down!
 
 Can you hear me?
 ¿Me oyes?
+
+cash register
+la caja
 
 bracelet
 la pulsera
@@ -3937,6 +4012,9 @@ Dónde está la embajada?
 Seeya!
 Chao!
 
+defect
+el defecto
+
 Goodbye!
 Adiós
 
@@ -4021,6 +4099,9 @@ He would appreciate that!
 I knew it!
 Ya lo sabía
 
+diet
+la dieta
+
 soldier
 el/la soldado
 
@@ -4057,6 +4138,9 @@ del resto de...
 rest stop
 la área de descanso
 
+fountain
+la fuente
+
 ...and it was inevitable
 ...y fue inevitable
 
@@ -4092,6 +4176,9 @@ a corto plazo...
 
 to slip
 resbalarse
+
+balanced
+equilibrado
 
 You're not gonna believe it!
 No vas a creerlo!
@@ -4140,6 +4227,9 @@ emprender
 
 peacock
 pavo real
+
+peach
+el durazno
 
 unpleasant
 deagradable
@@ -4294,6 +4384,9 @@ energizado
 exhausted
 agotado
 
+to row
+remar
+
 pending tasks
 tareas pendientes
 
@@ -4339,6 +4432,9 @@ las cortinas
 blinds
 las persianas
 
+nightmare
+la pesadilla
+
 nightstand
 la mesita de noche
 
@@ -4347,6 +4443,15 @@ Vas de gane!
 
 sock
 el calcentín
+
+dizzy
+mareado
+
+basement
+el sótano
+
+box office
+la taquilla
 
 long sock
 la calceta
@@ -4514,7 +4619,7 @@ running shoes
 deportivos
 
 slippers
-zapatillas
+las zapatillas
 
 let me think about it
 déjame pensarlo
@@ -4536,6 +4641,18 @@ Cómo lo piensas?
 
 bankrupcy
 la quiebra
+
+bull
+el toro
+
+normal
+normal
+
+digital camera
+la cámara digital
+
+Russia
+Rusia
 
 environment (setting)
 entorno
@@ -4752,6 +4869,9 @@ el gasto
 
 cash flow
 flujo de caja
+
+box
+la caja
 
 I'm cold
 tengo frío
@@ -5053,11 +5173,23 @@ la cascada
 daring
 atrevido
 
+bridge
+el puente
+
 cooooool!
 cooooool!
 
+wisdom
+la sabiduría
+
 my babies!
 mis chiquis los dos!
+
+misunderstanding
+el malentendido
+
+electrician
+el/la electricista
 
 jewish
 judió
@@ -5314,6 +5446,18 @@ el vaivén
 I wonder what will happen
 Me pregunto qué pasará
 
+regular
+regular
+
+to describe
+describir
+
+to publish
+publicar
+
+to announce
+anunciar
+
 What were you expecting?
 ¿Qué esperabas?
 
@@ -5400,6 +5544,21 @@ Me gusta tu pajarita
 
 This is why we have ants
 Y por eso tenemos hormigas
+
+reserved
+reservado
+
+to live together
+convivir
+
+How surprising!
+Qué sorprendente!
+
+cake shop
+la pastelería
+
+cooked
+cocido
 
 roof
 el techo
@@ -5649,6 +5808,12 @@ posible
 
 cloth (material)
 la tela
+
+smile
+la sonrisa
+
+widowed
+viudo
 
 laxatives
 los laxantes
@@ -5950,8 +6115,17 @@ las tijeras
 at least we've got out health
 por lo menos tenemos salud
 
+to plant
+sembrar
+
 elephant
 elefante
+
+password
+la contraseña
+
+pillow
+la almohada
 
 I passed my driving test
 Aprobé el examen de manejar
@@ -5976,6 +6150,12 @@ la hierba sierra
 
 yoga mat
 el tapete
+
+yoga
+el yoga
+
+opportunity
+la oportunidad
 
 bottle opener
 el abrebotellas
@@ -6067,6 +6247,15 @@ la distopía
 baking flour
 la harina
 
+to play the piano
+tocar el piano
+
+representative
+el/la representante
+
+immature
+inmaduro
+
 That explains everything!
 ¡Eso lo explica todo!
 
@@ -6154,6 +6343,12 @@ la parrilla
 propane
 el propano
 
+own
+propio
+
+thief
+el ladrón
+
 infinity
 el infinito
 
@@ -6220,8 +6415,14 @@ Apuesto a que estabas
 You were probably expecting...
 Probablemente esperabas
 
+to sneeze
+estornudar
+
 Flip it over!
 Dale la vuelta!
+
+flight
+el vuelo
 
 Turn it over!
 Voltéalo!
@@ -6252,6 +6453,24 @@ levadura
 
 Did you have fun?
 ¿Te divertiste?
+
+adult
+el adulto
+
+in a bad mood
+de mal humor
+
+half-brother
+el medio hermano
+
+discipline
+la disciplina
+
+dignity
+la dignidad
+
+Italy
+Italia
 
 When was your last trip to...
 ¿Cuándo fue tu último viaje a...?
@@ -6295,6 +6514,12 @@ el pulgar
 index finger
 el dedo índice
 
+fax
+el fax
+
+king
+el rey
+
 middle finger
 el dedo medio
 
@@ -6315,6 +6540,12 @@ angle
 
 expressive
 expresivo
+
+to review
+revisar
+
+itinerary
+el itinerario
 
 teammates
 compañeros de equipo
@@ -6387,3 +6618,6 @@ Are you proud of yourself?
 
 I'm proud of myself!
 ¡Estoy orgulloso de mí mismo!
+
+studio
+el estudio
