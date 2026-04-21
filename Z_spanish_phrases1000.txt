@@ -358,9 +358,6 @@ no somos compatibles
 Concerning...
 Por lo que toca...
 
-I have a confession to make
-tengo algo que confesar
-
 congratulations on
 felicidades por
 
@@ -369,18 +366,6 @@ Se considera que es...
 
 take something into consideration
 tomar algo en consideración
-
-I'm a good cook
-soy un buen cocinero
-
-Is it correct to say...?
-¿Es correcto decir...?
-
-you're correct
-tienes razón
-
-it costs too much
-cuesta demasiado
 
 I'd like to visit your country one day
 Me gustaría visitar algún día tu país
@@ -430,9 +415,6 @@ Día tras día...
 it's a good deal
 es una ocasión
 
-dear Rosa
-querida rosa
-
 there will be a 5 min delay
 habrá una demora de 5 minutos
 
@@ -445,26 +427,14 @@ te estás engañando a ti mismo
 I don't deny it, I'm proud of being ...
 no lo niego, soy muy orgulloso de ser latino
 
-that depends
-depende
-
-it depends on the weather
-depende del tiempo
-
 deprive someone of something
 privar a alguien de algo
 
 Dial the number ...for...
 Marque el numero...para...
 
-it doesn't make any difference
-no cambia nada
-
 with difficulty
 con dificultades
-
-a four digit number
-un número de 4 dígitos
 
 Is there any discount on...
 Haces descuento a...
@@ -481,9 +451,6 @@ no sé qué hacer
 That will do!
 ¡Ya vale!
 
-Well done!
-¡bien hecho!
-
 with double bed
 con dos camas
 
@@ -492,18 +459,6 @@ voy al centro
 
 it's drafty here
 hace mucha corriente aquí
-
-she is a good drawer
-dibuja muy bien
-
-I dreamt about you last night
-anoche soñé contigo
-
-I don't drink
-no bebo
-
-You're driving me crazy
-Me vuelves loco
 
 he is driving me mad
 Él me está volviendo loco.
@@ -519,9 +474,6 @@ take it easy
 
 I can't eat food that have pork
 no consumo alimentos que contienen jamón
-
-effective May 1
-a partir del 1 de mayo
 
 you speak in an elegant way
 hablas con cierta elegancia
@@ -552,9 +504,6 @@ adiós y que disfruten su tiempo
 
 hope you enjoy the meal
 espero que disfruten la comida
-
-I don't have enough money
-no tengo suficiente dinero
 
 Enough talk! That's enough!
 Esto es. Basta ya
@@ -661,9 +610,6 @@ conocer/ver a alguien en persona
 sorry, I'm not free
 lo siento mucho, pero no estoy libre
 
-I'm fond of...
-soy un gran aficionado al ajedrez
-
 I'm very fond of him
 le tengo mucho cariño
 
@@ -711,9 +657,6 @@ trabajo de nueve a cinco
 
 Where are you from?
 ¿de dónde eres tu?
-
-Anyone from Maryland?
-¿alguna persona de Maryland?
 
 I'm frozen
 estoy helado
@@ -768,9 +711,6 @@ me alegro de verte
 
 Where would you like to go?
 ¿adónde quieres ir?
-
-it's to go (food)
-es para llevar
 
 I have to go, goodbye
 me tengo que ir, adiós

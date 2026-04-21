@@ -547,6 +547,12 @@ la mujer
 game (match, event)
 el partido
 
+eventually
+eventualmente
+
+It would be absurd if...
+Sería absurdo si...
+
 mature
 maduro
 
@@ -946,11 +952,17 @@ el ojo
 egg
 el huevo
 
-painting (art or materials)
+paint
 la pintura
 
 firefighter
 el bombero
+
+bomb
+la bomba
+
+I'm open to try it again
+Estoy abierto a intentarlo de nuevo
 
 parents
 los padres
@@ -1117,6 +1129,24 @@ el fútbol
 illness
 la enfermedad
 
+I have a confession to make
+tengo algo que confesar
+
+I'm a good cook
+soy un buen cocinero
+
+Is it correct to say...?
+¿Es correcto decir...?
+
+you're correct
+tienes razón
+
+it costs too much
+cuesta demasiado
+
+dear Sarah
+querida Sarah
+
 advertisement
 el anuncio
 
@@ -1131,6 +1161,15 @@ el refresco
 
 coach
 el entrenador
+
+coarse
+rezo
+
+medium grit
+medio
+
+fine grit
+fino
 
 employment
 el empleo
@@ -1305,6 +1344,15 @@ el dependiente
 
 it depends on...
 depende de...
+
+that depends
+depende
+
+a four digit number
+un número de 4 dígitos
+
+it doesn't make any difference
+no cambia nada
 
 towel
 la toalla
@@ -2197,14 +2245,23 @@ te aconsejo que te vayas
 he's afraid of the dark
 Le da miedo la oscuridad
 
-I can't afford it
-Es superior a mis recursos
+I don't have enough money
+no tengo suficiente dinero
 
 sorry my bad!
 perdón!
 
+I'm fond of...
+soy un gran aficionado a...
+
 road
 la carretera
+
+Anyone from Maryland?
+¿alguna persona de Maryland?
+
+it's to go (food)
+es para llevar
 
 runway
 la pista
@@ -3400,8 +3457,23 @@ el micrófono
 barely
 apenas
 
-well done!
-bien hecho!
+Well done!
+¡bien hecho!
+
+effective May 1...
+a partir del 1 de mayo...
+
+I don't drink
+no bebo
+
+You're driving me crazy
+Me vuelves loco
+
+I dreamt about you last night
+anoche soñé contigo
+
+she is a good drawer
+dibuja muy bien
 
 toy
 juguete
@@ -5173,6 +5245,9 @@ la cascada
 daring
 atrevido
 
+The water balloon burst in midair
+El globo de agua reventó en el aire
+
 bridge
 el puente
 
@@ -5965,8 +6040,11 @@ otorgar
 queen
 la reina
 
-goal
-la meta
+goals
+las metas
+
+objectives
+los objectivos
 
 above all...
 sobre todo...
@@ -6328,6 +6406,9 @@ el engraje
 rope
 la cuerda
 
+string
+la cuerda
+
 scotch tape
 cinta scotch
 
@@ -6621,3 +6702,63 @@ I'm proud of myself!
 
 studio
 el estudio
+
+tissue paper
+papel de seda
+
+antonym
+antónimo
+
+synonym
+sinónimo
+
+sawblade
+hoja de sierra
+
+tripod
+trípode
+
+unusual
+inusual
+
+She appreciates...
+Ella aprecia...
+
+fertile
+fértil
+
+infertile
+infértil
+
+potting soil
+la tierra para plantas
+
+drywall
+el drywall
+
+mud
+el barro
+
+instrument
+instrumento
+
+we're fucked
+ya nos lleva la chingada
+
+we're screwed
+ya valió
+
+we're done for
+ya bailó berta
+
+it's gone to shit
+ya valió madres
+
+We're at the mercy of...
+Estamos a merced de...
+
+Give it another shot!
+¡Inténtalo de nuevo!
+
+Try again!
+¡Prueba de nuevo!
