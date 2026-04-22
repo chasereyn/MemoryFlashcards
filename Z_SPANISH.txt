@@ -1,3 +1,4 @@
+roof
 How could I forget
 It's time to party!
 It's been an uphill battle
@@ -190,16 +191,51 @@ valle valley
 
 EXPLAIN HASTA (until, missing)
 
+Aceite de oliva Olive Oil
+Aceite de coco Coconut Oil
+Manteca de cerdo Larde
+Chocolate negro Dark Chocolate
+Chocolate con leche Milk chocolate
+Almendras Almonds
+Nueces Walnuts
+Pistaches Pistachios
+Cacahuates Peanuts
+Semillas de girasol Sunflower seeds
+Semillas de chía Chia seeds
+Queso cheddar Cheddar cheese
+Tocino Bacon
+Aguacate Avocado
+Pan blanco White bread
+Pan integral Whole grain bread
+Pasta seca Dry pasta
+Arroz blanco white rice
+Plátano banana
 
+we don't cook at first boil move to spanish idioms
+find spanish jokes too
 
-
-
-
-
-
-
-
-
+Papas fritas french fries
+Yogurt entero whole yogurt
+Manzana apple
+Uvas grapes
+Fresas strawberries
+Sandía watermelon
+Melón canteloupe
+Tomate tomato
+Zanahoria carrot
+Brócoli brocolli
+Coliflor caulflower
+Espinacas spinach
+Lechuga romana romaine lettuce
+Pepino cucumber
+Apio celery
+Calabacín zucchini
+Pimiento verde green pepper
+Pimiento rojo red pepper
+Champiñones mushrooms
+Nopal cactus
+Jícama
+Carne deshebrada con verdura
 
 
 
@@ -229,6 +265,54 @@ ASK THEIR BLESSING
 GATHER FROM SONGS / VIDEOS
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RANDOM NUMBER GENERATOR
+
+what a day day to have eyes
+brutal
+investigate
+bristles
+They don't care about that...what they care about is...
+Expanding into other markets
+In this family we fight for each other
+paws
+A man never walks down the same street twice because...
+pins
+to match
+the pattern
+plasticware
+gunammo
+recoil
+diamond
+picture frame
+cheese and crackers
+to bond
+
+4 gun rules
+
+the pan wasn't hot enough, so the food stuck
+be care free!
 
 better than ever
 stronger than ever
@@ -520,6 +604,40 @@ odometer
 frozen fruit
 tachometer
 
+father figure
+Reschedule
+Axolotl ajolote
+Sweet tooth
+Savory
+Check in, check out
+We were going to…but then…
+Build your own
+Do it yourself
+Windshield
+Windshield wipers
+Rear view mirrors
+A stomach bug
+Colita = tail and cauliflower
+Hereditary
+The American dream
+Minimum wage
+Million dollar question
+Paid hourly
+Work Benefits
+Dental, vision
+Commute
+Commuter account
+Pre tax
+Tax deductible
+Too much to keep track of
+Too many moving parts
+Unnecessary
+Frivolous spending
+Plastification
+Slaughterhouse
+Workshop
+City park, state park
+
 chambear to work
 half and half micha y micha
 de volada fast replaces rapido
@@ -707,49 +825,6 @@ ASK FOR HER AUDIO ABOUT THE DAY
 nickel and diming
 brain bleed
 human meat trafficing
-
-Aceite de oliva Olive Oil
-Aceite de coco Coconut Oil
-Manteca de cerdo Larde
-Chocolate negro Dark Chocolate
-Chocolate con leche Milk chocolate
-Almendras Almonds
-Nueces Walnuts
-Pistaches Pistachios
-Cacahuates Peanuts
-Semillas de girasol Sunflower seeds
-Semillas de chía Chia seeds
-Queso cheddar Cheddar cheese
-Tocino Bacon
-Aguacate Avocado
-Pan blanco White bread
-Pan integral Whole grain bread
-Pasta seca Dry pasta
-Arroz blanco white rice
-Plátano banana
-
-Papas fritas french fries
-Yogurt entero whole yogurt
-Manzana apple
-Uvas grapes
-Fresas strawberries
-Sandía watermelon
-Melón canteloupe
-Tomate tomato
-Zanahoria carrot
-Brócoli brocolli
-Coliflor caulflower
-Espinacas spinach
-Lechuga romana romaine lettuce
-Pepino cucumber
-Apio celery
-Calabacín zucchini
-Pimiento verde green pepper
-Pimiento rojo red pepper
-Champiñones mushrooms
-Nopal cactus
-Jícama
-Carne deshebrada con verdura
 
 --------
 
@@ -1778,7 +1853,6 @@ asphault
 ojos pispiretos
 
 MEMORIZR 11:11
-MEMORIZAR Corazon Sin Cara
 
 grout
 tile
@@ -4487,15 +4561,12 @@ False friends (words that look similar but mean different things)
 VERBS
 - DOPs for each verb (add gustar, faltar, doler recordar? backwards verbs)
 - Certain verbs with llevar/seguir/andar type constructions?
-
-
-- Change DOP in the matrix (first through all subjects, then through all DOPs)
 - Aun me falta = I still haven't... / I still need to... (we, you...)
 - Soler usually
 - Imperfect I used to...
 - acabar de = I just...
 - volver a = again
-- Should I as question is just te paso? (no deber)but as statement its deber
+- Should I as question is just te paso? (no deber) but as statement its deber
 - Commands
 - Haber = I've... eaten
 - estar a punto de = I'm about to...

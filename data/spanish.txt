@@ -3250,8 +3250,8 @@ los separadores
 shape
 la forma
 
-Size
-El tamaño
+size
+el tamaño
 
 Firmly
 Fijamente
@@ -4009,8 +4009,8 @@ Do you speak a foreign language?
 I was speechless
 Me quedé sin habla
 
-Straight ahead
-Todo derecho
+straight ahead
+todo derecho
 
 To the right
 A la derecha
