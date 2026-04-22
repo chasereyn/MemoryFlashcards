@@ -3016,39 +3016,6 @@ la ley
 drug
 la droga
 
-video
-el video
-
-temple
-el templo
-
-enormous
-enorme
-
-contaminated
-contaminado
-
-violent
-violento
-
-discrimination
-la discriminación
-
-capital
-la capital
-
-next
-próximo
-
-independent
-independiente
-
-object
-el objeto
-
-mistake
-el error
-
 favorite
 favorito
 
@@ -3070,20 +3037,8 @@ el puerto
 to go to the movies
 ir al cine
 
-rule
-la regla
-
 salary
 el salario
-
-popular
-popular
-
-to fly
-volar
-
-sushi
-el sushi
 
 siblings
 los hermanos
@@ -3093,12 +3048,6 @@ el castillo
 
 racket
 la raqueta
-
-to dream
-soñar
-
-useful
-útil
 
 cream
 la crema
@@ -4369,9 +4318,6 @@ el vinagre
 to train
 entrenarse
 
-pottery
-la cerámica
-
 quarter
 el trimestre
 
@@ -4399,32 +4345,11 @@ eficaz
 summit
 la cima
 
-cherry
-la cereza
-
-user
-el usuario
-
-kiosk
-el quiosco
-
 health
 la sanidad
 
-toothbrush
-el cepillo de dientes
-
-comb
-el peine
-
 composer
 el compositor
-
-joy
-la alegría
-
-to ride a bicycle
-montar en bicicleta
 
 jeans
 los vaqueros
@@ -4438,50 +4363,14 @@ el fotógrafo
 to premiere
 estrenar
 
-to mow the lawn
-cortar el césped
-
-unemployment
-el desempleo
-
 season
 la temporada
-
-businessman
-el empresario
 
 balance
 el equilibrio
 
-apartment building
-el edificio de apartamentos
-
-eraser
-el borrador
-
-chalkboard
-la pizarra
-
-flour
-la harina
-
 to make up
 componer
-
-mushroom
-el champiñón
-
-press
-la prensa
-
-to retire
-jubilarse
-
-fireworks
-los fuegos artificiales
-
-hairdryer
-el secador de pelo
 
 fine arts
 las bellas artes
@@ -4510,44 +4399,20 @@ el beneficio
 environmentalist
 el/la ecologista
 
-laptop
-el/la portátil
-
 to charge for
 cobrar
 
 to resign
 renunciar
 
-self-esteem
-la autoestima
-
-shrimp
-el camarón
-
-mailbox
-el buzón
-
 nutritious
 nutritivo
-
-guest
-el/la huésped
 
 entertainment
 la diversión
 
 to be bored
 aburrirse
-
-to go shopping
-hacer la compra
-
-candle
-la vela
-
-workshop
-el taller
 
 to fire
 despedir
@@ -4858,17 +4723,11 @@ denunciar
 to decrease
 disminuir
 
-syrup
-el jarabe
-
 fire
 el incendio
 
 to assure
 asegurar
-
-savings account
-la cuenta de ahorros
 
 referee
 el árbitro
@@ -4878,9 +4737,6 @@ la huelga
 
 sweatshirt
 la sudadera
-
-to boil
-hervir
 
 stopover
 la escala
@@ -4897,12 +4753,6 @@ la desigualdad
 to rehearse
 ensayar
 
-trust
-la confianza
-
-measurement
-la medida
-
 city council
 el ayuntamiento
 
@@ -4917,9 +4767,6 @@ el almacén
 
 to tie
 empatar
-
-to download
-descargar
 
 liver
 el hígado
@@ -4936,20 +4783,11 @@ la sequía
 to get engaged
 comprometerse
 
-snack
-la merienda
-
-naughty
-travieso
-
 flood
 la inundación
 
 understanding
 comprensivo
-
-surgeon
-el cirujano
 
 cold
 el resfriado
@@ -4974,9 +4812,6 @@ apretado
 
 to lose weight
 adelgazar
-
-to suggest
-sugerir
 
 affectionate
 cariñoso

@@ -61,6 +61,9 @@ los olmos
 sure
 seguro
 
+surgeon
+el cirujano
+
 gold
 el oro
 
@@ -532,6 +535,9 @@ gustar
 to travel
 viajar
 
+naughty
+travieso
+
 then
 luego
 
@@ -715,6 +721,18 @@ la puerta
 expensive
 caro
 
+user
+el usuario
+
+kiosk
+el quiosco
+
+joy
+la alegría
+
+to ride a bicycle
+montar en bicicleta
+
 health
 la salud
 
@@ -750,6 +768,12 @@ ir de compras
 
 cake
 el pastel
+
+to do the shopping
+hacer la compra
+
+workshop
+el taller
 
 birthday cake
 el patel de cumpleaños
@@ -868,6 +892,15 @@ inocente
 to discover
 descubrir
 
+to download
+descargar
+
+trust
+la confianza
+
+measurement
+la medida
+
 discovery
 el descubrimiento
 
@@ -957,6 +990,12 @@ la pintura
 
 firefighter
 el bombero
+
+to retire
+jubilarse
+
+fireworks
+los fuegos artificiales
 
 bomb
 la bomba
@@ -1105,6 +1144,15 @@ la meada
 lake
 el lago
 
+popular
+popular
+
+to fly
+volar
+
+sushi
+el sushi
+
 population
 la población
 
@@ -1239,6 +1287,9 @@ ni
 
 wild
 salvaje
+
+That's wild!
+Está cañón!
 
 guilty
 culpable
@@ -2101,6 +2152,12 @@ el voleibol
 musician
 el músico
 
+mushroom
+el champiñón
+
+press
+la prensa
+
 to listen to music
 escuchar música
 
@@ -2416,6 +2473,9 @@ el voluntario
 toothpaste
 la pasta de dientes
 
+toothbrush
+el cepillo de dientes
+
 tooth
 el diente
 
@@ -2652,6 +2712,9 @@ el puesto
 
 voice
 la voz
+
+voicemail
+el buzón de voz
 
 sound
 el sonido
@@ -3931,6 +3994,9 @@ Disculpe
 Slower please
 Mas despacio por favor
 
+useful
+útil
+
 Where is the station?
 Dónde está la estación?
 
@@ -4864,6 +4930,15 @@ la gota que derramó el vaso
 We're not stupid (don't cook at first boil)
 no nos cocemos al primer hervor
 
+to boil
+hervir
+
+syrup
+el jarabe
+
+savings account
+la cuenta de ahorros
+
 to leave early
 irse con tiempo
 
@@ -4881,6 +4956,15 @@ el helicóptero
 
 to train
 entrenar
+
+self-esteem
+la autoestima
+
+shrimp
+el camarón
+
+mailbox
+el buzón
 
 to throw up (idiom)
 devolver el estomago
@@ -4917,6 +5001,9 @@ electrificado
 
 weeds
 las malas hierbas
+
+hairdryer
+el secador de cabello
 
 blowdryer
 el secador de cabello
@@ -5962,6 +6049,9 @@ las frambuesas
 blackberries
 las moras
 
+pottery
+la cerámica
+
 cherries
 las cerezas
 
@@ -5991,6 +6081,39 @@ el portaviones
 
 fast food restaurant
 restaurante de comidas rápidas
+
+video
+el video
+
+temple
+el templo
+
+enormous
+enorme
+
+contaminated
+contaminado
+
+next
+próximo
+
+independent
+independiente
+
+object
+el objeto
+
+mistake
+el error
+
+violent
+violento
+
+discrimination
+la discriminación
+
+capital
+la capital
 
 the best option
 la mejor opción
@@ -6318,6 +6441,24 @@ el centro
 
 anarchy
 la anarquía
+
+eraser
+el borrador
+
+the comb
+el peine
+
+apartment building
+el edificio de apartamentos
+
+to mow the lawn
+cortar el césped
+
+unemployment
+el desempleo
+
+businessman
+el empresario
 
 dystopia
 la distopía
@@ -6762,3 +6903,12 @@ Give it another shot!
 
 Try again!
 ¡Prueba de nuevo!
+
+What did you say?
+¿Qué dijiste?
+
+Let's go grab some beers
+Vamos por unas chelas
+
+No way!
+No manches!
