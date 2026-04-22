@@ -56,7 +56,7 @@ They told me
 me dijieron
 
 They told you
-me dijieron
+te dijieron
 
 They told him
 le dijieron

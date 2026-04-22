@@ -3448,6 +3448,9 @@ las lecturas
 Thanks for subscribing
 Gracias por suscribirte
 
+For sure!
+Claro si!
+
 From now on...
 A partir de hoy...
 
@@ -4041,9 +4044,6 @@ Me puede traer el menu por favor?
 
 What do you recommend?
 Qué recomienda?
-
-I would like...
-Me gustaría...
 
 For me, a beer please
 Para mí, una cerveza por favor
@@ -6912,3 +6912,9 @@ Vamos por unas chelas
 
 No way!
 No manches!
+
+honeycomb
+el panal
+
+I would like
+quisiera...
