@@ -2029,6 +2029,9 @@ el ratón
 to sunbathe
 tomar el sol
 
+to survive
+sobrevivir
+
 closed
 cerrado
 
@@ -6412,6 +6415,9 @@ Déjalos hacer lo que quieran
 sunvisor
 el parasol
 
+sun
+el solaso
+
 People never change
 La gente nunca cambia
 
@@ -6918,3 +6924,147 @@ el panal
 
 I would like
 quisiera...
+
+environmentally conscious
+consciente del medio ambiente
+
+sustainable
+sostenible
+
+first phase
+primera fase
+
+second phase
+segunda fase
+
+denial
+la negación
+
+rejection
+el rechazo
+
+acceptance
+la aceptación
+
+vending machine
+la máquina expendedora
+
+to scold
+regañar
+
+the american dream
+el sueño americano
+
+suppress
+suprimir
+
+superior
+superior
+
+assimilation
+la asimilación
+
+immigrants
+los inmigrantes
+
+birth control
+el control de la natalidad
+
+powerful
+poderoso
+
+standing desk
+el escritorio de pie
+
+treadmill
+el treadmill
+
+sedentary
+sedentario
+
+learnings
+los aprendizajes
+
+to wither away
+marchitarse
+
+to abuse
+abusar
+
+safety vest
+el chaleco de seguridad
+
+a videocall
+una videollamada
+
+cornerstore
+la tienda de la esquina
+
+roof
+el tejado
+
+How could I forget!
+¡Cómo se me pudo olvidar!
+
+It's time to party!
+¡A festejar!
+
+It's been an uphill battle
+ha sido una lucha cuesta arriba
+
+Independent journalism
+el periodismo independiente
+
+A challenge at every step
+un desafío en cada paso
+
+A good resume makes a world of difference
+un buen CV lo cambia todo
+
+A good first impression is paramount
+una buena primera impresión lo es todo
+
+Only then can we be finished
+solo entonces habremos terminado
+
+the next chapter
+el próximo capítulo
+
+we're all in this together
+estamos juntos en esto
+
+Think hard!
+¡Piénsatelo con calma!
+
+I keep no secrets
+no guardo secretos
+
+Vercel hosts her website
+Vercel aloja su sitio web
+
+I will show you the deployment
+te mostraré el despliegue
+
+Always date the nerd!
+¡Sal siempre con alguien nerd!
+
+...just like you've always wanted
+...justo como siempre has querido
+
+Start by getting your foot in the door
+lo primero es hacerte un hueco
+
+an ad (advertisement)
+un anuncio (publicitario)
+
+silly things
+tonterías
+
+frivolous
+frívolo
+
+Strait of Hormuz
+Estrecho de Ormuz
+
+rubber band
+la banda elastica 
