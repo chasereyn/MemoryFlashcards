@@ -1198,6 +1198,9 @@ querida Sarah
 advertisement
 el anuncio
 
+ad
+el anuncio
+
 refrigerator
 el refrigerador
 
@@ -7054,11 +7057,8 @@ Always date the nerd!
 Start by getting your foot in the door
 lo primero es hacerte un hueco
 
-an ad (advertisement)
-un anuncio (publicitario)
-
 silly things
-tonterías
+las tonterías
 
 frivolous
 frívolo

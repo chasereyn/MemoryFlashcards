@@ -67,7 +67,7 @@ The investigation was launched at his behest.
 a person who publicly supports or recommends a particular cause or policy
 advocate
 
-She is a supporter for environmental protection.
+She is a supporter of environmental protection.
 She is an advocate for environmental protection.
 
 concerned with beauty or the appreciation of beauty
@@ -78,6 +78,9 @@ The garden has a pleasing aesthetic.
 
 to arouse public concern and prompt action
 to agitate
+
+The group tried to stir public concern about the rent hikes.
+The group tried to agitate for stricter rent controls.
 
 have enough money to pay for
 afford
@@ -119,7 +122,7 @@ the state of having mixed feelings or contradictory ideas about something or som
 ambivalence
 
 He had mixed feelings about moving to a new city.
-He felt ambivalence about moving to a new city.
+He felt ambivalent about moving to a new city.
 
 comparable in certain respects, typically in a way that makes clearer the nature of the things compared
 analogous
@@ -168,24 +171,6 @@ treachery
 
 The king saw the secret alliance as a stab in the back.
 The king saw the secret alliance as treachery.
-
-A crude stand-in for "at the bleeding edge"
-at the foreskin of research
-
-The team is at the bleeding edge of research.
-The team is at the foreskin of research.
-
-federal student loan whose interest is paid (or otherwise does not accrue) while you are enrolled at least half-time
-subsidized
-
-Her award letter included loans where interest did not pile up until after she left school.
-Her award letter included subsidized loans where interest did not pile up until after she left school.
-
-federal student loan on which interest accrues from disbursement, including while you are still in school
-unsubsidized
-
-Her award letter also listed loans that started accruing interest from the first payout.
-Her award letter also listed unsubsidized loans that started accruing interest from the first payout.
 
 Wry joke about showing off modern tech or skill in the distant past
 If you went back 1000 years and did this, you'd either start a religion or be burned alive.
@@ -247,15 +232,81 @@ All that glitters is not gold.
 The merch table glittered with hype, yet the album was unfinished.
 The merch table glittered with hype, yet the album was unfinished—proof that all that glitters is not gold.
 
-sounds like what caramel tastes like
-mellifluous
-
-The narrator's voice was smooth and sweet on the audiobook track.
-The narrator's voice was mellifluous on the audiobook track.
-
 when you win, your critics serve you (brag)
 All my haters become my waiters when I sit down at the table of success.
 
 He said his rivals would wait on him after he finally won.
 He said, "All my haters become my waiters when I sit down at the table of success."
+
+warm and friendly; sincere (especially of a welcome, manner, or relations)
+cordial
+
+The two leaders exchanged a polite, friendly greeting.
+The two leaders exchanged a cordial greeting.
+
+comically or repulsively ugly, distorted, or wrong (often shockingly so)
+grotesque
+
+The mask looked disturbingly warped in the lamplight.
+The mask looked grotesque in the lamplight.
+
+evoking a keen sense of sadness, regret, or other deep, affecting feeling
+poignant
+
+The old photograph was deeply moving in a quiet way.
+The old photograph was poignant.
+
+so lacking in freshness or novelty as to be obvious, dull, and boring
+banal
+
+His closing argument was a tired cliché everyone had heard before.
+His closing argument was banal.
+
+showy, confident, and striking in style or manner
+flamboyant
+
+The pianist's stage outfits were loud and hard to miss.
+The pianist's stage outfits were flamboyant.
+
+extreme greed for wealth or material gain
+avarice
+
+His love of money seemed to have no limit.
+His avarice seemed to have no limit.
+
+the feeling that someone or something is unworthy of respect; contempt; scorn
+disdain
+
+She looked at the bribe with open contempt.
+She looked at the bribe with disdain.
+
+hesitating to trust; of doubtful value, veracity, or quality; suspect
+dubious
+
+The witness's alibi seemed unreliable on its face.
+The witness's alibi seemed dubious on its face.
+
+to arrest (someone, especially a criminal suspect) for a crime; to take into custody
+to apprehend
+
+The police finally caught the fugitive on the border.
+The police finally apprehended the fugitive on the border.
+
+occurring or discovered by a fortunate accident; opportune and unplanned
+serendipitous
+
+Their partnership started from a chance meeting in an airport line.
+Their partnership was serendipitous, born from a chance meeting in an airport line.
+
+having or showing great learning; deeply educated (often in literature or a narrow field)
+erudite
+
+The critic's reviews were full of bookish references and insight.
+The critic's reviews were erudite.
+
+courteous, refined, and at ease; polished in manner (suggesting sophistication)
+urbane
+
+He was smooth, polite, and unflappable at the tense dinner.
+He was urbane at the tense dinner.
 

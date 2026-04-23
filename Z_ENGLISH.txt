@@ -1,7 +1,3 @@
--------- VOCAB
-
-sounds like what caramel tastes like redo that again
-
 how stupid average person, half stupider than that
 used to be a fan now I'm an air conditioner
 beauty is in the eye of the beholder
@@ -66,11 +62,12 @@ rancor
 odious
 feeble
 
+https://www.rd.com/article/dark-jokes/
+JOKES FOR EACH ITEM
+AND IN SPANISH
+
 Think about that / Let that sink in
 Ponder the implications
-
-Ugly
-Grotesque
 
 That's exciting
 That's exhilarating
@@ -132,9 +129,6 @@ it's nice to have a quiescent day
 we have a lot of alcohol
 we have a plethora of alcohol
 
-Touching, moving, emotional, memorable, deep
-Poignant
-
 We all become flatters when a cop pulls us over
 We all become sycophants when a cop pulls us over
 
@@ -147,17 +141,11 @@ Today I juxtaposed Mac and Windows
 The lively young boy jumped into the leaves
 The alacritous young boy jumped into the leaves
 
-A noisy argument or disagreement
-Altercation
-
 Multicolored
 Polychromatic
 
 Although
 Albeit
-
-Lame, non-original
-Banal
 
 The early bird gets the worm
 Prompt action yields rewards
@@ -203,9 +191,6 @@ I'm about to wage war on this problem
 
 She was pretty private about her personal affairs
 She was extremely reticent about her personal affairs
-
-It was a flashy acrobatics show, crazy, lots of action
-It was a flamboyant display of aerobatics
 
 He was a popular man, he liked company
 He was a popular and gregarious man
@@ -276,9 +261,6 @@ Perform actions that achieve measurable progress
 Now I'm out of my flow
 Now you messed up my mojo!
 
-Where do you like to eat?
-Where do you like to dine?
-
 It was the most disgusting nasty smell I think I have ever smelled
 It was the most putrid scent I ever smelled
 
@@ -315,9 +297,6 @@ I'm glad he could have it
 Dumb / stupid
 Ignoramous
 
-To find / extract
-Excavate
-
 That's a little more on your level
 That's more tuned to your mental caliber
 
@@ -344,9 +323,6 @@ You'd be hard-pressed to find...
 
 To disturb
 To make waves
-
-Extreme greed
-Avarice
 
 Just get it done
 Rip it and ship it
@@ -404,9 +380,6 @@ As the crowd dispered, the noise diminished
 The team disagreed
 There was discord among the team
 
-She looked at the mess with disgust
-She looked at the mess with disdain
-
 He felt hopeless watching the building collapse
 He was in dismay as the building collapsed
 
@@ -422,9 +395,6 @@ Dominion
 The weather was pretty grey and sad
 The weather was dreary and overcast
 
-Sus
-Dubious
-
 It blends in well
 It's inconspicuous
 
@@ -439,9 +409,6 @@ You seem hell-belt over...
 
 Bye Bye (idiom)
 Hasta Lasagna
-
-To arrest
-to apprehend
 
 Chillin' out
 Luxuriating
@@ -475,9 +442,6 @@ He's got his fingers glued at the fingertips like an evil boss
 
 It's stuck in the middle
 It's in limbo
-
-deal with it
-kick rocks
 
 they're gonna be upset
 they're gonna cry when it happens
@@ -529,9 +493,6 @@ My spider sense tells me that...
 
 Let's go
 Let's hit the hyperdrive
-
-We need to change
-We need to adapt
 
 Was enough for
 Was adequate for
@@ -596,15 +557,6 @@ Fallback...or should I say spring ahead
 
 Barely
 By the skin of your teeth
-
-That was fortunate
-That was serendipitous
-
-He can turn any conversation into a smart discussion
-He can turn any conversation into an erudite discussion
-
-He is quite a curteous gentleman
-He is quite an urbane gentleman
 
 This isn't really working
 I guess I rolled a gutterball with this...
@@ -799,42 +751,6 @@ I'm at a palce in my life when errands are starting to count as going out
 Pass away / Die
 When I die, I want to die like my grandfather who died peacefully in his sleep. Not screaming like all the passengers in his car
 
-Long life
-I intend to live forever. So far, so good
-
-Creative / creativity
-Creativity is knowing how to hide your sources
-
-That's hot / the fire is hot
-Give a man a fire and he's warm for a day, but set him on fire and he's warm for the rest of his life
-
-Education
-Education is what remains after you forget what you learned in school
-
-Memorize
-Never memorize something you can look up
-
-It's hard
-This life's hard, but it's harder if you're stupid
-
-I was trying this thing
-The distance between genius and insanity is measured only by success
-
-Woah, hold up
-Shocking. Positively shocking
-
-I don't think this reference is right
-They'll print anything these days
-
-Airports
-I love airports. You can eat a pizza and have a glass of wine at 7am in track pants and nobody cares
-
-Doing Nothing
-People say nothing is impossible, but I do nothing every day
-
-Dark / Night
-A day without sunsine is like, you know, night
-
 Deadlines
 I love deadlines. I love the whooshing sound they make as they go by
 
@@ -984,7 +900,3 @@ bartender says sorry we don't serve your type here
 
 Someone broke into the local Walmart and stole a case of red bull
 I don't know how he sleeps at night
-
--------- INSULTS
-
--------- PICKUP LINES
