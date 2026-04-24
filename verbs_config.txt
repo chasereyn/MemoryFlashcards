@@ -1,6 +1,6 @@
 preterite-yo: 0
 preterite-el: 0
 questions: 0
-llevar: 0
+llevar: 1
 seguir: 1
-andar: 0
+andar: 1
