@@ -7,7 +7,7 @@ The storm began to abate after several hours of heavy rain.
 existing in thought or as an idea but not having a physical or concrete existence
 abstract
 
-Her paintings were full of unreal shapes and colors.
+Her paintings did not depict recognizable people, places, or things.
 Her paintings were full of abstract shapes and colors.
 
 very bad
@@ -16,7 +16,7 @@ abysmal
 The team's performance was terrible in last night's game.
 The team's performance was abysmal in last night's game.
 
-to be in accordance with
+in a way that fits the facts; as a natural or logical result; therefore
 accordingly
 
 She studied hard and, as a result, did well on the exam.
@@ -122,7 +122,7 @@ the state of having mixed feelings or contradictory ideas about something or som
 ambivalence
 
 He had mixed feelings about moving to a new city.
-He felt ambivalent about moving to a new city.
+He could not quite shake his ambivalence about moving to a new city.
 
 comparable in certain respects, typically in a way that makes clearer the nature of the things compared
 analogous
@@ -145,8 +145,8 @@ The test results showed an anomaly.
 pleasant and agreeable in character; friendly and suited to one's company
 congenial
 
-The committee room felt warm and welcoming during the discussion.
-The committee room felt congenial during the discussion.
+The other people at the table were warm and easy to talk to.
+The other people at the table were congenial.
 
 skill in achieving one's ends by deceit or evasive cleverness
 cunning
@@ -181,13 +181,13 @@ If you went back 1000 years and did this, you'd either start a religion or be bu
 when something is spot on; exactly right or perfectly timed (informal)
 bullseye moment
 
-His reply named the problem nobody else dared to say out loud.
+His reply pinpointed the problem nobody else dared to name out loud.
 His reply was a bullseye moment.
 
 a really long time ago (informal, nostalgic)
 many moons ago
 
-She learned to drive in another decade entirely.
+It feels like a different lifetime, but she still remembers her first time behind the wheel.
 Many moons ago, she learned to drive.
 
 a new era of; renewed interest in (formal or literary)
@@ -211,14 +211,14 @@ The volunteers were overzealous about flagging every tiny paperwork error.
 ready to accept control or instruction; submissive and easy to manage
 docile
 
-The rescue horse was gentle and let the volunteers lead it.
-The rescue horse was docile and let the volunteers lead it.
+The rescue horse did not resist as the volunteers clipped on the lead rope.
+The rescue horse was docile as the volunteers led it away.
 
 (of a victory) won at such a cost that it is hardly worth winning
 pyrrhic
 
-The settlement was a costly win for the firm.
-The settlement was a pyrrhic win for the firm.
+The firm won the case, but the fees had wiped out the upside.
+The settlement was a pyrrhic victory for the firm.
 
 dealing with things sensibly and realistically; practical rather than idealistic
 pragmatic

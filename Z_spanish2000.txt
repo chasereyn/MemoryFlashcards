@@ -1432,17 +1432,8 @@ el departamento
 to keep in mind
 tener en cuenta
 
-to pack
-hacer la maleta
-
-olive
-la aceituna
-
 advisor
 el asesor
-
-princess
-la princesa
 
 to joke
 bromear
@@ -1450,32 +1441,8 @@ bromear
 to exchange
 intercambiar
 
-pessimistic
-pesimista
-
 to declare
 manifestar
-
-to hug each other
-abrazarse
-
-teenager
-el/la adolescente
-
-solidarity
-la solidaridad
-
-murder
-el asesinato
-
-waste
-el desperdicio
-
-enemy
-el enemigo
-
-institute
-el instituto
 
 match
 el fósforo
@@ -1483,50 +1450,11 @@ el fósforo
 to put on one's clothes
 ponerse la ropa
 
-to accuse
-acusar
-
-outer
-exterior
-
-sweetness
-la dulzura
-
-result
-el resultado
-
-to be lucky
-tener suerte
-
-skating
-el patinaje
-
-phenomenon
-el fenómeno
-
 exaggerated
 exagerado
 
-personality
-la personalidad
-
 hairstyle
 el peinado
-
-tradition
-la tradición
-
-citizenship
-la ciudadanía
-
-introverted
-introvertido
-
-rule
-la norma
-
-winner
-el ganador
 
 figure
 la figura
@@ -1536,9 +1464,6 @@ el torneo
 
 glass
 el cristal
-
-waterfall
-la cascada
 
 to introduce oneself
 presentarse
@@ -1909,50 +1834,17 @@ el investigador
 media
 los medios de comunicación
 
-traveler's check
-el cheque de viajero
-
-cholesterol
-el colesterol
-
 boarding gate
 la puerta de embarque
 
 to get angry with
 enojarse con
 
-stockbroker
-el corredor de bolsa
-
 before
 antes que
 
-slogan
-el eslogan
-
-drug addict
-el drogadicto
-
-ecosystem
-el ecosistema
-
-accessory
-el accesorio
-
-genetics
-la genética
-
 to go on a trip
 ir de excursión
-
-life jacket
-el chaleco salvavidas
-
-nightlife
-la vida nocturna
-
-atmosphere
-la atmósfera
 
 curriculum vitae
 el currículum vitae

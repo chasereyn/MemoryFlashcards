@@ -196,8 +196,8 @@ tranquilo
 young
 joven
 
-field / countryside
-el campo
+fields
+los campos
 
 music
 la música
@@ -207,9 +207,6 @@ empezar
 
 on (on top of)
 sobre
-
-to hurt
-doler
 
 store
 la tienda
@@ -345,9 +342,6 @@ alguno
 
 pollution
 la contaminación
-
-container
-el contenedor
 
 to know someone
 conocer
@@ -851,7 +845,7 @@ place
 el lugar
 
 to work
-trabajar
+chambear
 
 too much
 demasiado
@@ -936,6 +930,12 @@ proteger
 
 incidents
 los incidentes
+
+life jacket
+el chaleco salvavidas
+
+atmosphere
+la atmósfera
 
 night life
 la vida nocturna
@@ -1900,8 +1900,8 @@ la gorra
 salary
 el sueldo
 
-stone
-la piedra
+stones
+las piedras
 
 twenty-one
 veintiuno
@@ -2138,7 +2138,7 @@ important
 importante
 
 meeting
-la reunión
+la junta
 
 to pollute
 contaminar
@@ -2200,8 +2200,8 @@ con
 to feel
 sentirse
 
-birthday
-el cumpleaños
+Happy birthday!
+¡Feliz cumpleaños!
 
 lazy
 flojo
@@ -2436,6 +2436,9 @@ el desierto
 
 show
 el espectáculo
+
+chicken breast
+la pechuaga
 
 baseball
 el béisbol
@@ -2854,8 +2857,8 @@ rezar
 legal
 legal
 
-to encourage
-animar
+Cheer up!
+¡Anímate!
 
 to be afraid
 tener miedo
@@ -3097,9 +3100,6 @@ el destino
 lively
 animado
 
-host
-el anfitrión
-
 in the morning
 por la mañana
 
@@ -3259,8 +3259,8 @@ la forma
 size
 el tamaño
 
-Firmly
-Fijamente
+firmly
+fijamente
 
 To give a hand
 Echar la mano
@@ -3275,7 +3275,7 @@ stapler
 engrapadora
 
 staples
-grapas
+las grapas
 
 rocket
 el cohete
@@ -4066,11 +4066,11 @@ Está incluido el servicio?
 It's very good
 Esta muy bueno
 
-Enjoy your meal!
-Buen provecho
+Bon appétit!
+¡Buen provecho!
 
 Cheers!
-Salud!
+¡Salud!
 
 Bless you!
 Salud!
@@ -4185,6 +4185,9 @@ Buena suerte!
 
 Take care!
 Con cuidado!
+
+Be careful!
+¡Ten Cuidado!
 
 Have fun!
 Que lo pases bien!
@@ -4327,8 +4330,8 @@ equilibrado
 You're not gonna believe it!
 No vas a creerlo!
 
-Guess what!
-Adivida qué!
+Guess what?
+Que crees?
 
 guests
 los huespedes
@@ -4387,8 +4390,11 @@ la estética
 warehouse
 el almacén
 
-That's enough!
-Ya estuvo!
+Enough talk! That's enough!
+Esto es. Basta ya
+
+sense of humor
+sentido del humor
 
 Stop it!
 Párate
@@ -4494,6 +4500,9 @@ distinguido
 
 very good indeed!
 muy bien indeed!
+
+Good idea!
+¡buena idea!
 
 that makes me happy!
 eso me hace feliz
@@ -4780,9 +4789,6 @@ Me acostumbré
 I forgot
 se me olvidó
 
-what do you think?
-Cómo lo piensas?
-
 bankrupcy
 la quiebra
 
@@ -4867,9 +4873,6 @@ candado
 candles
 las velas
 
-to lock the door
-echar llave la puerta
-
 Mr Fit-me-in
 Sr. Caemebien
 
@@ -4893,9 +4896,6 @@ Camaron que se duerme, se lo lleva la corriente
 
 Just say it as it is
 Al pan, pan. Y al vino, vino
-
-To throw (oneself) onto the bed
-Echarse a dormir
 
 To fire someone (throw out of a job)
 Echar a alguien del trabajo
@@ -4948,11 +4948,8 @@ la cuenta de ahorros
 to leave early
 irse con tiempo
 
-Pleasure (to meet you)
-Encantado
-
-to make a mistake
-meter la pata
+Pleasure! (nice to meet you)
+Encantado!
 
 don't put up with that shit (don't take the crumbs)
 no seas migajero
@@ -4990,8 +4987,23 @@ el moto acuático
 thick skin
 piel dura
 
+stockbroker
+el corredor de bolsa
+
 slogan
-eslogan
+el eslogan
+
+drug addict
+el drogadicto
+
+ecosystem
+el ecosistema
+
+accessory
+el accesorio
+
+genetics
+la genética
 
 fist
 puño
@@ -5070,9 +5082,6 @@ es raro
 
 you're welcome
 de nada
-
-way of life
-modo de vida
 
 to be at war
 estar en guerra
@@ -5305,6 +5314,12 @@ Te aviso
 I'm hungry
 Tengo hambre
 
+I'm in a hurry
+tengo prisa
+
+my feet hurt
+me duelen los pies
+
 I'm staying at a hotel
 me quedo en el hotel
 
@@ -5326,8 +5341,29 @@ drogar
 aztec culture
 la cultura azteca
 
+traveler's check
+el cheque de viajero
+
+cholesterol
+el colesterol
+
 hostel
 el hostal
+
+tradition
+la tradición
+
+citizenship
+la ciudadanía
+
+introverted
+introvertido
+
+winner
+el ganador
+
+personality
+la personalidad
 
 brothal
 el burdel
@@ -5596,9 +5632,6 @@ la ardilla
 spanish-speaking
 hispanohablante
 
-feel me whispering in your ear
-siente que estoy al oído susurrando
-
 I took her with me
 Me la llevé
 
@@ -5709,6 +5742,27 @@ Ponle un lazo al regalo
 
 I like your bowtie
 Me gusta tu pajarita
+
+pessimistic
+pesimista
+
+teenager
+el/la adolescente
+
+solidarity
+la solidaridad
+
+murder
+el asesinato
+
+waste
+el desperdicio
+
+enemy
+el enemigo
+
+institute
+el instituto
 
 This is why we have ants
 Y por eso tenemos hormigas
@@ -5851,11 +5905,29 @@ se ha acabado el tiempo
 soon
 pronto
 
-There's something in my eye
-Me pica el ojo
+to accuse
+acusar
+
+outer
+exterior
+
+sweetness
+la dulzura
+
+result
+el resultado
+
+to be lucky
+tener suerte
+
+skating
+el patinaje
 
 phenomenon
-fenómeno
+el fenómeno
+
+There's something in my eye
+Me pica el ojo
 
 belly button
 el ombligo
@@ -6445,8 +6517,11 @@ la avenida principal
 small successes lead to big successes
 los pequeños éxitos llevan a grandes éxitos
 
-downtown
-el centro
+I'm going downtown
+voy al centro
+
+to encourage someone
+dar ánimo a alguien
 
 anarchy
 la anarquía
@@ -7067,4 +7142,202 @@ Strait of Hormuz
 Estrecho de Ormuz
 
 rubber band
-la banda elastica 
+la goma elástica
+
+The hosts made us feel at home
+Los anfitriones nos hicieron sentir como en casa
+
+oysters
+las ostras
+
+microplastics
+los microplásticos
+
+plastification
+la plastificación
+
+rocks
+las rocas
+
+pebbles
+los guijarros
+
+Do you regret it?
+¿Te arrepientes?
+
+Put the lid on the container
+Ponle la tapa al recipiente
+
+calories
+las calorías
+
+guinea pig
+el conejillo de Indias
+
+otter
+la nutria
+
+capybara
+el capibara
+
+dust bunny
+una bola de polvo
+
+put your glass on a coaster
+pon el vaso en el posavasos
+
+water filter
+el filtro de agua
+
+to ingest
+ingerir
+
+gravel
+la grava
+
+cobblestone
+el adoquín
+
+That doesn't matter!
+¡Eso no importa!
+
+Is he on a leash?
+¿Va con correa?
+
+A salad with ranch dressing and croutons
+Una ensalada con aderezo ranch y picatostes
+
+What do you think?
+¿Qué te parece?
+
+drying rack
+el escurridor
+
+clothes line
+la cuerda de tender
+
+Lock the door please
+Echa llave la puerta, por favor
+
+Did you lock the door?
+¿Cerraste la puerta con llave?
+
+red velvet
+el pastel de terciopelo rojo
+
+Everyone has a different way of life
+Cada quien tiene su forma de vivir
+
+Did you put them to sleep?
+¿Ya los acostaste?
+
+teddy bear
+el osito de peluche
+
+golf ball
+la pelota de golf
+
+carabiner
+el mosquetón
+
+She's from the city and I'm from the country
+Ella es de la ciudad y yo del campo
+
+scale
+la báscula
+
+What does it involve?
+¿En qué consiste?
+
+The things that matter are...
+Lo que de verdad importa es...
+
+two adjoining rooms
+dos habitaciones contiguas
+
+I'm afraid of cats
+tengo miedo a los gatos
+
+I'm afraid she won't come
+Me temo que no venga
+
+the day after
+el día siguiente
+
+I never saw him again
+no lo volví a ver
+
+Is it alright to leave now?
+¿Puedo irme ahora?
+
+Do you have any idea at all?
+¿Tienes alguna idea?
+
+he is as tall as John
+el es tan alto como Juan
+
+I don't like dogs at all
+no me gustan nada los perros
+
+I'll be right back
+regreso en un ratito
+
+I bet he doesn't come
+apuesto a que no viene
+
+to pack
+hacer la maleta
+
+olive
+la aceituna
+
+Date of birth?
+¿Fecha de nacimiento?
+
+I booked a room
+tengo una habitación reservada
+
+I did it by myself
+lo hice yo solito
+
+What's that called?
+¿Cómo se llama a esto?
+
+Merry Christmas!
+¡Feliz navidad!
+
+I had no choice
+no tuve alternativa
+
+Is it close?
+¡está cerca?
+
+I have no clue
+no tengo ni idea
+
+it's chilly today
+hace fresquito hoy
+
+Come in!
+¡adelante!
+
+Come on! tell me
+¡anda! Dime
+
+damn it
+¡Maldita sea!
+
+That'll work!
+¡Ya vale!
+
+I have insurance
+tengo seguro
+
+I've just arrived
+acabo de llegar
+
+I was just about to leave when...
+estaba a punto de salir cuando...
+
+last week
+la semana pasada
