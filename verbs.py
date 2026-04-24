@@ -1,17 +1,23 @@
+"""
+Spanish verb practice deck: load config + CSV, then for each verb emit 3 unique
+(construction, subject) flashcards, seeded by year+month+verb. Each construction
+isolates its own English/Spanish logic in one builder function.
+"""
+from __future__ import annotations
+
 import csv
 import json
 import os
 import random
-from typing import Dict, List, Tuple, Optional
+import re
+from dataclasses import dataclass
+from datetime import date
+from typing import Callable, Dict, List, Optional, Tuple
 
-
-# Map for 7 English persons: I, you, he, it, we, they, you guys
-# Spanish persons: yo, tu, ud, nosotros, uds (Latin American - uds for both they and you guys)
-SPANISH_PERSON_KEYS = ['yo', 'tu', 'ud', 'nosotros', 'uds']
+# —— 7 English “subjects” → Latin American Spanish person keys
+SPANISH_PERSON_KEYS = ["yo", "tu", "ud", "nosotros", "uds"]
 ENGLISH_PRONOUNS = ["I", "you", "he", "it", "we", "they", "you guys"]
-SPANISH_MAP = [0, 1, 2, 2, 3, 4, 4]  # it=he, you guys=they
-
-# Clitic before auxiliary in "nos andamos acostando" (Latin American persons only).
+SPANISH_MAP = [0, 1, 2, 2, 3, 4, 4]
 _REFLEXIVE_CLITIC_BY_KEY = {
     "yo": "me",
     "tu": "te",
@@ -19,6 +25,70 @@ _REFLEXIVE_CLITIC_BY_KEY = {
     "nosotros": "nos",
     "uds": "se",
 }
+GERUND_AUXILIARIES = ("llevar", "seguir", "andar")
+VALID_FLAGS = frozenset(
+    {
+        "preterite-yo",
+        "preterite-el",
+        "llevar",
+        "seguir",
+        "andar",
+        "acabar",
+        "questions",
+    }
+)
+# Known construction ids, order used only for stable sorting. Add new ids at the end.
+CONSTRUCTION_ORDER: Tuple[str, ...] = (
+    "preterite",
+    "llevar",
+    "seguir",
+    "andar",
+    "acabar",
+    "questions",
+)
+Flashcard = Tuple[str, str]  # (english, spanish,)
+
+
+@dataclass
+class VerbContext:
+    """Per-verb + global runtime for builders (all config-driven, no hardcoded verb list)."""
+    flags: dict
+    auxiliary_data: Dict[str, dict]  # lemma -> loaded JSON
+    acabar_data: Optional[dict]
+    verbs_dir: str
+    rotation_seed: str  # "YYYY-MM"
+    wh_choice: str
+    stative: bool
+    acabar_de_english: str  # "past" | "ing" from CSV
+
+
+# --------------------------------------------------------------------------- #
+# JSON + English / Spanish form helpers
+# --------------------------------------------------------------------------- #
+
+
+def _verb_json_filename(verb: str) -> str:
+    return (
+        verb.replace("ñ", "n")
+        .replace("á", "a")
+        .replace("é", "e")
+        .replace("í", "i")
+        .replace("ó", "o")
+        .replace("ú", "u")
+    )
+
+
+def load_verb_json(verb: str, verbs_dir: str = "verbs") -> Optional[dict]:
+    for candidate in [verb, _verb_json_filename(verb)]:
+        path = os.path.join(verbs_dir, f"{candidate}.json")
+        if os.path.exists(path):
+            try:
+                with open(path, "r", encoding="utf-8") as f:
+                    return json.load(f)
+            except (json.JSONDecodeError, OSError) as e:
+                print(f"Warning: Could not load {path}: {e}")
+                return None
+    return None
 
 
 def _is_reflexive_infinitivo(json_data: dict) -> bool:
@@ -26,11 +96,20 @@ def _is_reflexive_infinitivo(json_data: dict) -> bool:
     return inf.endswith(("arse", "erse", "irse"))
 
 
+def _spanish_reflexive_infinitive_for_person(json_data: dict, spanish_key: str) -> str:
+    inf = (json_data.get("infinitivo") or "").strip()
+    if not _is_reflexive_infinitivo(json_data) or not inf or len(inf) < 4:
+        return inf
+    if not inf.lower().endswith("se"):
+        return inf
+    stem = inf[:-2]
+    clitic = _REFLEXIVE_CLITIC_BY_KEY.get(spanish_key, "")
+    if not clitic:
+        return inf
+    return f"{stem}{clitic}"
+
+
 def _spanish_gerund_for_auxiliary_reflexive(gerund: str) -> str:
-    """
-    Jehle reflexive gerunds end in -se (e.g. acostándose). For
-    clitic + auxiliary + gerund, use the non-reflexive gerund (acostando).
-    """
     g = gerund.strip()
     lower = g.lower()
     if lower.endswith("yéndose"):
@@ -44,143 +123,146 @@ def _spanish_gerund_for_auxiliary_reflexive(gerund: str) -> str:
     return g
 
 
-def _verb_json_filename(verb: str) -> str:
-    """Resolve verb to JSON filename (handles ñ→n for filesystem compatibility)."""
-    return verb.replace('ñ', 'n').replace('á', 'a').replace('é', 'e').replace('í', 'i').replace('ó', 'o').replace('ú', 'u')
-
-
-def load_verb_json(verb: str, verbs_dir: str = "verbs") -> Optional[dict]:
-    """
-    Load verb data from verbs/{verb}.json.
-    Returns None if file doesn't exist.
-    Handles ñ/accents in verb names (e.g. bañarse -> banyarse.json, añadir -> anyadir.json).
-    """
-    for candidate in [verb, _verb_json_filename(verb)]:
-        path = os.path.join(verbs_dir, f"{candidate}.json")
-        if os.path.exists(path):
-            try:
-                with open(path, 'r', encoding='utf-8') as f:
-                    return json.load(f)
-            except (json.JSONDecodeError, OSError) as e:
-                print(f"Warning: Could not load {path}: {e}")
-                return None
-    return None
-
-
 def _primary_english_verb_gloss(english_infinitivo: str) -> str:
-    """
-    One short English lemma for drills: first sense before ; or ,, strip 'to ',
-    drop a parenthetical like '(a vehicle)'.
-    """
     s = english_infinitivo.strip()
     if not s:
-        return ''
-    if s.lower().startswith('to '):
+        return ""
+    if s.lower().startswith("to "):
         s = s[3:].strip()
-    main = s.split(';')[0].strip()
-    if ',' in main:
-        main = main.split(',')[0].strip()
-    if '(' in main:
-        main = main.split('(')[0].strip()
+    main = s.split(";")[0].strip()
+    if "," in main:
+        main = main.split(",")[0].strip()
+    if "(" in main:
+        main = main.split("(")[0].strip()
     return main
 
 
 def _get_english_base(json_data: dict) -> str:
-    """Base for English phrasing: primary gloss from english.infinitivo, else Spanish lemma."""
-    eng = json_data.get('english', {}) or {}
-    inf_en = eng.get('infinitivo', '')
+    eng = json_data.get("english", {}) or {}
+    inf_en = eng.get("infinitivo", "")
     if isinstance(inf_en, str) and inf_en.strip():
         return _primary_english_verb_gloss(inf_en)
-    inf = json_data.get('infinitivo', '')
+    inf = json_data.get("infinitivo", "")
     if isinstance(inf, str):
         return inf.strip()
-    return ''
+    return ""
 
 
 def _derive_3rd_person(base: str) -> str:
-    """Derive 3rd person singular from base (e.g., 'go' -> 'goes'). Simple rules."""
     if not base:
-        return ''
-    if base.endswith(('s', 'x', 'z', 'ch', 'sh')):
-        return base + 'es'
-    if base.endswith('y') and len(base) > 1 and base[-2] not in 'aeiou':
-        return base[:-1] + 'ies'
-    return base + 's'
+        return ""
+    if base.endswith(("s", "x", "z", "ch", "sh")):
+        return base + "es"
+    if base.endswith("y") and len(base) > 1 and base[-2] not in "aeiou":
+        return base[:-1] + "ies"
+    return base + "s"
 
 
 def _derive_simple_past(base: str) -> str:
-    """Derive simple past from base (e.g., 'talk' -> 'talked'). Simple rules."""
     if not base:
-        return ''
-    if base.endswith('e'):
-        return base + 'd'
-    if base.endswith('y') and len(base) > 1 and base[-2] not in 'aeiou':
-        return base[:-1] + 'ied'
-    if len(base) >= 2 and base[-1] in 'bdgmnprt' and base[-2] in 'aeiou':
-        return base + base[-1] + 'ed'
-    return base + 'ed'
+        return ""
+    if base.endswith("e"):
+        return base + "d"
+    if base.endswith("y") and len(base) > 1 and base[-2] not in "aeiou":
+        return base[:-1] + "ied"
+    if len(base) >= 2 and base[-1] in "bdgmnprt" and base[-2] in "aeiou":
+        return base + base[-1] + "ed"
+    return base + "ed"
+
+
+def _get_english_past_participle(json_data: dict) -> str:
+    eng = json_data.get("english", {}) or {}
+    pp = (eng.get("participioPasado") or "").strip()
+    if pp:
+        return pp
+    base = _get_english_base(json_data)
+    if not base:
+        return ""
+    if base.endswith("e"):
+        return base + "d"
+    if base.endswith("y") and len(base) > 1 and base[-2] not in "aeiou":
+        return base[:-1] + "ied"
+    return base + "ed"
 
 
 def _get_gerund(json_data: dict) -> str:
-    """Get English gerund from JSON."""
-    return (json_data.get('english', {}).get('gerundio', '') or '').strip()
+    return (json_data.get("english", {}) or {}).get("gerundio", "") or ""
 
 
 def _get_3rd_person(json_data: dict, prefs: dict) -> str:
-    """Get 3rd person singular - from JSON, override, or derive."""
-    from_json = (json_data.get('english', {}) or {}).get('thirdPersonSingular', '').strip()
+    from_json = (json_data.get("english", {}) or {}).get("thirdPersonSingular", "") or ""
+    from_json = from_json.strip()
     if from_json:
         return from_json
-    override = prefs.get('en_3rd_person', '').strip()
+    override = (prefs.get("en_3rd_person") or "").strip()
     if override:
         return override
-    base = _get_english_base(json_data)
-    return _derive_3rd_person(base)
+    return _derive_3rd_person(_get_english_base(json_data))
 
 
 def _get_simple_past(json_data: dict, prefs: dict) -> str:
-    """Get simple past - from override, JSON, or derive."""
-    override = prefs.get('en_past', '').strip()
+    override = (prefs.get("en_past") or "").strip()
     if override:
         return override
-    # Try to parse from english.indicativo.preterito (e.g., "I went" -> "went")
-    preterito_desc = (json_data.get('english', {}).get('indicativo', {}) or {}).get('preterito', '')
-    if isinstance(preterito_desc, str) and preterito_desc.strip().lower().startswith('i '):
-        parts = preterito_desc.strip().split(None, 1)
+    preterito_desc = (json_data.get("english", {}) or {}).get("indicativo", {}) or {}
+    preterito_desc = (preterito_desc.get("preterito", "") or "").strip() if isinstance(
+        preterito_desc, dict
+    ) else ""
+    if isinstance(preterito_desc, str) and preterito_desc.lower().startswith("i "):
+        parts = preterito_desc.split(None, 1)
         if len(parts) == 2:
             return parts[1].strip()
-    base = _get_english_base(json_data)
-    return _derive_simple_past(base)
+    return _derive_simple_past(_get_english_base(json_data))
 
 
 def _get_spanish_conjugation(json_data: dict, tense: str, person_key: str) -> str:
-    """Get Spanish conjugation from indicativo.presente or indicativo.preterito."""
     try:
-        indicativo = json_data.get('indicativo', {})
-        tense_data = indicativo.get(tense, {})
-        return (tense_data.get(person_key, '') or '').strip()
+        tense_data = (json_data.get("indicativo", {}) or {}).get(tense, {}) or {}
+        return (tense_data.get(person_key, "") or "").strip()
     except (AttributeError, TypeError):
-        return ''
+        return ""
 
 
-def format_english_present_simple(person_index: int, json_data: dict, prefs: dict) -> str:
-    """Format English present simple (e.g., 'he knows')."""
-    pronoun = ENGLISH_PRONOUNS[person_index]
+def _prefs_from_context(ctx: VerbContext) -> dict:
+    return {
+        "es_present_style": "progressive",
+        "stative_english": ctx.stative,
+        "acabar_de_english": ctx.acabar_de_english,
+        "rotation_seed": ctx.rotation_seed,
+    }
+
+
+def _get_english_preterite_1st(json_data: dict) -> str:
+    p = (json_data.get("english", {}) or {}).get("indicativo", {}) or {}
+    p = p.get("preterito", "")
+    if isinstance(p, str) and p.strip().lower().startswith("i "):
+        return p.strip()
     base = _get_english_base(json_data)
-    if person_index in (2, 3):  # he, it
-        verb_form = _get_3rd_person(json_data, prefs)
-    else:
-        verb_form = base
+    past = _derive_simple_past(base)
+    return f"I {past}" if past else ""
+
+
+# --------------------------------------------------------------------------- #
+# English line formatters (used by builders)
+# --------------------------------------------------------------------------- #
+
+
+def format_english_preterite(
+    person_index: int, json_data: dict, prefs: dict
+) -> str:
+    pronoun = ENGLISH_PRONOUNS[person_index]
+    verb_form = _get_simple_past(json_data, prefs)
     return f"{pronoun} {verb_form}"
 
 
-def format_english_present_progressive(person_index: int, json_data: dict, prefs: dict) -> str:
-    """Format English present progressive (e.g., 'he's eating')."""
+def format_english_present_progressive(
+    person_index: int, json_data: dict, prefs: dict
+) -> str:
     gerund = _get_gerund(json_data)
     if not gerund:
         base = _get_english_base(json_data)
-        gerund = base + 'ing' if not base.endswith('e') else base[:-1] + 'ing'
-    pronoun = ENGLISH_PRONOUNS[person_index]
+        gerund = base + "ing" if not base.endswith("e") else base[:-1] + "ing"
+    pron = ENGLISH_PRONOUNS[person_index]
     if person_index == 0:
         return f"I'm {gerund}"
     if person_index == 1:
@@ -192,317 +274,170 @@ def format_english_present_progressive(person_index: int, json_data: dict, prefs
     return f"they're {gerund}" if person_index == 5 else f"you guys are {gerund}"
 
 
-def format_english_present(person_index: int, json_data: dict, prefs: dict) -> str:
-    """Format English present - simple or progressive based on es_present_style."""
-    style = prefs.get('es_present_style', 'progressive').strip().lower()
-    if style == 'simple':
-        return format_english_present_simple(person_index, json_data, prefs)
-    return format_english_present_progressive(person_index, json_data, prefs)
-
-
-def format_english_preterite(person_index: int, json_data: dict, prefs: dict) -> str:
-    """Format English preterite (e.g., 'I went')."""
+def format_english_present_simple(
+    person_index: int, json_data: dict, prefs: dict
+) -> str:
     pronoun = ENGLISH_PRONOUNS[person_index]
-    verb_form = _get_simple_past(json_data, prefs)
-    return f"{pronoun} {verb_form}"
-
-
-def sample_person_indices(
-    verb_lemma: str, namespace: str, count: int = 2
-) -> List[int]:
-    """
-    Deterministic pseudo-random English person indices (0-6) for verb drills.
-    `namespace` separates modes so e.g. llevar and questions pick different subjects
-    for the same lemma (more variety).
-    """
-    rng = random.Random(f"{namespace}\t{verb_lemma}")
-    n = min(max(count, 0), 7)
-    if n == 0:
-        return []
-    return rng.sample(range(7), n)
-
-
-def format_english_llevar_gerund(person_index: int, json_data: dict, prefs: dict) -> str:
-    """Format English present perfect continuous (e.g., 'I've been doing')."""
-    gerund = _get_gerund(json_data)
-    if not gerund:
-        base = _get_english_base(json_data)
-        gerund = base + 'ing' if not base.endswith('e') else base[:-1] + 'ing'
-    if person_index == 0:
-        return f"I've been {gerund}"
-    if person_index == 1:
-        return f"you've been {gerund}"
+    base = _get_english_base(json_data)
     if person_index in (2, 3):
-        return f"he's been {gerund}" if person_index == 2 else f"it's been {gerund}"
-    if person_index == 4:
-        return f"we've been {gerund}"
-    return f"they've been {gerund}" if person_index == 5 else f"you guys have been {gerund}"
+        v = _get_3rd_person(json_data, prefs)
+    else:
+        v = base
+    return f"{pronoun} {v}"
 
 
-def format_english_seguir_gerund(person_index: int, json_data: dict, prefs: dict) -> str:
-    """Present progressive + still (e.g. 'he's still eating')."""
-    gerund = _get_gerund(json_data)
-    if not gerund:
+def format_english_llevar_gerund(
+    person_index: int, json_data: dict, prefs: dict
+) -> str:
+    g = _get_gerund(json_data) or _derive_english_gerund_from_base(json_data)
+    if not g:
         base = _get_english_base(json_data)
-        gerund = base + 'ing' if not base.endswith('e') else base[:-1] + 'ing'
+        g = base + "ing" if not base.endswith("e") else base[:-1] + "ing"
     if person_index == 0:
-        return f"I'm still {gerund}"
+        return f"I've been {g}"
     if person_index == 1:
-        return f"you're still {gerund}"
+        return f"you've been {g}"
     if person_index in (2, 3):
-        return f"he's still {gerund}" if person_index == 2 else f"it's still {gerund}"
+        return f"he's been {g}" if person_index == 2 else f"it's been {g}"
     if person_index == 4:
-        return f"we're still {gerund}"
+        return f"we've been {g}"
+    return f"they've been {g}" if person_index == 5 else f"you guys have been {g}"
+
+
+def format_english_llevar_stative(
+    person_index: int, json_data: dict, prefs: dict
+) -> str:
+    pp = _get_english_past_participle(json_data)
+    if not pp:
+        return format_english_llevar_gerund(person_index, json_data, prefs)
+    if person_index == 0:
+        return f"I've {pp}"
+    if person_index == 1:
+        return f"you've {pp}"
+    if person_index in (2, 3):
+        return f"he's {pp}" if person_index == 2 else f"it's {pp}"
+    if person_index == 4:
+        return f"we've {pp}"
     if person_index == 5:
-        return f"they're still {gerund}"
-    return f"you guys are still {gerund}"
+        return f"they've {pp}"
+    return f"you guys have {pp}"
+
+
+def format_english_seguir_gerund(
+    person_index: int, json_data: dict, prefs: dict
+) -> str:
+    g = _get_gerund(json_data) or _derive_english_gerund_from_base(json_data)
+    if not g:
+        base = _get_english_base(json_data)
+        g = base + "ing" if not base.endswith("e") else base[:-1] + "ing"
+    if person_index == 0:
+        return f"I'm still {g}"
+    if person_index == 1:
+        return f"you're still {g}"
+    if person_index in (2, 3):
+        return f"he's still {g}" if person_index == 2 else f"it's still {g}"
+    if person_index == 4:
+        return f"we're still {g}"
+    if person_index == 5:
+        return f"they're still {g}"
+    return f"you guys are still {g}"
+
+
+def format_english_seguir_stative(
+    person_index: int, json_data: dict, prefs: dict
+) -> str:
+    p = ENGLISH_PRONOUNS[person_index]
+    base = _get_english_base(json_data)
+    v = _get_3rd_person(json_data, prefs) if person_index in (2, 3) else base
+    return f"{p} still {v}"
 
 
 def format_english_andar_gerund(
     person_index: int, json_data: dict, prefs: dict, *, right_now_first: bool
 ) -> str:
-    """Present progressive + 'right now' before or after (e.g. 'right now I'm walking')."""
     core = format_english_present_progressive(person_index, json_data, prefs)
     if right_now_first:
         return f"right now {core}"
     return f"{core} right now"
 
 
-def generate_auxiliary_gerund_cards(
-    verb: str,
-    json_data: dict,
-    prefs: dict,
-    aux_data: dict,
-    *,
-    aux_lemma: str,
-    english_pattern: str,
-) -> List[Tuple[str, str]]:
-    """
-    Two flashcards per verb: present auxiliary + main gerund (Spanish), matching English pattern.
-    english_pattern: llevar | seguir | andar
-    """
-    subjects = sample_person_indices(verb, aux_lemma, 2)
-    cards: List[Tuple[str, str]] = []
-    spanish_gerund = (json_data.get('gerundio', '') or '').strip()
-    if not spanish_gerund:
-        return cards
-    for person_index in subjects:
-        spanish_key = SPANISH_PERSON_KEYS[SPANISH_MAP[person_index]]
-        aux_conj = _get_spanish_conjugation(aux_data, 'presente', spanish_key)
-        if not aux_conj:
-            continue
-        if _is_reflexive_infinitivo(json_data):
-            clitic = _REFLEXIVE_CLITIC_BY_KEY.get(spanish_key, "")
-            g_span = _spanish_gerund_for_auxiliary_reflexive(spanish_gerund)
-            if clitic:
-                spanish = f"{clitic} {aux_conj} {g_span}"
-            else:
-                spanish = f"{aux_conj} {g_span}"
-        else:
-            spanish = f"{aux_conj} {spanish_gerund}"
-        if english_pattern == "llevar":
-            english = format_english_llevar_gerund(person_index, json_data, prefs)
-        elif english_pattern == "seguir":
-            english = format_english_seguir_gerund(person_index, json_data, prefs)
-        elif english_pattern == "andar":
-            rng = random.Random(f"andar-order\t{aux_lemma}\t{verb}\t{person_index}")
-            right_now_first = rng.choice((True, False))
-            english = format_english_andar_gerund(
-                person_index, json_data, prefs, right_now_first=right_now_first
-            )
-        else:
-            raise ValueError(f"unknown english_pattern: {english_pattern!r}")
-        cards.append((english, spanish))
-    return cards
+def format_english_andar_stative(
+    person_index: int, json_data: dict, prefs: dict, *, right_now_first: bool
+) -> str:
+    core = format_english_present_simple(person_index, json_data, prefs)
+    if right_now_first:
+        return f"right now {core}"
+    return f"{core} right now"
 
 
-def generate_flashcards_for_verb(json_data: dict, prefs: dict) -> List[Tuple[str, str]]:
-    """
-    Generate 14 flashcards for a verb (7 present + 7 preterite).
-    Spanish conjugations from JSON; English from JSON + prefs.
-    """
-    flashcards = []
-
-    # Present tense (7 cards)
-    for i in range(7):
-        spanish_key = SPANISH_PERSON_KEYS[SPANISH_MAP[i]]
-        spanish = _get_spanish_conjugation(json_data, 'presente', spanish_key)
-        if not spanish:
-            continue
-        english = format_english_present(i, json_data, prefs)
-        flashcards.append((english, spanish))
-
-    # Preterite tense (7 cards)
-    for i in range(7):
-        spanish_key = SPANISH_PERSON_KEYS[SPANISH_MAP[i]]
-        spanish = _get_spanish_conjugation(json_data, 'preterito', spanish_key)
-        if not spanish:
-            continue
-        english = format_english_preterite(i, json_data, prefs)
-        flashcards.append((english, spanish))
-
-    return flashcards
+def _title_subject_pronoun(person_index: int) -> str:
+    p = ENGLISH_PRONOUNS[person_index]
+    if p == "you guys":
+        return "You guys"
+    if len(p) == 1:
+        return p.upper()
+    return p[0].upper() + p[1:]
 
 
-def generate_verbs_flashcards(
-    csv_path: str,
-    output_path: str,
-    verbs_dir: str = "verbs",
-    config_path: str = "verbs_config.txt",
-) -> None:
-    """
-    Read verbs.csv (verb, optional WH-choice, optional es_present_style / overrides)
-    and generate present+preterite (+ optional llevar/seguir/andar gerund drills).
-
-    Uses verbs_config.txt when present for llevar/seguir/andar flags. If the config
-    file is missing, llevar+gerund cards are still generated when llevar.json exists
-    (legacy behavior); seguir and andar stay off.
-
-    For the full pipeline (preterite yo/él, questions), use
-    generate_preterite_13_flashcards with verbs_config.txt + verbs.csv.
-    """
-    if not os.path.exists(csv_path):
-        raise FileNotFoundError(f"Verbs CSV file not found: {csv_path}")
-
-    output_dir = os.path.dirname(output_path)
-    if output_dir and not os.path.exists(output_dir):
-        os.makedirs(output_dir, exist_ok=True)
-
-    flashcards = []
-    skipped = []
-
-    config_exists = os.path.exists(config_path)
-    config_flags = parse_verbs_config(config_path) if config_exists else {}
-
-    def _auxiliary_enabled(aux: str) -> bool:
-        if config_exists:
-            return config_flags.get(aux, 0) == 1
-        return aux == "llevar" and load_verb_json("llevar", verbs_dir) is not None
-
-    auxiliary_data: Dict[str, dict] = {}
-    for aux in GERUND_AUXILIARIES:
-        if not _auxiliary_enabled(aux):
-            continue
-        data = load_verb_json(aux, verbs_dir)
-        if data:
-            auxiliary_data[aux] = data
-        elif config_exists and config_flags.get(aux, 0) == 1:
-            print(
-                f"Warning: {aux}:1 in {config_path} but {aux}.json not found; "
-                f"skipping {aux} cards."
-            )
-
-    with open(csv_path, newline="", encoding="utf-8-sig") as f:
-        reader = csv.DictReader(f)
-        names = reader.fieldnames or ()
-        if "verb" not in names:
-            raise ValueError(f"CSV must have 'verb' column. Found: {list(names)}")
-
-        for row in reader:
-            verb = row.get("verb", "").strip()
-            if not verb:
-                continue
-
-            prefs = {
-                "es_present_style": (row.get("es_present_style") or "progressive").strip(),
-                "en_3rd_person": (row.get("en_3rd_person") or "").strip(),
-                "en_past": (row.get("en_past") or "").strip(),
-            }
-
-            json_data = load_verb_json(verb, verbs_dir)
-            if json_data is None:
-                skipped.append(verb)
-                continue
-
-            verb_cards = generate_flashcards_for_verb(json_data, prefs)
-            flashcards.extend(verb_cards)
-
-            for aux_lemma, aux_data in auxiliary_data.items():
-                flashcards.extend(
-                    generate_auxiliary_gerund_cards(
-                        verb,
-                        json_data,
-                        prefs,
-                        aux_data,
-                        aux_lemma=aux_lemma,
-                        english_pattern=aux_lemma,
-                    )
-                )
-
-    if skipped:
-        print(f"Warning: No JSON found for verb(s): {', '.join(skipped)}")
-
-    with open(output_path, "w", encoding="utf-8") as f:
-        for english, spanish in flashcards:
-            f.write(f"{english}\n{spanish}\n\n")
+def _derive_english_gerund_from_base(json_data: dict) -> str:
+    g = _get_gerund(json_data)
+    if g:
+        return g
+    base = _get_english_base(json_data)
+    if not base:
+        return ""
+    if base.endswith("e"):
+        return base[:-1] + "ing"
+    return base + "ing"
 
 
-VALID_FLAGS = frozenset(
-    {"preterite-yo", "preterite-el", "llevar", "seguir", "andar", "questions"}
-)
-
-GERUND_AUXILIARIES = ("llevar", "seguir", "andar")
-
-
-def parse_verbs_config(config_path: str) -> dict:
-    """
-    Read verbs_config.txt: lines of key: value. Boolean flags use 0/1.
-    Empty lines and # comments skipped.
-    """
-    flags: dict = {}
-    if not os.path.exists(config_path):
-        return flags
-
-    with open(config_path, "r", encoding="utf-8") as f:
-        for line in f:
-            stripped = line.strip()
-            if not stripped or stripped.startswith("#"):
-                continue
-            if ":" not in stripped:
-                continue
-            key, val = stripped.split(":", 1)
-            key = key.strip()
-            val = val.strip()
-            if key in VALID_FLAGS and val in ("0", "1"):
-                flags[key] = int(val)
-    return flags
+def _parse_acabar_de_english_cell(raw: str) -> str:
+    s = (raw or "").strip().lower()
+    if not s or s in ("past", "preterite", "simple", "p"):
+        return "past"
+    if s in ("ing", "gerund", "g", "finished", "i"):
+        return "ing"
+    return "past"
 
 
-def load_verb_rows_from_csv(csv_path: str) -> List[Tuple[str, str]]:
-    """
-    Read verbs.csv: verb column plus optional WH-choice (preterite question drills).
-    Returns list of (lemma, wh_fragment) with wh_fragment '' if empty.
-    """
-    rows: List[Tuple[str, str]] = []
-    if not os.path.exists(csv_path):
-        raise FileNotFoundError(f"verbs CSV not found: {csv_path}")
+def format_english_acabar_de(
+    person_index: int, json_data: dict, prefs: dict
+) -> str:
+    subj = _title_subject_pronoun(person_index)
+    style = _parse_acabar_de_english_cell(
+        str(prefs.get("acabar_de_english", "") or "past")
+    )
+    if style == "ing":
+        ger = _derive_english_gerund_from_base(json_data)
+        if not ger:
+            sp = _get_simple_past(json_data, prefs)
+            return f"{subj} just {sp}" if sp else f"{subj} just (…)"
+        return f"{subj} just finished {ger}"
+    sp = _get_simple_past(json_data, prefs)
+    if not sp:
+        g = _derive_english_gerund_from_base(json_data)
+        if g:
+            return f"{subj} just finished {g}"
+        return f"{subj} just (…)"
+    return f"{subj} just {sp}"
 
-    with open(csv_path, newline="", encoding="utf-8-sig") as f:
-        reader = csv.DictReader(f)
-        names = reader.fieldnames or ()
-        if "verb" not in names:
-            raise ValueError(f"verbs.csv must have 'verb' column. Found: {list(names)}")
-        wh_key = "WH-choice" if "WH-choice" in names else (
-            "wh-choice" if "wh-choice" in names else None
-        )
 
-        for row in reader:
-            verb = (row.get("verb") or "").strip()
-            if not verb:
-                continue
-            wh = ""
-            if wh_key:
-                wh = (row.get(wh_key) or "").strip()
-            rows.append((verb, wh))
-    return rows
+def _parse_stative_csv_cell(raw: str) -> bool:
+    s = (raw or "").strip().lower()
+    if not s or s in ("0", "no", "n", "false"):
+        return False
+    return s in ("1", "true", "yes", "y", "stative")
+
+
+# --------------------------------------------------------------------------- #
+# Question (preterite) English / Spanish
+# --------------------------------------------------------------------------- #
 
 
 def _wh_fragment_to_english_prefix(wh_sp: str) -> Optional[str]:
-    """Map Spanish WH fragment (from CSV) to English question word(s). None if empty."""
-    if not wh_sp or not wh_sp.strip():
+    if not (wh_sp or "").strip():
         return None
     key = wh_sp.strip().lower()
-    # Special phrases return full front; caller may adjust word order for some verbs.
     table = {
         "cuándo": "When",
         "dónde": "Where",
@@ -515,23 +450,19 @@ def _wh_fragment_to_english_prefix(wh_sp: str) -> Optional[str]:
         "con quién": "Who",
         "de qué": "What",
         "en qué": "What",
-        "de dónde": "__de_donde__",  # handled in _english_preterite_question_line
+        "de dónde": "__de_donde__",
     }
     return table.get(key, wh_sp.strip().capitalize())
 
 
 def _question_subject_pronoun(person_index: int) -> str:
-    """Subject pronoun in questions: 'I' stays capitalized; others lowercased."""
     p = ENGLISH_PRONOUNS[person_index]
-    if p == "I":
-        return "I"
-    return p.lower()
+    return p if p == "I" else p.lower()
 
 
 def _english_preterite_question_line(
     person_index: int, json_data: dict, wh_sp: str
 ) -> str:
-    """English question matching a Spanish preterite question (7 English personas)."""
     pron = _question_subject_pronoun(person_index)
     es_inf = (json_data.get("infinitivo", "") or "").strip().lower()
     base = _get_english_base(json_data)
@@ -539,10 +470,7 @@ def _english_preterite_question_line(
     wh_en = _wh_fragment_to_english_prefix(wh_sp)
 
     def was_were_aux(idx: int) -> str:
-        # I, you, he, it, we, they, you guys → was/were
-        if idx in (1, 4, 5, 6):
-            return "were"
-        return "was"
+        return "were" if idx in (1, 4, 5, 6) else "was"
 
     if es_inf == "ser" or es_inf == "estar":
         aux = was_were_aux(person_index)
@@ -560,19 +488,14 @@ def _english_preterite_question_line(
 
     if not base:
         return ""
-
     if wh_raw == "de dónde":
         return f"Where did {pron} {base} from?"
-
     if wh_raw == "con quién":
         return f"Who did {pron} {base} with?"
-
-    if wh_raw == "de qué" or wh_raw == "en qué":
+    if wh_raw in ("de qué", "en qué"):
         return f"What did {pron} {base} about?"
-
     if not wh_en:
         return f"Did {pron} {base}?"
-
     return f"{wh_en} did {pron} {base}?"
 
 
@@ -583,86 +506,310 @@ def _spanish_preterite_question(wh_fragment: str, conjugated: str) -> str:
     return f"¿{conjugated}?"
 
 
-def generate_question_preterite_flashcards(
-    verb_lemma: str,
-    wh_choice: str,
+# --------------------------------------------------------------------------- #
+# One function per construction: (verb, subject) -> optional flashcard
+# --------------------------------------------------------------------------- #
+
+
+def build_preterite(
+    verb: str, subject: int, json_data: dict, ctx: VerbContext
+) -> Optional[Flashcard]:
+    if not 0 <= subject <= 6:
+        return None
+    if not (ctx.flags.get("preterite-yo") or ctx.flags.get("preterite-el")):
+        return None
+    if not (
+        _get_spanish_conjugation(json_data, "preterito", "yo")
+        and _get_spanish_conjugation(json_data, "preterito", "ud")
+        and _get_english_preterite_1st(json_data)
+    ):
+        return None
+    prefs = _prefs_from_context(ctx)
+    sk = SPANISH_PERSON_KEYS[SPANISH_MAP[subject]]
+    sp = _get_spanish_conjugation(json_data, "preterito", sk)
+    if not sp:
+        return None
+    en = format_english_preterite(subject, json_data, prefs)
+    return (en, sp)
+
+
+def _build_aux_gerund(
+    aux_id: str, verb: str, subject: int, json_data: dict, ctx: VerbContext
+) -> Optional[Flashcard]:
+    if aux_id not in ctx.auxiliary_data or ctx.flags.get(aux_id, 0) != 1:
+        return None
+    g = (json_data.get("gerundio") or "").strip()
+    if not g:
+        return None
+    prefs = _prefs_from_context(ctx)
+    st = bool(prefs.get("stative_english"))
+    sk = SPANISH_PERSON_KEYS[SPANISH_MAP[subject]]
+    aux = ctx.auxiliary_data[aux_id]
+    conj = _get_spanish_conjugation(aux, "presente", sk)
+    if not conj:
+        return None
+    if _is_reflexive_infinitivo(json_data):
+        cl = _REFLEXIVE_CLITIC_BY_KEY.get(sk, "")
+        gs = _spanish_gerund_for_auxiliary_reflexive(g)
+        if cl:
+            sp = f"{cl} {conj} {gs}"
+        else:
+            sp = f"{conj} {gs}"
+    else:
+        sp = f"{conj} {g}"
+
+    if aux_id == "llevar":
+        en = format_english_llevar_stative(subject, json_data, prefs) if st else format_english_llevar_gerund(subject, json_data, prefs)
+    elif aux_id == "seguir":
+        en = format_english_seguir_stative(subject, json_data, prefs) if st else format_english_seguir_gerund(subject, json_data, prefs)
+    elif aux_id == "andar":
+        rseed = (prefs.get("rotation_seed") or "no-rotation").strip()
+        rnf = random.Random(
+            f"andar-order\t{rseed}\t{aux_id}\t{verb}\t{subject}"
+        ).choice((True, False))
+        en = (
+            format_english_andar_stative(subject, json_data, prefs, right_now_first=rnf)
+            if st
+            else format_english_andar_gerund(subject, json_data, prefs, right_now_first=rnf)
+        )
+    else:
+        return None
+    return (en, sp)
+
+
+def build_llevar(
+    verb: str, subject: int, json_data: dict, ctx: VerbContext
+) -> Optional[Flashcard]:
+    return _build_aux_gerund("llevar", verb, subject, json_data, ctx)
+
+
+def build_seguir(
+    verb: str, subject: int, json_data: dict, ctx: VerbContext
+) -> Optional[Flashcard]:
+    return _build_aux_gerund("seguir", verb, subject, json_data, ctx)
+
+
+def build_andar(
+    verb: str, subject: int, json_data: dict, ctx: VerbContext
+) -> Optional[Flashcard]:
+    return _build_aux_gerund("andar", verb, subject, json_data, ctx)
+
+
+def build_acabar(
+    verb: str, subject: int, json_data: dict, ctx: VerbContext
+) -> Optional[Flashcard]:
+    if ctx.flags.get("acabar", 0) != 1 or not ctx.acabar_data:
+        return None
+    inf = (json_data.get("infinitivo") or "").strip()
+    if not inf:
+        return None
+    prefs = _prefs_from_context(ctx)
+    sk = SPANISH_PERSON_KEYS[SPANISH_MAP[subject]]
+    aconj = _get_spanish_conjugation(ctx.acabar_data, "presente", sk)
+    if not aconj:
+        return None
+    main = (
+        _spanish_reflexive_infinitive_for_person(json_data, sk)
+        if _is_reflexive_infinitivo(json_data)
+        else inf
+    )
+    if not main:
+        return None
+    sp = f"{aconj} de {main}"
+    en = format_english_acabar_de(subject, json_data, prefs)
+    return (en, sp)
+
+
+def build_questions(
+    verb: str, subject: int, json_data: dict, ctx: VerbContext
+) -> Optional[Flashcard]:
+    if ctx.flags.get("questions", 0) != 1:
+        return None
+    if not 0 <= subject <= 6:
+        return None
+    sk = SPANISH_PERSON_KEYS[SPANISH_MAP[subject]]
+    conj = _get_spanish_conjugation(json_data, "preterito", sk)
+    if not conj:
+        return None
+    en = _english_preterite_question_line(subject, json_data, ctx.wh_choice)
+    if not en:
+        return None
+    return (en, _spanish_preterite_question(ctx.wh_choice, conj))
+
+
+# Registry: construction id -> builder. Add new constructions here and in CONSTRUCTION_ORDER.
+CONSTRUCTION_BUILDERS: Dict[str, Callable[[str, int, dict, VerbContext], Optional[Flashcard]]] = {
+    "preterite": build_preterite,
+    "llevar": build_llevar,
+    "seguir": build_seguir,
+    "andar": build_andar,
+    "acabar": build_acabar,
+    "questions": build_questions,
+}
+
+
+def _enabled_constructions(
+    flags: dict, auxiliary_data: Dict[str, dict], acabar_data: Optional[dict]
+) -> List[str]:
+    g_yo, g_el = flags.get("preterite-yo", 0), flags.get("preterite-el", 0)
+    out: List[str] = []
+    for cid in CONSTRUCTION_ORDER:
+        if cid == "preterite" and (g_yo or g_el):
+            out.append(cid)
+        elif cid in GERUND_AUXILIARIES and cid in auxiliary_data and flags.get(cid, 0) == 1:
+            out.append(cid)
+        elif cid == "acabar" and flags.get("acabar", 0) == 1 and acabar_data is not None:
+            out.append(cid)
+        elif cid == "questions" and flags.get("questions", 0) == 1:
+            out.append(cid)
+    return [c for c in out if c in CONSTRUCTION_BUILDERS]
+
+
+def _construction_order_key(c: str) -> int:
+    try:
+        return CONSTRUCTION_ORDER.index(c)
+    except ValueError:
+        return 9999
+
+
+def pick_three_construction_subject_pairs(
+    verb: str, year: int, month: int, available: List[str]
+) -> List[Tuple[str, int]]:
+    """
+    up to 3 unique (construction_id, subject) pairs; deterministic from YYYY-MM + verb.
+    """
+    if not available:
+        return []
+    pool = [(c, s) for c in available for s in range(7)]
+    rng = random.Random(f"{year:04d}-{month:02d}\t{verb}\tconstruction-subject")
+    k = min(3, len(pool))
+    chosen = sorted(rng.sample(pool, k), key=lambda p: (_construction_order_key(p[0]), p[1]))
+    return chosen
+
+
+def three_flashcards_for_verb(
+    verb: str,
     json_data: dict,
-) -> List[Tuple[str, str]]:
-    """
-    Preterite question drills: English question -> Spanish ¿…(WH)… preterite?
-    Two personas per verb, chosen deterministically (namespace separate from llevar).
-    Empty WH-choice: yes/no questions only (¿fuiste?).
-    """
-    cards: List[Tuple[str, str]] = []
-    for i in sample_person_indices(verb_lemma, "questions", 2):
-        sk = SPANISH_PERSON_KEYS[SPANISH_MAP[i]]
-        conj = _get_spanish_conjugation(json_data, "preterito", sk)
-        if not conj:
+    ctx: VerbContext,
+    year: int,
+    month: int,
+    available: List[str],
+) -> List[Flashcard]:
+    """Pick 3 unique (construction, subject) pairs and build each card via its builder."""
+    out: List[Flashcard] = []
+    for cid, subj in pick_three_construction_subject_pairs(verb, year, month, available):
+        fn = CONSTRUCTION_BUILDERS.get(cid)
+        if not fn:
             continue
-        en = _english_preterite_question_line(i, json_data, wh_choice)
-        if not en:
-            continue
-        es = _spanish_preterite_question(wh_choice, conj)
-        cards.append((en, es))
-    return cards
+        card = fn(verb, subj, json_data, ctx)
+        if card is not None:
+            out.append(card)
+    return out
 
 
-def _parse_verbs_file_with_flags(verbs_path: str) -> Tuple[dict, List[str]]:
-    """
-    Parse verbs.txt: read optional flags at top (key: 0|1), then verb list.
-    Returns (flags_dict, verb_list). Unknown flags ignored.
-    Missing preterite-yo / preterite-el default to 1; missing llevar defaults to 0.
-    """
+# --------------------------------------------------------------------------- #
+# Config + CSV
+# --------------------------------------------------------------------------- #
+
+
+def parse_verbs_config(config_path: str) -> dict:
     flags: dict = {}
-    verbs: List[str] = []
-    seen = set()
-    in_flags = True
-
-    with open(verbs_path, 'r', encoding='utf-8') as f:
+    if not os.path.exists(config_path):
+        return flags
+    with open(config_path, "r", encoding="utf-8") as f:
         for line in f:
-            stripped = line.strip()
-            if not stripped:
-                if in_flags:
-                    in_flags = False
+            s = line.strip()
+            if not s or s.startswith("#") or ":" not in s:
                 continue
+            k, v = s.split(":", 1)
+            k, v = k.strip(), v.strip()
+            if k in VALID_FLAGS and v in ("0", "1"):
+                flags[k] = int(v)
+    return flags
 
-            if in_flags and ':' in stripped:
-                parts = stripped.split(':', 1)
-                key = parts[0].strip()
-                val = parts[1].strip()
-                if key in VALID_FLAGS and val in ('0', '1'):
-                    flags[key] = int(val)
+
+def parse_verbs_config_rotation(config_path: str) -> Tuple[int, int]:
+    y, m = date.today().year, date.today().month
+    if not os.path.exists(config_path):
+        return (y, m)
+    rot: Optional[Tuple[int, int]] = None
+    yf, mf = None, None
+    with open(config_path, "r", encoding="utf-8") as f:
+        for line in f:
+            s = line.strip()
+            if not s or s.startswith("#") or ":" not in s:
                 continue
+            k, v = s.split(":", 1)
+            k, v = k.strip().lower(), v.strip()
+            if k == "rotation":
+                mo = re.match(r"^(\d{4})\s*[-/]\s*(\d{1,2})\s*$", v)
+                if mo:
+                    rot = (int(mo.group(1)), int(mo.group(2)))
+            if k == "rotation-year" and v.isdigit():
+                yf = int(v)
+            if k == "rotation-month" and v.isdigit():
+                mf = int(v)
+    if rot is not None:
+        y, m = rot[0], rot[1]
+    if yf is not None:
+        y = yf
+    if mf is not None:
+        m = mf
+    m = max(1, min(12, m))
+    return (y, m)
 
-            in_flags = False
-            if stripped not in seen:
-                verbs.append(stripped)
-                seen.add(stripped)
 
-    return flags, verbs
+def load_verb_rows_from_csv(csv_path: str) -> List[Tuple[str, str, bool, str]]:
+    rows: List[Tuple[str, str, bool, str]] = []
+    with open(csv_path, newline="", encoding="utf-8-sig") as f:
+        r = csv.DictReader(f)
+        names = r.fieldnames or ()
+        if "verb" not in names:
+            raise ValueError("verbs.csv must have a 'verb' column")
+        whk = "WH-choice" if "WH-choice" in names else (
+            "wh-choice" if "wh-choice" in names else None
+        )
+        has_st, has_ac = "stative" in names, "acabar_de" in names
+        for row in r:
+            v = (row.get("verb") or "").strip()
+            if not v:
+                continue
+            wh = (row.get(whk) or "").strip() if whk else ""
+            st = _parse_stative_csv_cell(row.get("stative", "") or "") if has_st else False
+            ac = _parse_acabar_de_english_cell((row.get("acabar_de") or "")) if has_ac else "past"
+            rows.append((v, wh, st, ac))
+    return rows
 
 
-def _get_english_preterite_1st(json_data: dict) -> str:
-    """Get English 1st person preterite (e.g. 'I went') from JSON."""
-    preterito = (json_data.get('english', {}).get('indicativo', {}) or {}).get('preterito', '')
-    if isinstance(preterito, str) and preterito.strip().lower().startswith('i '):
-        return preterito.strip()
-    # Fallback: build from infinitive
-    base = _get_english_base(json_data)
-    past = _derive_simple_past(base)
-    return f"I {past}" if past else ''
+def _load_auxiliary_and_acabar(
+    flags: dict, verbs_dir: str, config_path: str
+) -> Tuple[Dict[str, dict], Optional[dict]]:
+    aux: Dict[str, dict] = {}
+    for a in GERUND_AUXILIARIES:
+        if flags.get(a, 0) != 1:
+            continue
+        d = load_verb_json(a, verbs_dir)
+        if d:
+            aux[a] = d
+        else:
+            print(
+                f"Warning: {a}:1 in {config_path} but {a}.json not found; "
+                f"skipping {a}."
+            )
+    ac: Optional[dict] = None
+    if flags.get("acabar", 0) == 1:
+        ac = load_verb_json("acabar", verbs_dir)
+        if not ac:
+            print(
+                f"Warning: acabar:1 in {config_path} but acabar.json not found; "
+                "skipping acabar."
+            )
+    return aux, ac
 
 
-def _english_preterite_1st_to_3rd(english_1st: str) -> str:
-    """Convert 'I went' to 'he went'. For reflexives, also shifts possessives: 'my' -> 'his', 'myself' -> 'himself'."""
-    s = english_1st.strip()
-    if not s.lower().startswith('i '):
-        return s
-    result = 'he ' + s[2:]
-    # Shift 1st-person reflexives/possessives to 3rd person
-    result = result.replace(' my ', ' his ')
-    result = result.replace(' myself', ' himself')
-    return result
+# --------------------------------------------------------------------------- #
+# Main generator (entry from main.py)
+# --------------------------------------------------------------------------- #
 
 
 def generate_preterite_13_flashcards(
@@ -672,115 +819,64 @@ def generate_preterite_13_flashcards(
     config_path: str = "verbs_config.txt",
     csv_path: str = "verbs.csv",
 ) -> None:
-    """
-    Build the verbs deck text file.
-
-    Preferred layout:
-      - verbs_config.txt — preterite-yo/el, llevar, questions, etc.
-      - verbs.csv — verb roster and optional WH-choice for question drills.
-
-    Legacy layout (if config or csv is missing):
-      - verbs.txt — same flags at top, then one verb lemma per line.
-
-    Preterite yo/él, llevar + gerund, and questions (preterite) follow flags.
-    """
-    output_dir = os.path.dirname(output_path)
-    if output_dir and not os.path.exists(output_dir):
-        os.makedirs(output_dir, exist_ok=True)
-
     if os.path.exists(config_path) and not os.path.exists(csv_path):
         raise FileNotFoundError(
-            f"'{config_path}' is present but '{csv_path}' is missing. "
-            "Add the CSV roster or remove the config file to use legacy verbs.txt only."
+            f"'{config_path}' exists but '{csv_path}' is missing. Add the CSV or remove the config."
+        )
+    odir = os.path.dirname(output_path)
+    if odir and not os.path.exists(odir):
+        os.makedirs(odir, exist_ok=True)
+
+    if not (os.path.exists(config_path) and os.path.exists(csv_path)):
+        raise FileNotFoundError(
+            f"Need both '{config_path}' and '{csv_path}' in the current layout."
         )
 
-    use_config_csv = os.path.exists(config_path) and os.path.exists(csv_path)
-    wh_by_verb: Dict[str, str] = {}
+    flags = parse_verbs_config(config_path)
+    year, month = parse_verbs_config_rotation(config_path)
+    rotation_seed = f"{year:04d}-{month:02d}"
+    auxiliary_data, acabar_data = _load_auxiliary_and_acabar(flags, verbs_dir, config_path)
+    available = _enabled_constructions(flags, auxiliary_data, acabar_data)
+    if len(available) < 1:
+        print("Warning: No constructions enabled; output will be empty.")
 
-    if use_config_csv:
-        flags = parse_verbs_config(config_path)
-        verb_rows = load_verb_rows_from_csv(csv_path)
-        verbs: List[str] = []
-        for v, wh in verb_rows:
-            verbs.append(v)
-            wh_by_verb[v] = wh
-    else:
-        if not os.path.exists(verbs_path):
-            raise FileNotFoundError(
-                f"Verb sources not found: need both '{config_path}' and '{csv_path}', "
-                f"or a legacy '{verbs_path}'."
-            )
-        flags, verbs = _parse_verbs_file_with_flags(verbs_path)
-        wh_by_verb = {v: "" for v in verbs}
+    verb_rows = load_verb_rows_from_csv(csv_path)
+    all_cards: List[Flashcard] = []
+    missing_json: List[str] = []
+    miss_pre: List[str] = []
 
-    gen_yo = flags.get("preterite-yo", 1)
-    gen_el = flags.get("preterite-el", 1)
-    gen_questions = flags.get("questions", 0) == 1
-
-    auxiliary_data: Dict[str, dict] = {}
-    for aux in GERUND_AUXILIARIES:
-        if flags.get(aux, 0) != 1:
+    for v, wh, st, acde in verb_rows:
+        jd = load_verb_json(v, verbs_dir)
+        if jd is None:
+            missing_json.append(v)
             continue
-        data = load_verb_json(aux, verbs_dir)
-        if data:
-            auxiliary_data[aux] = data
-        else:
-            print(
-                f"Warning: {aux}:1 but {aux}.json not found; skipping {aux} cards."
-            )
+        if (flags.get("preterite-yo") or flags.get("preterite-el")) and not (
+            _get_english_preterite_1st(jd)
+            and _get_spanish_conjugation(jd, "preterito", "yo")
+            and _get_spanish_conjugation(jd, "preterito", "ud")
+        ):
+            miss_pre.append(v)
 
-    prefs = {"es_present_style": "progressive"}
+        ctx = VerbContext(
+            flags=flags,
+            auxiliary_data=auxiliary_data,
+            acabar_data=acabar_data,
+            verbs_dir=verbs_dir,
+            rotation_seed=rotation_seed,
+            wh_choice=wh,
+            stative=st,
+            acabar_de_english=acde,
+        )
+        all_cards.extend(three_flashcards_for_verb(v, jd, ctx, year, month, available))
 
-    flashcards = []
-    skipped_no_json = []
-    skipped_preterite = []
-
-    for verb in verbs:
-        json_data = load_verb_json(verb, verbs_dir)
-        if json_data is None:
-            skipped_no_json.append(verb)
-            continue
-
-        if gen_yo or gen_el:
-            spanish_yo = _get_spanish_conjugation(json_data, 'preterito', 'yo')
-            spanish_ud = _get_spanish_conjugation(json_data, 'preterito', 'ud')
-            english_1st = _get_english_preterite_1st(json_data)
-            english_3rd = _english_preterite_1st_to_3rd(english_1st)
-
-            if not spanish_yo or not spanish_ud or not english_1st:
-                skipped_preterite.append(verb)
-            else:
-                if gen_yo:
-                    flashcards.append((english_1st, spanish_yo))
-                if gen_el:
-                    flashcards.append((english_3rd, f"él {spanish_ud}"))
-
-        for aux_lemma, aux_data in auxiliary_data.items():
-            flashcards.extend(
-                generate_auxiliary_gerund_cards(
-                    verb,
-                    json_data,
-                    prefs,
-                    aux_data,
-                    aux_lemma=aux_lemma,
-                    english_pattern=aux_lemma,
-                )
-            )
-
-        if gen_questions:
-            flashcards.extend(
-                generate_question_preterite_flashcards(
-                    verb, wh_by_verb.get(verb, ""), json_data
-                )
-            )
-
-    if skipped_no_json:
-        print(f"Warning: No JSON found for verb(s): {', '.join(skipped_no_json)}")
-    if skipped_preterite and (gen_yo or gen_el):
+    if missing_json:
+        print(f"Warning: No JSON for verb(s): {', '.join(missing_json)}")
+    if miss_pre and (flags.get("preterite-yo") or flags.get("preterite-el")):
         print(
-            f"Warning: Missing preterite data for verb(s): {', '.join(skipped_preterite)}"
+            f"Warning: incomplete preterite in JSON for: {', '.join(miss_pre)}"
         )
 
-    with open(output_path, 'w', encoding='utf-8') as f:
-        for english, spanish in flashcards:
-            f.write(f"{english}\n{spanish}\n\n")
+    with open(output_path, "w", encoding="utf-8") as f:
+        for en, sp in all_cards:
+            f.write(f"{en}\n{sp}\n\n")
+

@@ -4588,7 +4588,6 @@ VERBS
 - Aun me falta = I still haven't... / I still need to... (we, you...)
 - Soler usually
 - Imperfect I used to...
-- acabar de = I just...
 - volver a = again
 - Should I as question is just te paso? (no deber) but as statement its deber
 - Commands

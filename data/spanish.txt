@@ -3227,7 +3227,7 @@ to understand fully
 comprender
 
 to ask
-preguntar
+pedir
 
 to avoid
 evitar
@@ -5823,6 +5823,9 @@ Si volvieras 1000 años atrás y hicieras esto, empezarías una religión… o t
 
 Is that polite to say?
 ¿Es correcto decir eso?
+
+in a bit
+ahorita
 
 give me a minute
 ahorita regreso

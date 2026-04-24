@@ -57,12 +57,25 @@ Unlike traditional spaced repetition systems (like Anki's SM-2), this uses a **s
 
 **Adaptive Difficulty Tracking** - Struggle history is tracked separately from intervals, ensuring difficult material gets frequent reviews even when intervals suggest otherwise.
 
+## Verbs deck (extension)
+
+A separate generator (not the generic deck sync) builds the **verbs** practice file from your roster and per-verb options:
+
+| Input | Role |
+| --- | --- |
+| `verbs_config.txt` | Turn drills on or off: preterite (yo/él), `llevar` / `seguir` / `andar` + gerund, `acabar de` + infinitive, preterite **WH**-questions. Optional `rotation: YYYY-MM` (or `rotation-year` / `rotation-month`) seeds the three **(construction, person)** picks per verb; bump it monthly to refresh prompts without changing code. |
+| `verbs.csv` | One row per verb: lemma, optional WH fragment for questions, `stative` and `acabar_de` columns for English phrasing. |
+| `verbs/<lemma>.json` | Conjugation data (shared with the old pipeline). |
+
+`verbs.py` enables only constructions that are both **flagged on** and **have the needed JSON** (e.g. auxiliary lemmas). For each verb it draws **three distinct** random `(construction, one of 7 English persons)` pairs (seeded by rotation + verb), runs **one small builder function per construction** to produce English + Spanish, and appends the lines to `data/verbs.txt`. The main app’s usual text→JSON **sync** then picks up that file like any other deck.
+
 ## File Structure
 
 ```
 data/
   ├── spanish_vocab.txt        # Your text decks
   ├── english_jokes.txt
+  ├── verbs.txt                 # Built by verbs.py (or hand-maintained)
   └── decks/
       ├── spanish_vocab.json    # Auto-generated (don't edit)
       └── english_jokes.json
