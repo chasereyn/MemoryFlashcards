@@ -1339,9 +1339,6 @@ la fiesta
 cheese
 el queso
 
-flu
-la gripe
-
 salesclerk
 el dependiente
 
@@ -2610,9 +2607,6 @@ tanto
 
 nice to meet you
 mucho gusto
-
-happy birthday
-feliz cumpleaños
 
 I would like coffee with milk
 quisiera un café con leche
@@ -4885,8 +4879,8 @@ irse por las ramas
 The straw that broke the camel's back
 la gota que derramó el vaso
 
-We're not stupid (don't cook at first boil)
-no nos cocemos al primer hervor
+I'm not stupid
+no me cuezo al primer hervor
 
 to boil
 hervir
