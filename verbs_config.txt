@@ -1,7 +1,0 @@
-preterite-yo: 1
-preterite-el: 1
-questions: 1
-llevar: 1
-seguir: 1
-andar: 1
-acabar: 1

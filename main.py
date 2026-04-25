@@ -14,7 +14,6 @@ from spaced_repetition import (
     reset_daily_flags,
     get_today,
 )
-from verbs import generate_preterite_13_flashcards
 import random
 
 
@@ -318,14 +317,6 @@ def run():
 def main():
     """Main entry point."""
     ensure_data_directory()
-    
-    # Generate verbs deck: verbs_config.txt + verbs.csv (or legacy verbs.txt)
-    try:
-        generate_preterite_13_flashcards(output_path="data/verbs.txt")
-    except Exception as e:
-        print(f"\nError generating verbs flashcards: {e}")
-        import sys
-        sys.exit(1)
     
     # Sync all decks from text files on startup
     sync_all_decks()
