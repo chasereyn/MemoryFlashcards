@@ -70,9 +70,6 @@ el oro
 plane
 el avión
 
-to leave
-dejar
-
 orange (color)
 anaranjado
 
@@ -93,9 +90,6 @@ el/la artista
 
 tasty
 sabroso
-
-to stay
-quedarse
 
 butter
 la mantequilla
@@ -178,9 +172,6 @@ el novio
 movie theater
 el cine
 
-to take
-tomar
-
 boring
 aburrido
 
@@ -201,9 +192,6 @@ los campos
 
 music
 la música
-
-to start
-empezar
 
 on (on top of)
 sobre
@@ -322,9 +310,6 @@ también
 to go to bed
 acostarse
 
-to dance
-bailar
-
 someone
 alguien
 
@@ -351,9 +336,6 @@ dormir
 
 after
 después
-
-to tell
-contar
 
 small
 pequeño
@@ -442,23 +424,11 @@ el sofá
 soft
 suave
 
-to look for
-buscar
-
 to read
 leer
 
 good
 bueno
-
-to rest
-descansar
-
-to study
-estudiar
-
-to win
-ganar
 
 neither
 tampoco
@@ -517,17 +487,8 @@ nervioso
 to write
 escribir
 
-to play
-jugar
-
 Spanish
 el español
-
-to like
-gustar
-
-to travel
-viajar
 
 naughty
 travieso
@@ -537,9 +498,6 @@ luego
 
 sad
 triste
-
-to end
-terminar
 
 woman
 la mujer
@@ -566,7 +524,7 @@ street
 la calle
 
 to take a shower
-ducharse
+bañarse
 
 painting
 el cuadro
@@ -655,9 +613,6 @@ bañarse
 short (height)
 chaparro
 
-to cook
-cocinar
-
 late
 tarde
 
@@ -705,9 +660,6 @@ guapo
 
 no one
 nadie
-
-to need
-necesitar
 
 door
 la puerta
@@ -765,6 +717,12 @@ el pastel
 
 to do the shopping
 hacer la compra
+
+I'm gonna do some errands
+Voy a hacer el mandado
+
+I'm craving something sweet
+Tengo antojito de algo dulce
 
 workshop
 el taller
@@ -834,12 +792,6 @@ funcionar
 
 concert
 el concierto
-
-to wait for
-esperar
-
-to look at
-mirar
 
 place
 el lugar
@@ -1180,6 +1132,9 @@ la enfermedad
 I have a confession to make
 tengo algo que confesar
 
+I have to go
+Tengo que irme
+
 I'm a good cook
 soy un buen cocinero
 
@@ -1251,12 +1206,6 @@ cuando
 
 because of that...
 por eso...
-
-to learn
-aprender
-
-to believe
-creer
 
 from
 desde
@@ -1616,7 +1565,7 @@ behind
 detrás de
 
 bus
-el autobús
+el autobús / el camión
 
 the cook
 el cocinero
@@ -1800,9 +1749,6 @@ solitario
 
 to drive
 manejar
-
-to repeat
-repetir
 
 etiquette
 la etiqueta
@@ -2208,9 +2154,6 @@ flojo
 
 ready
 listo
-
-to add
-añadir
 
 town
 el pueblo
@@ -3016,9 +2959,6 @@ el gobierno
 elevator
 el ascensor
 
-to stop (doing something)
-dejar de
-
 sociable
 sociable
 
@@ -3051,9 +2991,6 @@ poner la mesa
 
 driver
 el conductor
-
-to insist
-insistir
 
 new insights
 nuevas ideas
@@ -3162,9 +3099,6 @@ el menú
 
 to hope
 esperar
-
-to go up
-subir
 
 to send
 mandar
@@ -3565,6 +3499,9 @@ la avena
 lazyness
 flojera
 
+it sucks
+está de la verga
+
 branches
 las ramas
 
@@ -3820,6 +3757,15 @@ Do you have rooms available?
 Don't be sad!
 ¡No estés triste!
 
+so get this, my ex works here
+resulta que mi ex trabaja aquí
+
+the thing is I have a lot of work
+resulta que tengo mucho trabajo
+
+don't mess with me!
+no me chingues!
+
 sadness
 la tristeza
 
@@ -3994,14 +3940,14 @@ Cómo se llama?
 Where are you from?
 De dónde eres?
 
-Repeat, please
-Repite por favor
+Repeat that please
+Repítelo por favor
 
 Excuse me
 Disculpe
 
 Slower please
-Mas despacio por favor
+Más despacio por favor
 
 useful
 útil
@@ -4039,8 +3985,11 @@ A qué hora cierra?
 What time is it?
 Qué hora es?
 
-Can you help me (formal)
-Me puede ayudar?
+Can you help me?
+Me puedes ayudar?
+
+Can you wait one sec?
+Puedes esperar?
 
 A table for two, please
 Una mesa para dos, por favor
@@ -4103,7 +4052,7 @@ I'm very sorry
 Lo siento mucho
 
 No problem
-No hay problema
+No pasa nada
 
 How delicious!
 Qué rico!
@@ -4146,6 +4095,9 @@ All the best!
 
 I need a doctor
 Necesito un médico
+
+I need to relax
+Necesito descansar
 
 I lost my passport
 Perdí mi pasaporte
@@ -4264,8 +4216,8 @@ el volante
 gear shifter
 la palancia de cambios
 
-a light cold
-la gripe
+a light cold / fever
+la gripa
 
 a strong flu
 el gripe
@@ -4909,8 +4861,8 @@ conseguir trabajo
 dish soap
 jabon de trastes
 
-That's disgusting!
-Está asqueroso!
+disgusting
+asqueroso
 
 ...I'm just sayin...
 ...yo digo...
@@ -5314,8 +5266,8 @@ Te aviso
 I'm hungry
 Tengo hambre
 
-I'm in a hurry
-tengo prisa
+I'm in a rush
+Tengo prisa
 
 my feet hurt
 me duelen los pies
@@ -5343,6 +5295,12 @@ la cultura azteca
 
 traveler's check
 el cheque de viajero
+
+through a cable
+a traves de un cable
+
+from one place to another
+de un lugar a otro
 
 cholesterol
 el colesterol
@@ -5522,7 +5480,7 @@ the first half
 la primera parte
 
 fat (cooking)
-la grasa
+la grasita
 
 to bake
 hornear
@@ -5547,6 +5505,18 @@ Contribuyo a mi 401K
 
 retirement
 la jubilación
+
+I don't understand
+No entiendo
+
+Ya lo entiendo!
+Now I understand!
+
+My head hurts
+Me duele la cabeza
+
+I don't feel good
+Me siento mal
 
 Rice and lentils is a cheap meal
 Arroz con lentejas es una comida barata
@@ -5610,6 +5580,12 @@ te queda perfectamente
 
 It's foggy
 hay niebla
+
+it's fine
+Está bien
+
+Puedes repetir la última parte?
+Can you repeat the last part?
 
 follow me
 sígueme
@@ -5713,13 +5689,25 @@ No sé si puedo
 My sister licks all the frosting off the cupcakes
 Mi hermana lame todo el frosting de los cupcakes
 
-Oh well
-Ya ni modo
+Oh well...
+Ya ni modo...
 
-Whatever
-Ya ni modo
+Whatever...
+ni modo...
+
+That's how it is...
+Pues así es...
+
+There's no other option
+No queda de otra
+
+It's the only option
+No queda de otra
 
 It is what it is
+Es lo que hay
+
+That's what we've got
 Es lo que hay
 
 What is it?
@@ -5830,6 +5818,12 @@ ahorita
 give me a minute
 ahorita regreso
 
+Can you describe it?
+Puedes describirlo?
+
+I'll be right back
+ahorita regreso
+
 a blind person
 el invidente
 
@@ -5922,6 +5916,9 @@ el resultado
 
 to be lucky
 tener suerte
+
+skyscraper
+el rascacielos
 
 skating
 el patinaje
@@ -6033,6 +6030,9 @@ desodorante
 
 I'll remember that!
 Lo recordaré
+
+No me acuerdo
+I don't remember
 
 fiber
 la fibra
@@ -6283,8 +6283,8 @@ el cementerio
 cemetary
 cementerio
 
-The cow is sitll mooing
-La vaca sigue mugiendo
+The cow is still mooing
+Parece que la carne quiere mugir
 
 to moo
 mugir
@@ -6682,6 +6682,9 @@ absorbente
 rotton eggs
 huevos podridos
 
+hell yeah! (reponse to question)
+A huevo!
+
 perpetual motion
 movimiento perpetuo
 
@@ -6786,6 +6789,9 @@ When was your last trip to...
 
 That's what I said!
 ¡Es lo que dije!
+
+What I want to do is eat lunch
+Lo que quiero hacer es almorzar
 
 well-fed
 satisfecho
@@ -7169,7 +7175,7 @@ Do you regret it?
 ¿Te arrepientes?
 
 Put the lid on the container
-Ponle la tapa al recipiente
+Ponle la tapa al contenedor
 
 calories
 las calorías
@@ -7223,7 +7229,7 @@ Lock the door please
 Echa llave la puerta, por favor
 
 Did you lock the door?
-¿Cerraste la puerta con llave?
+¿Echaste llave la puerta?
 
 red velvet
 el pastel de terciopelo rojo
@@ -7282,9 +7288,6 @@ el es tan alto como Juan
 I don't like dogs at all
 no me gustan nada los perros
 
-I'll be right back
-regreso en un ratito
-
 I bet he doesn't come
 apuesto a que no viene
 
@@ -7336,11 +7339,146 @@ That'll work!
 I have insurance
 tengo seguro
 
-I've just arrived
-acabo de llegar
-
 I was just about to leave when...
 estaba a punto de salir cuando...
 
 last week
 la semana pasada
+
+beef
+carne de res
+
+I'm impressed!
+¡estoy impresionado!
+
+He did extra
+Hizo más de lo necesario
+
+He went above and beyond
+se lució
+
+utensil
+el utensilio
+
+tortilla press
+la prensa para tortillas
+
+whip
+el látigo
+
+I'm great!
+¡estoy al cien!
+
+I feel awesome!
+¡estoy al millón!
+
+I'm chillin
+estoy a toda madre
+
+It never fails!
+¡nunca falla!
+
+rude
+grosero
+
+sarcastic
+sarcástico
+
+Who's who?
+¿quién es quién?
+
+I'll spoil the secret
+te lo chismeo
+
+The flight is booked
+el vuelo está reservado
+
+We were doing good... what happened?
+íbamos bien... ¿qué pasó?
+
+It's been my favorite recently
+últimamente es mi favorito
+
+protein
+la proteína
+
+carbohydrates
+los carbohidratos
+
+fats
+las grasas
+
+macros
+los macros
+
+calories
+las calorías
+
+I approve
+apruebo; estoy de acuerdo
+
+Do you approve?
+¿apruebas? ¿estás de acuerdo?
+
+bathtub
+la bañera
+
+goddess
+la diosa
+
+stamp
+el sello
+
+to flatten
+aplanar
+
+motion
+el movimiento
+
+thumbs up
+pulgar arriba
+
+I don't want to make you dizzy
+No quiero marearte
+
+license plate
+la placa
+
+bamboo
+el bambú
+
+broth
+el caldo
+
+chopsticks
+los palillos
+
+condos
+los condominios
+
+I’ve never been here before
+nunca he estado aquí antes
+
+How far away is it?
+¿qué tan lejos está?
+
+crosswalk
+el cruce peatonal
+
+It's past my bedtime
+ya pasó mi hora de dormir
+
+How the tables have turned!
+¡cómo cambia la tortilla!
+
+I'm on the hunt to find the best taco places in Orlando
+estoy buscando los mejores taquitos de Orlando
+
+I had to cancel last minute
+tuve que cancelar a último minuto
+
+It's my first time here
+es la primera vez que vengo aquí
+
+I'll talk to you when I get around to it
+te hablaré cuando me ponga a hacerlo

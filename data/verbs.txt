@@ -1,792 +1,1020 @@
-I'm still going
-sigo yendo
+I was a teacher
+fui profesor
 
-right now we're going
-andamos yendo
+I was in Madrid all summer
+estuve en Madrid todo el verano
 
-Where did you guys go?
-¿adónde fueron?
+I had a great idea
+tuve una gran idea
 
-he's been leaving
-se lleva yendo
+I went to the bank
+fui al banco
 
-you guys have been leaving
-se llevan yendo
+I saw it
+lo vi
 
-It just left
+I told her the news
+le dije la noticia
+
+I made dinner
+hice la cena
+
+I gave you the book
+te di el libro
+
+I left early
+me fui temprano
+
+I put the keys on the table
+puse las llaves en la mesa
+
+I spoke with the manager
+hablé con el gerente
+
+I came to help
+vine a ayudar
+
+I found out last night
+supe anoche
+
+I wanted to stay
+quise quedarme
+
+I decided to stay home
+me quedé en casa
+
+I arrived late
+llegué tarde
+
+I went out with friends
+salí con amigos
+
+I ate too much
+comí de más
+
+I lived there for years
+viví allí unos años
+
+I read the message
+leí el mensaje
+
+I ordered the salad
+pedí la ensalada
+
+I played in the final
+jugué en la final
+
+I slept eight hours
+dormí ocho horas
+
+I dozed off in class
+me dormí en clase
+
+I came back the next day
+volví al día siguiente
+
+I started a new project
+empecé un proyecto nuevo
+
+I thought it over
+lo pensé
+
+I met your cousin
+conocí a tu primo
+
+I brought the documents
+traje los documentos
+
+I watched the match
+miré el partido
+
+I listened to the album
+escuché el álbum
+
+I looked for a parking spot
+busqué estacionamiento
+
+I worked a double shift
+trabajé doble turno
+
+I took a taxi
+tomé un taxi
+
+I helped the neighbors
+ayudé a los vecinos
+
+I learned the answer
+aprendí la respuesta
+
+I put the jacket on
+me puse la chaqueta
+
+I got up before dawn
+me levanté antes del amanecer
+
+I heard the warning
+oí el aviso
+
+I understood the problem
+entendí el problema
+
+I drove across town
+manejé cruzando la ciudad
+
+I remembered the password
+recordé la contraseña
+
+I opened the door
+abrí la puerta
+
+I bought it for my mom
+se lo compré a mi madre
+
+I went up the stairs
+subí las escaleras
+
+I won the bet
+gané la apuesta
+
+I played that song on the radio
+toqué esa canción en la radio
+
+I believed the story
+creí el cuento
+
+I threw out the old bottles
+eché las botellas viejas
+
+I woke up at dawn
+me desperté al amanecer
+
+I liked the coffee
+me gustó el café
+
+I loved the play
+me encantó la obra
+
+My head hurt
+me dolió la cabeza
+
+My feet hurt
+me dolieron los pies
+
+he was a teacher
+él fue profesor
+
+he was in Madrid all summer
+él estuvo en Madrid todo el verano
+
+he had a great idea
+él tuvo una gran idea
+
+he went to the bank
+él fue al banco
+
+he saw it
+él lo vio
+
+he told her the news
+él le dijo la noticia
+
+he made dinner
+él hizo la cena
+
+he gave her the book
+él le dio el libro
+
+he left early
+él se fue temprano
+
+he put the keys on the table
+él puso las llaves en la mesa
+
+he spoke with the manager
+él habló con el gerente
+
+he came to help
+él vino a ayudar
+
+he found out last night
+él supo anoche
+
+he wanted to stay
+él quiso quedarse
+
+he decided to stay home
+él se quedó en casa
+
+he arrived late
+él llegó tarde
+
+he went out with friends
+él salió con amigos
+
+he ate too much
+él comió de más
+
+he lived there for years
+él vivió allí unos años
+
+he read the message
+él leyó el mensaje
+
+he ordered the salad
+él pidió la ensalada
+
+he played in the final
+él jugó en la final
+
+he slept eight hours
+él durmió ocho horas
+
+he dozed off in class
+él se durmió en clase
+
+he came back the next day
+él volvió al día siguiente
+
+he started a new project
+él empezó un proyecto nuevo
+
+he thought it over
+él lo pensó
+
+he met your cousin
+él conoció a tu primo
+
+he brought the documents
+él trajo los documentos
+
+he watched the match
+él miró el partido
+
+he listened to the album
+él escuchó el álbum
+
+he looked for a parking spot
+él buscó estacionamiento
+
+he worked a double shift
+él trabajó doble turno
+
+he took a taxi
+él tomó un taxi
+
+he helped the neighbors
+él ayudó a los vecinos
+
+he learned the answer
+él aprendió la respuesta
+
+he put the jacket on
+él se puso la chaqueta
+
+he got up before dawn
+él se levantó antes del amanecer
+
+he heard the warning
+él oyó el aviso
+
+he understood the problem
+él entendió el problema
+
+he drove across town
+él manejó cruzando la ciudad
+
+he remembered the password
+él recordó la contraseña
+
+he opened the door
+él abrió la puerta
+
+he bought it for his mom
+él se lo compró a su madre
+
+he went up the stairs
+él subió las escaleras
+
+he won the bet
+él ganó la apuesta
+
+he played that song on the radio
+él tocó esa canción en la radio
+
+he believed the story
+él creyó el cuento
+
+he threw out the old bottles
+él echó las botellas viejas
+
+he woke up at dawn
+él se despertó al amanecer
+
+she liked the coffee
+a ella le gustó el café
+
+he loved the play
+a él le encantó la obra
+
+his head hurt
+le dolió la cabeza
+
+her feet hurt
+le dolieron los pies
+
+they were teachers
+ellos fueron profesores
+
+they were in Madrid all summer
+ellos estuvieron en Madrid todo el verano
+
+they had a great idea
+ellos tuvieron una gran idea
+
+they went to the bank
+ellos fueron al banco
+
+they saw it
+ellos lo vieron
+
+they told her the news
+ellos le dijeron la noticia
+
+they made dinner
+ellos hicieron la cena
+
+they gave her the book
+ellos le dieron el libro
+
+they left early
+ellos se fueron temprano
+
+they put the keys on the table
+ellos pusieron las llaves en la mesa
+
+they spoke with the manager
+ellos hablaron con el gerente
+
+they came to help
+ellos vinieron a ayudar
+
+they found out last night
+ellos supieron anoche
+
+they wanted to stay
+ellos quisieron quedarse
+
+they decided to stay home
+ellos se quedaron en casa
+
+they arrived late
+ellos llegaron tarde
+
+they went out with friends
+ellos salieron con amigos
+
+they ate too much
+ellos comieron de más
+
+they lived there for years
+ellos vivieron allí unos años
+
+they read the message
+ellos leyeron el mensaje
+
+they ordered the salad
+ellos pidieron la ensalada
+
+they played in the final
+ellos jugaron en la final
+
+they slept eight hours
+ellos durmieron ocho horas
+
+they dozed off in class
+ellos se durmieron en clase
+
+they came back the next day
+ellos volvieron al día siguiente
+
+they started a new project
+ellos empezaron un proyecto nuevo
+
+they thought it over
+ellos lo pensaron
+
+they met your cousin
+ellos conocieron a tu primo
+
+they brought the documents
+ellos trajeron los documentos
+
+they watched the match
+ellos miraron el partido
+
+they listened to the album
+ellos escucharon el álbum
+
+they looked for a parking spot
+ellos buscaron estacionamiento
+
+they worked a double shift
+ellos trabajaron doble turno
+
+they took a taxi
+ellos tomaron un taxi
+
+they helped the neighbors
+ellos ayudaron a los vecinos
+
+they learned the answer
+ellos aprendieron la respuesta
+
+they put their jackets on
+ellos se pusieron las chaquetas
+
+they got up before dawn
+ellos se levantaron antes del amanecer
+
+they heard the warning
+ellos oyeron el aviso
+
+they understood the problem
+ellos entendieron el problema
+
+they drove across town
+ellos manejaron cruzando la ciudad
+
+they remembered the password
+ellos recordaron la contraseña
+
+they opened the door
+ellos abrieron la puerta
+
+they bought it for their mom
+ellos se lo compraron a su madre
+
+they went up the stairs
+ellos subieron las escaleras
+
+they won the bet
+ellos ganaron la apuesta
+
+they played that song on the radio
+ellos tocaron esa canción en la radio
+
+they believed the story
+ellos creyeron el cuento
+
+they threw out the old bottles
+ellos echaron las botellas viejas
+
+they woke up at dawn
+ellos se despertaron al amanecer
+
+they liked the coffee
+a ellos les gustó el café
+
+they loved the play
+a ellas les encantó la obra
+
+their heads hurt
+les dolió la cabeza
+
+their feet hurt
+les dolieron los pies
+
+were you a teacher?
+¿fuiste profesor?
+
+were you in Madrid all summer?
+¿estuviste en Madrid todo el verano?
+
+did you have a great idea?
+¿tuviste una gran idea?
+
+did you go to the bank?
+¿fuiste al banco?
+
+did you see it?
+¿lo viste?
+
+did you tell her the news?
+¿le dijiste la noticia?
+
+did you make dinner?
+¿hiciste la cena?
+
+did you give her the book?
+¿le diste el libro?
+
+did you leave early?
+¿te fuiste temprano?
+
+did you put the keys on the table?
+¿pusiste las llaves en la mesa?
+
+did you speak with the manager?
+¿hablaste con el gerente?
+
+did you come to help?
+¿viniste a ayudar?
+
+did you find out last night?
+¿supiste anoche?
+
+did you want to stay?
+¿quisiste quedarte?
+
+did you stay home?
+¿te quedaste en casa?
+
+did you arrive late?
+¿llegaste tarde?
+
+did you go out with friends?
+¿saliste con amigos?
+
+did you eat too much?
+¿comiste de más?
+
+did you live there for years?
+¿viviste allí unos años?
+
+did you read the message?
+¿leíste el mensaje?
+
+did you order the salad?
+¿pediste la ensalada?
+
+did you play in the final?
+¿jugaste en la final?
+
+did you sleep eight hours?
+¿dormiste ocho horas?
+
+did you doze off in class?
+¿te dormiste en clase?
+
+did you come back the next day?
+¿volviste al día siguiente?
+
+did you start a new project?
+¿empezaste un proyecto nuevo?
+
+did you think it over?
+¿lo pensaste?
+
+did you meet your cousin?
+¿conociste a tu primo?
+
+did you bring the documents?
+¿trajiste los documentos?
+
+did you watch the match?
+¿miraste el partido?
+
+did you listen to the album?
+¿escuchaste el álbum?
+
+did you look for a parking spot?
+¿buscaste estacionamiento?
+
+did you work a double shift?
+¿trabajaste doble turno?
+
+did you take a taxi?
+¿tomaste un taxi?
+
+did you help the neighbors?
+¿ayudaste a los vecinos?
+
+did you learn the answer?
+¿aprendiste la respuesta?
+
+did you put the jacket on?
+¿te pusiste la chaqueta?
+
+did you get up before dawn?
+¿te levantaste antes del amanecer?
+
+did you hear the warning?
+¿oíste el aviso?
+
+did you understand the problem?
+¿entendiste el problema?
+
+did you drive across town?
+¿manejaste cruzando la ciudad?
+
+did you remember the password?
+¿recordaste la contraseña?
+
+did you open the door?
+¿abriste la puerta?
+
+did you buy it for your mom?
+¿se lo compraste a tu madre?
+
+did you go up the stairs?
+¿subiste las escaleras?
+
+did you win the bet?
+¿ganaste la apuesta?
+
+did you play that song on the radio?
+¿tocaste esa canción en la radio?
+
+did you believe the story?
+¿creíste el cuento?
+
+did you throw out the old bottles?
+¿echaste las botellas viejas?
+
+did you wake up at dawn?
+¿te despertaste al amanecer?
+
+did you like the coffee?
+¿te gustó el café?
+
+did you love the play?
+¿te encantó la obra?
+
+did your head hurt?
+¿te dolió la cabeza?
+
+did your feet hurt?
+¿te dolieron los pies?
+
+I’ve been working all day
+llevo trabajando todo el día
+
+You’ve been looking for the keys for half an hour
+llevas media hora buscando las llaves
+
+He’s been staring at the same screen
+lleva quince minutos mirando la misma pantalla
+
+We’ve been listening to this on repeat
+llevamos escuchando esto en bucle
+
+I’ve been reading it for a week
+llevo una semana leyéndolo
+
+They’ve been learning the new software since Monday
+llevan aprendiendo el programa desde el lunes
+
+She’s been on the phone for an hour
+lleva una hora hablando por teléfono
+
+We’ve been doing chores all morning
+llevamos toda la mañana haciendo tareas
+
+The kids have been playing in the yard
+los niños llevan toda la tarde jugando en el jardín
+
+You’ve been snacking for an hour
+llevas una hora comiendo
+
+He’s been driving for six hours straight
+lleva seis horas manejando sin parar
+
+I can’t focus; I’ve been thinking about it
+no puedo concentrarme; llevo días pensando en ello
+
+You’ve been explaining the rules to us for half an hour
+llevas media hora explicándonos las reglas
+
+They’ve been helping us all week
+llevan toda la semana ayudándonos
+
+She’s been asking for a raise for months
+lleva meses pidiendo un aumento
+
+You’ve been winning every bet
+llevas ganando cada apuesta
+
+I’ve been trying to tell you
+llevo semanas diciéndotelo
+
+For hours the kitchen has smelled like garlic
+la cocina lleva horas oliendo a ajo
+
+We’ve been living here since May
+llevamos viviendo aquí desde mayo
+
+You keep reopening old fights
+llevas abriendo viejas heridas
+
+She’s still talking on the phone
+sigue hablando por teléfono
+
+He’s still working late
+sigue trabajando hasta tarde
+
+I’m still looking for it
+sigo buscándolo
+
+We’re still listening
+seguimos escuchando
+
+They’re still learning the job
+siguen aprendiendo el oficio
+
+You’re still reading that novel
+sigues leyendo esa novela
+
+I’m still thinking about it
+sigo pensando en ello
+
+The kids are still playing outside
+los niños siguen jugando afuera
+
+He’s still driving; he won’t stop
+sigue manejando; no para
+
+We’re still doing the same old thing
+seguimos haciendo lo mismo
+
+You’re still eating? I thought you were full
+sigues comiendo; pensé que estabas lleno
+
+She still believes in the project
+sigue creyendo en el proyecto
+
+I still want to go
+sigo queriendo ir
+
+I’m still scared
+sigo teniendo miedo
+
+He’s still asking for a raise
+sigue pidiendo un aumento
+
+You’re still watching that show
+sigues mirando esa serie
+
+The prof is still going over the topic
+el profe sigue explicando el tema
+
+I’m still helping out when I can
+sigo ayudando cuando puedo
+
+We’re still living together
+seguimos viviendo juntos
+
+You’re still saying the same thing
+sigues diciendo lo mismo
+
+I just finished working
+acabo de trabajar
+
+I just ate
+acabo de comer
+
+We just left
+acabamos de salir
+
+I just got here
+acabo de llegar
+
+I just saw you
+acabo de verte
+
+I just told you
+acabo de decírtelo
+
+He just read the message
+acaba de leerlo
+
+I just heard the news
+acabo de oír la noticia
+
+I just asked for the check
+acabo de pedir la cuenta
+
+I just did it
+acabo de hacerlo
+
+She just made dinner
+acaba de hacer la cena
+
+He just left
 acaba de irse
 
-You just saw
-acabas de ver
+I just got out of the bath
+acabo de bañarme
 
-They just saw
-acaban de ver
+I just met your sister
+acabo de conocer a tu hermana
 
-What did he see?
-¿qué vio?
+They just won
+acaban de ganar
 
-I'm saying right now
-ando diciendo
+I just found out
+acabo de saberlo
 
-he's saying right now
-anda diciendo
+I just opened the door
+acabo de abrir la puerta
 
-We just said
-acabamos de decir
+You just bought that
+acabas de comprar eso
 
-we've been putting
-llevamos poniendo
+I just gave it to you
+acabo de dártelo
 
-you're still putting
-sigues poniendo
+I just drove all the way here
+acabo de manejar hasta aquí
 
-right now he's putting
-anda poniendo
+He usually cooks dinner at six
+suele hacer la cena a las seis
 
-I've been giving
-llevo dando
+She usually gets up early
+suele levantarse temprano
 
-it's still giving
-sigue dando
+I usually work from home
+suelo trabajar desde casa
 
-right now it's giving
-anda dando
+They usually arrive late
+suelen llegar tarde
 
-I know right now
-ando sabiendo
+We usually eat out on Fridays
+solemos comer fuera los viernes
 
-It just knew
-acaba de saber
+You usually say the same thing
+sueles decir lo mismo
 
-Did I know?
-¿supe?
+I usually read before bed
+suelo leer antes de acostarme
 
-right now he's asking
-anda pidiendo
+He usually drives to work
+suele manejar al trabajo
 
-right now you guys are asking
-andan pidiendo
+We usually take the bus
+solemos tomar el autobús
 
-I just asked
-acabo de pedir
+They usually play on weekends
+suelen jugar los fines de semana
 
-He just came
-acaba de venir
+He usually stays home
+suele quedarse en casa
 
-Where did I come from?
-¿de dónde vine?
+I usually help on Sundays
+suelo ayudar los domingos
 
-Where did it come from?
-¿de dónde vino?
+He usually watches the news
+suele mirar las noticias
 
-we did
-hicimos
+We usually go to bed early
+solemos acostarnos temprano
 
-It just did
-acaba de hacer
+You usually get worked up over nothing
+sueles enojarte por nada
 
-What did he do?
-¿qué hizo?
+The meeting usually starts late
+la reunión suele empezar tarde
 
-they've had
-llevan teniendo
+She usually naps in the afternoon
+suele dormir la siesta por la tarde
 
-right now they have
-andan teniendo
+The train is usually on time
+el tren suele llegar a tiempo
 
-you guys have right now
-andan teniendo
+I usually forget my keys
+suelo olvidar las llaves
 
-you guys brought
-trajeron
+It’s usually really cold in the morning
+suele hacer mucho frío por la mañana
 
-it's still bringing
-sigue trayendo
+don’t touch that
+¡no lo toques!
 
-What did I bring?
-¿qué traje?
+give it to me
+¡dámelo!
 
-he arrived
-llegó
+put it in the box
+¡mételo en la caja!
 
-we arrived
-llegamos
+don’t leave without me
+¡no te vayas sin mí!
 
-you've been arriving
-llevas llegando
+come here
+¡ven aquí!
 
-he spoke
-habló
+tell me the truth
+¡dime la verdad!
 
-you guys spoke
-hablaron
+do it now
+¡hazlo!
 
-it's been speaking
-lleva hablando
+look at me
+¡mírame!
 
-I ate
-comí
+don’t look
+¡no mires!
 
-we ate
-comimos
+listen to me
+¡escúchame!
 
-You guys just ate
-acaban de comer
+don’t open the door
+¡no abras la puerta!
 
-we lived
-vivimos
+open it
+¡ábrelo!
 
-You guys just lived
-acaban de vivir
+don’t say that
+¡no digas eso!
 
-Where did I live?
-¿dónde viví?
+don’t eat that
+¡no comas eso!
 
-we was (ser)
-fuimos
+read it
+¡léelo!
 
-they was (ser)
-fueron
+get up
+¡levántate!
 
-right now I'm being (ser)
-ando siendo
+go to bed
+¡acuéstate!
 
-I chose
-escogí
+don’t be afraid
+¡no tengas miedo!
 
-he's still choosing
-sigue escogiendo
+stay there
+¡quédate ahí!
 
-What did we choose?
-¿qué escogimos?
+don’t be late
+¡no llegues tarde!
 
-they was (estar)
-estuvieron
+let’s not talk about it
+¡no hablemos de eso!
 
-he's been being (estar)
-lleva estando
+please do it (formal, singular)
+¡hágalo, por favor!
 
-it's been being (estar)
-lleva estando
+please don’t (formal, singular)
+¡no haga eso, por favor!
 
-you began
-empezaste
+please tell me (formal, singular)
+¡dígamelo, por favor!
 
-we began
-empezamos
+please bring the document (formal, singular)
+¡tráigalo, por favor!
 
-When did you begin?
-¿cuándo empezaste?
+let’s get out of here
+¡salgamos de aquí!
 
-it's wanted
-lleva queriendo
+let’s go
+¡vámonos!
 
-you still want
-sigues queriendo
+don’t get angry
+¡no te enojes!
 
-What did I want?
-¿qué quise?
+have fun
+¡diviértete!
 
-you guys have been reading
-llevan leyendo
+don’t fall
+¡no te caigas!
 
-I'm still reading
-sigo leyendo
+get out of here
+¡vete de aquí!
 
-they're reading right now
-andan leyendo
+throw that away
+¡tíralo!
 
-you played
-jugaste
+find it
+¡búscalo!
 
-you guys are still playing
-siguen jugando
+buy it
+¡cómpralo!
 
-Who did we play with?
-¿con quién jugamos?
+don’t buy it
+¡no lo compres!
 
-I went out
-salí
+give them to us
+¡dánoslos!
 
-he's been going out
-lleva saliendo
+return it to me
+¡devuélvemelo!
 
-When did it go out?
-¿cuándo salió?
+wash your hands
+¡lávate las manos!
 
-he slept
-durmió
+get dressed
+¡vístete!
 
-It just slept
-acaba de dormir
+add a little salt
+¡añade un poco de sal!
 
-Where did he sleep?
-¿dónde durmió?
+don’t add sugar
+¡no añadas azúcar!
 
-you guys returned
-volvieron
+don’t play with that
+¡no juegues con eso!
 
-You just returned
-acabas de volver
+don’t drive drunk
+¡no manejes borracho!
 
-He just returned
-acaba de volver
-
-you guys thought
-pensaron
-
-right now we're thinking
-andamos pensando
-
-We just thought
-acabamos de pensar
-
-they met
-conocieron
-
-you guys still meet
-siguen conociendo
-
-Who did it meet?
-¿a quién conoció?
-
-I've been driving
-llevo manejando
-
-you guys have been driving
-llevan manejando
-
-You just finished driving
-acabas de manejar
-
-you guys heard
-oyeron
-
-you've been hearing
-llevas oyendo
-
-You just heard
-acabas de oír
-
-he's still serving
-sigue sirviendo
-
-we're serving right now
-andamos sirviendo
-
-What did we serve?
-¿qué servimos?
-
-we watched
-miramos
-
-they watched
-miraron
-
-we've been watching
-llevamos mirando
-
-you guys listened to
-escucharon
-
-you guys have been listening to
-llevan escuchando
-
-they're still listening to
-siguen escuchando
-
-we helped
-ayudamos
-
-You just helped
-acabas de ayudar
-
-Who did he help?
-¿a quién ayudó?
-
-we reached
-alcanzamos
-
-you've been reaching
-llevas alcanzando
-
-What did it reach?
-¿qué alcanzó?
-
-it's been falling down
-se lleva cayendo
-
-they've been falling down
-se llevan cayendo
-
-How did I fall down?
-¿cómo me caí?
-
-you searched for
-buscaste
-
-we searched for
-buscamos
-
-you guys are searching for right now
-andan buscando
-
-he learned
-aprendió
-
-he's been learning
-lleva aprendiendo
-
-What did he learn?
-¿qué aprendió?
-
-he understood
-entendió
-
-it's understood
-lleva entendiendo
-
-they've understood
-llevan entendiendo
-
-you guys still hurt
-siguen doliendo
-
-it hurts right now
-anda doliendo
-
-It just hurted
-acaba de doler
-
-we've been permitting
-llevamos permitiendo
-
-right now you're permitting
-andas permitiendo
-
-What did he permit?
-¿qué permitió?
-
-I'm still receiving
-sigo recibiendo
-
-you're still receiving
-sigues recibiendo
-
-We just received
-acabamos de recibir
-
-it's been opening
-lleva abriendo
-
-you guys have been opening
-llevan abriendo
-
-I'm still opening
-sigo abriendo
-
-it bought
-compró
-
-We just bought
-acabamos de comprar
-
-What did they buy?
-¿qué compraron?
-
-it's been throwing
-lleva tirando
-
-it's throwing right now
-anda tirando
-
-What did they throw?
-¿qué tiraron?
-
-he's been tossing
-lleva echando
-
-you guys have been tossing
-llevan echando
-
-You just tossed
-acabas de echar
-
-he directed
-dirigió
-
-we've been directing
-llevamos dirigiendo
-
-They just directed
-acaban de dirigir
-
-you've been building
-llevas construyendo
-
-you're still building
-sigues construyendo
-
-they're still building
-siguen construyendo
-
-I've believed
-llevo creyendo
-
-it's believed
-lleva creyendo
-
-What did he believe?
-¿qué creyó?
-
-you demanded
-exigiste
-
-They just demanded
-acaban de exigir
-
-What did we demand?
-¿qué exigimos?
-
-I died
-morí
-
-we're still dying
-seguimos muriendo
-
-Did I die?
-¿morí?
-
-it's been getting
-lleva consiguiendo
-
-right now he's getting
-anda consiguiendo
-
-What did you guys get?
-¿qué consiguieron?
-
-they're still taking
-siguen tomando
-
-right now you're taking
-andas tomando
-
-It just took
-acaba de tomar
-
-it worked
-trabajó
-
-we're working right now
-andamos trabajando
-
-Where did you work?
-¿dónde trabajaste?
-
-you've smelled
-llevas oliendo
-
-What did we smell?
-¿qué olimos?
-
-What did you guys smell?
-¿qué olieron?
-
-you went up
-subiste
-
-We just went up
-acabamos de subir
-
-They just went up
-acaban de subir
-
-We just remembered
-acabamos de recordar
-
-They just remembered
-acaban de recordar
-
-What did he remember?
-¿qué recordó?
-
-he's been winning
-lleva ganando
-
-You just won
-acabas de ganar
-
-We just won
-acabamos de ganar
-
-he's still putting
-sigue metiendo
-
-it's still putting
-sigue metiendo
-
-He just put
-acaba de meter
-
-I've been insisting
-llevo insistiendo
-
-we've been insisting
-llevamos insistiendo
-
-you guys have been insisting
-llevan insistiendo
-
-he's been suffering
-lleva sufriendo
-
-you're still suffering
-sigues sufriendo
-
-What did we suffer?
-¿qué sufrimos?
-
-he's been explaining
-lleva explicando
-
-I'm explaining right now
-ando explicando
-
-You just explained
-acabas de explicar
-
-we repented
-nos arrepentimos
-
-it's still repenting
-se sigue arrepintiendo
-
-What did you guys repent about?
-¿de qué se arrepintieron?
-
-we sent
-mandamos
-
-I've been sending
-llevo mandando
-
-we've been sending
-llevamos mandando
-
-we've been calling
-llevamos marcando
-
-right now you're calling
-andas marcando
-
-What did you call?
-¿qué marcaste?
-
-he returned
-devolvió
-
-I just returned
-acabo de devolver
-
-He just returned
-acaba de devolver
-
-they've been adding
-llevan añadiendo
-
-we're still adding
-seguimos añadiendo
-
-They just added
-acaban de añadir
-
-they're still touching
-siguen tocando
-
-It just touched
-acaba de tocar
-
-What did I touch?
-¿qué toqué?
-
-you guys are killing right now
-andan matando
-
-You just killed
-acabas de matar
-
-Did we kill?
-¿matamos?
-
-they put on
-se pusieron
-
-it's still putting on
-se sigue poniendo
-
-What did it put on?
-¿qué se puso?
-
-you guys stayed
-se quedaron
-
-he's still staying
-se sigue quedando
-
-Where did they stay?
-¿dónde se quedaron?
-
-right now it's falling asleep
-se anda durmiendo
-
-You guys just fell asleep
-acaban de dormirse
-
-When did they fall asleep?
-¿cuándo se durmieron?
-
-we felt
-nos sentimos
-
-you still feel
-te sigues sintiendo
-
-How did you feel?
-¿cómo te sentiste?
-
-I've been getting dressed
-me llevo vistiendo
-
-it's been getting dressed
-se lleva vistiendo
-
-I'm still getting dressed
-me sigo vistiendo
-
-I've been forgetting
-llevo olvidándose
-
-you're still forgetting
-sigues olvidándose
-
-you guys are forgetting right now
-andan olvidándose
-
-you've been waking up
-te llevas despertando
-
-he's still waking up
-se sigue despertando
-
-right now you're waking up
-te andas despertando
-
-you got up
-te levantaste
-
-you're getting up right now
-te andas levantando
-
-When did we get up?
-¿cuándo nos levantamos?
-
-it went to bed
-se acostó
-
-right now we're going to bed
-nos andamos acostando
-
-You guys just went to bed
-acaban de acostarse
-
-it took a shower
-se duchó
-
-we took a shower
-nos duchamos
-
-he's taking a shower right now
-se anda duchando
-
-they took a bath
-se bañaron
-
-you're still taking a bath
-te sigues bañando
-
-right now you guys are taking a bath
-se andan bañando
-
-they've been washing
-llevan lavando
-
-What did you wash?
-¿qué lavaste?
-
-What did it wash?
-¿qué lavó?
-
-he's been washing up
-se lleva lavando
-
-When did I wash?
-¿cuándo me lavé?
-
-When did he wash?
-¿cuándo se lavó?
-
-we're still brushing
-seguimos cepillando
-
-right now we're brushing
-andamos cepillando
-
-You just brushed
-acabas de cepillar
-
-he shaved
-se afeitó
-
-you're shaving right now
-te andas afeitando
-
-He just shaved
-acaba de afeitarse
-
-you guys have been having fun
-se llevan divirtiendo
-
-we're still having fun
-nos seguimos divirtiendo
-
-We just had fun
-acabamos de divertirnos
-
-they've been getting angry
-se llevan enojando
-
-you guys are still getting angry
-se siguen enojando
-
-We just got angry
-acabamos de enojarnos
-
-I was glad
-me alegré
-
-you was glad
-te alegraste
-
-It just was glad
-acaba de alegrarse
-
-right now you're approaching
-te andas acercando
-
-it's approaching right now
-se anda acercando
-
-You guys just approached
-acaban de acercarse
+use your head
+¡piensa un poco!
 
