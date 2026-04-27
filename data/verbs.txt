@@ -52,7 +52,7 @@ salí con amigos
 I ate too much
 comí de más
 
-I lived there for years
+I lived there for many years
 viví allí unos años
 
 I read the message
@@ -536,7 +536,7 @@ did you go out with friends?
 ¿saliste con amigos?
 
 did you eat too much?
-¿comiste de más?
+¿comiste demasiado?
 
 did you live there for years?
 ¿viviste allí unos años?
@@ -575,7 +575,7 @@ did you watch the match?
 ¿miraste el partido?
 
 did you listen to the album?
-¿escuchaste el álbum?
+¿escuchaste al álbum?
 
 did you look for a parking spot?
 ¿buscaste estacionamiento?
@@ -656,7 +656,7 @@ He’s been staring at the same screen
 lleva quince minutos mirando la misma pantalla
 
 We’ve been listening to this on repeat
-llevamos escuchando esto en bucle
+llevamos escuchando esto en repeat
 
 I’ve been reading it for a week
 llevo una semana leyéndolo
@@ -905,7 +905,7 @@ tell me the truth
 ¡dime la verdad!
 
 do it now
-¡hazlo!
+¡hazlo ahorita mismo!
 
 look at me
 ¡mírame!

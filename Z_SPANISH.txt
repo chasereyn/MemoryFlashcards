@@ -3,6 +3,142 @@ FOCUS ON PARAGRAPHS AND EXPLAINING MY WORK (both languages)
 MY INTENTIONS
 ASK THEIR BLESSING
 GATHER FROM SONGS / VIDEOS
+(Describe yuppy)
+
+backyard
+el patio
+
+front yard
+el jardin
+
+Aren't they sweet?
+¿No son preciosos?
+
+Armchair
+El sillón
+
+Office chair
+La silla de oficina
+
+Recliner
+La silla reclinable
+
+Folding chair
+La silla plegable
+
+Stool
+El banquito
+
+Rocking Chair
+La mecedora
+
+High Chair
+La periquera
+
+VERBS
+- they came back should be regresar (check if that is in verbs.csv list)
+- please bring the document is off
+SPANISH
+- I don't have enough money redo
+- I like the layout remove
+- regatear use in sentence
+- to go by the branches (use in proper sentence)
+- Turn off the lights!
+- Turn on the lights
+- Close the door!
+- Open the door!
+- Way of life with modo de vida
+- just like you've lways wanted remove justo
+- to match use in sentence
+- She is a good drawer, she draws really well
+- we're cooked, ya bailo berta
+
+aun no. I still haven't
+el santo
+ingenioso
+You haven't seen the least of...
+extra
+diamond
+fascinating...
+keep a secret
+El otro intenta responder con otro albur que le dé la vuelta.
+ando borracho = ando bien pedo
+empathetic
+primaveral
+que fresco te ves energia, peppy, cool temperature
+fluff
+transcribe
+scrub
+splash
+suffocating
+chain cadena
+armrest
+noodle
+brick
+lotion
+refrigatator
+humidifier
+nail polish
+ramp
+bush
+ripples
+unicamente
+tornado
+carpet
+rug
+lightbulb
+infinity
+tile
+manhole conver
+opposite
+scalp
+scab
+cast iron
+invention
+chicken alfredo
+peeling off
+chin
+glitter
+revolutions
+underwear
+mold
+algae
+water pressure
+spiders
+goggles
+worms
+specs
+watermelon
+honeydew
+grapefruit
+dragonfruit
+obscure
+denim / jeans
+blanket
+open tabs
+bookmark
+grid
+butt
+conjunction
+period, comma, semicolon, quote
+treasure chest
+fish tank
+veins
+yeti
+cartoon
+float / sink
+healthy / unhealthy
+loud / quiet
+knife block
+cleaver
+putrid / fragrant
+ostrobogulous weird
+limp
+questionable
+agotar v aguantar
+autistic kids
+shooting guns at the range
+Alcohol (run, vodka, ...)
 
 
 
@@ -11,6 +147,9 @@ GATHER FROM SONGS / VIDEOS
 
 
 
+yo soy asi that's just how I am
+vamos a tirarnos un selfie let's take a selfie
+ahor entiendo al buen... now I understand well...
 
 SPANISH
 - big spoon and little spoon?
@@ -364,93 +503,6 @@ we take for granted
 
 to become when each
 hacerse ponerse volverse quedarse convertirse transformarse llegar a ser
-
-aun no. I still haven't
-el santo
-ingenioso
-You haven't seen the least of...
-extra
-diamond
-fascinating...
-keep a secret
-El otro intenta responder con otro albur que le dé la vuelta.
-ando borracho = ando bien pedo
-empathetic
-primaveral
-que fresco te ves energia, peppy, cool temperature
-fluff
-transcribe
-scrub
-splash
-suffocating
-chain cadena
-armrest
-noodle
-brick
-lotion
-refrigatator
-humidifier
-nail polish
-ramp
-bush
-ripples
-unicamente
-tornado
-carpet
-rug
-lightbulb
-infinity
-tile
-manhole conver
-opposite
-scalp
-scab
-cast iron
-invention
-chicken alfredo
-peeling off
-chin
-glitter
-revolutions
-underwear
-mold
-algae
-water pressure
-spiders
-goggles
-worms
-specs
-watermelon
-honeydew
-grapefruit
-dragonfruit
-obscure
-denim / jeans
-blanket
-open tabs
-bookmark
-grid
-butt
-conjunction
-period, comma, semicolon, quote
-treasure chest
-fish tank
-veins
-yeti
-cartoon
-float / sink
-healthy / unhealthy
-loud / quiet
-knife block
-cleaver
-putrid / fragrant
-ostrobogulous weird
-limp
-questionable
-agotar v aguantar
-autistic kids
-shooting guns at the range
-Alcohol (run, vodka, ...)
 
 pelate - run away
 papolatear - daydreaming
@@ -3519,27 +3571,6 @@ Mi corazón late
 I feel renewed
 Me siento renovado
 
-Armchair
-El sillón
-
-Office chair
-La silla de oficina
-
-Recliner
-La silla reclinable
-
-Folding chair
-La silla plegable
-
-Stool
-El banquito
-
-Rocking Chair
-La mecedora
-
-High Chair
-La periquera
-
 Bench
 El banco
 
@@ -4558,6 +4589,7 @@ VERBS
 - Imperfect (I used to...)
 - Andar present progressive
 - dejar as commands (10)
+' To find out saber past tense
 - Should we wash the dishes? lavamos los trastes?
 - I should've left earlier debí irme con más tiempo
 - estar a punto de = I'm about to...

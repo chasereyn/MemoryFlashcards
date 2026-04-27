@@ -28,9 +28,6 @@ el abrigo
 gray
 gris
 
-delicious
-delicioso
-
 sweet
 dulce
 
@@ -835,6 +832,9 @@ la cena
 innocent
 inocente
 
+innovation
+la inovación
+
 to discover
 descubrir
 
@@ -978,15 +978,6 @@ la política
 
 energy
 la energía
-
-to find
-encontrar
-
-to be left
-quedar
-
-to touch
-tocar
 
 besides
 además
@@ -1357,6 +1348,9 @@ no cambia nada
 towel
 la toalla
 
+to make dinner
+hacer la cena
+
 heroine
 la heroína
 
@@ -1395,9 +1389,6 @@ dinámico
 
 magic
 mágico
-
-spicy
-picante
 
 hot
 caliente
@@ -2422,6 +2413,9 @@ el voluntario
 toothpaste
 la pasta de dientes
 
+productivity
+productividad
+
 toothbrush
 el cepillo de dientes
 
@@ -2668,6 +2662,9 @@ el sonido
 translator
 el traductor
 
+slangs
+los slangs
+
 pronunciation
 la pronunciación
 
@@ -2704,15 +2701,6 @@ sentarse
 early
 temprano
 
-to pass
-pasar
-
-to translate
-traducir
-
-to happen
-pasar
-
 to treat
 tratar
 
@@ -2742,9 +2730,6 @@ quitar
 
 to turn in
 entregar
-
-things
-las cosas
 
 to order
 ordenar
@@ -4069,6 +4054,9 @@ Al aeropuerto por favor
 highway
 la autopista
 
+high school
+la preparatoria
+
 Stop here please
 Pare aqui por favor
 
@@ -4966,6 +4954,9 @@ electrificado
 weeds
 las malas hierbas
 
+hair
+el cabello
+
 hairdryer
 el secador de cabello
 
@@ -5763,9 +5754,6 @@ la pastelería
 
 cooked
 cocido
-
-roof
-el techo
 
 earrings
 los aretes
@@ -7081,9 +7069,6 @@ una videollamada
 cornerstore
 la tienda de la esquina
 
-roof
-el tejado
-
 How could I forget!
 ¡Cómo se me pudo olvidar!
 
@@ -7166,7 +7151,7 @@ pebbles
 los guijarros
 
 Do you regret it?
-¿Te arrepientes?
+¿Te lo arrepientes?
 
 Put the lid on the container
 Ponle la tapa al contenedor
@@ -7476,3 +7461,129 @@ es la primera vez que vengo aquí
 
 I'll talk to you when I get around to it
 te hablaré cuando me ponga a hacerlo
+
+golf cart
+carro de golf
+
+streetcar
+tranvía
+
+friends with benefits
+amigos con derechos
+
+The more you know!
+Lo mejor que sabes!
+
+mini schnauzer
+schnauzer miniatura
+
+personal values
+valores personales
+
+better known as...
+mejor conocido como...
+
+complications
+complicaciones
+
+ladies and gentlemen
+damas y caballeros
+
+add some more salt
+échale sal
+
+it's not that spicy
+no pica
+
+it's a little spicy
+pica poquito
+
+it's spicy
+pica rico
+
+it's really spicy
+sí pica
+
+this shit's fucking spicy
+pica de a madres
+
+expectations
+expectativas
+
+significant
+significativo
+
+a braid
+la trenza
+
+to braid
+trenzar
+
+ponytail
+la colita
+
+pneumonia
+la neumonía
+
+intramural groups
+los grupos intramuros
+
+the same thing
+lo mismo
+
+How cultured!
+¡Qué refinado!
+
+vineyard
+el viñedo
+
+I was just about to say that!
+¡eso iba a decir!
+
+We're almost there!
+¡ya casi llegamos!
+
+practical experience
+la experiencia práctica
+
+Did I miss the exit?
+¿me pasé de la salida?
+
+yard
+el patio
+
+frontyard
+el jardín delantero
+
+backyard
+el patio trasero
+
+It's raining
+está lloviendo
+
+It rained
+llovió
+
+distress
+la angustia
+
+I'll take one of everything
+uno de cada, por favor
+
+He never keeps a promise
+nunca cumple lo que promete
+
+I like the layout
+me gusta la distribución
+
+plumbing
+la plomería
+
+leftists
+los izquierdistas
+
+rightists
+los derechistas
+
+I got settled in
+ya me instalé
