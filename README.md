@@ -69,6 +69,10 @@ Unlike traditional spaced repetition systems (like Anki's SM-2), this uses a **s
 - **Vary** subjects (I, tú, él/ella, we, they, inanimate “subject”), and mix in **DOP/IO** and **reflexive** clitics when the pattern allows.
 - Reuse the same **short narrative style** as earlier cards in the file so the deck stays consistent.
 
+## English deck (`data/english.txt`)
+
+Cards often use a gloss, headword, then **two example lines**. Prefer the **same sentence** twice: first with a plain word or phrase, second with only the **headword** (or fixed idiom) substituted in. Full rewrites train a second line from scratch; **minimal swaps** train actually using the word in a familiar frame.
+
 ## File Structure
 
 ```
