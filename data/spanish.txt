@@ -211,6 +211,12 @@ divertido
 film
 la película
 
+to boil (something in water)
+cocer
+
+to boil water
+hervir
+
 clothing
 la ropa
 
@@ -306,6 +312,9 @@ también
 
 to go to bed
 acostarse
+
+costly
+costoso
 
 someone
 alguien
@@ -538,6 +547,9 @@ el hermano
 broom
 la escoba
 
+roof
+el techo
+
 lawyer
 el abogado
 
@@ -615,6 +627,9 @@ tarde
 
 later
 al rato
+
+after that...
+luego...
 
 time
 el tiempo
@@ -2281,6 +2296,9 @@ actuar
 drama
 el drama
 
+actually
+de hecho
+
 arrival
 la llegada
 
@@ -3036,9 +3054,6 @@ el/la guía
 
 play
 la obra de teatro
-
-after
-después de
 
 portrait
 el retrato
@@ -3847,9 +3862,6 @@ el yerno
 to deserve
 merecer
 
-to fail
-fallar
-
 burner
 el mechero
 
@@ -4246,7 +4258,13 @@ manga larga
 short sleeve
 manga corta
 
+longitudinal
+longitudinal
+
 floor plans
+los planos
+
+blueprints
 los planos
 
 fugitive
@@ -7198,8 +7216,11 @@ Una ensalada con aderezo ranch y picatostes
 What do you think?
 ¿Qué te parece?
 
-drying rack
+drying rack (dishes)
 el escurridor
+
+drying rack (clothes)
+el tendedero
 
 clothes line
 la cuerda de tender
@@ -7587,3 +7608,108 @@ los derechistas
 
 I got settled in
 ya me instalé
+
+intertwined
+entrelazado
+
+poles
+los polos
+
+transversal
+transversal
+
+vibrations
+las vibraciones
+
+to influence
+influir
+
+waxy
+ceroso
+
+nervous tic
+el tic nervioso
+
+part number
+el número de parte
+
+it's failing
+está fallando
+
+Gustavo brought his son face to face with his fear of heights
+Gustavo encaró a su hijo con su miedo a las alturas
+
+the motor had a failure
+el motor tenía un fallo
+
+sunrise
+el amanecer
+
+dawn
+el amanecer
+
+sunset
+el atardecer
+
+dusk
+el atardecer
+
+circuit breaker
+el disyuntor
+
+fracture
+la fractura
+
+estimation
+el estimado
+
+to simulate
+simular
+
+tweezers
+las pinzas
+
+pliers
+las pinzas
+
+a major revision
+una revisión mayor
+
+the catered lunch was a hit!
+¡el almuerzo de catering fue todo un éxito!
+
+initiative
+la iniciativa
+
+fish tank
+la pecera
+
+tank (war)
+el tanque de guerra
+
+spectroscopy
+la espectroscopia
+
+learning curve
+la curva de aprendizaje
+
+final boss
+el jefe final
+
+I'll be patient
+seré paciente
+
+QA (Quality Assurance)
+el control de calidad (QA)
+
+Do you remember the thing I told you, at the place at the time?
+¿Te acuerdas de lo que te dije, en ese lugar y en ese momento?
+
+Gimme the thing by that thing
+Pasame el desde encima del ese, la cosa de la cosa
+
+Actually I have chisme for you
+De hecho te tengo chisme
+
+cool as a cucumber
+fresco como lechuga
