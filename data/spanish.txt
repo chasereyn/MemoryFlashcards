@@ -634,9 +634,6 @@ luego...
 time
 el tiempo
 
-hour
-la hora
-
 the date
 la fecha
 
@@ -2374,8 +2371,8 @@ elegante
 for example
 por ejemplo
 
-for instance
-por ejemplo
+for instance...
+por ejemplo...
 
 medicine
 la medicina
@@ -3500,7 +3497,7 @@ branches
 las ramas
 
 brands
-las brands
+los brands
 
 droplet
 la gota de agua
@@ -4182,9 +4179,6 @@ polvoso
 
 greed
 avarica
-
-to deceive
-engañar
 
 He would appreciate that!
 Él lo apreciaría!
@@ -6431,7 +6425,7 @@ sawgrass
 la hierba sierra
 
 yoga mat
-el tapete
+el tapete para yoga
 
 yoga
 el yoga
@@ -7713,3 +7707,6 @@ De hecho te tengo chisme
 
 cool as a cucumber
 fresco como lechuga
+
+double bed
+cama doble
