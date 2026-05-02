@@ -1006,9 +1006,6 @@ entre
 to have dinner
 cenar
 
-to rain
-llover
-
 to cost
 costar
 
@@ -1565,7 +1562,7 @@ behind
 detrás de
 
 bus
-el autobús / el camión
+el camión
 
 the cook
 el cocinero
@@ -2692,9 +2689,6 @@ el medico
 according to
 según
 
-to complain
-quejarse
-
 with you
 contigo
 
@@ -3713,7 +3707,7 @@ I agree
 estoy de acuerdo
 
 it will be alright
-saldrá bien
+todo se va a dar
 
 Almighty God
 El todopoderoso
@@ -7573,12 +7567,6 @@ el jardín delantero
 backyard
 el patio trasero
 
-It's raining
-está lloviendo
-
-It rained
-llovió
-
 distress
 la angustia
 
@@ -7710,3 +7698,72 @@ fresco como lechuga
 
 double bed
 cama doble
+
+resolved
+resuelto
+
+course
+el curso
+
+to take the bus
+tomar el camión
+
+everything will work out
+todo se va a dar
+
+the feeling
+el sentir
+
+It frustrates me
+me frustra
+
+I get frustrated
+me frustro
+
+She said goodbye to her friend and headed to class
+Despidió a su amiga para irse a clase
+
+He cheated on her
+La engañó a su pareja
+
+step towards the wall
+Da un paso hacia la pared
+
+step away from the wall
+Da un paso alejándote de la pared
+
+all they do is complain for 30 minutes
+no hacen más que quejarse durante 30 minutos
+
+I want to run more often
+quiero correr más seguido
+
+Today is my day off
+hoy es mi día libre
+
+We were talking about it
+estábamos hablando de eso
+
+Our consultants are not thankful for the work that we are doing
+nuestros consultores no agradecen el trabajo que estamos haciendo
+
+land of the free home of the brave
+la tierra de los libres y el hogar de los valientes
+
+I got some boots that I like and a girl that I love
+tengo unas botas que me gustan y una chica que amo
+
+it's raining
+está lloviendo
+
+it rained
+llovió
+
+it's going to rain
+va a llover
+
+hopefully it doesn't rain
+ojalá no llueva
+
+I like the rain
+me gusta la lluvia
