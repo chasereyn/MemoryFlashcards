@@ -1,48 +1,6 @@
 {
   "cards": [
     {
-      "id": "6982841b788a",
-      "term": "croc",
-      "definition": "In a while crocodile",
-      "next_review": "2026-05-02",
-      "ease_factor": 2.45,
-      "interval": 1,
-      "difficulty": 0,
-      "completed_today": true,
-      "first_rating": null,
-      "session_attempts": 0,
-      "consecutive_easy_sessions": 0,
-      "latest_rating": null
-    },
-    {
-      "id": "3bf8c569d564",
-      "term": "jellyfish",
-      "definition": "Send a kiss jellyfish",
-      "next_review": "2026-05-04",
-      "ease_factor": 2.5,
-      "interval": 3,
-      "difficulty": 0,
-      "completed_today": true,
-      "first_rating": null,
-      "session_attempts": 0,
-      "consecutive_easy_sessions": 1,
-      "latest_rating": null
-    },
-    {
-      "id": "610099da6d63",
-      "term": "alligator",
-      "definition": "See you later alligator",
-      "next_review": "2026-05-04",
-      "ease_factor": 2.5,
-      "interval": 3,
-      "difficulty": 0,
-      "completed_today": true,
-      "first_rating": null,
-      "session_attempts": 0,
-      "consecutive_easy_sessions": 1,
-      "latest_rating": null
-    },
-    {
       "id": "191df5d6b785",
       "term": "butterfly",
       "definition": "Bye bye butterfly",
@@ -50,6 +8,20 @@
       "ease_factor": 2.35,
       "interval": 1,
       "difficulty": 1,
+      "completed_today": true,
+      "first_rating": null,
+      "session_attempts": 0,
+      "consecutive_easy_sessions": 0,
+      "latest_rating": null
+    },
+    {
+      "id": "dc0f871f5606",
+      "term": "raccoon",
+      "definition": "See you soon raccoon",
+      "next_review": "2026-05-02",
+      "ease_factor": 2.25,
+      "interval": 1,
+      "difficulty": 2,
       "completed_today": true,
       "first_rating": null,
       "session_attempts": 0,
@@ -68,6 +40,20 @@
       "first_rating": null,
       "session_attempts": 0,
       "consecutive_easy_sessions": 0,
+      "latest_rating": null
+    },
+    {
+      "id": "610099da6d63",
+      "term": "alligator",
+      "definition": "See you later alligator",
+      "next_review": "2026-05-04",
+      "ease_factor": 2.5,
+      "interval": 3,
+      "difficulty": 0,
+      "completed_today": true,
+      "first_rating": null,
+      "session_attempts": 0,
+      "consecutive_easy_sessions": 1,
       "latest_rating": null
     },
     {
@@ -92,6 +78,34 @@
       "ease_factor": 2.25,
       "interval": 1,
       "difficulty": 2,
+      "completed_today": true,
+      "first_rating": null,
+      "session_attempts": 0,
+      "consecutive_easy_sessions": 0,
+      "latest_rating": null
+    },
+    {
+      "id": "3bf8c569d564",
+      "term": "jellyfish",
+      "definition": "Send a kiss jellyfish",
+      "next_review": "2026-05-04",
+      "ease_factor": 2.5,
+      "interval": 3,
+      "difficulty": 0,
+      "completed_today": true,
+      "first_rating": null,
+      "session_attempts": 0,
+      "consecutive_easy_sessions": 1,
+      "latest_rating": null
+    },
+    {
+      "id": "6982841b788a",
+      "term": "croc",
+      "definition": "In a while crocodile",
+      "next_review": "2026-05-02",
+      "ease_factor": 2.45,
+      "interval": 1,
+      "difficulty": 0,
       "completed_today": true,
       "first_rating": null,
       "session_attempts": 0,
@@ -125,21 +139,7 @@
       "session_attempts": 0,
       "consecutive_easy_sessions": 0,
       "latest_rating": null
-    },
-    {
-      "id": "dc0f871f5606",
-      "term": "raccoon",
-      "definition": "See you soon raccoon",
-      "next_review": "2026-05-02",
-      "ease_factor": 2.25,
-      "interval": 1,
-      "difficulty": 2,
-      "completed_today": true,
-      "first_rating": null,
-      "session_attempts": 0,
-      "consecutive_easy_sessions": 0,
-      "latest_rating": null
     }
   ],
-  "last_session_date": "2026-05-01"
+  "last_session_date": "2026-05-02"
 }
