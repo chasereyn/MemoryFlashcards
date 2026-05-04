@@ -15,20 +15,6 @@
       "latest_rating": null
     },
     {
-      "id": "a7357d72e790",
-      "term": "bubble bass order",
-      "definition": "I'll take a Double Triple Bossy Deluxe on a raft, 4x4, animal style, extra shingles, with a shimmy and a squeeze, light axle grease, make it cry, burn it and let it swim",
-      "next_review": "2026-05-04",
-      "ease_factor": 2.5,
-      "interval": 3,
-      "difficulty": 0,
-      "completed_today": true,
-      "first_rating": null,
-      "session_attempts": 0,
-      "consecutive_easy_sessions": 1,
-      "latest_rating": null
-    },
-    {
       "id": "19375408ee64",
       "term": "trapdoors",
       "definition": "Look for trapdoors mirrors secret-compartments sliding-panels gimicks wires magnets mirrors or anything at all",
@@ -46,8 +32,8 @@
       "id": "893af0da36e8",
       "term": "truck drivin girl",
       "definition": "She's a tire-spinning, gear-grinding, clutch-burning', back-firing, paint-trading, red-lining, over-heating, throttle-stomping truck-drivin' girl!",
-      "next_review": "2026-05-03",
-      "ease_factor": 2.4000000000000004,
+      "next_review": "2026-05-04",
+      "ease_factor": 2.3500000000000005,
       "interval": 1,
       "difficulty": 0,
       "completed_today": true,
@@ -55,7 +41,21 @@
       "session_attempts": 0,
       "consecutive_easy_sessions": 0,
       "latest_rating": null
+    },
+    {
+      "id": "a7357d72e790",
+      "term": "bubble bass order",
+      "definition": "I'll take a Double Triple Bossy Deluxe on a raft, 4x4, animal style, extra shingles, with a shimmy and a squeeze, light axle grease, make it cry, burn it and let it swim",
+      "next_review": "2026-05-04",
+      "ease_factor": 2.5,
+      "interval": 3,
+      "difficulty": 0,
+      "completed_today": true,
+      "first_rating": null,
+      "session_attempts": 0,
+      "consecutive_easy_sessions": 1,
+      "latest_rating": null
     }
   ],
-  "last_session_date": "2026-05-02"
+  "last_session_date": "2026-05-03"
 }
