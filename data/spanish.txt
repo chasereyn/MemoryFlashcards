@@ -5506,7 +5506,7 @@ Now I understand!
 My head hurts
 Me duele la cabeza
 
-I don't feel good
+I feel bad
 Me siento mal
 
 Rice and lentils is a cheap meal
@@ -5716,8 +5716,8 @@ La parabrisas
 I hit my ankle
 Me golpeé el tobillo
 
-Put a bow on the present
-Ponle un lazo al regalo
+El regalo estaba envuelto con papel verde y un moño rojo
+The gift was wrapped with green paper and a red bow
 
 I like your bowtie
 Me gusta tu pajarita
@@ -7220,7 +7220,7 @@ Did you lock the door?
 ¿Echaste llave la puerta?
 
 red velvet
-el pastel de terciopelo rojo
+red velvet
 
 Everyone has a different way of life
 Cada quien tiene su forma de vivir
@@ -7767,3 +7767,6 @@ ojalá no llueva
 
 I like the rain
 me gusta la lluvia
+
+magnum opus
+la obra maestra
