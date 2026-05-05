@@ -1,39 +1,11 @@
 {
   "cards": [
     {
-      "id": "6982841b788a",
-      "term": "croc",
-      "definition": "In a while crocodile",
-      "next_review": "2026-05-07",
+      "id": "0a124c5a4140",
+      "term": "kangaroo",
+      "definition": "Todaloo kangaroo",
+      "next_review": "2026-05-06",
       "ease_factor": 2.5,
-      "interval": 3,
-      "difficulty": 0,
-      "completed_today": true,
-      "first_rating": null,
-      "session_attempts": 0,
-      "consecutive_easy_sessions": 1,
-      "latest_rating": null
-    },
-    {
-      "id": "191df5d6b785",
-      "term": "butterfly",
-      "definition": "Bye bye butterfly",
-      "next_review": "2026-05-07",
-      "ease_factor": 2.2,
-      "interval": 3,
-      "difficulty": 2,
-      "completed_today": true,
-      "first_rating": null,
-      "session_attempts": 0,
-      "consecutive_easy_sessions": 1,
-      "latest_rating": null
-    },
-    {
-      "id": "0abe9ab1d193",
-      "term": "polar bear",
-      "definition": "Take care polar bear",
-      "next_review": "2026-05-07",
-      "ease_factor": 2.4000000000000004,
       "interval": 3,
       "difficulty": 0,
       "completed_today": true,
@@ -57,20 +29,6 @@
       "latest_rating": null
     },
     {
-      "id": "fa49882bcc98",
-      "term": "dinasour",
-      "definition": "Out the door dinasour",
-      "next_review": "2026-05-06",
-      "ease_factor": 2.35,
-      "interval": 3,
-      "difficulty": 1,
-      "completed_today": true,
-      "first_rating": null,
-      "session_attempts": 0,
-      "consecutive_easy_sessions": 1,
-      "latest_rating": null
-    },
-    {
       "id": "7ae4d1f23fb1",
       "term": "ladybug",
       "definition": "Give a hug ladybug",
@@ -85,11 +43,11 @@
       "latest_rating": null
     },
     {
-      "id": "efee3b17134f",
-      "term": "parakeet",
-      "definition": "Be sweet parakeet",
+      "id": "0abe9ab1d193",
+      "term": "polar bear",
+      "definition": "Take care polar bear",
       "next_review": "2026-05-07",
-      "ease_factor": 2.5,
+      "ease_factor": 2.4000000000000004,
       "interval": 3,
       "difficulty": 0,
       "completed_today": true,
@@ -99,13 +57,13 @@
       "latest_rating": null
     },
     {
-      "id": "dc0f871f5606",
-      "term": "raccoon",
-      "definition": "See you soon raccoon",
+      "id": "191df5d6b785",
+      "term": "butterfly",
+      "definition": "Bye bye butterfly",
       "next_review": "2026-05-07",
-      "ease_factor": 2.3000000000000003,
+      "ease_factor": 2.2,
       "interval": 3,
-      "difficulty": 1,
+      "difficulty": 2,
       "completed_today": true,
       "first_rating": null,
       "session_attempts": 0,
@@ -113,10 +71,10 @@
       "latest_rating": null
     },
     {
-      "id": "0a124c5a4140",
-      "term": "kangaroo",
-      "definition": "Todaloo kangaroo",
-      "next_review": "2026-05-06",
+      "id": "6982841b788a",
+      "term": "croc",
+      "definition": "In a while crocodile",
+      "next_review": "2026-05-07",
       "ease_factor": 2.5,
       "interval": 3,
       "difficulty": 0,
@@ -139,7 +97,49 @@
       "session_attempts": 0,
       "consecutive_easy_sessions": 2,
       "latest_rating": null
+    },
+    {
+      "id": "dc0f871f5606",
+      "term": "raccoon",
+      "definition": "See you soon raccoon",
+      "next_review": "2026-05-07",
+      "ease_factor": 2.3000000000000003,
+      "interval": 3,
+      "difficulty": 1,
+      "completed_today": true,
+      "first_rating": null,
+      "session_attempts": 0,
+      "consecutive_easy_sessions": 1,
+      "latest_rating": null
+    },
+    {
+      "id": "fa49882bcc98",
+      "term": "dinasour",
+      "definition": "Out the door dinasour",
+      "next_review": "2026-05-06",
+      "ease_factor": 2.35,
+      "interval": 3,
+      "difficulty": 1,
+      "completed_today": true,
+      "first_rating": null,
+      "session_attempts": 0,
+      "consecutive_easy_sessions": 1,
+      "latest_rating": null
+    },
+    {
+      "id": "efee3b17134f",
+      "term": "parakeet",
+      "definition": "Be sweet parakeet",
+      "next_review": "2026-05-07",
+      "ease_factor": 2.5,
+      "interval": 3,
+      "difficulty": 0,
+      "completed_today": true,
+      "first_rating": null,
+      "session_attempts": 0,
+      "consecutive_easy_sessions": 1,
+      "latest_rating": null
     }
   ],
-  "last_session_date": "2026-05-04"
+  "last_session_date": "2026-05-05"
 }
