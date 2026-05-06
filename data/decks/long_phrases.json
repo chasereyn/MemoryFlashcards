@@ -1,48 +1,6 @@
 {
   "cards": [
     {
-      "id": "19375408ee64",
-      "term": "trapdoors",
-      "definition": "Look for trapdoors mirrors secret-compartments sliding-panels gimicks wires magnets mirrors or anything at all",
-      "next_review": "2026-05-06",
-      "ease_factor": 2.35,
-      "interval": 2,
-      "difficulty": 1,
-      "completed_today": true,
-      "first_rating": null,
-      "session_attempts": 0,
-      "consecutive_easy_sessions": 0,
-      "latest_rating": null
-    },
-    {
-      "id": "893af0da36e8",
-      "term": "truck drivin girl",
-      "definition": "She's a tire-spinning, gear-grinding, clutch-burning', back-firing, paint-trading, red-lining, over-heating, throttle-stomping truck-drivin' girl!",
-      "next_review": "2026-05-06",
-      "ease_factor": 1.9500000000000006,
-      "interval": 1,
-      "difficulty": 3,
-      "completed_today": true,
-      "first_rating": null,
-      "session_attempts": 0,
-      "consecutive_easy_sessions": 0,
-      "latest_rating": null
-    },
-    {
-      "id": "70ce614f658b",
-      "term": "trell",
-      "definition": "yes yes yes the double western bacon cheeseburger with extra bbq squce, 3 tenders, 2 ranch & 2 barbecue sauces! Why is you playin Trell Demetrius Jefferson Lopez",
-      "next_review": "2026-05-06",
-      "ease_factor": 2.45,
-      "interval": 2,
-      "difficulty": 0,
-      "completed_today": true,
-      "first_rating": null,
-      "session_attempts": 0,
-      "consecutive_easy_sessions": 0,
-      "latest_rating": null
-    },
-    {
       "id": "a7357d72e790",
       "term": "bubble bass order",
       "definition": "I'll take a Double Triple Bossy Deluxe on a raft, 4x4, animal style, extra shingles, with a shimmy and a squeeze, light axle grease, make it cry, burn it and let it swim",
@@ -55,7 +13,49 @@
       "session_attempts": 0,
       "consecutive_easy_sessions": 2,
       "latest_rating": null
+    },
+    {
+      "id": "893af0da36e8",
+      "term": "truck drivin girl",
+      "definition": "She's a tire-spinning, gear-grinding, clutch-burning', back-firing, paint-trading, red-lining, over-heating, throttle-stomping truck-drivin' girl!",
+      "next_review": "2026-05-09",
+      "ease_factor": 2.0500000000000007,
+      "interval": 3,
+      "difficulty": 2,
+      "completed_today": true,
+      "first_rating": null,
+      "session_attempts": 0,
+      "consecutive_easy_sessions": 1,
+      "latest_rating": null
+    },
+    {
+      "id": "19375408ee64",
+      "term": "trapdoors",
+      "definition": "Look for trapdoors mirrors secret-compartments sliding-panels gimicks wires magnets mirrors or anything at all",
+      "next_review": "2026-05-13",
+      "ease_factor": 2.45,
+      "interval": 7,
+      "difficulty": 0,
+      "completed_today": true,
+      "first_rating": null,
+      "session_attempts": 0,
+      "consecutive_easy_sessions": 1,
+      "latest_rating": null
+    },
+    {
+      "id": "70ce614f658b",
+      "term": "trell",
+      "definition": "yes yes yes the double western bacon cheeseburger with extra bbq squce, 3 tenders, 2 ranch & 2 barbecue sauces! Why is you playin Trell Demetrius Jefferson Lopez",
+      "next_review": "2026-05-07",
+      "ease_factor": 2.4000000000000004,
+      "interval": 1,
+      "difficulty": 0,
+      "completed_today": true,
+      "first_rating": null,
+      "session_attempts": 0,
+      "consecutive_easy_sessions": 0,
+      "latest_rating": null
     }
   ],
-  "last_session_date": "2026-05-05"
+  "last_session_date": "2026-05-06"
 }

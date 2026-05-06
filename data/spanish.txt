@@ -3691,8 +3691,11 @@ No es cosa tuya
 afterlife
 la vida futura
 
-Never again
-Nunca jamás
+never again
+nunca jamás
+
+never ever
+nunca jamás
 
 10 minutes ago
 hace 10 minutos
@@ -5443,14 +5446,11 @@ haré lo que quieras
 I like a dark beer
 Me gusta la cerveza oscura
 
-My uncle has a kegerator
-Mi tio tiene un kegerator
+dispenser
+dispensador
 
-Beer dispenser
-Dispensador para la cerveza
-
-He has Irish heritage
-Tiene herencia Irlandesa
+heritage
+la herencia
 
 with me myself and I
 contigo mismo
@@ -7803,3 +7803,81 @@ gato
 
 checkers
 damas
+
+puppy
+el cachorro
+
+calf
+el ternero
+
+chick
+pollito
+
+kitten
+el gatito
+
+story
+el cuento
+
+I have a lot to talk about
+Tengo mucho de qué hablar
+
+a picture's worth 1000 words
+Una imagen vale más que mil palabras
+
+the perfect moment
+el momento perfecto
+
+appropriate
+apropiado
+
+there is no escape
+no hay salida
+
+corporate politics
+la política corporativa
+
+deadline
+la fecha límite
+
+to feel welcome
+sentirse bienvenido
+
+hamburger bun
+el pan de hamburguesa
+
+ground beef
+la carne molida
+
+sauce
+la salsa
+
+alarm
+la alarma
+
+There's no doubt
+No hay duda
+
+ottoman
+la otomana
+
+coffee table
+la mesa de centro
+
+driveway
+el camino de entrada
+
+tree stump
+el tocón
+
+asphalt
+el asfalto
+
+neighbor
+el vecino
+
+bus stop
+la parada del camión
+
+tray
+la bandeja
