@@ -4271,7 +4271,7 @@ You're not gonna believe it!
 No vas a creerlo!
 
 Guess what?
-Que crees?
+Que crees!
 
 guests
 los huespedes
@@ -7052,7 +7052,7 @@ standing desk
 el escritorio de pie
 
 treadmill
-el treadmill
+la caminadora
 
 sedentary
 sedentario
@@ -7383,6 +7383,9 @@ el vuelo está reservado
 
 We were doing good... what happened?
 íbamos bien... ¿qué pasó?
+
+what happened?
+¿qué pasó?
 
 It's been my favorite recently
 últimamente es mi favorito
@@ -7770,3 +7773,33 @@ me gusta la lluvia
 
 magnum opus
 la obra maestra
+
+lawn
+el cesped
+
+herbs
+la hierba
+
+How do you fill your time on the weekends?
+Cómo ocupas el tiempo los fines de semana?
+
+wait hold on
+esperame esperame
+
+these days
+esos dias
+
+that's exactly why...
+precisamente por eso...
+
+the next morning
+la mañana siguiente
+
+hangman
+ahorcado
+
+tic-tac-toe
+gato
+
+checkers
+damas
