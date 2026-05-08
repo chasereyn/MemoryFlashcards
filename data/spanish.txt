@@ -389,7 +389,7 @@ tomorrow
 mañana
 
 weekend
-el fin de semana
+el fin
 
 before
 antes
@@ -5080,10 +5080,13 @@ no estoy acostumbrado
 food coma
 mal de puerco
 
-we're working on it!
-en eso estamos!
+I got it!
+en eso estoy!
 
 I'm working on it!
+en eso estoy!
+
+I'm doing it now!
 en eso estoy!
 
 I'm with...
@@ -7881,3 +7884,54 @@ la parada del camión
 
 tray
 la bandeja
+
+...just so you know
+...para que sepas
+
+I don't waste time
+yo no pierdo tiempo
+
+we're gonna have a great time!
+qué rico la vamos a pasar!
+
+Give me that look hehe
+mirame mal
+
+it sticks out
+sobresalia
+
+pawn
+el peón
+
+rook
+el torre
+
+knight
+el caballo
+
+bishop
+el alfil
+
+we'll talk later
+nos hablamos al ratito
+
+we'll talk more later
+nos hablamos más al rato
+
+I'm chasing the pork chop
+estoy persiguiendo la chuleta
+
+promise
+la promesa
+
+for lunch
+para el lunch
+
+that's not true!
+no es cierto
+
+it's true
+es cierto
+
+oaxaca
+oaxaca (pronounced wajaka)
