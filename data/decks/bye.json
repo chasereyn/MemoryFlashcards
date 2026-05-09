@@ -1,10 +1,10 @@
 {
   "cards": [
     {
-      "id": "610099da6d63",
-      "term": "alligator",
-      "definition": "See you later alligator",
-      "next_review": "2026-05-20",
+      "id": "efee3b17134f",
+      "term": "parakeet",
+      "definition": "Be sweet parakeet",
+      "next_review": "2026-05-23",
       "ease_factor": 2.5,
       "interval": 16,
       "difficulty": 0,
@@ -29,6 +29,20 @@
       "latest_rating": null
     },
     {
+      "id": "0abe9ab1d193",
+      "term": "polar bear",
+      "definition": "Take care polar bear",
+      "next_review": "2026-05-23",
+      "ease_factor": 2.5,
+      "interval": 16,
+      "difficulty": 0,
+      "completed_today": true,
+      "first_rating": null,
+      "session_attempts": 0,
+      "consecutive_easy_sessions": 2,
+      "latest_rating": null
+    },
+    {
       "id": "0a124c5a4140",
       "term": "kangaroo",
       "definition": "Todaloo kangaroo",
@@ -43,66 +57,10 @@
       "latest_rating": null
     },
     {
-      "id": "6982841b788a",
-      "term": "croc",
-      "definition": "In a while crocodile",
-      "next_review": "2026-05-09",
-      "ease_factor": 2.45,
-      "interval": 2,
-      "difficulty": 0,
-      "completed_today": true,
-      "first_rating": null,
-      "session_attempts": 0,
-      "consecutive_easy_sessions": 0,
-      "latest_rating": null
-    },
-    {
       "id": "7ae4d1f23fb1",
       "term": "ladybug",
       "definition": "Give a hug ladybug",
       "next_review": "2026-05-22",
-      "ease_factor": 2.5,
-      "interval": 16,
-      "difficulty": 0,
-      "completed_today": true,
-      "first_rating": null,
-      "session_attempts": 0,
-      "consecutive_easy_sessions": 2,
-      "latest_rating": null
-    },
-    {
-      "id": "3bf8c569d564",
-      "term": "jellyfish",
-      "definition": "Send a kiss jellyfish",
-      "next_review": "2026-05-20",
-      "ease_factor": 2.5,
-      "interval": 16,
-      "difficulty": 0,
-      "completed_today": true,
-      "first_rating": null,
-      "session_attempts": 0,
-      "consecutive_easy_sessions": 2,
-      "latest_rating": null
-    },
-    {
-      "id": "dc0f871f5606",
-      "term": "raccoon",
-      "definition": "See you soon raccoon",
-      "next_review": "2026-05-23",
-      "ease_factor": 2.4000000000000004,
-      "interval": 16,
-      "difficulty": 0,
-      "completed_today": true,
-      "first_rating": null,
-      "session_attempts": 0,
-      "consecutive_easy_sessions": 2,
-      "latest_rating": null
-    },
-    {
-      "id": "0abe9ab1d193",
-      "term": "polar bear",
-      "definition": "Take care polar bear",
-      "next_review": "2026-05-23",
       "ease_factor": 2.5,
       "interval": 16,
       "difficulty": 0,
@@ -127,11 +85,53 @@
       "latest_rating": null
     },
     {
-      "id": "efee3b17134f",
-      "term": "parakeet",
-      "definition": "Be sweet parakeet",
-      "next_review": "2026-05-23",
+      "id": "3bf8c569d564",
+      "term": "jellyfish",
+      "definition": "Send a kiss jellyfish",
+      "next_review": "2026-05-20",
       "ease_factor": 2.5,
+      "interval": 16,
+      "difficulty": 0,
+      "completed_today": true,
+      "first_rating": null,
+      "session_attempts": 0,
+      "consecutive_easy_sessions": 2,
+      "latest_rating": null
+    },
+    {
+      "id": "610099da6d63",
+      "term": "alligator",
+      "definition": "See you later alligator",
+      "next_review": "2026-05-20",
+      "ease_factor": 2.5,
+      "interval": 16,
+      "difficulty": 0,
+      "completed_today": true,
+      "first_rating": null,
+      "session_attempts": 0,
+      "consecutive_easy_sessions": 2,
+      "latest_rating": null
+    },
+    {
+      "id": "6982841b788a",
+      "term": "croc",
+      "definition": "In a while crocodile",
+      "next_review": "2026-05-10",
+      "ease_factor": 2.4000000000000004,
+      "interval": 1,
+      "difficulty": 0,
+      "completed_today": true,
+      "first_rating": null,
+      "session_attempts": 0,
+      "consecutive_easy_sessions": 0,
+      "latest_rating": null
+    },
+    {
+      "id": "dc0f871f5606",
+      "term": "raccoon",
+      "definition": "See you soon raccoon",
+      "next_review": "2026-05-23",
+      "ease_factor": 2.4000000000000004,
       "interval": 16,
       "difficulty": 0,
       "completed_today": true,
@@ -141,5 +141,5 @@
       "latest_rating": null
     }
   ],
-  "last_session_date": "2026-05-08"
+  "last_session_date": "2026-05-09"
 }
