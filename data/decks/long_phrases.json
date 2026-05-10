@@ -1,17 +1,31 @@
 {
   "cards": [
     {
-      "id": "893af0da36e8",
-      "term": "truck drivin girl",
-      "definition": "She's a tire-spinning, gear-grinding, clutch-burning', back-firing, paint-trading, red-lining, over-heating, throttle-stomping truck-drivin' girl!",
-      "next_review": "2026-05-10",
-      "ease_factor": 1.8000000000000007,
-      "interval": 1,
-      "difficulty": 4,
+      "id": "19375408ee64",
+      "term": "trapdoors",
+      "definition": "Look for trapdoors mirrors secret-compartments sliding-panels gimicks wires magnets mirrors or anything at all",
+      "next_review": "2026-05-13",
+      "ease_factor": 2.45,
+      "interval": 7,
+      "difficulty": 0,
       "completed_today": true,
       "first_rating": null,
       "session_attempts": 0,
-      "consecutive_easy_sessions": 0,
+      "consecutive_easy_sessions": 1,
+      "latest_rating": null
+    },
+    {
+      "id": "893af0da36e8",
+      "term": "truck drivin girl",
+      "definition": "She's a tire-spinning, gear-grinding, clutch-burning', back-firing, paint-trading, red-lining, over-heating, throttle-stomping truck-drivin' girl!",
+      "next_review": "2026-05-12",
+      "ease_factor": 1.9000000000000008,
+      "interval": 2,
+      "difficulty": 3,
+      "completed_today": true,
+      "first_rating": null,
+      "session_attempts": 0,
+      "consecutive_easy_sessions": 1,
       "latest_rating": null
     },
     {
@@ -41,21 +55,7 @@
       "session_attempts": 0,
       "consecutive_easy_sessions": 2,
       "latest_rating": null
-    },
-    {
-      "id": "19375408ee64",
-      "term": "trapdoors",
-      "definition": "Look for trapdoors mirrors secret-compartments sliding-panels gimicks wires magnets mirrors or anything at all",
-      "next_review": "2026-05-13",
-      "ease_factor": 2.45,
-      "interval": 7,
-      "difficulty": 0,
-      "completed_today": true,
-      "first_rating": null,
-      "session_attempts": 0,
-      "consecutive_easy_sessions": 1,
-      "latest_rating": null
     }
   ],
-  "last_session_date": "2026-05-09"
+  "last_session_date": "2026-05-10"
 }
