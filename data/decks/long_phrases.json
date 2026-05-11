@@ -1,17 +1,17 @@
 {
   "cards": [
     {
-      "id": "19375408ee64",
-      "term": "trapdoors",
-      "definition": "Look for trapdoors mirrors secret-compartments sliding-panels gimicks wires magnets mirrors or anything at all",
-      "next_review": "2026-05-13",
-      "ease_factor": 2.45,
-      "interval": 7,
+      "id": "a7357d72e790",
+      "term": "bubble bass order",
+      "definition": "I'll take a Double Triple Bossy Deluxe on a raft, 4x4, animal style, extra shingles, with a shimmy and a squeeze, light axle grease, make it cry, burn it and let it swim",
+      "next_review": "2026-05-20",
+      "ease_factor": 2.5,
+      "interval": 16,
       "difficulty": 0,
       "completed_today": true,
       "first_rating": null,
       "session_attempts": 0,
-      "consecutive_easy_sessions": 1,
+      "consecutive_easy_sessions": 2,
       "latest_rating": null
     },
     {
@@ -29,12 +29,12 @@
       "latest_rating": null
     },
     {
-      "id": "70ce614f658b",
-      "term": "trell",
-      "definition": "yes yes yes the double western bacon cheeseburger with extra bbq squce, 3 tenders, 2 ranch & 2 barbecue sauces! Why is you playin Trell Demetrius Jefferson Lopez",
-      "next_review": "2026-05-11",
-      "ease_factor": 2.4500000000000006,
-      "interval": 3,
+      "id": "19375408ee64",
+      "term": "trapdoors",
+      "definition": "Look for trapdoors mirrors secret-compartments sliding-panels gimicks wires magnets mirrors or anything at all",
+      "next_review": "2026-05-13",
+      "ease_factor": 2.45,
+      "interval": 7,
       "difficulty": 0,
       "completed_today": true,
       "first_rating": null,
@@ -43,10 +43,10 @@
       "latest_rating": null
     },
     {
-      "id": "a7357d72e790",
-      "term": "bubble bass order",
-      "definition": "I'll take a Double Triple Bossy Deluxe on a raft, 4x4, animal style, extra shingles, with a shimmy and a squeeze, light axle grease, make it cry, burn it and let it swim",
-      "next_review": "2026-05-20",
+      "id": "70ce614f658b",
+      "term": "trell",
+      "definition": "yes yes yes the double western bacon cheeseburger with extra bbq squce, 3 tenders, 2 ranch & 2 barbecue sauces! Why is you playin Trell Demetrius Jefferson Lopez",
+      "next_review": "2026-05-27",
       "ease_factor": 2.5,
       "interval": 16,
       "difficulty": 0,
@@ -57,5 +57,5 @@
       "latest_rating": null
     }
   ],
-  "last_session_date": "2026-05-10"
+  "last_session_date": "2026-05-11"
 }

@@ -2632,9 +2632,6 @@ mientras
 to have lunch
 almorzar
 
-to enjoy
-disfrutar
-
 to go down
 bajar
 
@@ -4858,9 +4855,6 @@ asqueroso
 ...I'm just sayin...
 ...yo digo...
 
-piece of cake (easy)
-pan comido
-
 ...just in case
 ...por si las moscas
 
@@ -5719,8 +5713,8 @@ La parabrisas
 I hit my ankle
 Me golpeé el tobillo
 
-El regalo estaba envuelto con papel verde y un moño rojo
 The gift was wrapped with green paper and a red bow
+El regalo estaba envuelto con papel verde y un moño rojo
 
 I like your bowtie
 Me gusta tu pajarita
@@ -5983,9 +5977,6 @@ hecho sopa
 Respect your elders
 Respeta a tus mayores
 
-That girl is really sassy
-Esa niña es muy fresca
-
 She talked back to the teacher
 Le contestó mal a la maestra
 
@@ -6047,7 +6038,7 @@ smile
 la sonrisa
 
 widowed
-viudo
+viuda
 
 laxatives
 los laxantes
@@ -7895,7 +7886,7 @@ we're gonna have a great time!
 qué rico la vamos a pasar!
 
 Give me that look hehe
-mirame mal
+mírame mal
 
 it sticks out
 sobresalia
@@ -7979,7 +7970,7 @@ I lost my shit
 se me fue la cabeza
 
 I forget what I was going to say
-sue me fue el rollo
+se me fue el rollo
 
 same here
 igual
@@ -7987,8 +7978,56 @@ igual
 he has a green thumb
 tiene una buena mano para las plantes
 
-here he goes again...
+here she goes again...
 ahi va de nuevo...
 
 here we go again...
-y qui vamos de nuevo...
+y aquí vamos de nuevo...
+
+thank god
+gracias a dios
+
+God bless!
+Que dios te bendiga!
+
+aluminum foil
+el papel aluminio
+
+a pinch of salt
+y salecita
+
+we're going to flip them over
+vamos a echar la vueltecita
+
+maple syrup
+la miel de maple
+
+unconsciously
+inconscientemente
+
+the brain
+la mente
+
+the mind
+la mente
+
+stigmatism
+astigmatismo
+
+which one?
+qué de todo?
+
+brother in law
+el cuñado
+
+sister in law
+la cuñada
+
+glass door
+la puerta de cristal
+
+oh ok
+ah bueno
+
+children's godparents
+los compadres
