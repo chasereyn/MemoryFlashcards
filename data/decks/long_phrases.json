@@ -1,10 +1,10 @@
 {
   "cards": [
     {
-      "id": "a7357d72e790",
-      "term": "bubble bass order",
-      "definition": "I'll take a Double Triple Bossy Deluxe on a raft, 4x4, animal style, extra shingles, with a shimmy and a squeeze, light axle grease, make it cry, burn it and let it swim",
-      "next_review": "2026-05-20",
+      "id": "70ce614f658b",
+      "term": "trell",
+      "definition": "yes yes yes the double western bacon cheeseburger with extra bbq squce, 3 tenders, 2 ranch & 2 barbecue sauces! Why is you playin Trell Demetrius Jefferson Lopez",
+      "next_review": "2026-05-27",
       "ease_factor": 2.5,
       "interval": 16,
       "difficulty": 0,
@@ -12,20 +12,6 @@
       "first_rating": null,
       "session_attempts": 0,
       "consecutive_easy_sessions": 2,
-      "latest_rating": null
-    },
-    {
-      "id": "893af0da36e8",
-      "term": "truck drivin girl",
-      "definition": "She's a tire-spinning, gear-grinding, clutch-burning', back-firing, paint-trading, red-lining, over-heating, throttle-stomping truck-drivin' girl!",
-      "next_review": "2026-05-12",
-      "ease_factor": 1.9000000000000008,
-      "interval": 2,
-      "difficulty": 3,
-      "completed_today": true,
-      "first_rating": null,
-      "session_attempts": 0,
-      "consecutive_easy_sessions": 1,
       "latest_rating": null
     },
     {
@@ -43,10 +29,38 @@
       "latest_rating": null
     },
     {
-      "id": "70ce614f658b",
-      "term": "trell",
-      "definition": "yes yes yes the double western bacon cheeseburger with extra bbq squce, 3 tenders, 2 ranch & 2 barbecue sauces! Why is you playin Trell Demetrius Jefferson Lopez",
-      "next_review": "2026-05-27",
+      "id": "52ebf8bcf4ee",
+      "term": "bird is the word",
+      "definition": "I thought that would be big news...Well there seems to be an absence of a certain ornithological piece...A headline regarding mass awareness of a certain avian variety...Oh have you not heard? It was my understanding that everyone had heard",
+      "next_review": null,
+      "ease_factor": 2.5,
+      "interval": 1,
+      "difficulty": 0,
+      "completed_today": false,
+      "first_rating": null,
+      "session_attempts": 0,
+      "consecutive_easy_sessions": 0,
+      "latest_rating": null
+    },
+    {
+      "id": "893af0da36e8",
+      "term": "truck drivin girl",
+      "definition": "She's a tire-spinning, gear-grinding, clutch-burning', back-firing, paint-trading, red-lining, over-heating, throttle-stomping truck-drivin' girl!",
+      "next_review": "2026-05-12",
+      "ease_factor": 1.9000000000000008,
+      "interval": 2,
+      "difficulty": 3,
+      "completed_today": true,
+      "first_rating": null,
+      "session_attempts": 0,
+      "consecutive_easy_sessions": 1,
+      "latest_rating": null
+    },
+    {
+      "id": "a7357d72e790",
+      "term": "bubble bass order",
+      "definition": "I'll take a Double Triple Bossy Deluxe on a raft, 4x4, animal style, extra shingles, with a shimmy and a squeeze, light axle grease, make it cry, burn it and let it swim",
+      "next_review": "2026-05-20",
       "ease_factor": 2.5,
       "interval": 16,
       "difficulty": 0,
@@ -57,5 +71,5 @@
       "latest_rating": null
     }
   ],
-  "last_session_date": "2026-05-11"
+  "last_session_date": "2026-05-13"
 }

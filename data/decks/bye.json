@@ -15,11 +15,25 @@
       "latest_rating": null
     },
     {
-      "id": "0abe9ab1d193",
-      "term": "polar bear",
-      "definition": "Take care polar bear",
-      "next_review": "2026-05-23",
+      "id": "6982841b788a",
+      "term": "croc",
+      "definition": "In a while crocodile",
+      "next_review": "2026-05-13",
       "ease_factor": 2.5,
+      "interval": 3,
+      "difficulty": 0,
+      "completed_today": true,
+      "first_rating": null,
+      "session_attempts": 0,
+      "consecutive_easy_sessions": 1,
+      "latest_rating": null
+    },
+    {
+      "id": "fa49882bcc98",
+      "term": "dinasour",
+      "definition": "Out the door dinasour",
+      "next_review": "2026-05-22",
+      "ease_factor": 2.45,
       "interval": 16,
       "difficulty": 0,
       "completed_today": true,
@@ -29,10 +43,10 @@
       "latest_rating": null
     },
     {
-      "id": "0a124c5a4140",
-      "term": "kangaroo",
-      "definition": "Todaloo kangaroo",
-      "next_review": "2026-05-22",
+      "id": "efee3b17134f",
+      "term": "parakeet",
+      "definition": "Be sweet parakeet",
+      "next_review": "2026-05-23",
       "ease_factor": 2.5,
       "interval": 16,
       "difficulty": 0,
@@ -71,11 +85,25 @@
       "latest_rating": null
     },
     {
-      "id": "fa49882bcc98",
-      "term": "dinasour",
-      "definition": "Out the door dinasour",
+      "id": "0abe9ab1d193",
+      "term": "polar bear",
+      "definition": "Take care polar bear",
+      "next_review": "2026-05-23",
+      "ease_factor": 2.5,
+      "interval": 16,
+      "difficulty": 0,
+      "completed_today": true,
+      "first_rating": null,
+      "session_attempts": 0,
+      "consecutive_easy_sessions": 2,
+      "latest_rating": null
+    },
+    {
+      "id": "0a124c5a4140",
+      "term": "kangaroo",
+      "definition": "Todaloo kangaroo",
       "next_review": "2026-05-22",
-      "ease_factor": 2.45,
+      "ease_factor": 2.5,
       "interval": 16,
       "difficulty": 0,
       "completed_today": true,
@@ -111,35 +139,7 @@
       "session_attempts": 0,
       "consecutive_easy_sessions": 2,
       "latest_rating": null
-    },
-    {
-      "id": "efee3b17134f",
-      "term": "parakeet",
-      "definition": "Be sweet parakeet",
-      "next_review": "2026-05-23",
-      "ease_factor": 2.5,
-      "interval": 16,
-      "difficulty": 0,
-      "completed_today": true,
-      "first_rating": null,
-      "session_attempts": 0,
-      "consecutive_easy_sessions": 2,
-      "latest_rating": null
-    },
-    {
-      "id": "6982841b788a",
-      "term": "croc",
-      "definition": "In a while crocodile",
-      "next_review": "2026-05-13",
-      "ease_factor": 2.5,
-      "interval": 3,
-      "difficulty": 0,
-      "completed_today": true,
-      "first_rating": null,
-      "session_attempts": 0,
-      "consecutive_easy_sessions": 1,
-      "latest_rating": null
     }
   ],
-  "last_session_date": "2026-05-11"
+  "last_session_date": "2026-05-13"
 }
