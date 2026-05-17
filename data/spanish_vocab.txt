@@ -8159,34 +8159,40 @@ to invest
 invertir
 
 update
+la actualización
+
+to update
+actualizar
+
 tables, charts, and graphs
+las tablas y los gráficos
+
 it's all part of the plan
+todo es parte del plan
+
 flour tortillas
+las tortillas de harina
+
 it's one of a kind
+es único en su tipo
+
 we're halfway
-he's half mexican
+estamos a mitad de camino
+
+he's half Mexican
+es medio mexicano
+
 every half hour
+cada media hora
+
 half a teaspoon
+media cucharadita
+
 half a pound
+media libra
+
 it's too good to be true
+es demasiado bueno para ser verdad
+
 suggestion
-
-
-
-
-
-
-CREATE THE DECKS AND FILES BELOW
-spanish_vocab
-spanish_idioms
-spanish_flirt (mirame mal)
-spanish_jokes (one liners, wife)
-spanish_insults
-spanish_stories
-
-english_vocab
-english_idioms
-english_flirt
-english_jokes (one liners, wife)
-english_insults
-english_stories
+la sugerencia
