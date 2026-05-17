@@ -718,8 +718,8 @@ feo
 to save money
 ahorrar
 
-to go shopping
-ir de compras
+I'm gonna go shopping
+Voy a hacer las compras
 
 cake
 el pastel
@@ -727,7 +727,7 @@ el pastel
 to do the shopping
 hacer la compra
 
-I'm gonna do some errands
+I'm gonna go run some errands
 Voy a hacer el mandado
 
 I'm craving something sweet
@@ -4936,6 +4936,9 @@ el drogadicto
 ecosystem
 el ecosistema
 
+system
+el sistema
+
 accessory
 el accesorio
 
@@ -6118,8 +6121,8 @@ la cerámica
 cherries
 las cerezas
 
-Picture frame
-Marco de foto
+picture frame
+marco de foto
 
 cranberries
 los arándanos
@@ -7285,8 +7288,8 @@ Date of birth?
 I booked a room
 tengo una habitación reservada
 
-I did it by myself
-lo hice yo solito
+I did it myself
+lo hice por mi cuenta
 
 What's that called?
 ¿Cómo se llama a esto?
@@ -7885,9 +7888,6 @@ yo no pierdo tiempo
 we're gonna have a great time!
 qué rico la vamos a pasar!
 
-Give me that look hehe
-mírame mal
-
 it sticks out
 sobresalia
 
@@ -8079,3 +8079,114 @@ Con mi novia me defiendo con el español
 
 I understand more than I speak
 Entiendo más de lo que hablo
+
+It gives good insights
+Da buenas ideas
+
+current
+actual
+
+the current month
+el mes actual
+
+the next month
+el mes siguiente
+
+skunk
+el zorillo
+
+proposal
+la propuesta
+
+proposal (marriage)
+la propuesta de matrimonio
+
+punishment
+castigo
+
+sourdough bread
+masa padre
+
+apartment (the crib)
+el depa
+
+car dealership
+la agencia
+
+disassemble / weaken
+desarmar
+
+no idea
+ni idea
+
+come in!
+pasale!
+
+lingerie
+la lencería
+
+brake lining
+la balata
+
+uh oh...
+todo mal..
+
+I don't have time
+no tengo tiempo
+
+I lost track of time
+se me fue el tiempo
+
+Do you remember...
+Te acuerdas que...
+
+payday
+el día de paga
+
+I'm feeling good today
+ando de buenas hoy
+
+I'm feeling bad today
+ando de malas hoy
+
+lunchbox
+la lunchera
+
+You're absolutely right!
+tienes toda la razón!
+
+to invest
+invertir
+
+update
+tables, charts, and graphs
+it's all part of the plan
+flour tortillas
+it's one of a kind
+we're halfway
+he's half mexican
+every half hour
+half a teaspoon
+half a pound
+it's too good to be true
+suggestion
+
+
+
+
+
+
+CREATE THE DECKS AND FILES BELOW
+spanish_vocab
+spanish_idioms
+spanish_flirt (mirame mal)
+spanish_jokes (one liners, wife)
+spanish_insults
+spanish_stories
+
+english_vocab
+english_idioms
+english_flirt
+english_jokes (one liners, wife)
+english_insults
+english_stories
