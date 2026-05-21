@@ -8,16 +8,62 @@ mole poblano - rich dark sauce from puebla with chiles, seeds, spices, and a hin
 enchiladas verdes - enchiladas sauced with tart green tomatillo-serrano salsa, often chicken, crema, and cheese
 tacos de birria - tacos of slow-braised spiced meat (often beef or goat) with consomé for dipping
 carnitas - pork shoulder simmered until tender then crisped in its own fat, shredded for tacos with onion and cilantro
+dragonzito - tiny paper pouches of sweet-sour-chile powder, classic candy eaten straight or dusted on fruit and cucumbers from street carts
+tamales - masa spread with filling, wrapped in corn husks or banana leaves, and steamed until the dough turns fluffy and pulls from the husk
+pambazo - soft bun dipped in guajillo salsa, seared on the plancha, and stuffed with papas con chorizo, lettuce, crema, and queso
+queso fundido - skillet-baked melted cheese, often with chorizo or roasted rajas, scraped onto hot tortillas right from the sizzle
+empanadas - crimped pastry pockets, fried or baked, filled with anything from picadillo and queso to pumpkin or cajeta depending on the region
+chile verde - meat braised until tender in a chunky green gravy of tomatillos, green chiles, garlic, and cumin, scooped with rice or tortillas
+flan - egg custard set in a mold lined with dark caramel, chilled, then flipped so the syrup coats every glossy slice
+enchiladas de mole - tortillas softened in rich mole, rolled or folded around chicken or cheese, topped with toasted sesame, crema, and crumbly queso
+arroz con leche - short-grain rice cooked slowly in milk with sugar, cinnamon, and a little vanilla until thick and spoonable, warm or cold
 
-dragonzito
-tamales
-pambazo
-queso fundito
-empanadas
-chile verde
-flan
-enchiladas de mole
-arroz con leche
+toastadas
+tacos de suadero
+huevos rancheros
+huevos con chorizo
+huevos a la mexicana
+Pinole (atole)
+besos de nuez
+mezcalita / mezcal
+sopa azteca
+Ceviche de camarón
+coricos sinaloenses
+pollo en chile rojo
+paella
+piña loca
+chimichanga
+pollo tapatio
+pollo sinaloense
+
+cazuelas
+chicarron en salsa verde
+molotito
+longaniza en salsa verde
+tacos de cabeza de borrego
+huarache
+mole cake
+pulque
+guava
+elotes con crema
+achiote
+tacos al pastor
+
+hoja santa
+memela
+chilaquites
+costilla frita
+tlayuda
+sapote
+aguachile
+ceviche
+trompo (of meal al pastor)
+chamorro
+chorizo a la sidra
+tripe
+cojita cheese
+
+OTHER TYPES OF TACOS
 
 - Famous mexican gods
 - Famous mexican historical figures
@@ -30,34 +76,16 @@ arroz con leche
 - Guache
 - Rapiña
 - Popocatépetl
-Pinole (atole)
-besos de nuez
-mezcal
 julion alvarez y su norteno bands - las mulas de moreno
-coricos sinaloenses
-caviche de camaron
-sopa azteca
 esquite
 para atrapar al ladron
-tostadas
-tacos de suadero
-huevos rancheros
-huevos con chorizo
-huevos a la mexicana
 nachitos
 burrito jalisco
-pollo tapatio
-pollo sinaloense
 abito brand
-chimichanga
 chuletas ahumadas
-molcajete
 quesadilla el vaquero
 Panam brand
-chile rojo
-piña loca
 taquitos
-Paella
 Jamon Serrano
 Queso Manchego
 Tapas
@@ -67,7 +95,6 @@ Escamole
 Tlacoyos (alberjon requeson)
 Barbacoa
 Chicarron delgado
-Tacos de Suadero
 Pollo feliz / Pollo loco (pollo asado)
 El camaron guasaveno
 Marlin comida
@@ -100,6 +127,7 @@ tres leches
 - La puerta metepec (la eme roja)
 - Tlaloc
 - Quetalcoatl
+- maizajo
 - Ehecatl
 - Huitzilopochtil
 - los nahuas
@@ -113,7 +141,6 @@ tres leches
 - Zihuatanejo
 - Acapulco
 - zacahuil
-- tlayuda
 - Amapola
 - Belladona
 - Yerbabuena
