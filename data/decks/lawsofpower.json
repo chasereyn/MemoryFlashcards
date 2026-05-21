@@ -1,33 +1,33 @@
 {
   "cards": [
     {
-      "id": "2e74da59f8c1",
-      "term": "1",
-      "definition": "Never outshine the master",
-      "next_review": "2026-08-20",
-      "ease_factor": 2.5,
-      "interval": 135,
-      "difficulty": 0,
-      "completed_today": true,
-      "first_rating": null,
-      "session_attempts": 0,
-      "consecutive_easy_sessions": 3,
-      "latest_rating": null
-    },
-    {
       "id": "c77916c9b3a0",
       "term": "2",
       "definition": "Never put too much trust in friends; learn how to use enemies",
-      "next_review": "2026-08-22",
-      "ease_factor": 2.3000000000000003,
-      "interval": 108,
-      "difficulty": 1,
-      "completed_today": true,
+      "next_review": null,
+      "ease_factor": 2.5,
+      "interval": 1,
+      "difficulty": 0,
+      "completed_today": false,
       "first_rating": null,
       "session_attempts": 0,
-      "consecutive_easy_sessions": 3,
+      "consecutive_easy_sessions": 0,
+      "latest_rating": null
+    },
+    {
+      "id": "2e74da59f8c1",
+      "term": "1",
+      "definition": "Never outshine the master",
+      "next_review": null,
+      "ease_factor": 2.5,
+      "interval": 1,
+      "difficulty": 0,
+      "completed_today": false,
+      "first_rating": null,
+      "session_attempts": 0,
+      "consecutive_easy_sessions": 0,
       "latest_rating": null
     }
   ],
-  "last_session_date": "2026-05-17"
+  "last_session_date": "2026-05-21"
 }

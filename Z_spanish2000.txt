@@ -19,9 +19,6 @@ calentar
 depressed
 deprimido
 
-challenge
-el reto
-
 classroom
 el aula
 
@@ -565,12 +562,6 @@ la estación de metro
 to be online
 estar en línea
 
-opera
-la ópera
-
-sense of humor
-el sentido del humor
-
 see you later
 hasta luego
 
@@ -586,17 +577,8 @@ el teléfono celular
 talk show
 programa de entrevistas
 
-train station
-la estación de tren
-
 single room
 la habitación individual
-
-videoconference
-la videoconferencia
-
-to ride
-montar
 
 care
 el cuidado
@@ -1408,23 +1390,8 @@ gestionar
 to govern
 gobernar
 
-zoo
-el zoológico
-
-Puerto Rican
-puertorriqueño
-
-bravery
-la valentía
-
-false
-falso
-
 to apologize
 disculparse
-
-hero
-el héroe
 
 department
 el departamento
@@ -1449,9 +1416,6 @@ el fósforo
 
 to put on one's clothes
 ponerse la ropa
-
-exaggerated
-exagerado
 
 hairstyle
 el peinado
@@ -1522,23 +1486,8 @@ el prejuicio
 kid
 el chaval
 
-thermometer
-el termómetro
-
-conservative
-conservador
-
 explanation
 la explicación
-
-furious
-furioso
-
-considerate
-considerado
-
-unfair
-injusto
 
 verse
 el verso
@@ -1552,15 +1501,6 @@ narrar
 shooting
 el rodaje
 
-pea
-el guisante
-
-hostel
-el hostal
-
-sting
-la picadura
-
 construction
 la construcción
 
@@ -1569,12 +1509,6 @@ el electrodoméstico
 
 to be about
 tratarse de
-
-risky
-arriesgado
-
-spare time
-ratos libres
 
 to imitate
 imitar
@@ -1633,9 +1567,6 @@ protestar
 efficient
 eficiente
 
-toast
-el pan tostado
-
 boiled
 hervido
 
@@ -1644,9 +1575,6 @@ nacional
 
 environment
 el medioambiente
-
-sedentary
-sedentario
 
 ecotourism
 el ecoturismo
@@ -1690,9 +1618,6 @@ administrar
 independence
 la independencia
 
-bedside table
-la mesita de noche
-
 marketing
 el mercadeo
 
@@ -1726,26 +1651,14 @@ indignar
 religious
 religioso
 
-to fall in love with
-enamorarse de
-
-authentic
-auténtico
-
 to collide with
 chocar con
 
 perspective
 la perspectiva
 
-to brush one's hair
-cepillarse el pelo
-
 creation
 la creación
-
-roommate
-el compañero de cuarto
 
 submissive
 agachado
@@ -2107,20 +2020,8 @@ físico
 to admit
 admitir
 
-successful
-exitoso
-
 to compare
 comparar
-
-thumb
-el pulgar
-
-raspberry
-la frambuesa
-
-broccoli
-el brócoli
 
 to imagine
 imaginar
@@ -2131,23 +2032,11 @@ la lágrima
 exactly
 exactamente
 
-text
-el texto
-
-plumber
-el plomero
-
-monthly
-mensual
-
 strict
 estricto
 
 theory
 la teoría
-
-rainy
-lluvioso
 
 completely
 completamente
@@ -2161,9 +2050,6 @@ libre
 welcome
 bienvenido
 
-tell me
-dime
-
 down
 abajo
 
@@ -2175,12 +2061,6 @@ chocar
 
 right
 la derecha
-
-true
-cierto
-
-to burn
-quemar
 
 to meet
 reunirse
@@ -2550,69 +2430,6 @@ saltar
 
 to inform
 informar
-
-violence
-la violencia
-
-fresh
-fresco
-
-girl
-la niña
-
-fantastic
-fantástico
-
-message
-el mensaje
-
-modest
-modesto
-
-lemon
-el limón
-
-critic
-el crítico
-
-vacation
-la vacación
-
-memory
-la memoria
-
-conservation
-la conservación
-
-graduation
-la graduación
-
-radio
-el radio
-
-biology
-la biología
-
-metal
-el metal
-
-normally
-normalmente
-
-space
-el espacio
-
-invitation
-la invitación
-
-action
-la acción
-
-shower
-la ducha
-
-gram
-el gramo
 
 service
 el servicio
@@ -3472,23 +3289,8 @@ leal
 to appreciate
 apreciar
 
-choir
-el coro
-
 terrace
 la terraza
-
-valley
-el valle
-
-snake
-la serpiente
-
-ring
-el anillo
-
-statue
-la estatua
 
 to interview
 entrevistar
@@ -3514,35 +3316,14 @@ el aumento
 rain
 la lluvia
 
-dictionary
-el diccionario
-
-smoke
-el humo
-
 funny
 gracioso
-
-to throw
-tirar
 
 brush
 el cepillo
 
-laboratory
-el laboratorio
-
-tourist
-turístico
-
 greedy
 ambicioso
-
-to clear the table
-quitar la mesa
-
-species
-la especie
 
 champion
 el campeón
@@ -3556,9 +3337,6 @@ el chorizo
 as a child
 de niño
 
-mayonnaise
-la mayonesa
-
 to brush one's teeth
 cepillarse los dientes
 
@@ -3568,20 +3346,11 @@ tener éxito
 to measure
 medir
 
-physical education
-la educación física
-
 sunny
 soleado
 
 to miss
 faltar
-
-Earth
-la Tierra
-
-pig
-el cerdo
 
 to get along
 llevarse bien
@@ -3607,15 +3376,6 @@ México
 skiing
 el esquí
 
-scanner
-el escáner
-
-finally
-por último
-
-glass
-el vaso
-
 likewise
 igualmente
 
@@ -3625,23 +3385,14 @@ hablador
 point of view
 el punto de vista
 
-ghost
-el fantasma
-
 home
 el hogar
 
 to be titled
 titularse
 
-file
-el archivo
-
 to be late
 llegar tarde
-
-to choose
-elegir
 
 to iron
 planchar
@@ -3652,35 +3403,14 @@ el reportaje
 to board
 abordar
 
-underwear
-la ropa interior
-
-board game
-el juego de mesa
-
 to respect
 respetar
-
-finally
-por fin
 
 to talk
 conversar
 
 to deny
 negar
-
-daily
-diario
-
-chemistry
-la química
-
-wool
-la lana
-
-to be afraid
-tener miedo
 
 to fight
 pelearse
@@ -3691,23 +3421,11 @@ dentro de
 to destroy
 destruir
 
-key
-la clave
-
 necklace
 el collar
 
 jealous
 celoso
-
-forehead
-la frente
-
-to delete
-borrar
-
-stepmother
-la madrastra
 
 single
 soltero
@@ -3727,9 +3445,6 @@ el gesto
 laughter
 la risa
 
-to cough
-toser
-
 beautiful
 bello
 
@@ -3742,44 +3457,17 @@ la soledad
 interviewer
 el entrevistador
 
-oven
-el horno
-
 ticket
 el boleto
 
-support
-el apoyo
-
-to play soccer
-jugar al fútbol
-
-strategy
-la estrategia
-
 sandal
 la sandalia
-
-to sweat
-sudar
-
-excited
-emocionado
-
-in love
-enamorado
-
-technician
-el técnico
 
 glass
 la copa
 
 ticket
 el billete
-
-deforestation
-la deforestación
 
 response
 la respuesta
@@ -3789,12 +3477,6 @@ saludar
 
 to support
 apoyar
-
-back
-la espalda
-
-great
-genial
 
 to applaud
 aplaudir

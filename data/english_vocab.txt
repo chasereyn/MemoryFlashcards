@@ -331,7 +331,7 @@ The new coach thanked her predecessor.
 stated or professed as true, but possibly not the real reason; outwardly appearing but possibly insincere
 ostensible
 
-The official reason for the trip was a client meeting.
+The supposed reason for the trip was a client meeting.
 The ostensible reason for the trip was a client meeting.
 
 the act of deceiving or misleading; behavior intended to make someone believe something false
@@ -381,3 +381,51 @@ livid
 
 When she saw the unauthorized charges, she was furious.
 When she saw the unauthorized charges, she was livid.
+
+seeming to be present or found everywhere at the same time; common across a whole environment
+ubiquitous
+
+Coffee shop chains are everywhere in that part of the city.
+Coffee shop chains are ubiquitous in that part of the city.
+
+very weak, thin, or uncertain (often of a link, hold, or argument)
+tenuous
+
+Their partnership rested on a fragile agreement that either side could exit anytime.
+Their partnership rested on a tenuous agreement that either side could exit anytime.
+
+(figurative) failing to read the mood of a situation; socially or contextually insensitive
+tone deaf
+
+Canceling benefits during the celebration struck employees as wildly insensitive.
+Canceling benefits during the celebration struck employees as tone deaf.
+
+to a very great depth or degree; intensely
+profoundly
+
+She was deeply moved by the survivor's testimony.
+She was profoundly moved by the survivor's testimony.
+
+in a way that leaves no doubt; with full clarity
+unequivocally
+
+The agency clearly stated that the data had been mishandled.
+The agency unequivocally stated that the data had been mishandled.
+
+serving as a desirable model; outstandingly good
+exemplary
+
+The rescue team's discipline was outstanding and worthy of imitation.
+The rescue team's discipline was exemplary.
+
+causing harm or damage (often over time)
+detrimental
+
+Long hours without breaks can be harmful to focus and health.
+Long hours without breaks can be detrimental to focus and health.
+
+large or important in degree, amount, or significance
+substantial
+
+They made a large contribution to the hospital fund.
+They made a substantial contribution to the hospital fund.

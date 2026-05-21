@@ -121,6 +121,9 @@ entonces
 thermostat
 el termostato
 
+thermometer
+el termómetro
+
 chess
 el ajedrez
 
@@ -526,6 +529,63 @@ reparar
 the search
 la búsqueda
 
+violence
+la violencia
+
+fresh
+fresco
+
+fantastic
+fantástico
+
+message
+el mensaje
+
+modest
+modesto
+
+lemon
+el limón
+
+critic
+el crítico
+
+vacation
+la vacación
+
+memory
+la memoria
+
+conservation
+la conservación
+
+graduation
+la graduación
+
+radio
+el radio
+
+biology
+la biología
+
+metal
+el metal
+
+normally
+normalmente
+
+space
+el espacio
+
+action
+la acción
+
+shower
+la ducha
+
+gram
+el gramo
+
 street
 la calle
 
@@ -675,6 +735,9 @@ la puerta
 
 expensive
 caro
+
+exaggerated
+exagerado
 
 user
 el usuario
@@ -975,6 +1038,15 @@ orinar
 
 to pee
 mear
+
+strategy
+la estrategia
+
+support
+el apoyo
+
+to play soccer
+jugar al fútbol
 
 painter
 el pintor
@@ -1357,6 +1429,9 @@ no cambia nada
 towel
 la toalla
 
+toast
+el pan tostado
+
 to make dinner
 hacer la cena
 
@@ -1579,8 +1654,8 @@ la botella
 university
 la universidad
 
-airport
-el aeropuerto
+Puerto Rican
+puertorriqueño
 
 responsible
 responsable
@@ -1798,6 +1873,12 @@ menos
 bathroom
 el baño
 
+physical education
+la educación física
+
+Earth
+la Tierra
+
 land
 la tierra
 
@@ -1806,6 +1887,9 @@ el cereal
 
 real
 real
+
+false
+falso
 
 fake
 falso
@@ -1947,6 +2031,12 @@ antier
 
 carrot
 la zanahoria
+
+zoo
+el zoológico
+
+bravery
+la valentía
 
 horizon
 el horizonte
@@ -2314,6 +2404,9 @@ el pimiento
 to invite
 invitar
 
+invitation
+la invitación
+
 to compete
 competir
 
@@ -2346,6 +2439,12 @@ la blusa
 
 to fall in love
 enamorarse
+
+excited
+emocionado
+
+in love
+enamorado
 
 corn
 el maíz
@@ -3124,6 +3223,12 @@ prestar
 to fix
 arreglar
 
+smoke
+el humo
+
+dictionary
+el diccionario
+
 same
 mismo
 
@@ -3319,6 +3424,9 @@ el/la modelo
 operation
 la operación
 
+opera
+la ópera
+
 racism
 el racismo
 
@@ -3380,6 +3488,9 @@ I'm left wanting more
 Me quedo con ganas de más
 
 archive
+el archivo
+
+file
 el archivo
 
 Take a look!
@@ -3447,6 +3558,9 @@ apenas
 
 Well done!
 ¡bien hecho!
+
+mayonnaise
+la mayonesa
 
 effective May 1...
 a partir del 1 de mayo...
@@ -3525,6 +3639,9 @@ el dicho
 
 bunsen burner
 mechero bunsen
+
+hero
+el héroe
 
 headboard
 cabecera
@@ -3721,6 +3838,12 @@ el padrino
 godmother
 la madrina
 
+forehead
+la frente
+
+to delete
+borrar
+
 stepfather
 el padrastro
 
@@ -3799,6 +3922,9 @@ Quedarse hasta tarde
 cover your ass
 cúbrete las espaldas
 
+back
+la espalda
+
 How could I forget that?
 ¿Cómo pude olvidar eso?
 
@@ -3859,6 +3985,12 @@ el mechero
 sweat
 el sudor
 
+technician
+el técnico
+
+to sweat
+sudar
+
 to put up with
 aguantar
 
@@ -3866,7 +3998,7 @@ smell
 el olor
 
 I'm joking!
-estoy bromeando
+estoy bromeando!
 
 simple
 sencillo
@@ -3894,6 +4026,9 @@ claro
 
 professional
 profesional
+
+key
+la clave
 
 traditional
 tradicional
@@ -4018,8 +4153,8 @@ Qué horror
 How beautiful!
 Qué bonito!
 
-Awesome!
-Genial!
+Awesome, good, nice, great
+genial
 
 I'm thirsty
 Tengo sed
@@ -4282,8 +4417,14 @@ atento
 attentive
 atento
 
+furious
+furioso
+
 considerate
 considerado
+
+unfair
+injusto
 
 about 30 minutes away
 a unos 30 minutos
@@ -4419,6 +4560,21 @@ el tablón de corcho
 
 vanilla
 la vainilla
+
+valley
+el valle
+
+snake
+la serpiente
+
+ring
+el anillo
+
+statue
+la estatua
+
+choir
+el coro
 
 van
 la camioneta
@@ -4614,6 +4770,9 @@ el bizcocho
 
 texting
 mensajeando
+
+the text
+el texto
 
 dragon
 el dragón
@@ -4896,6 +5055,12 @@ el helicóptero
 
 to train
 entrenar
+
+train station
+la estación de tren
+
+videoconference
+la videoconferencia
 
 self-esteem
 la autoestima
@@ -5233,6 +5398,9 @@ Antes de comprar el carro, échale un vistazo al motor
 risk
 el riesgo
 
+risky
+arriesgado
+
 bathtub
 la bañera
 
@@ -5302,6 +5470,12 @@ el colesterol
 hostel
 el hostal
 
+pea
+el guisante
+
+sting
+la picadura
+
 tradition
 la tradición
 
@@ -5364,6 +5538,12 @@ por la casa
 
 pentagon
 el pentágono
+
+species
+la especie
+
+to clear the table
+quitar la mesa
 
 edge
 el borde
@@ -5475,6 +5655,12 @@ la grasita
 
 to bake
 hornear
+
+oven
+el horno
+
+deforestation
+la deforestación
 
 the second half
 la segunda parte
@@ -5839,6 +6025,9 @@ el tope
 Don't spill the water
 No derrames el agua
 
+broccoli
+el brócoli
+
 link
 el enlace
 
@@ -6030,6 +6219,12 @@ descartable
 
 tourism
 el turismo
+
+laboratory
+el laboratorio
+
+tourist
+turístico
 
 possible
 posible
@@ -6388,6 +6583,9 @@ sembrar
 elephant
 elefante
 
+ghost
+el fantasma
+
 password
 la contraseña
 
@@ -6495,6 +6693,9 @@ el avioncito
 
 Unfortunately the word 'mother-in-law' has a bad connotation in English
 Desafortunadamente, la palabra 'suegra' tiene una mala connotación en Inglés
+
+successful
+exitoso
 
 You get what you pay for
 La calidad se paga
@@ -6895,8 +7096,11 @@ uñas de los pies
 What is the opposite of...
 ¿Cuál es el opuesto de...?
 
+underwear
+la ropa interior
+
 board game
-juego de mesa
+el juego de mesa
 
 I left a comment
 Dejé un comentario
@@ -7174,6 +7378,9 @@ el capibara
 dust bunny
 una bola de polvo
 
+scanner
+el escáner
+
 put your glass on a coaster
 pon el vaso en el posavasos
 
@@ -7243,6 +7450,12 @@ la báscula
 What does it involve?
 ¿En qué consiste?
 
+authentic
+auténtico
+
+roommate
+el compañero de cuarto
+
 The things that matter are...
 Lo que de verdad importa es...
 
@@ -7255,7 +7468,7 @@ tengo miedo a los gatos
 I'm afraid she won't come
 Me temo que no venga
 
-the day after
+the next day
 el día siguiente
 
 I never saw him again
@@ -7414,6 +7627,9 @@ la bañera
 goddess
 la diosa
 
+finally...
+por fin...
+
 stamp
 el sello
 
@@ -7422,6 +7638,15 @@ aplanar
 
 motion
 el movimiento
+
+daily
+diario
+
+chemistry
+la química
+
+wool
+la lana
 
 thumbs up
 pulgar arriba
@@ -8051,10 +8276,7 @@ party bangers
 los temazos
 
 challenge
-el rato
-
-conservative
-el conservador
+el reto
 
 lazy shit
 huevón
@@ -8088,6 +8310,9 @@ actual
 
 the current month
 el mes actual
+
+monthly
+mensual
 
 the next month
 el mes siguiente
@@ -8196,3 +8421,69 @@ es demasiado bueno para ser verdad
 
 suggestion
 la sugerencia
+
+snail
+el caracol
+
+Remind me what you're doing today
+Recuérdame qué vas a hacer hoy
+
+rainy
+lluvioso
+
+mailbox
+el buzón
+
+fire hydrant
+el hidrante
+
+How much do you wanna bet?
+¿Cuánto quieres apostar?
+
+I won't rest until...
+no descansaré hasta que...
+
+muscle memory
+la memoria muscular
+
+What is your name? What do you do? What is your dream?
+¿Cómo te llamas? ¿A qué te dedicas? ¿Cuál es tu sueño?
+
+leftists
+los izquierdistas
+
+rightists
+los derechistas
+
+liberal
+liberal
+
+conservative
+conservador
+
+steep
+empinado
+
+shallow
+poco profundo
+
+deep
+profundo
+
+brainstorming
+la lluvia de ideas
+
+I hope I'm not overwhelming you
+espero no abrumarte
+
+I'm overwhelmed
+estoy abrumado
+
+who's laughing now?
+¿ahora quién ríe?
+
+have a nice dinner!
+¡que disfrutes la cena!
+
+impactful
+impactante
