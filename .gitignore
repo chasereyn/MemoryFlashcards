@@ -11,4 +11,3 @@ wheels/
 
 # Local review progress (generated from deck sync + sessions)
 data/progress/
-data/decks/*.json
