@@ -1,4 +1,5 @@
 from datetime import datetime, timedelta
+import random
 from typing import List, Optional
 from flashcard import Flashcard
 
@@ -157,39 +158,24 @@ def get_due_cards(cards: List[Flashcard], today: Optional[str] = None) -> List[F
 
 def prioritize_cards(active_cards: List[Flashcard], due_cards: List[Flashcard]) -> List[Flashcard]:
     """
-    Prioritize cards for review.
-    Active cards (in session) come first, then due cards (new session).
-    
-    Active cards sorted by:
-    1. session_attempts (descending) - cards attempted more times first
-    2. difficulty (descending) - struggling cards first
-    
-    Due cards sorted in two groups (new cards first, then reviews):
-    1. New cards (never reviewed, next_review is None) — by difficulty descending
-    2. Review cards — by difficulty descending, then most recently due first
-       (cards that became due yesterday beat cards overdue since last year)
+    Build review queue: active in-session cards first, then due cards in random order.
+
+    Active cards (rated 1–3, not yet 4) stay sorted by session_attempts and difficulty
+    so struggling cards come back quickly.
+
+    Due cards are shuffled so bulk-added decks (e.g. medical vocab) do not play out
+    as one long sequential block weeks later.
     """
-    # Sort active cards
     active_sorted = sorted(
         active_cards,
         key=lambda c: (c.session_attempts, c.difficulty),
-        reverse=True
-    )
-
-    new_cards = [c for c in due_cards if c.next_review is None]
-    review_cards = [c for c in due_cards if c.next_review is not None]
-
-    new_sorted = sorted(new_cards, key=lambda c: c.difficulty, reverse=True)
-    review_sorted = sorted(
-        review_cards,
-        key=lambda c: (c.difficulty, c.next_review or ""),
         reverse=True,
     )
 
-    due_sorted = new_sorted + review_sorted
-    
-    # Active cards first, then due cards
-    return active_sorted + due_sorted
+    due_shuffled = list(due_cards)
+    random.shuffle(due_shuffled)
+
+    return active_sorted + due_shuffled
 
 
 def reset_daily_flags(cards: List[Flashcard], last_session_date: Optional[str], today: Optional[str] = None) -> None:
@@ -237,10 +223,10 @@ def get_cards_for_review(
     daily_limit: int = DEFAULT_DAILY_LIMIT,
 ) -> List[Flashcard]:
     """
-    Get cards ready for review, properly prioritized.
+    Get cards ready for review.
 
-    Active in-session cards are always included. Due cards are capped at
-    daily_limit (fixed pool for the day; no refill when cards complete).
+    Active in-session cards are always included first. Due cards are shuffled and
+    capped at daily_limit (fixed pool for the day; no refill when cards complete).
     """
     if today is None:
         today = get_today()
