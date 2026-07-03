@@ -1,0 +1,85 @@
+merge_z_spanish report
+mode: APPLIED
+
+=== Summary ===
+Z source cards:        1466
+Skipped (exact dup):   52
+Added (new term):      1236
+Added (disambiguated): 178
+Total to append:       1414
+
+=== Disambiguated (first 40) ===
+  was 'period': period (etapa)	la etapa
+  was 'fair': fair (feria)	la feria
+  was 'to laugh': to laugh (reflexive)	reírse
+  was 'education': education (enseñanza)	la enseñanza
+  was 'ball': ball (balón)	el balón
+  was 'living room': living room (salón)	el salón
+  was 'fantastic': fantastic (adj)	fenomenal
+  was 'to remove': to remove (verb)	eliminar
+  was 'toast': toast (brindis)	el brindis
+  was 'to promote': to promote (verb)	ascender
+  was 'honest': honest (adj)	honesto
+  was 'calm': calm (tranquilidad)	la tranquilidad
+  was 'bathroom': bathroom (cuarto)	el cuarto de baño
+  was 'narrator': narrator (narrador)	el narrador
+  was 'to forget': to forget (adj)	olvidarse de
+  was 'to achieve (complete)': to achieve (verb)	cumplir
+  was 'school': school (colegio)	el colegio
+  was 'to come': to come (verb)	acudir
+  was 'half': half (mitad)	la mitad
+  was 'to carry out': to carry out (verb)	desempeñar
+  was 'place': place (sitio)	el sitio
+  was 'smooth': smooth (adj)	liso
+  was 'mountain range': mountain range (cordillera)	la cordillera
+  was 'only': only (adj)	solo
+  was 'to enter': to enter (verb)	ingresar
+  was 'actually': actually (adj)	realmente
+  was 'to contribute': to contribute (verb)	contribuir
+  was 'leader': leader (noun)	el/la líder
+  was 'schedule': schedule (agenda)	la agenda
+  was 'news': news (noticia)	la noticia
+  was 'elephant': elephant (elefante)	el elefante
+  was 'immediately': immediately (adj)	inmediatamente
+  was 'ball': ball (bola)	la bola
+  was 'close': close (adj)	cercano
+  was 'french fry': french fry (papa)	la papa frita
+  was 'square': square (cuadrado)	el cuadrado
+  was 'shame': shame (lástima)	la lástima
+  was 'soft': soft (adj)	blando
+  was 'windshield': windshield (parabrisas)	el parabrisas
+  was 'anxiety': anxiety (angustia)	la angustia
+  ... and 138 more
+
+=== Skipped exact duplicates (first 30) ===
+  to train	entrenar
+  to influence	influir
+  proposal	la propuesta
+  to affect	afectar
+  sector	el sector
+  dawn	el amanecer
+  daughter-in-law	la nuera
+  smell	el olor
+  to grant	otorgar
+  tablecloth	el mantel
+  to undertake	emprender
+  broth	el caldo
+  godfather	el padrino
+  skyscraper	el rascacielos
+  deep	profundo
+  values	los valores
+  grill	la parrilla
+  retired	jubilado
+  tiger	el tigre
+  initiative	la iniciativa
+  prejudice	el prejuicio
+  protein	la proteína
+  real	real
+  size	el tamaño
+  suggestion	la sugerencia
+  waiter	el mesero
+  toilet	el inodoro
+  rope	la cuerda
+  wheat	el trigo
+  good evening	buenas noches
+  ... and 22 more
