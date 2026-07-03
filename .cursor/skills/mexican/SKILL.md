@@ -1,6 +1,6 @@
 ---
 name: mexican
-description: Expands trailing notes in MemoryFlashcards `data/decks/mexican.tsv` into TSV flashcard rows (name or English prompt, vivid English definition) for Mexican food, culture, geography, history, and brands. Use when editing the mexican deck, converting scratch lists about Mexico, or adding cards for Sarah, family trips, and Mexican cultural context.
+description: Expands trailing notes in MemoryFlashcards `data/decks/mexican.tsv` into TSV flashcard rows (name or English prompt, vivid English definition) for Mexican food, culture, traditions, geography, history, and brands. Use when editing the mexican deck or converting scratch lists about Mexico. Do NOT add general Spanish vocabulary, slang phrases, or English→Spanish pairs here — those belong in `spanish.tsv`.
 disable-model-invocation: true
 ---
 
@@ -15,7 +15,11 @@ MemoryFlashcards stores deck content as **TSV** in `data/decks/`. Each line is o
 
 Review progress lives in `data/progress/mexican.tsv` (auto-managed — do not edit).
 
-Unlike `spanish.tsv`, this deck is **not** English → Spanish. It is **Mexican cultural knowledge**: foods, places, gods, artists, brands, and customs described in English so the user can recall what each thing is.
+Unlike `spanish.tsv`, this deck is **not** English → Spanish. It is **Mexican cultural knowledge** described in English so the user can recall what each thing is.
+
+**In scope:** foods, dishes, drinks, places, geography, gods, artists, holidays/traditions, brands, customs, and cultural references tied to Mexico.
+
+**Out of scope (use `spanish.tsv` instead):** general vocabulary, conversational phrases, slang one-liners, proverbs as language cards, text abbreviations, and anything that is primarily “English prompt → Spanish answer” for daily speech.
 
 ## Card format (one item = one line)
 
@@ -29,20 +33,21 @@ name or prompt	English description
 
 ## Style (match the deck)
 
-- **Food:** dish name → sensory English description (ingredients, texture, how it's eaten, regional note if relevant)
-- **Places / geography:** proper name → what/where it is; include legend or context when iconic (Popocatépetl, Teotihuacán)
-- **People / gods:** name → role and why they matter (Los Tres Grandes, Tlaloc, etc.)
-- **Brands / local refs:** name → what it is (Pollo Feliz, Pineda Covalin, La Puerta Metepec)
-- **Slang / culture:** term → plain English gloss (`guache`, `huachicol`, `esquite`)
-- Fix obvious typos from scratch notes; preserve intent
-- Skip section headers, empty lines, and personal meta-notes (report those to the user instead of cardifying)
+- **Food / drink:** dish name → sensory English description (ingredients, texture, how it's eaten, regional note)
+- **Places / geography:** proper name → what/where it is; legend or context when iconic
+- **People / gods / history:** name → role and why they matter
+- **Traditions / holidays:** custom or object → what it is and how it fits Mexican culture (Día de los Muertos, lotería, piñata)
+- **Brands / local refs:** name → what it is
+- **Cultural gloss (in English):** only when defining a *thing* (e.g. `huachicol` as fuel theft phenomenon), not when the card is really a phrase to produce in Spanish
+
+Fix obvious typos from scratch notes; preserve intent. Skip section headers, empty lines, and personal meta-notes.
 
 ## Workflow when the user adds material
 
 1. Open `data/decks/mexican.tsv` and find **trailing orphans** or raw scratch at the end.
 2. Convert each item to **one tab-separated row** unless the user asks for splits.
 3. Prefer **name → description** over question format when the scratch list uses dish/place names.
-4. Add a **small** set of high-value extras only when the user says to (Día de los Muertos, mariachi, etc.) — do not bulk-fill generic tourism cards.
+4. Route **slang, phrases, and speech** to `spanish.tsv`, not this deck.
 5. Do **not** rewrite unrelated rows; only extend or fix the tail.
 
 ## Quick reference example

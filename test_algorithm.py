@@ -1,4 +1,5 @@
 """Test script for spaced repetition algorithm."""
+import random
 from flashcard import Flashcard
 from spaced_repetition import (
     update_card_after_review,
@@ -135,7 +136,9 @@ def test_daily_limit_caps_due_cards():
 
     assert review[0].id == "active", "Active card should come first"
     assert len(review) == 26, "Should include all active + 25 due cards"
-    assert all(c.id != "due49" for c in review), "Cards beyond daily limit should be excluded"
+    due_in_review = [c for c in review if c.id != "active"]
+    assert len(due_in_review) == 25, "Should cap due cards at daily limit"
+    assert len({c.id for c in due_in_review}) == 25, "Due cards in session should be unique"
     print("PASSED\n")
 
 
@@ -156,26 +159,24 @@ def test_deck_session_info():
     print("PASSED\n")
 
 
-def test_new_cards_before_old_reviews():
-    """Test that new cards are queued before old overdue reviews."""
-    print("Test 8: New cards prioritized before old reviews")
+def test_due_cards_are_shuffled():
+    """Due cards should be randomized, not new-first or oldest-first."""
+    print("Test 8: Due cards are shuffled")
     today = get_today()
 
-    old_review = Flashcard(
-        id="old", term="Old", definition="Answer",
-        next_review="2024-01-01", difficulty=0,
-    )
-    recent_review = Flashcard(
-        id="recent", term="Recent", definition="Answer",
-        next_review="2026-07-01", difficulty=0,
-    )
-    new_card = Flashcard(id="new", term="New", definition="Answer")
+    cards = [
+        Flashcard(id="old", term="Old", definition="Answer", next_review="2024-01-01"),
+        Flashcard(id="recent", term="Recent", definition="Answer", next_review="2026-07-01"),
+        Flashcard(id="new", term="New", definition="Answer"),
+        Flashcard(id="mid", term="Mid", definition="Answer", next_review=today),
+    ]
 
-    due = prioritize_cards([], [old_review, recent_review, new_card])
+    orders = set()
+    for seed in range(20):
+        random.seed(seed)
+        orders.add(tuple(c.id for c in prioritize_cards([], cards)))
 
-    assert due[0].id == "new", "New card should come first"
-    assert due[1].id == "recent", "Recently due should beat ancient backlog"
-    assert due[2].id == "old", "Oldest overdue should be last"
+    assert len(orders) > 1, "Due queue should vary across shuffles"
     print("PASSED\n")
 
 
@@ -193,7 +194,7 @@ if __name__ == "__main__":
         test_multiple_ratings_before_4()
         test_daily_limit_caps_due_cards()
         test_deck_session_info()
-        test_new_cards_before_old_reviews()
+        test_due_cards_are_shuffled()
         
         print("=" * 60)
         print("All tests passed!")

@@ -51,7 +51,7 @@ Unlike traditional spaced repetition systems (like Anki's SM-2), this uses a **s
 
 **Fixed-Distance Reinsertion** - Unlike proportional systems that can bury struggling cards thousands of positions back in large decks, fixed distances work identically for 20 cards or 3000+ cards. Hard cards reappear randomly in positions 2-5 (not immediately) to force cognitive refocusing—the unpredictable brief gap prevents short-term/muscle memory from masquerading as true learning.
 
-**Smart Prioritization** - Active session cards (struggling) appear first, prioritized by attempts and difficulty. Well-mastered cards fade into the background with exponential backoff (consecutive easy sessions multiply intervals exponentially).
+**Smart Prioritization** - Active session cards (struggling) appear first. Due cards are shuffled each session so bulk-added content does not play out in one block. Well-mastered cards fade into the background with exponential backoff (consecutive easy sessions multiply intervals exponentially).
 
 **Adaptive Difficulty Tracking** - Struggle history is tracked separately from intervals, ensuring difficult material gets frequent reviews even when intervals suggest otherwise.
 

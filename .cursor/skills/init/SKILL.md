@@ -54,16 +54,17 @@ Root scratch files (`Z_SpanishVocab/`) are **not** loaded by the app — referen
 
 | Deck | ~Cards | Notes |
 |------|--------|-------|
-| `spanish.tsv` | 8150+ | Main vocab cob list — one English prompt, one Spanish answer per line |
-| `verbs.tsv` | 470+ | Grammar/conjugation blocks (hand-maintained; see README) |
+| `spanish.tsv` | 8250+ | Main vocab cob list — one English prompt, one Spanish answer per line |
+| `verbs.tsv` | 370 | Grammar/conjugation — construction-first example sentences |
 | `english.tsv` | 375+ | English vocabulary — minimal-swap paired sentences (see `english` skill) |
 | `DOP.tsv` | 56 | Direct/indirect object pronouns |
+| `numbers.tsv` | 100 | Spanish numbers 1–100 (digit → Spanish) |
 | `jokes.tsv` | 195+ | English jokes |
-| `flirt.tsv` | 85+ | Pick-up lines, pet names, couple talk |
-| `chistes.tsv` | 45+ | Spanish wordplay jokes |
+| `flirt.tsv` | 60 | Pick-up lines, pet names, couple talk |
+| `chistes.tsv` | 40 | Spanish wordplay jokes |
 | `longphrases.tsv` | 5 | |
-| `lawsofpower.tsv` | 2 | |
-| `mexican.tsv` | 260+ | Mexican food, culture, geography, history, brands, slang |
+| `lawsofpower.tsv` | 48 | The 48 Laws of Power (number → law) |
+| `mexican.tsv` | 158 | Mexican food, culture, traditions, geography, history, brands (English descriptions — not phrase deck) |
 
 Only `data/decks/*.tsv` become decks. Progress mirrors deck names in `data/progress/`.
 
@@ -95,7 +96,7 @@ Session-based (not Anki SM-2). Cards must **finish the session** (reach rating 4
 
 **Daily limit:** `DEFAULT_DAILY_LIMIT = 25` in `spaced_repetition.py`. Max **25 new due cards** introduced per deck per day (fixed pool; no refill when one completes). Active in-session cards always included. Reinsertions from 1–3 do not consume extra slots.
 
-**Queue priority:** active session → **new cards** (never reviewed) → recently due reviews → oldest backlog.
+**Queue order:** active session (struggling first) → **shuffled due cards** (daily cap 25).
 
 **Deck menu:** shows `Today: N` and `Total: N`. Set `SHOW_BACKLOG_IN_MENU = True` in `main.py` to also show overdue backlog count.
 
