@@ -28,7 +28,7 @@ See `STORAGE.md` for file format and sync behavior.
 - **Daily habit over marathons** — 25 cards/day cap on large decks; show up every day.
 - **Keep the long vocab list** — `spanish.tsv` is the big cob deck (~2900 cards); presentation may evolve, but the content stays.
 
-Root scratch files (`more_spanish_phrases.txt`, `stories_and_other.txt`, `mexican_stuff.txt`, `Z_*.txt`) are **not** loaded by the app — reference/queue material only.
+Root scratch files (`more_spanish_phrases.txt`, `stories_and_other.txt`, `Z_*.txt`) are **not** loaded by the app — reference/queue material only.
 
 ## People & themes
 
@@ -54,13 +54,14 @@ Root scratch files (`more_spanish_phrases.txt`, `stories_and_other.txt`, `mexica
 
 | Deck | ~Cards | Notes |
 |------|--------|-------|
-| `spanish.tsv` | 2900+ | Main vocab cob list — one English prompt, one Spanish answer per line |
+| `spanish.tsv` | 5270+ | Main vocab cob list — one English prompt, one Spanish answer per line |
 | `verbs.tsv` | 379 | Grammar/conjugation blocks (hand-maintained; see README) |
 | `english.tsv` | 144 | English vocabulary — minimal-swap paired sentences (see `english` skill) |
 | `DOP.tsv` | 56 | Direct/indirect object pronouns |
 | `jokes.tsv` | 63 | |
 | `longphrases.tsv` | 5 | |
 | `lawsofpower.tsv` | 2 | |
+| `mexican.tsv` | 160+ | Mexican food, culture, geography, history, brands — English descriptions |
 
 Only `data/decks/*.tsv` become decks. Progress mirrors deck names in `data/progress/`.
 
@@ -101,6 +102,7 @@ Session-based (not Anki SM-2). Cards must **finish the session** (reach rating 4
 - **Extend content** at the **tail** of deck TSV files — do not rewrite existing cards unless asked.
 - **Spanish vocab:** use the `spanish` skill for `data/decks/spanish.tsv`.
 - **English vocab:** use the `english` skill for `data/decks/english.tsv`.
+- **Mexican culture deck:** use the `mexican` skill for `data/decks/mexican.tsv`.
 - **Code:** match existing style; minimal diffs; no over-engineering.
 - **Windows:** PowerShell — chain with `;`, not `&&`.
 - **Git:** commit only when explicitly asked.
@@ -117,6 +119,7 @@ Session-based (not Anki SM-2). Cards must **finish the session** (reach rating 4
 |-------|------|
 | `spanish` | Appending/formatting `data/decks/spanish.tsv` |
 | `english` | Appending/formatting `data/decks/english.tsv` |
+| `mexican` | Appending/formatting `data/decks/mexican.tsv` |
 | `init` | This file — project orientation |
 
 ## After /init

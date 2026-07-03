@@ -24,12 +24,20 @@ That's it! No setup required—just add your vocabulary and run the program.
 
 ### Automatic Syncing
 
-The system automatically syncs deck content (`.tsv`) with progress storage on startup. It:
-- **Preserves** cards that exist in both (keeps your progress and review history)
-- **Adds** new cards from text files
-- **Removes** cards that you've deleted from text files
+Deck **content** and review **progress** are stored separately:
 
-Your review progress is never lost—only the source content (text files) is synced, while all learning metadata stays intact.
+| Location | Purpose | Edit by hand? |
+|----------|---------|---------------|
+| `data/decks/{name}.tsv` | Card content (`term`, `definition`) | Yes |
+| `data/progress/{name}.tsv` | Review metadata (gitignored) | No |
+
+On startup, the app syncs each deck's content with its progress file:
+
+- **Preserves** metadata for cards that exist in both (review history stays intact)
+- **Adds** new cards from the deck file (default progress)
+- **Removes** progress rows for cards deleted from the deck file
+
+Each card's `id` is an MD5 hash of `term|definition`, so editing a card's text creates a new card. Progress files also store a `# last_session_date:` header. See `STORAGE.md` for the full format.
 
 ### Session-Based Algorithm
 
@@ -64,28 +72,31 @@ Unlike traditional spaced repetition systems (like Anki's SM-2), this uses a **s
 **When adding a new construction block (for you or a future editor):**
 
 - Use `verbs.csv` as the **lemma list**; pick **~20** verbs that sound **natural** with that pattern. Skip odd collocations.
-- **Append** new pairs to the end of `data/decks/verbs.tsv`—**do not** delete or replace existing blocks.
-- **Format** matches other decks: one line English (prompt), one line Spanish (answer), blank line between cards.
+- **Append** new rows to the end of `data/decks/verbs.tsv` — **do not** delete or replace existing blocks.
+- **Format:** one TSV row per card (`English prompt\tSpanish answer`).
 - **Vary** subjects (I, tú, él/ella, we, they, inanimate “subject”), and mix in **DOP/IO** and **reflexive** clitics when the pattern allows.
 - Reuse the same **short narrative style** as earlier cards in the file so the deck stays consistent.
 
-## English deck (`data/english.txt`)
+## English deck (`data/decks/english.tsv`)
 
-Cards often use a gloss, headword, then **two example lines**. Prefer the **same sentence** twice: first with a plain word or phrase, second with only the **headword** (or fixed idiom) substituted in. Full rewrites train a second line from scratch; **minimal swaps** train actually using the word in a familiar frame.
+Cards use a gloss → headword pair, then **two example rows** with **minimal swap** (same sentence frame, one substitution). See the `english` skill for the full pattern.
 
 ## File Structure
 
 ```
 data/
-  ├── decks/
-  │   ├── spanish_vocab.tsv     # Deck content — edit this (one card per line)
-  │   └── verbs.tsv
-  └── progress/                 # Review state (auto-managed, gitignored)
-      ├── spanish_vocab.tsv
-      └── verbs.tsv
+  ├── decks/                    # Deck content — edit these (tracked in git)
+  │   ├── spanish.tsv
+  │   ├── verbs.tsv
+  │   ├── english.tsv
+  │   └── ...
+  └── progress/                 # Review state — auto-managed, gitignored
+      ├── spanish.tsv
+      ├── verbs.tsv
+      └── ...
 ```
 
-Edit files in `data/decks/` to add or remove cards. Progress in `data/progress/` is managed automatically.
+Edit files in `data/decks/` only. Run `python test_sync.py` after storage changes.
 
 ## Requirements
 
