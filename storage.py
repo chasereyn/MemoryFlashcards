@@ -39,7 +39,7 @@ def deck_progress_path(deck_name: str) -> str:
 
 
 def get_deck_name_from_file(filename: str) -> str:
-    """Extract deck name (e.g. 'spanish_vocab.tsv' -> 'spanish_vocab')."""
+    """Extract deck name (e.g. 'spanish.tsv' -> 'spanish')."""
     for suffix in (".tsv", ".txt"):
         if filename.endswith(suffix):
             return filename[: -len(suffix)]

@@ -1,6 +1,6 @@
 ---
 name: spanish
-description: Converts trailing orphan words or phrases in MemoryFlashcards `data/decks/spanish.tsv` into TSV flashcard rows (English prompt, Spanish answer, one card per line), matching the deck's tone and punctuation. Use when appending vocabulary to spanish.tsv, formatting a raw scratch list at the file tail, or syncing notes into the main Spanish vocab deck.
+description: Appends vocabulary to MemoryFlashcards `data/decks/spanish.tsv` as TSV flashcard rows (English prompt, Spanish answer, one card per line), matching the deck's tone and punctuation. Use when editing or extending the main Spanish vocab deck.
 disable-model-invocation: true
 ---
 
@@ -35,13 +35,13 @@ English prompt	Spanish answer
 - **Political / group labels:** `los izquierdistas`, `los derechistas`; adjectives like `liberal`, `conservador` for single-word labels.
 - **Ambiguous English** (e.g. “update”): split into **two rows** — `update (noun)	la actualización` and `to update	actualizar` — when both senses are common.
 
-## Workflow when the user adds material at the end
+## Workflow when adding cards
 
-1. Open `data/decks/spanish.tsv` and find **trailing orphans**: English-only lines, mixed notes, or scratch without a paired Spanish column.
-2. For each orphan, **replace the scratch** with proper **tab-separated rows** (one card per line).
-3. **Infer missing Spanish** — concise, idiomatic, **Latin American–leaning** usage already in the deck (`manejar`, `pasale`, etc.).
-4. **Light English cleanup** is allowed (e.g. `wont` → `won't`) unless the user wants slang spellings preserved.
-5. Do **not** rewrite unrelated rows; only normalize the **tail** (fix duplicates only if asked).
+1. Open `data/decks/spanish.tsv` and append at the **tail**.
+2. Write **one tab-separated row per card** (English prompt → Spanish answer).
+3. Match **Latin American–leaning** usage already in the deck (`manejar`, `pasale`, etc.).
+4. Fix obvious English typos in new rows unless the user wants slang spellings preserved.
+5. Do **not** rewrite unrelated rows unless asked.
 
 ## Quick reference example
 

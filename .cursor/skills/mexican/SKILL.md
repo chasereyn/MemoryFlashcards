@@ -1,6 +1,6 @@
 ---
 name: mexican
-description: Expands trailing notes in MemoryFlashcards `data/decks/mexican.tsv` into TSV flashcard rows (name or English prompt, vivid English definition) for Mexican food, culture, traditions, geography, history, and brands. Use when editing the mexican deck or converting scratch lists about Mexico. Do NOT add general Spanish vocabulary, slang phrases, or English→Spanish pairs here — those belong in `spanish.tsv`.
+description: Appends rows to MemoryFlashcards `data/decks/mexican.tsv` (name or English prompt, vivid English definition) for Mexican food, culture, traditions, geography, history, and brands. Use when editing the mexican deck. Do NOT add general Spanish vocabulary or English→Spanish phrase pairs here — those belong in `spanish.tsv`.
 disable-model-invocation: true
 ---
 
@@ -19,7 +19,7 @@ Unlike `spanish.tsv`, this deck is **not** English → Spanish. It is **Mexican 
 
 **In scope:** foods, dishes, drinks, places, geography, gods, artists, holidays/traditions, brands, customs, and cultural references tied to Mexico.
 
-**Out of scope (use `spanish.tsv` instead):** general vocabulary, conversational phrases, slang one-liners, proverbs as language cards, text abbreviations, and anything that is primarily “English prompt → Spanish answer” for daily speech.
+**Out of scope (use `spanish.tsv` instead):** general vocabulary, conversational phrases, slang one-liners, proverbs as language cards, and anything that is primarily “English prompt → Spanish answer” for daily speech.
 
 ## Card format (one item = one line)
 
@@ -40,15 +40,13 @@ name or prompt	English description
 - **Brands / local refs:** name → what it is
 - **Cultural gloss (in English):** only when defining a *thing* (e.g. `huachicol` as fuel theft phenomenon), not when the card is really a phrase to produce in Spanish
 
-Fix obvious typos from scratch notes; preserve intent. Skip section headers, empty lines, and personal meta-notes.
+## Workflow when adding cards
 
-## Workflow when the user adds material
-
-1. Open `data/decks/mexican.tsv` and find **trailing orphans** or raw scratch at the end.
+1. Open `data/decks/mexican.tsv` and append at the **tail**.
 2. Convert each item to **one tab-separated row** unless the user asks for splits.
-3. Prefer **name → description** over question format when the scratch list uses dish/place names.
+3. Prefer **name → description** over question format for dishes, places, and people.
 4. Route **slang, phrases, and speech** to `spanish.tsv`, not this deck.
-5. Do **not** rewrite unrelated rows; only extend or fix the tail.
+5. Do **not** rewrite unrelated rows unless asked.
 
 ## Quick reference example
 
