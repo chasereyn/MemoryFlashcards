@@ -28,7 +28,7 @@ See `STORAGE.md` for file format and sync behavior.
 - **Daily habit over marathons** — 25 cards/day cap on large decks; show up every day.
 - **Keep the long vocab list** — `spanish.tsv` is the big cob deck (~2900 cards); presentation may evolve, but the content stays.
 
-Root scratch files (`more_spanish_phrases.txt`, `stories_and_other.txt`, `Z_*.txt`) are **not** loaded by the app — reference/queue material only.
+Root scratch files (`Z_SPANISH.txt`, `Z_ENGLISH.txt`, `Z_SpanishVocab/`) are **not** loaded by the app — reference/queue material only.
 
 ## People & themes
 
@@ -54,11 +54,13 @@ Root scratch files (`more_spanish_phrases.txt`, `stories_and_other.txt`, `Z_*.tx
 
 | Deck | ~Cards | Notes |
 |------|--------|-------|
-| `spanish.tsv` | 5270+ | Main vocab cob list — one English prompt, one Spanish answer per line |
+| `spanish.tsv` | 5500+ | Main vocab cob list — one English prompt, one Spanish answer per line |
 | `verbs.tsv` | 379 | Grammar/conjugation blocks (hand-maintained; see README) |
 | `english.tsv` | 144 | English vocabulary — minimal-swap paired sentences (see `english` skill) |
 | `DOP.tsv` | 56 | Direct/indirect object pronouns |
-| `jokes.tsv` | 63 | |
+| `jokes.tsv` | 63 | English jokes |
+| `flirt.tsv` | 18 | Pick-up lines and flirting basics |
+| `chistes.tsv` | 9 | Spanish wordplay jokes |
 | `longphrases.tsv` | 5 | |
 | `lawsofpower.tsv` | 2 | |
 | `mexican.tsv` | 160+ | Mexican food, culture, geography, history, brands — English descriptions |

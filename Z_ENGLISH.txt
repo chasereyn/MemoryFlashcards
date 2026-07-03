@@ -15,20 +15,6 @@ soap: this cheese is really bad
 beauty and the beast
 I'm a lover not a fighter
 
-CHECKLIST
-English
-- flirting
-- idioms
-- insults
-- jokes
-- stories
-Spanish
-- flirting
-- idioms
-- insults
-- jokes
-- stories
-
 drank the kool aid yourself so thoroughout to be able to whip this one out
 
 it was a smash hit
@@ -109,7 +95,7 @@ vagaries
 ignoble
 to vaunt
 overt
-elusive, 
+elusive,
 discreet
 bestow
 monstrously
@@ -439,7 +425,7 @@ There was discord among the team
 He felt hopeless watching the building collapse
 He was in dismay as the building collapsed
 
-To talk down to 
+To talk down to
 Disparage
 
 Military philosophy
