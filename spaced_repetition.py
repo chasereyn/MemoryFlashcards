@@ -13,6 +13,7 @@ EASE_FACTOR_DECREASE_EASY = 0.05
 EASE_FACTOR_DECREASE_MEDIUM = 0.15
 EASE_FACTOR_DECREASE_HARD = 0.25
 BACKOFF_BASE = 1.5  # Exponential backoff multiplier
+DEFAULT_DAILY_LIMIT = 25  # Max new due cards introduced per deck per day
 
 
 def get_today() -> str:
@@ -163,9 +164,10 @@ def prioritize_cards(active_cards: List[Flashcard], due_cards: List[Flashcard]) 
     1. session_attempts (descending) - cards attempted more times first
     2. difficulty (descending) - struggling cards first
     
-    Due cards sorted by:
-    1. difficulty (descending) - struggling cards first
-    2. next_review (ascending, None first) - oldest due dates first
+    Due cards sorted in two groups (new cards first, then reviews):
+    1. New cards (never reviewed, next_review is None) — by difficulty descending
+    2. Review cards — by difficulty descending, then most recently due first
+       (cards that became due yesterday beat cards overdue since last year)
     """
     # Sort active cards
     active_sorted = sorted(
@@ -173,13 +175,18 @@ def prioritize_cards(active_cards: List[Flashcard], due_cards: List[Flashcard]) 
         key=lambda c: (c.session_attempts, c.difficulty),
         reverse=True
     )
-    
-    # Sort due cards
-    def due_sort_key(card: Flashcard):
-        next_rev = card.next_review if card.next_review else "0000-01-01"  # None comes first
-        return (-card.difficulty, next_rev)
-    
-    due_sorted = sorted(due_cards, key=due_sort_key)
+
+    new_cards = [c for c in due_cards if c.next_review is None]
+    review_cards = [c for c in due_cards if c.next_review is not None]
+
+    new_sorted = sorted(new_cards, key=lambda c: c.difficulty, reverse=True)
+    review_sorted = sorted(
+        review_cards,
+        key=lambda c: (c.difficulty, c.next_review or ""),
+        reverse=True,
+    )
+
+    due_sorted = new_sorted + review_sorted
     
     # Active cards first, then due cards
     return active_sorted + due_sorted
@@ -202,22 +209,50 @@ def reset_daily_flags(cards: List[Flashcard], last_session_date: Optional[str], 
             card.reset_session()
 
 
-def get_cards_for_review(cards: List[Flashcard], today: Optional[str] = None) -> List[Flashcard]:
+def get_deck_session_info(
+    cards: List[Flashcard],
+    today: Optional[str] = None,
+    daily_limit: int = DEFAULT_DAILY_LIMIT,
+) -> tuple[int, int]:
     """
-    Get all cards ready for review, properly prioritized.
-    Combines active cards (in session) and due cards (new session).
-    Active cards are excluded from due cards to prevent duplicates.
+    Return (today_count, backlog_count) for deck menu display.
+
+    today_count: cards that will enter today's session (active + capped due).
+    backlog_count: total due cards not yet scheduled for today (hidden by default in UI).
     """
     if today is None:
         today = get_today()
-    
+
     active = get_active_cards(cards)
     active_ids = {card.id for card in active}
-    
-    # Exclude active cards from due cards to prevent duplicates
     due = [card for card in get_due_cards(cards, today) if card.id not in active_ids]
-    
-    return prioritize_cards(active, due)
+    backlog_count = len(due)
+    today_count = len(active) + min(backlog_count, daily_limit)
+    return today_count, backlog_count
+
+
+def get_cards_for_review(
+    cards: List[Flashcard],
+    today: Optional[str] = None,
+    daily_limit: int = DEFAULT_DAILY_LIMIT,
+) -> List[Flashcard]:
+    """
+    Get cards ready for review, properly prioritized.
+
+    Active in-session cards are always included. Due cards are capped at
+    daily_limit (fixed pool for the day; no refill when cards complete).
+    """
+    if today is None:
+        today = get_today()
+
+    active = get_active_cards(cards)
+    active_ids = {card.id for card in active}
+
+    due = [card for card in get_due_cards(cards, today) if card.id not in active_ids]
+    prioritized_due = prioritize_cards([], due)
+
+    capped_due = prioritized_due[:daily_limit]
+    return prioritize_cards(active, capped_due)
 
 
 def is_card_in_session(card: Flashcard) -> bool:

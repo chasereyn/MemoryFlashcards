@@ -1,6 +1,6 @@
 ---
 name: english
-description: Expands trailing words or phrases in CCC `data/english.txt` into full flashcard blocks (gloss, headword, two parallel example lines) with a single minimal lexical swap. Use when editing the English deck, appending vocabulary to `english.txt`, or matching the project's minimal-swap paired-sentence pattern.
+description: Expands trailing words or phrases in MemoryFlashcards `data/english.txt` into full flashcard blocks (gloss, headword, two parallel example lines) with a single minimal lexical swap. Use when editing the English deck, appending vocabulary to `english.txt`, or matching the project's minimal-swap paired-sentence pattern.
 disable-model-invocation: true
 ---
 
@@ -8,7 +8,7 @@ disable-model-invocation: true
 
 ## Project context
 
-In the CCC flashcard app, `parser.py` builds cards from **consecutive non-empty lines**: line 1 = prompt, line 2 = answer, blank lines are skipped between pairs. Each logical "English deck" block therefore produces **two** synced cards: (gloss → headword) and (plain example → example with target).
+In the MemoryFlashcards app, `parser.py` builds cards from **consecutive non-empty lines**: line 1 = prompt, line 2 = answer, blank lines are skipped between pairs. Each logical "English deck" block therefore produces **two** synced cards: (gloss → headword) and (plain example → example with target).
 
 ## Block format (one vocabulary item)
 
