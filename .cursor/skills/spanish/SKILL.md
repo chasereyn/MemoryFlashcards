@@ -1,44 +1,54 @@
 ---
 name: spanish
-description: Converts trailing orphan words or phrases in MemoryFlashcards `data/spanish_vocab.txt` into parser-ready flashcard pairs (English prompt, Spanish answer, blank line between cards), matching the deck’s tone and punctuation. Use when appending vocabulary to `spanish_vocab.txt`, formatting a raw scratch list at the file tail, or syncing notes into the Spanish vocab deck.
+description: Converts trailing orphan words or phrases in MemoryFlashcards `data/decks/spanish.tsv` into TSV flashcard rows (English prompt, Spanish answer, one card per line), matching the deck's tone and punctuation. Use when appending vocabulary to spanish.tsv, formatting a raw scratch list at the file tail, or syncing notes into the main Spanish vocab deck.
 disable-model-invocation: true
 ---
 
-# Spanish vocab deck (`data/spanish_vocab.txt`)
+# Spanish vocab deck (`data/decks/spanish.tsv`)
 
 ## Project context
 
-The MemoryFlashcards app’s `parser.py` pairs **consecutive non-empty lines**: line 1 = **term** (shown as the English prompt in review), line 2 = **definition** (Spanish). Blank lines separate cards. There is **no** six-line minimal-swap pattern here—unlike `data/english.txt`, this file is strictly **one English line, one Spanish line, one blank line** per card.
+MemoryFlashcards stores deck content as **TSV** in `data/decks/`. Each line is one card:
 
-## Card format (one item)
+- Column 1 = **term** (English prompt shown in review)
+- Column 2 = **definition** (Spanish answer)
 
-1. **English** — word, gloss, or full sentence/question as the prompt (match neighboring cards: sentence case when the deck uses it; fragments allowed if the deck already uses them, e.g. trailing `...`).
-2. **Spanish** — natural translation or target line (see style rules below).
-3. **Blank line** before the next card.
+`parser.py` reads this file; review progress lives separately in `data/progress/spanish.tsv` (auto-managed — do not edit).
+
+There is **no** six-line minimal-swap pattern here — unlike `data/decks/english.tsv`, this deck is strictly **one English prompt + one Spanish answer per line**.
+
+## Card format (one item = one line)
+
+```
+English prompt	Spanish answer
+```
+
+- Optional header row: `term	definition`
+- **Append** new rows at the **tail** of the file
+- Use tab separation; if a field contains a tab, the CSV writer would quote it (rare)
 
 ## Spanish-side style (match the file)
 
-- **Phrases and fixed expressions:** often **lowercase** in this deck (e.g. `no tengo tiempo`, `espero no abrumarte`), unless Spanish convention clearly expects a leading **¿** / **¡** for questions or exclamations.
-- **Countable / lexical nouns:** usually include article where the English cue has one or where the deck uses `el` / `la` / `los` / `las` (`el buzón`, `la lluvia de ideas`).
-- **Adjectives** as glosses can appear **without** article if adjacent cards do (`lluvioso`, `profundo`, `empinado`).
-- **Political / group labels:** `los izquierdistas`, `los derechistas`; adjectives like `liberal`, `conservador` when the English cue is a single word label.
-- **Ambiguous English** (e.g. “update”): split into **two cards** with cues like `update (noun)` / `la actualización` and `to update` / `actualizar`, or one card with the dominant sense if the user prefers a single gloss—default to **noun + verb** when both are common in the wild.
+- **Phrases and fixed expressions:** often **lowercase** (e.g. `no tengo tiempo`, `espero no abrumarte`), unless **¿** / **¡** are required.
+- **Countable nouns:** usually include article where the English cue has one or the deck uses `el` / `la` / `los` / `las` (`el buzón`, `la lluvia de ideas`).
+- **Adjectives** as glosses can appear **without** article if adjacent cards do (`lluvioso`, `profundo`).
+- **Political / group labels:** `los izquierdistas`, `los derechistas`; adjectives like `liberal`, `conservador` for single-word labels.
+- **Ambiguous English** (e.g. “update”): split into **two rows** — `update (noun)	la actualización` and `to update	actualizar` — when both senses are common.
 
 ## Workflow when the user adds material at the end
 
-1. Open `data/spanish_vocab.txt` and find **trailing orphans**: consecutive English lines (or mixed notes) **without** a Spanish line paired on the next non-empty line in the usual pattern.
-2. For **each** orphan, **replace the scratch list** with full **two-line** pairs plus **blank lines** between cards.
-3. **Infer missing Spanish** that is concise, idiomatic, and appropriate to the project’s **Latin American–leaning** usage already visible in the deck (`manejar`, `pasale`, etc.). Prefer widely understood terms; if a term is region-sensitive (e.g. infrastructure vocabulary), pick a sensible default and optionally note alternates only when disambiguation matters to the user.
-4. **Light English cleanup** is allowed for clarity (e.g. fix `wont` → `won’t`, normalize “u” → “you” in study prompts) unless the user explicitly wants slang spellings preserved—when in doubt, keep their voice.
-5. Do **not** rewrite unrelated cards; only normalize the **tail** the user is extending (and fix duplicate paste errors only if the user asks).
+1. Open `data/decks/spanish.tsv` and find **trailing orphans**: English-only lines, mixed notes, or scratch without a paired Spanish column.
+2. For each orphan, **replace the scratch** with proper **tab-separated rows** (one card per line).
+3. **Infer missing Spanish** — concise, idiomatic, **Latin American–leaning** usage already in the deck (`manejar`, `pasale`, etc.).
+4. **Light English cleanup** is allowed (e.g. `wont` → `won't`) unless the user wants slang spellings preserved.
+5. Do **not** rewrite unrelated rows; only normalize the **tail** (fix duplicates only if asked).
 
 ## Quick reference example
 
 ```
-mailbox
-el buzón
-
-I'm joking
-estoy bromeando
-
+mailbox	el buzón
+I'm joking	estoy bromeando
+Who's laughing now?	¿quién se ríe ahora?
 ```
+
+After editing, `python main.py` syncs on startup — new rows get default progress; existing ids keep their review history.

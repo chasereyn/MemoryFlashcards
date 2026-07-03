@@ -1,6 +1,6 @@
 ---
 name: init
-description: Onboards agents to the MemoryFlashcards repo — personal Spanish flashcard system, architecture, content philosophy, decks, queues, and review algorithm. Use when the user runs /init or asks to get up to speed on this project.
+description: Onboards agents to the MemoryFlashcards repo — personal Spanish flashcard CLI, TSV storage, architecture, decks, review algorithm, and content philosophy. Use when the user runs /init or asks to get up to speed on this project.
 disable-model-invocation: true
 ---
 
@@ -10,106 +10,115 @@ When invoked, treat this skill as your baseline context for this repo. Do **not*
 
 ## What this repo is
 
-**MemoryFlashcards** is a **personal Spanish flashcard CLI** — not a generic language app. TSV files in `data/decks/` are the source of truth for card content; `data/progress/` stores review progress. Python 3.11+, **stdlib only**, no dependencies.
+**MemoryFlashcards** is a **personal Spanish flashcard CLI** — not a generic language app.
 
-Run: `python main.py` → pick a deck → review (English prompt → reveal Spanish → rate 1–4).
+- **Content:** TSV files in `data/decks/` (one card per line: `term\tdefinition`)
+- **Progress:** TSV files in `data/progress/` (review metadata, gitignored — user does not edit)
+- **Stack:** Python 3.11+, stdlib only, no dependencies
+
+Run: `python main.py` → pick a deck → English prompt → reveal Spanish → rate 1–4.
+
+See `STORAGE.md` for file format and sync behavior.
 
 ## Philosophy (owner intent)
 
-Read `README.md` for full detail. Core rules:
+- **Context over grammar** — whole phrases/stories, not rule drills.
+- **Personal over generic** — Sarah, family, Mexico trips, real stories they'll tell.
+- **Mexican Spanish** — natural MX choices, neutral register, light touch (no heavy slang).
+- **Daily habit over marathons** — 25 cards/day cap on large decks; show up every day.
+- **Keep the long vocab list** — `spanish.tsv` is the big cob deck (~2900 cards); presentation may evolve, but the content stays.
 
-- **Context over grammar** — memorize whole phrases/stories, not rules.
-- **Essentials over volume** — daily phrases they'll actually say, not vocab hoarding.
-- **Personal over generic** — stories about the owner's life, Sarah, family, Mexico trips — things they'll really tell people.
-- **Mexican Spanish** — light touch, natural MX choices, neutral register, no heavy slang.
-- **Thin decks** — ~10–20 active cards per deck; quality beats quantity.
-
-**Daily rhythm:** 5–10 phrases + 1 personal story. Scratch in queue files, merge into decks when translated.
+Root scratch files (`more_spanish_phrases.txt`, `stories_and_other.txt`, `mexican_stuff.txt`, `Z_*.txt`) are **not** loaded by the app — reference/queue material only.
 
 ## People & themes
 
 - **Sarah** — girlfriend, Mexico City; **tú** for phrases to her.
 - **Her parents (especially mom)** — in-laws in Mexico; **usted** for questions to/about them.
-- **Themes:** family history, CDMX/Sinaloa trips, house visits, couple expectations, food, feelings, small talk, work/life stories.
-
-For translation register and deck formatting rules, use the **`translate`** skill (`.cursor/skills/translate/SKILL.md`) — do not duplicate those rules here unless the task is translation.
+- **Themes:** family, CDMX/Sinaloa trips, food, feelings, couple life, work stories.
 
 ## Architecture
 
 | File | Role |
 |------|------|
 | `main.py` | Entry point, deck menu, review session, rating UI, in-session re-insertion |
-| `parser.py` | Parses `data/*.txt` → flashcards (consecutive non-empty line pairs; MD5 id from `term\|definition`) |
-| `flashcard.py` | Card model + JSON serialization |
-| `spaced_repetition.py` | Session-based SRS (not Anki SM-2) |
-| `storage.py` | Load/save JSON, sync text → JSON on startup |
-| `test_algorithm.py` | Tests for SRS logic |
+| `parser.py` | Parses `data/decks/*.tsv` → flashcards (MD5 id from `term\|definition`) |
+| `flashcard.py` | Card model + serialization helpers |
+| `spaced_repetition.py` | Session-based SRS, daily limit, queue prioritization |
+| `storage.py` | Load/save progress TSV, sync content ↔ progress on startup |
+| `test_algorithm.py` | SRS logic tests |
+| `test_sync.py` | Sync tests (critical — run after storage changes) |
 
-**Sync behavior** (`storage.sync_all_decks` on startup): preserve cards in both text + JSON (keeps progress), add new from text, remove deleted from text.
+**Sync** (`storage.sync_all_decks` on startup): preserve progress for matching ids, add new cards from deck TSV, remove deleted cards.
 
-## Decks & content files
+## Active decks (`data/decks/`)
 
-| Path | Purpose |
-|------|---------|
-| `data/spanish_phrases.txt` | Short phrases — **full English line** as prompt |
-| `data/spanish_stories.txt` | Personal stories — **2–3 word trigger** as prompt, full Spanish paragraph as answer |
-| `data/decks/spanish_phrases.json` | Review metadata for phrases |
-| `data/decks/spanish_stories.json` | Review metadata for stories |
-| `PhrasesQueue.txt` | Scratch — English phrase ideas awaiting translation |
-| `StoriesQueue.txt` | Scratch — story ideas awaiting translation |
+| Deck | ~Cards | Notes |
+|------|--------|-------|
+| `spanish.tsv` | 2900+ | Main vocab cob list — one English prompt, one Spanish answer per line |
+| `verbs.tsv` | 379 | Grammar/conjugation blocks (hand-maintained; see README) |
+| `english.tsv` | 144 | English vocabulary — minimal-swap paired sentences (see `english` skill) |
+| `DOP.tsv` | 56 | Direct/indirect object pronouns |
+| `jokes.tsv` | 63 | |
+| `longphrases.tsv` | 5 | |
+| `lawsofpower.tsv` | 2 | |
 
-**Card format** (both decks):
+Only `data/decks/*.tsv` become decks. Progress mirrors deck names in `data/progress/`.
+
+## Card format (default deck)
 
 ```
-English prompt
-Spanish answer
-
-Next English prompt
-Next Spanish answer
+term	definition
+Roof	Tejado
+I'm joking	estoy bromeando
 ```
 
-Only `data/*.txt` files become decks. Root files like `LatinArtists.txt`, `spanish_foods.txt` are reference lists, not wired into the app.
+Header row `term\tdefinition` is optional. Append new rows at the **tail** only unless asked otherwise.
 
-## Review algorithm (session-based)
+## Review algorithm
 
-Unlike SM-2, cards must **finish the session** before long-term scheduling applies.
+Session-based (not Anki SM-2). Cards must **finish the session** (reach rating 4) before long-term scheduling applies.
 
 **Ratings:** 1=Hard, 2=Medium-Hard, 3=Medium, 4=Easy (session complete).
 
 **Session rules:**
-- Must progress **1 → 2 → 3 → 4** within a session (can drop back to 1; then climb again).
-- Ratings **1–3** keep the card in session; only **4** removes it for today.
-- **First rating** drives long-term metadata when you finally hit 4 — not the last rating.
-- Re-insertion uses **fixed distances** (not % of deck size):
+- Progress **1 → 2 → 3 → 4** within a session (can drop back to 1).
+- Ratings **1–3** keep the card in session; only **4** completes it for today.
+- **First rating** drives long-term metadata when you hit 4 — not the last rating.
+- Re-insertion (fixed distances, not % of deck):
   - **1:** random position 2–5 ahead
   - **2:** 10–25 cards ahead
   - **3:** 20–40 cards ahead
   - **4:** done; exponential backoff on consecutive easy sessions
 
-**Prioritization:** active session cards (struggling) first, then due cards by difficulty and age.
+**Daily limit:** `DEFAULT_DAILY_LIMIT = 25` in `spaced_repetition.py`. Max **25 new due cards** introduced per deck per day (fixed pool; no refill when one completes). Active in-session cards always included. Reinsertions from 1–3 do not consume extra slots.
+
+**Queue priority:** active session → **new cards** (never reviewed) → recently due reviews → oldest backlog.
+
+**Deck menu:** shows `Today: N` and `Total: N`. Set `SHOW_BACKLOG_IN_MENU = True` in `main.py` to also show overdue backlog count.
 
 ## How to help
 
-- **Extend content** at the **tail** only — do not rewrite existing cards unless asked.
-- **Translate** queue/deck orphans with `/translate` skill.
-- **Code changes:** match existing style; minimal diffs; no over-engineering.
+- **Extend content** at the **tail** of deck TSV files — do not rewrite existing cards unless asked.
+- **Spanish vocab:** use the `spanish` skill for `data/decks/spanish.tsv`.
+- **English vocab:** use the `english` skill for `data/decks/english.tsv`.
+- **Code:** match existing style; minimal diffs; no over-engineering.
 - **Windows:** PowerShell — chain with `;`, not `&&`.
 - **Git:** commit only when explicitly asked.
 
 ## Do not
 
-- Re-add deleted bloat (old english vocab decks, joke decks, technical word lists, endless single-word cards).
-- Split into grammar exercises or vocab-count optimization.
+- Edit files in `data/progress/` by hand.
+- Re-add removed bloat decks without being asked.
 - Bulk-rewrite register (tú/usted) on old cards without being asked.
-- Add new deck types unless the user asks (README mentions optional future decks: flirting, insults, idioms — only after essentials are solid).
 
 ## Related skills
 
 | Skill | When |
 |-------|------|
-| `translate` | Adding/translating phrase or story cards |
+| `spanish` | Appending/formatting `data/decks/spanish.tsv` |
+| `english` | Appending/formatting `data/decks/english.tsv` |
 | `init` | This file — project orientation |
 
 ## After /init
 
-Reply briefly that you understand MemoryFlashcards and are ready. Mention you know: personal Spanish decks, two active decks, queue → translate → merge workflow, session SRS, and tail-only edits. Ask what they want to work on.
+Reply briefly that you understand MemoryFlashcards and are ready. Mention: TSV decks in `data/decks/`, progress in `data/progress/`, session SRS with 25/day cap, and tail-only edits. Ask what they want to work on.
