@@ -26,10 +26,10 @@ That's it! No setup required—just add your vocabulary and run the program.
 
 The system automatically syncs deck content (`.tsv`) with progress storage on startup. It:
 - **Preserves** cards that exist in both (keeps your progress and review history)
-- **Adds** new cards from text files
-- **Removes** cards that you've deleted from text files
+- **Adds** new cards from deck TSV files
+- **Removes** cards that you've deleted from deck TSV files
 
-Your review progress is never lost—only the source content (text files) is synced, while all learning metadata stays intact.
+Your review progress is never lost—only the source content (deck TSV) is synced, while all learning metadata stays intact.
 
 ### Session-Based Algorithm
 
@@ -55,41 +55,59 @@ Unlike traditional spaced repetition systems (like Anki's SM-2), this uses a **s
 
 **Adaptive Difficulty Tracking** - Struggle history is tracked separately from intervals, ensuring difficult material gets frequent reviews even when intervals suggest otherwise.
 
-**Daily Session Limit** - Large decks cap at **25 cards introduced per day** (configurable via `DEFAULT_DAILY_LIMIT` in `spaced_repetition.py`). Active in-session cards are always included; reinsertions from ratings 1–3 do not pull extra cards from the backlog. Remaining due cards stay queued for future days — show up daily rather than marathon sessions. Set `SHOW_BACKLOG_IN_MENU = True` in `main.py` to display the full overdue count in the deck menu.
+**Daily Session Limit** - Each deck introduces at most **10 due cards per day** (configurable via `DEFAULT_DAILY_LIMIT` in `spaced_repetition.py`). Active in-session cards are always included; reinsertions from ratings 1–3 do not pull extra cards from the backlog. Remaining due cards stay queued for future days — show up daily rather than marathon sessions. Set `SHOW_BACKLOG_IN_MENU = True` in `main.py` to display the full overdue count in the deck menu.
+
+## Decks
+
+All decks live in `data/decks/` as `*.tsv` files. Main decks:
+
+| Deck | Purpose |
+|------|---------|
+| `spanish.tsv` | Main vocabulary — English prompt → Spanish answer |
+| `verbs.tsv` | Grammar constructions — full example sentences |
+| `english.tsv` | English vocabulary — minimal-swap paired sentences |
+| `mexican.tsv` | Mexican food, culture, geography — English descriptions |
+| `numbers.tsv` | Digits 1–100 → Spanish number words |
+| `DOP.tsv` | Direct/indirect object pronoun drills |
+| `flirt.tsv`, `jokes.tsv`, `chistes.tsv` | Couple talk, English jokes, Spanish wordplay |
+| `lawsofpower.tsv`, `longphrases.tsv` | Side decks |
+
+Progress mirrors deck names in `data/progress/` (auto-managed, gitignored).
 
 ## Verbs deck
 
-`data/decks/verbs.tsv` is **hand-maintained** (nothing in `main.py` overwrites it). It contains topic blocks you add over time: e.g. preterite (yo / 3sg / 3pl / tú-questions), then optional grammar-pattern blocks (**llevar** + gerund, **seguir** + gerund, **acabar de** + infinitive, **soler** + infinitive, etc.).
+`data/decks/verbs.tsv` is **hand-maintained**. Cards are grouped by **construction** (preterite sampler, imperfect, subjunctive triggers, accidental se, etc.) — not by conjugation grids.
 
-**When adding a new construction block (for you or a future editor):**
+When adding a new construction block:
 
-- Use `verbs.csv` as the **lemma list**; pick **~20** verbs that sound **natural** with that pattern. Skip odd collocations.
-- **Append** new pairs to the end of `data/decks/verbs.tsv`—**do not** delete or replace existing blocks.
-- **Format** matches other decks: one line English (prompt), one line Spanish (answer), blank line between cards.
-- **Vary** subjects (I, tú, él/ella, we, they, inanimate “subject”), and mix in **DOP/IO** and **reflexive** clitics when the pattern allows.
-- Reuse the same **short narrative style** as earlier cards in the file so the deck stays consistent.
+- Pick verbs from `full_verb_list.txt` that sound **natural** with that pattern.
+- **Append** new rows at the end — blank lines between blocks are fine.
+- One English prompt, one Spanish answer per line.
+- Vary subjects and mix in clitics where the pattern allows.
+- Match the short narrative style already in the file.
 
-## English deck (`data/english.txt`)
+## English deck
 
-Cards often use a gloss, headword, then **two example lines**. Prefer the **same sentence** twice: first with a plain word or phrase, second with only the **headword** (or fixed idiom) substituted in. Full rewrites train a second line from scratch; **minimal swaps** train actually using the word in a familiar frame.
+`data/decks/english.tsv` uses **two TSV rows per vocabulary item**: gloss → headword, then a plain example sentence → the same sentence with only the headword swapped in. See `.cursor/skills/english/SKILL.md` for the full pattern.
 
 ## File Structure
 
 ```
 data/
-  ├── decks/
-  │   ├── spanish_vocab.tsv     # Deck content — edit this (one card per line)
-  │   └── verbs.tsv
-  └── progress/                 # Review state (auto-managed, gitignored)
-      ├── spanish_vocab.tsv
-      └── verbs.tsv
+  ├── decks/           # Deck content — edit these (one card per line)
+  │   ├── spanish.tsv
+  │   ├── verbs.tsv
+  │   └── ...
+  └── progress/        # Review state (auto-managed, gitignored)
+      ├── spanish.tsv
+      ├── verbs.tsv
+      └── ...
 ```
 
-Edit files in `data/decks/` to add or remove cards. Progress in `data/progress/` is managed automatically.
+Edit files in `data/decks/` to add or remove cards. Progress in `data/progress/` is managed automatically on startup.
 
 ## Requirements
 
 - Python 3.11+
 
 No dependencies required—uses only Python standard library.
-

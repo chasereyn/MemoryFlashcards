@@ -132,13 +132,13 @@ def test_daily_limit_caps_due_cards():
     ]
     all_cards = [active] + due_cards
 
-    review = get_cards_for_review(all_cards, today, daily_limit=25)
+    review = get_cards_for_review(all_cards, today, daily_limit=10)
 
     assert review[0].id == "active", "Active card should come first"
-    assert len(review) == 26, "Should include all active + 25 due cards"
+    assert len(review) == 11, "Should include all active + 10 due cards"
     due_in_review = [c for c in review if c.id != "active"]
-    assert len(due_in_review) == 25, "Should cap due cards at daily limit"
-    assert len({c.id for c in due_in_review}) == 25, "Due cards in session should be unique"
+    assert len(due_in_review) == 10, "Should cap due cards at daily limit"
+    assert len({c.id for c in due_in_review}) == 10, "Due cards in session should be unique"
     print("PASSED\n")
 
 
@@ -152,9 +152,9 @@ def test_deck_session_info():
         for i in range(100)
     ]
 
-    today_count, backlog = get_deck_session_info(due_cards, today, daily_limit=25)
+    today_count, backlog = get_deck_session_info(due_cards, today, daily_limit=10)
 
-    assert today_count == 25, "Today count should be capped at daily limit"
+    assert today_count == 10, "Today count should be capped at daily limit"
     assert backlog == 100, "Backlog should reflect all due cards"
     print("PASSED\n")
 

@@ -6,7 +6,7 @@ disable-model-invocation: true
 
 # MemoryFlashcards — Project Init
 
-When invoked, treat this skill as your baseline context for this repo. Do **not** re-explore from scratch unless the user asks or you need fresh file contents. Confirm you are oriented, then wait for the user's task.
+When invoked, treat this skill as your baseline context for this repo. Confirm you are oriented, then wait for the user's task.
 
 ## What this repo is
 
@@ -18,17 +18,15 @@ When invoked, treat this skill as your baseline context for this repo. Do **not*
 
 Run: `python main.py` → pick a deck → English prompt → reveal Spanish → rate 1–4.
 
-See `STORAGE.md` for file format and sync behavior.
+See `README.md` for file format, sync behavior, and deck overview.
 
 ## Philosophy (owner intent)
 
 - **Context over grammar** — whole phrases/stories, not rule drills.
 - **Personal over generic** — Sarah, family, Mexico trips, real stories they'll tell.
 - **Mexican Spanish** — natural MX choices, neutral register, light touch (no heavy slang).
-- **Daily habit over marathons** — 25 cards/day cap on large decks; show up every day.
-- **Keep the long vocab list** — `spanish.tsv` is the big cob deck (~8000 cards); presentation may evolve, but the content stays.
-
-Root scratch files (`Z_SpanishVocab/`) are **not** loaded by the app — reference/queue material only. (`Z_SPANISH.txt` and `Z_ENGLISH.txt` were merged into decks and deleted.)
+- **Daily habit over marathons** — 10 cards/day per deck; show up every day.
+- **Keep the long vocab list** — `spanish.tsv` is the main cob deck (~8000 cards).
 
 ## People & themes
 
@@ -54,17 +52,17 @@ Root scratch files (`Z_SpanishVocab/`) are **not** loaded by the app — referen
 
 | Deck | ~Cards | Notes |
 |------|--------|-------|
-| `spanish.tsv` | 8250+ | Main vocab cob list — one English prompt, one Spanish answer per line |
-| `verbs.tsv` | 370 | Grammar/conjugation — construction-first example sentences |
-| `english.tsv` | 375+ | English vocabulary — minimal-swap paired sentences (see `english` skill) |
+| `spanish.tsv` | 8000+ | Main vocab — one English prompt, one Spanish answer per line |
+| `verbs.tsv` | 370 | Construction-first grammar example sentences |
+| `english.tsv` | 530+ | English vocabulary — minimal-swap paired sentences (see `english` skill) |
 | `DOP.tsv` | 56 | Direct/indirect object pronouns |
 | `numbers.tsv` | 100 | Spanish numbers 1–100 (digit → Spanish) |
-| `jokes.tsv` | 195+ | English jokes |
+| `jokes.tsv` | 210+ | English jokes |
 | `flirt.tsv` | 60 | Pick-up lines, pet names, couple talk |
 | `chistes.tsv` | 40 | Spanish wordplay jokes |
-| `longphrases.tsv` | 5 | |
+| `longphrases.tsv` | 5 | Memorized quotes and long phrases |
 | `lawsofpower.tsv` | 48 | The 48 Laws of Power (number → law) |
-| `mexican.tsv` | 158 | Mexican food, culture, traditions, geography, history, brands (English descriptions — not phrase deck) |
+| `mexican.tsv` | 158 | Mexican food, culture, traditions, geography, history, brands (English descriptions) |
 
 Only `data/decks/*.tsv` become decks. Progress mirrors deck names in `data/progress/`.
 
@@ -94,9 +92,9 @@ Session-based (not Anki SM-2). Cards must **finish the session** (reach rating 4
   - **3:** 20–40 cards ahead
   - **4:** done; exponential backoff on consecutive easy sessions
 
-**Daily limit:** `DEFAULT_DAILY_LIMIT = 25` in `spaced_repetition.py`. Max **25 new due cards** introduced per deck per day (fixed pool; no refill when one completes). Active in-session cards always included. Reinsertions from 1–3 do not consume extra slots.
+**Daily limit:** `DEFAULT_DAILY_LIMIT = 10` in `spaced_repetition.py`. Max **10 new due cards** introduced per deck per day (fixed pool; no refill when one completes). Active in-session cards always included. Reinsertions from 1–3 do not consume extra slots.
 
-**Queue order:** active session (struggling first) → **shuffled due cards** (daily cap 25).
+**Queue order:** active session (struggling first) → **shuffled due cards** (daily cap 10).
 
 **Deck menu:** shows `Today: N` and `Total: N`. Set `SHOW_BACKLOG_IN_MENU = True` in `main.py` to also show overdue backlog count.
 
@@ -113,7 +111,6 @@ Session-based (not Anki SM-2). Cards must **finish the session** (reach rating 4
 ## Do not
 
 - Edit files in `data/progress/` by hand.
-- Re-add removed bloat decks without being asked.
 - Bulk-rewrite register (tú/usted) on old cards without being asked.
 
 ## Related skills
@@ -127,4 +124,4 @@ Session-based (not Anki SM-2). Cards must **finish the session** (reach rating 4
 
 ## After /init
 
-Reply briefly that you understand MemoryFlashcards and are ready. Mention: TSV decks in `data/decks/`, progress in `data/progress/`, session SRS with 25/day cap, and tail-only edits. Ask what they want to work on.
+Reply briefly that you understand MemoryFlashcards and are ready. Mention: TSV decks in `data/decks/`, progress in `data/progress/`, session SRS with 10/day cap per deck, and tail-only edits. Ask what they want to work on.

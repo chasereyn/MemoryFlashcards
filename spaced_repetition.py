@@ -14,7 +14,7 @@ EASE_FACTOR_DECREASE_EASY = 0.05
 EASE_FACTOR_DECREASE_MEDIUM = 0.15
 EASE_FACTOR_DECREASE_HARD = 0.25
 BACKOFF_BASE = 1.5  # Exponential backoff multiplier
-DEFAULT_DAILY_LIMIT = 25  # Max new due cards introduced per deck per day
+DEFAULT_DAILY_LIMIT = 10  # Max new due cards introduced per deck per day
 
 
 def get_today() -> str:

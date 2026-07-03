@@ -37,7 +37,7 @@ Review progress is in `data/progress/english.tsv` — do not edit.
 
 ## Workflow when the user adds material at the end
 
-1. Open `data/decks/english.tsv` and find **trailing headwords** or rough notes after the last complete block.
+1. Open `data/decks/english.tsv` and append after the last complete block.
 2. For each item, add **two tab-separated rows** per the format above.
 3. **Match the deck's voice:** concise glosses, neutral tone, same capitalization/punctuation as neighbors.
 4. Do **not** change unrelated rows; only extend or fix the tail.
