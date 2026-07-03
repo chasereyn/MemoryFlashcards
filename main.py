@@ -5,21 +5,26 @@ from storage import (
     ensure_data_directory, 
     get_last_session_date,
     sync_all_decks,
-    get_text_files,
+    get_deck_files,
+    deck_progress_path,
     get_deck_name_from_file
 )
 from spaced_repetition import (
     update_card_after_review,
     get_cards_for_review,
+    get_deck_session_info,
     reset_daily_flags,
     get_today,
 )
 import random
 
+# Set True to show overdue backlog in the deck menu (e.g. "Backlog: 523")
+SHOW_BACKLOG_IN_MENU = False
+
 
 def initialize(deck_name: str):
     """Load cards for a specific deck from JSON file."""
-    json_path = f"data/decks/{deck_name}.json"
+    json_path = deck_progress_path(deck_name)
     cards = load_cards(json_path)
     
     if not cards:
@@ -92,7 +97,7 @@ def review_session(cards, filepath):
     
     if not review_cards:
         print("\n" + "=" * 60)
-        print("No cards due for review!")
+        print("No cards ready for today!")
         print("=" * 60)
         return
     
@@ -221,8 +226,8 @@ def review_session(cards, filepath):
 
 def get_available_decks():
     """Get list of available deck names from text files."""
-    text_files = get_text_files()
-    deck_names = [get_deck_name_from_file(f) for f in text_files]
+    deck_files = get_deck_files()
+    deck_names = [get_deck_name_from_file(f) for f in deck_files]
     return sorted(deck_names)
 
 
@@ -232,16 +237,16 @@ def select_deck():
     deck_names = get_available_decks()
     
     if not deck_names:
-        print("No decks found. Add .txt files to the data/ directory.")
+        print("No decks found. Add .tsv files to the data/decks/ directory.")
         return None
     
     # Get today's date for calculating due cards
     today = get_today()
     
-    # Calculate deck info (due cards and total cards)
+    # Calculate deck info for menu display
     deck_info = []
     for deck_name in deck_names:
-        json_path = f"data/decks/{deck_name}.json"
+        json_path = deck_progress_path(deck_name)
         cards = load_cards(json_path)
         total_count = len(cards)
         
@@ -249,28 +254,30 @@ def select_deck():
         last_session_date = get_last_session_date(json_path)
         reset_daily_flags(cards, last_session_date, today)
         
-        # Get cards due for review
-        due_cards = get_cards_for_review(cards, today)
-        due_count = len(due_cards)
+        today_count, backlog_count = get_deck_session_info(cards, today)
         
         deck_info.append({
             'name': deck_name,
-            'due': due_count,
+            'today': today_count,
+            'backlog': backlog_count,
             'total': total_count
         })
     
     # Find max widths for formatting
     max_name_len = max(len(info['name']) for info in deck_info) if deck_info else 0
-    max_due_digits = max(len(str(info['due'])) for info in deck_info) if deck_info else 0
+    max_today_digits = max(len(str(info['today'])) for info in deck_info) if deck_info else 0
     max_total_digits = max(len(str(info['total'])) for info in deck_info) if deck_info else 0
     
     # Show deck selection with formatted columns (right-aligned numbers)
     print("\nAvailable decks:")
     for i, info in enumerate(deck_info, 1):
         name_padding = ' ' * (max_name_len - len(info['name']))
-        due_str = str(info['due']).rjust(max_due_digits)
+        today_str = str(info['today']).rjust(max_today_digits)
         total_str = str(info['total']).rjust(max_total_digits)
-        print(f"  {i:2d}. {info['name']}{name_padding}    Due: {due_str}    Total: {total_str}")
+        line = f"  {i:2d}. {info['name']}{name_padding}    Today: {today_str}    Total: {total_str}"
+        if SHOW_BACKLOG_IN_MENU:
+            line += f"    Backlog: {info['backlog']}"
+        print(line)
     print("\nType 'exit' to exit")
     
     while True:
@@ -322,7 +329,7 @@ def main():
     sync_all_decks()
     
     print("\n" + "=" * 60)
-    print("Flashcard Program")
+    print("MemoryFlashcards")
     print("=" * 60)
     
     while True:

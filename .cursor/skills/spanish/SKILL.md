@@ -1,6 +1,6 @@
 ---
 name: spanish
-description: Converts trailing orphan words or phrases in CCC `data/spanish_vocab.txt` into parser-ready flashcard pairs (English prompt, Spanish answer, blank line between cards), matching the deck’s tone and punctuation. Use when appending vocabulary to `spanish_vocab.txt`, formatting a raw scratch list at the file tail, or syncing notes into the Spanish vocab deck.
+description: Converts trailing orphan words or phrases in MemoryFlashcards `data/spanish_vocab.txt` into parser-ready flashcard pairs (English prompt, Spanish answer, blank line between cards), matching the deck’s tone and punctuation. Use when appending vocabulary to `spanish_vocab.txt`, formatting a raw scratch list at the file tail, or syncing notes into the Spanish vocab deck.
 disable-model-invocation: true
 ---
 
@@ -8,7 +8,7 @@ disable-model-invocation: true
 
 ## Project context
 
-The CCC app’s `parser.py` pairs **consecutive non-empty lines**: line 1 = **term** (shown as the English prompt in review), line 2 = **definition** (Spanish). Blank lines separate cards. There is **no** six-line minimal-swap pattern here—unlike `data/english.txt`, this file is strictly **one English line, one Spanish line, one blank line** per card.
+The MemoryFlashcards app’s `parser.py` pairs **consecutive non-empty lines**: line 1 = **term** (shown as the English prompt in review), line 2 = **definition** (Spanish). Blank lines separate cards. There is **no** six-line minimal-swap pattern here—unlike `data/english.txt`, this file is strictly **one English line, one Spanish line, one blank line** per card.
 
 ## Card format (one item)
 

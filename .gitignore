@@ -9,5 +9,6 @@ wheels/
 # Virtual environments
 .venv
 
-# Deck syncs
-data/decks/
+# Local review progress (generated from deck sync + sessions)
+data/progress/
+data/decks/*.json

@@ -6,6 +6,7 @@ from spaced_repetition import (
     get_due_cards,
     prioritize_cards,
     get_cards_for_review,
+    get_deck_session_info,
     get_today
 )
 
@@ -114,6 +115,70 @@ def test_multiple_ratings_before_4():
     print("PASSED\n")
 
 
+def test_daily_limit_caps_due_cards():
+    """Test that daily limit caps due cards but always includes active cards."""
+    print("Test 6: Daily limit caps due cards")
+    today = get_today()
+
+    active = Flashcard(id="active", term="Active", definition="Answer")
+    active.first_rating = 1
+    active.session_attempts = 1
+    active.completed_today = False
+
+    due_cards = [
+        Flashcard(id=f"due{i}", term=f"Due {i}", definition="Answer", next_review=today)
+        for i in range(50)
+    ]
+    all_cards = [active] + due_cards
+
+    review = get_cards_for_review(all_cards, today, daily_limit=25)
+
+    assert review[0].id == "active", "Active card should come first"
+    assert len(review) == 26, "Should include all active + 25 due cards"
+    assert all(c.id != "due49" for c in review), "Cards beyond daily limit should be excluded"
+    print("PASSED\n")
+
+
+def test_deck_session_info():
+    """Test today vs backlog counts for deck menu."""
+    print("Test 7: Deck session info counts")
+    today = get_today()
+
+    due_cards = [
+        Flashcard(id=f"due{i}", term=f"Due {i}", definition="Answer", next_review=today)
+        for i in range(100)
+    ]
+
+    today_count, backlog = get_deck_session_info(due_cards, today, daily_limit=25)
+
+    assert today_count == 25, "Today count should be capped at daily limit"
+    assert backlog == 100, "Backlog should reflect all due cards"
+    print("PASSED\n")
+
+
+def test_new_cards_before_old_reviews():
+    """Test that new cards are queued before old overdue reviews."""
+    print("Test 8: New cards prioritized before old reviews")
+    today = get_today()
+
+    old_review = Flashcard(
+        id="old", term="Old", definition="Answer",
+        next_review="2024-01-01", difficulty=0,
+    )
+    recent_review = Flashcard(
+        id="recent", term="Recent", definition="Answer",
+        next_review="2026-07-01", difficulty=0,
+    )
+    new_card = Flashcard(id="new", term="New", definition="Answer")
+
+    due = prioritize_cards([], [old_review, recent_review, new_card])
+
+    assert due[0].id == "new", "New card should come first"
+    assert due[1].id == "recent", "Recently due should beat ancient backlog"
+    assert due[2].id == "old", "Oldest overdue should be last"
+    print("PASSED\n")
+
+
 if __name__ == "__main__":
     print("=" * 60)
     print("Testing Spaced Repetition Algorithm")
@@ -126,6 +191,9 @@ if __name__ == "__main__":
         test_rating_4_immediate_easy()
         test_priority_sorting()
         test_multiple_ratings_before_4()
+        test_daily_limit_caps_due_cards()
+        test_deck_session_info()
+        test_new_cards_before_old_reviews()
         
         print("=" * 60)
         print("All tests passed!")

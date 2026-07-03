@@ -1,16 +1,14 @@
-# CCC - Flashcard Learning System
+# MemoryFlashcards
 
-A spaced repetition flashcard system with automatic syncing and a unique session-based algorithm designed for effective vocabulary learning.
+A personal spaced-repetition flashcard CLI with automatic syncing and a session-based review algorithm, built for effective vocabulary and phrase learning.
 
 ## Quick Start
 
-1. **Add your vocabulary**: Create text files (`.txt`) in the `data/` directory. Each file represents a deck. Format: term and definition on consecutive lines:
+1. **Add your vocabulary**: Create TSV files in `data/decks/`. One card per line — tab-separated prompt and answer:
    ```
-   Roof
-   Tejado
-   
-   Step aside!
-   Golpe avisa!
+   term	definition
+   Roof	Tejado
+   Step aside!	Golpe avisa!
    ```
 
 2. **Run the program**:
@@ -26,7 +24,7 @@ That's it! No setup required—just add your vocabulary and run the program.
 
 ### Automatic Syncing
 
-The system automatically syncs your text files with JSON storage on startup. It:
+The system automatically syncs deck content (`.tsv`) with progress storage on startup. It:
 - **Preserves** cards that exist in both (keeps your progress and review history)
 - **Adds** new cards from text files
 - **Removes** cards that you've deleted from text files
@@ -57,14 +55,16 @@ Unlike traditional spaced repetition systems (like Anki's SM-2), this uses a **s
 
 **Adaptive Difficulty Tracking** - Struggle history is tracked separately from intervals, ensuring difficult material gets frequent reviews even when intervals suggest otherwise.
 
+**Daily Session Limit** - Large decks cap at **25 cards introduced per day** (configurable via `DEFAULT_DAILY_LIMIT` in `spaced_repetition.py`). Active in-session cards are always included; reinsertions from ratings 1–3 do not pull extra cards from the backlog. Remaining due cards stay queued for future days — show up daily rather than marathon sessions. Set `SHOW_BACKLOG_IN_MENU = True` in `main.py` to display the full overdue count in the deck menu.
+
 ## Verbs deck
 
-`data/verbs.txt` is **hand-maintained** (nothing in `main.py` overwrites it). It contains topic blocks you add over time: e.g. preterite (yo / 3sg / 3pl / tú-questions), then optional grammar-pattern blocks (**llevar** + gerund, **seguir** + gerund, **acabar de** + infinitive, **soler** + infinitive, etc.).
+`data/decks/verbs.tsv` is **hand-maintained** (nothing in `main.py` overwrites it). It contains topic blocks you add over time: e.g. preterite (yo / 3sg / 3pl / tú-questions), then optional grammar-pattern blocks (**llevar** + gerund, **seguir** + gerund, **acabar de** + infinitive, **soler** + infinitive, etc.).
 
 **When adding a new construction block (for you or a future editor):**
 
 - Use `verbs.csv` as the **lemma list**; pick **~20** verbs that sound **natural** with that pattern. Skip odd collocations.
-- **Append** new pairs to the end of `data/verbs.txt`—**do not** delete or replace existing blocks.
+- **Append** new pairs to the end of `data/decks/verbs.tsv`—**do not** delete or replace existing blocks.
 - **Format** matches other decks: one line English (prompt), one line Spanish (answer), blank line between cards.
 - **Vary** subjects (I, tú, él/ella, we, they, inanimate “subject”), and mix in **DOP/IO** and **reflexive** clitics when the pattern allows.
 - Reuse the same **short narrative style** as earlier cards in the file so the deck stays consistent.
@@ -77,15 +77,15 @@ Cards often use a gloss, headword, then **two example lines**. Prefer the **same
 
 ```
 data/
-  ├── spanish_vocab.txt        # Your text decks
-  ├── english_jokes.txt
-  ├── verbs.txt                 # Verbs / grammar (hand-maintained; see "Verbs deck" above)
-  └── decks/
-      ├── spanish_vocab.json    # Auto-generated (don't edit)
-      └── english_jokes.json
+  ├── decks/
+  │   ├── spanish_vocab.tsv     # Deck content — edit this (one card per line)
+  │   └── verbs.tsv
+  └── progress/                 # Review state (auto-managed, gitignored)
+      ├── spanish_vocab.tsv
+      └── verbs.tsv
 ```
 
-Edit the text files to add or remove vocabulary. The JSON files are automatically managed by the sync system.
+Edit files in `data/decks/` to add or remove cards. Progress in `data/progress/` is managed automatically.
 
 ## Requirements
 
