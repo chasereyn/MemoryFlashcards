@@ -26,9 +26,9 @@ See `STORAGE.md` for file format and sync behavior.
 - **Personal over generic** — Sarah, family, Mexico trips, real stories they'll tell.
 - **Mexican Spanish** — natural MX choices, neutral register, light touch (no heavy slang).
 - **Daily habit over marathons** — 25 cards/day cap on large decks; show up every day.
-- **Keep the long vocab list** — `spanish.tsv` is the big cob deck (~2900 cards); presentation may evolve, but the content stays.
+- **Keep the long vocab list** — `spanish.tsv` is the big cob deck (~8000 cards); presentation may evolve, but the content stays.
 
-Root scratch files (`Z_SPANISH.txt`, `Z_ENGLISH.txt`, `Z_SpanishVocab/`) are **not** loaded by the app — reference/queue material only.
+Root scratch files (`Z_ENGLISH.txt`, `Z_SpanishVocab/`) are **not** loaded by the app — reference/queue material only. (`Z_SPANISH.txt` was merged into decks and deleted.)
 
 ## People & themes
 
@@ -54,16 +54,16 @@ Root scratch files (`Z_SPANISH.txt`, `Z_ENGLISH.txt`, `Z_SpanishVocab/`) are **n
 
 | Deck | ~Cards | Notes |
 |------|--------|-------|
-| `spanish.tsv` | 5500+ | Main vocab cob list — one English prompt, one Spanish answer per line |
-| `verbs.tsv` | 379 | Grammar/conjugation blocks (hand-maintained; see README) |
-| `english.tsv` | 144 | English vocabulary — minimal-swap paired sentences (see `english` skill) |
+| `spanish.tsv` | 7900+ | Main vocab cob list — one English prompt, one Spanish answer per line |
+| `verbs.tsv` | 470+ | Grammar/conjugation blocks (hand-maintained; see README) |
+| `english.tsv` | 145+ | English vocabulary — minimal-swap paired sentences (see `english` skill) |
 | `DOP.tsv` | 56 | Direct/indirect object pronouns |
-| `jokes.tsv` | 63 | English jokes |
-| `flirt.tsv` | 18 | Pick-up lines and flirting basics |
-| `chistes.tsv` | 9 | Spanish wordplay jokes |
+| `jokes.tsv` | 95+ | English jokes |
+| `flirt.tsv` | 85+ | Pick-up lines, pet names, couple talk |
+| `chistes.tsv` | 25+ | Spanish wordplay jokes |
 | `longphrases.tsv` | 5 | |
 | `lawsofpower.tsv` | 2 | |
-| `mexican.tsv` | 160+ | Mexican food, culture, geography, history, brands — English descriptions |
+| `mexican.tsv` | 260+ | Mexican food, culture, geography, history, brands, slang |
 
 Only `data/decks/*.tsv` become decks. Progress mirrors deck names in `data/progress/`.
 
