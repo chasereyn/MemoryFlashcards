@@ -8,7 +8,8 @@ from spaced_repetition import (
     prioritize_cards,
     get_cards_for_review,
     get_deck_session_info,
-    get_today
+    get_today,
+    DEFAULT_DAILY_LIMIT,
 )
 
 
@@ -132,13 +133,13 @@ def test_daily_limit_caps_due_cards():
     ]
     all_cards = [active] + due_cards
 
-    review = get_cards_for_review(all_cards, today, daily_limit=10)
+    review = get_cards_for_review(all_cards, today, daily_limit=DEFAULT_DAILY_LIMIT)
 
     assert review[0].id == "active", "Active card should come first"
-    assert len(review) == 11, "Should include all active + 10 due cards"
+    assert len(review) == 1 + DEFAULT_DAILY_LIMIT, "Should include all active + capped due cards"
     due_in_review = [c for c in review if c.id != "active"]
-    assert len(due_in_review) == 10, "Should cap due cards at daily limit"
-    assert len({c.id for c in due_in_review}) == 10, "Due cards in session should be unique"
+    assert len(due_in_review) == DEFAULT_DAILY_LIMIT, "Should cap due cards at daily limit"
+    assert len({c.id for c in due_in_review}) == DEFAULT_DAILY_LIMIT, "Due cards in session should be unique"
     print("PASSED\n")
 
 
@@ -152,9 +153,9 @@ def test_deck_session_info():
         for i in range(100)
     ]
 
-    today_count, backlog = get_deck_session_info(due_cards, today, daily_limit=10)
+    today_count, backlog = get_deck_session_info(due_cards, today, daily_limit=DEFAULT_DAILY_LIMIT)
 
-    assert today_count == 10, "Today count should be capped at daily limit"
+    assert today_count == DEFAULT_DAILY_LIMIT, "Today count should be capped at daily limit"
     assert backlog == 100, "Backlog should reflect all due cards"
     print("PASSED\n")
 
