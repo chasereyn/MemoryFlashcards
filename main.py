@@ -1,13 +1,14 @@
 import os
 from storage import (
-    load_cards, 
-    save_cards, 
-    ensure_data_directory, 
+    load_cards,
+    save_cards,
+    delete_card,
+    ensure_data_directory,
     get_last_session_date,
     sync_all_decks,
     get_deck_files,
     deck_progress_path,
-    get_deck_name_from_file
+    get_deck_name_from_file,
 )
 from spaced_repetition import (
     update_card_after_review,
@@ -34,14 +35,11 @@ def initialize(deck_name: str):
     return cards, json_path
 
 
-def get_user_rating(card) -> int:
+def get_user_rating(card):
     """Get user rating with validation, constrained by sequential progression.
-    
-    Args:
-        card: Flashcard object to determine allowed rating options
-        
+
     Returns:
-        User's rating (1-4) or None if user quits
+        int (1-4), 'delete', or None if user quits
     """
     # Determine allowed ratings based on latest_rating
     if card.latest_rating is None:
@@ -64,21 +62,25 @@ def get_user_rating(card) -> int:
         # Fallback (shouldn't happen)
         allowed_ratings = [1, 2, 3, 4]
         prompt_options = "1=Hard/Repeat, 2=Medium-Hard, 3=Medium, 4=Easy"
+
+    extra_options = "d=Delete, or 'quit'"
     
     while True:
         try:
-            rating = input(f"Rate difficulty ({prompt_options}, or 'quit'): ").strip().lower()
+            rating = input(f"Rate difficulty ({prompt_options}, {extra_options}): ").strip().lower()
             if rating == 'quit':
                 return None
+            if rating == 'd':
+                return 'delete'
             rating = int(rating)
             if rating in allowed_ratings:
                 return rating
             else:
                 allowed_str = ", ".join(str(r) for r in allowed_ratings)
-                print(f"Please enter a number from [{allowed_str}], or 'quit'.")
+                print(f"Please enter a number from [{allowed_str}], d, or 'quit'.")
         except ValueError:
             allowed_str = ", ".join(str(r) for r in allowed_ratings)
-            print(f"Please enter a valid number from [{allowed_str}], or 'quit'.")
+            print(f"Please enter a valid number from [{allowed_str}], d, or 'quit'.")
         except KeyboardInterrupt:
             print("\nExiting...")
             return None
@@ -109,6 +111,7 @@ def review_session(cards, filepath):
     print("  - Rate the card: 1=Hard/Repeat, 2=Medium-Hard, 3=Medium, 4=Easy")
     print("  - You can only advance ratings one step at a time (e.g., 1→2→3→4)")
     print("  - Cards rated 1-3 will be shown again until you rate them 4")
+    print("  - Press 'd' to delete the current card from the deck")
     print("  - Type 'quit' at any time to exit\n")
     
     initial_card_count = len(review_cards)
@@ -138,6 +141,15 @@ def review_session(cards, filepath):
         rating = get_user_rating(current_card)
         if rating is None:
             break
+        if rating == 'delete':
+            deck_name = get_deck_name_from_file(filepath)
+            cards[:] = delete_card(cards, deck_name, current_card.id)
+            save_cards(cards, filepath)
+            review_cards = [c for c in review_cards if c.id != current_card.id]
+            initial_card_count = len(review_cards)
+            print("\nCard deleted.")
+            print()
+            continue
         
         # Update card
         update_card_after_review(current_card, rating)
