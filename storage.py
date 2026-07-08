@@ -6,7 +6,7 @@ from datetime import datetime
 from typing import List, Optional, Tuple
 
 from flashcard import Flashcard
-from parser import parse_deck_tsv
+from parser import parse_deck_tsv, write_deck_tsv
 
 PROGRESS_FIELDNAMES = [
     "id",
@@ -147,6 +147,13 @@ def load_cards(filepath: str) -> List[Flashcard]:
         cards.append(card)
 
     return cards
+
+
+def delete_card(cards: List[Flashcard], deck_name: str, card_id: str) -> List[Flashcard]:
+    """Remove a card from deck content and return the updated in-memory list."""
+    remaining = [card for card in cards if card.id != card_id]
+    write_deck_tsv(deck_content_path(deck_name), remaining)
+    return remaining
 
 
 def save_cards(cards: List[Flashcard], filepath: str):

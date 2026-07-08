@@ -136,10 +136,10 @@ def test_daily_limit_caps_due_cards():
     review = get_cards_for_review(all_cards, today, daily_limit=DEFAULT_DAILY_LIMIT)
 
     assert review[0].id == "active", "Active card should come first"
-    assert len(review) == 1 + DEFAULT_DAILY_LIMIT, "Should include all active + capped due cards"
+    assert len(review) == DEFAULT_DAILY_LIMIT, "Active card uses a daily slot; total queue capped at daily limit"
     due_in_review = [c for c in review if c.id != "active"]
-    assert len(due_in_review) == DEFAULT_DAILY_LIMIT, "Should cap due cards at daily limit"
-    assert len({c.id for c in due_in_review}) == DEFAULT_DAILY_LIMIT, "Due cards in session should be unique"
+    assert len(due_in_review) == DEFAULT_DAILY_LIMIT - 1, "Remaining slots go to due cards"
+    assert len({c.id for c in due_in_review}) == DEFAULT_DAILY_LIMIT - 1, "Due cards in session should be unique"
     print("PASSED\n")
 
 
@@ -157,6 +157,36 @@ def test_deck_session_info():
 
     assert today_count == DEFAULT_DAILY_LIMIT, "Today count should be capped at daily limit"
     assert backlog == 100, "Backlog should reflect all due cards"
+    print("PASSED\n")
+
+
+def test_daily_limit_after_completing_cards():
+    """Test that completing the daily limit blocks further reviews until tomorrow."""
+    print("Test 9: Daily limit blocks new cards after completing today's pool")
+    today = get_today()
+
+    due_cards = [
+        Flashcard(
+            id=f"due{i}",
+            term=f"Due {i}",
+            definition="Answer",
+            next_review="2099-01-01",
+            completed_today=True,
+        )
+        for i in range(DEFAULT_DAILY_LIMIT)
+    ]
+    remaining_due = [
+        Flashcard(id=f"backlog{i}", term=f"Backlog {i}", definition="Answer", next_review=today)
+        for i in range(20)
+    ]
+    all_cards = due_cards + remaining_due
+
+    review = get_cards_for_review(all_cards, today, daily_limit=DEFAULT_DAILY_LIMIT)
+    today_count, backlog = get_deck_session_info(all_cards, today, daily_limit=DEFAULT_DAILY_LIMIT)
+
+    assert len(review) == 0, "No cards should be available after daily limit is used"
+    assert today_count == 0, "Today count should be 0 after daily limit is used"
+    assert backlog == 20, "Backlog should still reflect remaining due cards"
     print("PASSED\n")
 
 
@@ -195,6 +225,7 @@ if __name__ == "__main__":
         test_multiple_ratings_before_4()
         test_daily_limit_caps_due_cards()
         test_deck_session_info()
+        test_daily_limit_after_completing_cards()
         test_due_cards_are_shuffled()
         
         print("=" * 60)

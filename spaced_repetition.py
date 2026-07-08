@@ -14,7 +14,7 @@ EASE_FACTOR_DECREASE_EASY = 0.05
 EASE_FACTOR_DECREASE_MEDIUM = 0.15
 EASE_FACTOR_DECREASE_HARD = 0.25
 BACKOFF_BASE = 1.5  # Exponential backoff multiplier
-DEFAULT_DAILY_LIMIT = 5  # Max new due cards introduced per deck per day
+DEFAULT_DAILY_LIMIT = 2  # Max new due cards introduced per deck per day
 
 
 def get_today() -> str:
@@ -178,6 +178,27 @@ def prioritize_cards(active_cards: List[Flashcard], due_cards: List[Flashcard]) 
     return active_sorted + due_shuffled
 
 
+def get_daily_slots_used(cards: List[Flashcard]) -> int:
+    """
+    Count cards that have consumed a daily slot today.
+
+    A slot is used when a card is in an active session (rated 1-3) or
+    completed for today (rated 4). Re-insertions from 1-3 do not use extra slots.
+    """
+    return len([
+        card for card in cards
+        if card.completed_today or card.first_rating is not None
+    ])
+
+
+def get_remaining_daily_slots(
+    cards: List[Flashcard],
+    daily_limit: int = DEFAULT_DAILY_LIMIT,
+) -> int:
+    """Return how many new due cards can still be introduced today."""
+    return max(0, daily_limit - get_daily_slots_used(cards))
+
+
 def reset_daily_flags(cards: List[Flashcard], last_session_date: Optional[str], today: Optional[str] = None) -> None:
     """
     Reset daily flags if it's a new day.
@@ -213,7 +234,8 @@ def get_deck_session_info(
     active_ids = {card.id for card in active}
     due = [card for card in get_due_cards(cards, today) if card.id not in active_ids]
     backlog_count = len(due)
-    today_count = len(active) + min(backlog_count, daily_limit)
+    remaining_slots = get_remaining_daily_slots(cards, daily_limit)
+    today_count = len(active) + min(backlog_count, remaining_slots)
     return today_count, backlog_count
 
 
@@ -237,7 +259,8 @@ def get_cards_for_review(
     due = [card for card in get_due_cards(cards, today) if card.id not in active_ids]
     prioritized_due = prioritize_cards([], due)
 
-    capped_due = prioritized_due[:daily_limit]
+    remaining_slots = get_remaining_daily_slots(cards, daily_limit)
+    capped_due = prioritized_due[:remaining_slots]
     return prioritize_cards(active, capped_due)
 
 
