@@ -9,6 +9,7 @@ from parser import make_card_id, parse_deck_tsv, write_deck_tsv
 from storage import (
     deck_content_path,
     deck_progress_path,
+    get_last_session_date,
     load_cards,
     save_cards,
     sync_deck,
@@ -78,6 +79,23 @@ class SyncTests(unittest.TestCase):
         self.assertEqual(added, 0)
         self.assertEqual(removed, 1)
         self.assertEqual(len(load_cards(deck_progress_path(deck))), 1)
+
+    def test_sync_preserves_last_session_date(self):
+        deck = "test"
+        self._write_content(deck, [("hello", "hola")])
+
+        path = deck_progress_path(deck)
+        cards = load_cards(path)
+        save_cards(cards, path)
+
+        with open(path, "r", encoding="utf-8") as f:
+            lines = f.readlines()
+        lines[0] = "# last_session_date: 2020-01-01\n"
+        with open(path, "w", encoding="utf-8", newline="") as f:
+            f.writelines(lines)
+
+        sync_deck(deck)
+        self.assertEqual(get_last_session_date(path), "2020-01-01")
 
     def test_sync_content_edit_changes_id(self):
         deck = "test"

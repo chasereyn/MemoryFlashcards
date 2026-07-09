@@ -156,7 +156,7 @@ def delete_card(cards: List[Flashcard], deck_name: str, card_id: str) -> List[Fl
     return remaining
 
 
-def save_cards(cards: List[Flashcard], filepath: str):
+def save_cards(cards: List[Flashcard], filepath: str, update_session_date: bool = True):
     """Save review progress to TSV (content file is edited separately)."""
     ensure_data_directory()
     os.makedirs(os.path.dirname(filepath), exist_ok=True)
@@ -164,11 +164,15 @@ def save_cards(cards: List[Flashcard], filepath: str):
     deck_name = os.path.basename(filepath).replace(".tsv", "").replace(".json", "")
     filepath = deck_progress_path(deck_name)
 
-    last_session_date = datetime.now().strftime("%Y-%m-%d")
+    if update_session_date:
+        last_session_date = datetime.now().strftime("%Y-%m-%d")
+    else:
+        _, last_session_date = load_progress(deck_name)
 
     try:
         with open(filepath, "w", encoding="utf-8", newline="") as f:
-            f.write(f"{SESSION_DATE_PREFIX}{last_session_date}\n")
+            if last_session_date is not None:
+                f.write(f"{SESSION_DATE_PREFIX}{last_session_date}\n")
             writer = csv.DictWriter(f, fieldnames=PROGRESS_FIELDNAMES, delimiter="\t", lineterminator="\n")
             writer.writeheader()
             for card in cards:
@@ -225,7 +229,7 @@ def sync_deck(deck_name: str) -> Tuple[int, int, int]:
             added_count += 1
 
     removed_count = len(existing_ids - content_ids)
-    save_cards(synced_cards, deck_progress_path(deck_name))
+    save_cards(synced_cards, deck_progress_path(deck_name), update_session_date=False)
 
     return preserved_count, added_count, removed_count
 
