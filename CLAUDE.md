@@ -6,7 +6,7 @@ Run: `python main.py` → pick a deck → English prompt → reveal Spanish → 
 
 ## Why this repo exists
 
-Chase is 23, has a Mexican girlfriend, and has a lopsided problem: he **understands** spoken
+Chase is 23, is engaged to a Mexican woman, and has a lopsided problem: he **understands** spoken
 native Spanish at roughly 85%, and can barely **produce** a sentence. Years of classroom
 Spanish trained recognition — multiple choice, fill in the blank, translate this line — and
 every one of those gives you the answer's shape in advance. Listening does the same: the
@@ -15,7 +15,7 @@ from nothing and have to build the word, the gender, the conjugation and the wor
 about half a second.
 
 So the goal of this repo is narrow and specific: **sound fluent in everyday Mexico City
-conversation** with his girlfriend, her family, and their friends. Not pass a test. Not read
+conversation** with his fiancée, her family, and their friends. Not pass a test. Not read
 a novel. Not name animals.
 
 Three consequences that should drive every decision here:
@@ -46,6 +46,10 @@ from a source file — that mode existed, and removing it was the point.
 The loop only fills up if he is **attempting to speak**. The Keep list is downstream of the
 speaking habit, not a substitute for it.
 
+A launchd agent nudges him at **20:30 every night** and, on a click, opens Terminal with the
+deck already running — see `scripts/reminder/README.md`. It exists because the review habit is
+the part that actually decays, not the card supply.
+
 ## Storage
 
 | What | Where | Editable? |
@@ -67,6 +71,7 @@ removes deleted cards.
 | `storage.py` | JSON load/save, sync txt ↔ json on startup |
 | `test_algorithm.py` | SRS logic tests |
 | `.claude/skills/spanish/` | The `/spanish` skill — bullets → cards |
+| `scripts/reminder/` | launchd agent: 20:30 nightly nudge → opens the deck. See its README. |
 
 ## Decks
 
