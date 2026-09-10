@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.memoryflashcards.reminder</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>/Users/ChaseReynolds/Developer/MemoryFlashcards/scripts/reminder/run_reminder.sh</string>
+  </array>
+
+  <!-- Every night at 20:30. If the Mac is asleep (lid closed) launchd fires this at wake,
+       and the script's 20:00-03:59 window decides whether that wake is still tonight. -->
+  <key>StartCalendarInterval</key>
+  <array>
+    <dict>
+      <key>Hour</key><integer>20</integer>
+      <key>Minute</key><integer>30</integer>
+    </dict>
+  </array>
+
+  <!-- Also fire at login. launchd does not replay missed calendar jobs across a shutdown,
+       so this is the catch-up path. The script's guards make it a no-op unless it is
+       actually evening and tonight has not been handled yet. -->
+  <key>RunAtLoad</key>
+  <true/>
+
+  <key>StandardOutPath</key>
+  <string>/tmp/memoryflashcards-reminder.log</string>
+  <key>StandardErrorPath</key>
+  <string>/tmp/memoryflashcards-reminder.err</string>
+</dict>
+</plist>
