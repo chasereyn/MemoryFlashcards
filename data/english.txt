@@ -264,3 +264,42 @@ luxuriating
 
 second to last in a sequence (adj)
 penultimate
+
+to put a feeling or a thought into spoken words (v)
+verbalize
+
+the settled contentment of getting what you wanted (n)
+satisfaction
+
+in a way that stands for something larger than itself (adv)
+symbolically
+
+struck with a sudden helpless infatuation (adj)
+smitten
+
+left alone, with nothing breaking the calm (adj)
+undisturbed
+
+in a grave, serious way, with no trace of humor (adv)
+solemnly
+
+set apart from everything around it (adj)
+isolated
+
+in a showy way, staged to be noticed (adv)
+ostentatiously
+
+in a quietly satisfied way, wanting nothing more (adv)
+contentedly
+
+promised formally, as a binding commitment (v)
+pledged
+
+noticeably strong, more intense than usual (adj)
+pronounced
+
+the jarring mismatch of something that does not fit its surroundings (n)
+incongruity
+
+tending to make a particular outcome more likely (adj)
+conducive
