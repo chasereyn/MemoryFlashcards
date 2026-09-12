@@ -71,6 +71,7 @@ removes deleted cards.
 | `storage.py` | JSON load/save, sync txt ↔ json on startup |
 | `test_algorithm.py` | SRS logic tests |
 | `.claude/skills/spanish/` | The `/spanish` skill — bullets → cards |
+| `.claude/skills/english/` | The `/english` skill — words → definition-prompt cards |
 | `scripts/reminder/` | launchd agent: 20:30 nightly nudge → opens the deck. See its README. |
 
 ## Decks
@@ -83,12 +84,12 @@ All decks live flat in `data/`. There is no parking lot and no archive.
 | `core.txt` | 400 | English prompt → Spanish answer | Fixed. The curated survivors of the old bulk archive. |
 | `mexican.txt` | 386 | English prompt → Spanish answer | Fixed. CDMX slang, flirting, and food/culture terms. |
 | `verbs.txt` | 370 | English prompt → Spanish answer | Hand-maintained. Grammar-construction sentences. |
-| `english.txt` | 89 | **Definition prompt → word answer** | Fixed. Vocabulary recall, unrelated to Spanish. |
+| `english.txt` | 102 | **Definition prompt → word answer** | `/english` — his word bullets. Vocabulary recall, unrelated to Spanish. |
 
 `english.txt` runs the opposite direction on purpose: Spanish trains *producing the phrase*
 from an English cue, English trains *recalling the word* from its meaning, so the definition
-is on top and the word is the answer. It is no longer grown by a skill — the word queue that
-fed it is finished.
+is on top and the word is the answer. `/english` grows it the same way `/spanish` grows the
+Spanish deck — he pastes words, the skill writes the definition prompt for each one.
 
 `mexican.txt` folds in what used to be three files. Its food and culture cards were
 originally written Spanish-on-top as a glossary and were **flipped** during the merge, so the
