@@ -80,7 +80,7 @@ All decks live flat in `data/`. There is no parking lot and no archive.
 
 | Deck | Cards | Direction | Grown by |
 |------|-------|-----------|----------|
-| `spanish.txt` | 51 | English prompt → Spanish answer | `/spanish` — his daily bullets. **The deck that matters.** |
+| `spanish.txt` | 60 | English prompt → Spanish answer | `/spanish` — his daily bullets. **The deck that matters.** |
 | `core.txt` | 400 | English prompt → Spanish answer | Fixed. The curated survivors of the old bulk archive. |
 | `mexican.txt` | 386 | English prompt → Spanish answer | Fixed. CDMX slang, flirting, and food/culture terms. |
 | `verbs.txt` | 370 | English prompt → Spanish answer | Hand-maintained. Grammar-construction sentences. |
