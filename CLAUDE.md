@@ -80,11 +80,12 @@ All decks live flat in `data/`. There is no parking lot and no archive.
 
 | Deck | Cards | Direction | Grown by |
 |------|-------|-----------|----------|
-| `spanish.txt` | 60 | English prompt → Spanish answer | `/spanish` — his daily bullets. **The deck that matters.** |
+| `spanish.txt` | 67 | English prompt → Spanish answer | `/spanish` — his daily bullets. **The deck that matters.** |
 | `core.txt` | 400 | English prompt → Spanish answer | Fixed. The curated survivors of the old bulk archive. |
 | `mexican.txt` | 386 | English prompt → Spanish answer | Fixed. CDMX slang, flirting, and food/culture terms. |
 | `verbs.txt` | 370 | English prompt → Spanish answer | Hand-maintained. Grammar-construction sentences. |
 | `english.txt` | 102 | **Definition prompt → word answer** | `/english` — his word bullets. Vocabulary recall, unrelated to Spanish. |
+| `slang.txt` | 111 | **Definition prompt → word answer** | Fixed. Gen Z / teen slang from a WeAreTeachers list, one-time import. |
 
 `english.txt` runs the opposite direction on purpose: Spanish trains *producing the phrase*
 from an English cue, English trains *recalling the word* from its meaning, so the definition
