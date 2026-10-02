@@ -1,12 +1,12 @@
 # Nightly nudge — launchd, every night at 20:30
 
 **`com.memoryflashcards.reminder`** posts a notification and a dialog at **20:30 every night**.
-"Start" opens Terminal with `python3 main.py` already running in this repo; "Skip tonight"
+"Start" opens Ghostty with `python3 main.py` already running in this repo; "Skip tonight"
 stamps the night and goes away. Installed 2026-09-10.
 
 | File | What |
 |------|------|
-| `run_reminder.sh` | The wrapper. Guards (not already handled tonight, inside the 20:00-03:59 window), then notification → dialog → Terminal. Logs to `~/.local/state/memoryflashcards/reminder.log`. |
+| `run_reminder.sh` | The wrapper. Guards (not already handled tonight, inside the 20:00-03:59 window), then notification → dialog → Ghostty. Logs to `~/.local/state/memoryflashcards/reminder.log`. |
 | `com.memoryflashcards.reminder.plist` | The launchd agent. **Source of truth** — edit here, then reinstall. |
 
 Runtime state lives outside the repo, in `~/.local/state/memoryflashcards/` — the once-a-night
@@ -66,10 +66,11 @@ rm ~/Library/LaunchAgents/com.memoryflashcards.reminder.plist
 - **launchd's PATH is nearly empty.** The script sets its own and calls
   `/opt/homebrew/bin/python3` (3.14.7) outright — `python` does not exist on this machine and
   `/usr/bin/python3` is 3.9.6.
-- **Terminal.app, not Ghostty.** AppleScript's `do script` is the dependable way to open a
-  terminal with a command already running, and this has to work unattended every night. To
-  switch, replace the `tell application "Terminal"` block with
-  `open -na Ghostty --args -e "cd … && python3 main.py"`.
+- **Ghostty, not Terminal.app.** On macOS the Ghostty CLI cannot launch the app, so the
+  supported form is `open -na Ghostty --args --wait-after-command=true -e /bin/bash -lc "cd …
+  && python3 main.py"`. `-e` swallows the command and every argument after it, and
+  `--wait-after-command=true` leaves the window up when `main.py` exits or crashes, so an
+  error is readable instead of flashing away.
 - **A timeout does not stamp the night.** If the dialog gives up after 10 minutes, no stamp is
   written, so the next wake inside the window is allowed to ask again. Clicking either button
   does stamp it.

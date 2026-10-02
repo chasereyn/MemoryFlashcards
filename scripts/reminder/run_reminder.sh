@@ -1,7 +1,7 @@
 #!/bin/bash
 # run_reminder.sh — launchd entry point for the 20:30 flashcard nudge.
 #
-# Posts a notification, then a dialog with "Start" / "Skip tonight". Start opens Terminal
+# Posts a notification, then a dialog with "Start" / "Skip tonight". Start opens Ghostty
 # with `python3 main.py` already running in the repo, so there is no gap between the
 # reminder and the deck.
 #
@@ -67,13 +67,12 @@ APPLESCRIPT
 case "$answer" in
     Start)
         echo "$evening" > "$STAMP"
-        say "start: opening Terminal in $REPO"
-        /usr/bin/osascript >/dev/null 2>&1 <<APPLESCRIPT
-tell application "Terminal"
-    activate
-    do script "cd '$REPO' && '$PY' main.py"
-end tell
-APPLESCRIPT
+        say "start: opening Ghostty in $REPO"
+        # On macOS the Ghostty CLI cannot start the app, so `open -na Ghostty --args ...` is
+        # the supported launch. `-e` takes the command and everything after it;
+        # --wait-after-command keeps the window up when main.py exits or crashes.
+        /usr/bin/open -na Ghostty --args --wait-after-command=true \
+            -e /bin/bash -lc "cd '$REPO' && '$PY' main.py"
         ;;
     "Skip tonight")
         echo "$evening" > "$STAMP"
