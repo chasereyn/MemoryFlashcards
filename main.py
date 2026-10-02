@@ -14,6 +14,22 @@ from spaced_repetition import (
     reset_daily_flags,
     get_today,
 )
+from progress import (
+    breakdown,
+    deck_bar,
+    session_bar,
+    record_review,
+    reviews_on,
+    streak,
+    bold,
+    dim,
+    green,
+    yellow,
+    BAR_SOLID,
+    BAR_LEARNING,
+    BAR_NEW,
+    SOLID_DAYS,
+)
 import random
 
 
@@ -119,7 +135,8 @@ def review_session(cards, filepath):
         cards_remaining = len(review_cards)
         
         print("-" * 60)
-        print(f"{cards_remaining} card(s) remaining")
+        print(f"{session_bar(cards_completed, initial_card_count)}  "
+              f"{cards_completed}/{initial_card_count} done · {cards_remaining} left")
         print(f"Term: {current_card.term}")
         print("-" * 60)
         
@@ -136,6 +153,7 @@ def review_session(cards, filepath):
         
         # Update card
         update_card_after_review(current_card, rating)
+        record_review(today)
         total_reviews += 1
         
         # Save immediately after each review
@@ -223,7 +241,8 @@ def get_available_decks():
     """Get list of available deck names from text files."""
     text_files = get_text_files()
     deck_names = [get_deck_name_from_file(f) for f in text_files]
-    return sorted(deck_names)
+    # spanish is the deck that matters, so it leads; the rest stay alphabetical
+    return sorted(deck_names, key=lambda name: (name != "spanish", name))
 
 
 def select_deck():
@@ -253,24 +272,48 @@ def select_deck():
         due_cards = get_cards_for_review(cards, today)
         due_count = len(due_cards)
         
+        new, learning, solid = breakdown(cards)
         deck_info.append({
             'name': deck_name,
             'due': due_count,
-            'total': total_count
+            'total': total_count,
+            'new': new,
+            'learning': learning,
+            'solid': solid,
         })
-    
+
     # Find max widths for formatting
-    max_name_len = max(len(info['name']) for info in deck_info) if deck_info else 0
-    max_due_digits = max(len(str(info['due'])) for info in deck_info) if deck_info else 0
-    max_total_digits = max(len(str(info['total'])) for info in deck_info) if deck_info else 0
-    
-    # Show deck selection with formatted columns (right-aligned numbers)
-    print("\nAvailable decks:")
+    max_name_len = max(max(len(info['name']) for info in deck_info), len("ALL"))
+    all_new = sum(info['new'] for info in deck_info)
+    all_learning = sum(info['learning'] for info in deck_info)
+    all_solid = sum(info['solid'] for info in deck_info)
+    all_total = sum(info['total'] for info in deck_info)
+    num_w = len(str(all_total))
+
+    # Header: streak and today's count
+    days = streak(today)
+    today_count = reviews_on(today)
+    streak_str = f"🔥 {days}-day streak" if days else "No streak yet — start one tonight"
+    print()
+    print(f"  {bold(streak_str)}    Today: {today_count} reviewed")
+    print()
+
+    def row(label, info_new, info_learning, info_solid, info_total, due=None):
+        name_padding = ' ' * (max_name_len - len(label))
+        bar = deck_bar(info_new, info_learning, info_solid)
+        solid_str = f"{str(info_solid).rjust(num_w)}/{str(info_total).ljust(num_w)}"
+        due_str = f"   Due: {str(due).rjust(num_w)}" if due is not None else ""
+        return f"{label}{name_padding}  {bar}  Solid: {solid_str}{due_str}"
+
     for i, info in enumerate(deck_info, 1):
-        name_padding = ' ' * (max_name_len - len(info['name']))
-        due_str = str(info['due']).rjust(max_due_digits)
-        total_str = str(info['total']).rjust(max_total_digits)
-        print(f"  {i:2d}. {info['name']}{name_padding}    Due: {due_str}    Total: {total_str}")
+        print(f"  {i:2d}. " + row(info['name'], info['new'], info['learning'],
+                                  info['solid'], info['total'], info['due']))
+    # name, bar, "Solid: n/total", "   Due: n" — the full width of a deck row
+    print("      " + dim("─" * (max_name_len + 2 + 28 + 2 + 7 + 2 * num_w + 1 + 8 + num_w)))
+    print("      " + row("ALL", all_new, all_learning, all_solid, all_total))
+    print()
+    print(f"      {green(BAR_SOLID)} solid ({SOLID_DAYS}+ days out)   "
+          f"{yellow(BAR_LEARNING)} learning   {dim(BAR_NEW)} new")
     print("\nType 'exit' to exit")
     
     while True:
@@ -321,9 +364,9 @@ def main():
     # Sync all decks from text files on startup
     sync_all_decks()
     
-    print("\n" + "=" * 60)
+    print("\n" + dim("─" * 60))
     print("Flashcard Program")
-    print("=" * 60)
+    print(dim("─" * 60))
     
     while True:
         try:

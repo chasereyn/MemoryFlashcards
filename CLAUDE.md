@@ -46,7 +46,7 @@ from a source file — that mode existed, and removing it was the point.
 The loop only fills up if he is **attempting to speak**. The Keep list is downstream of the
 speaking habit, not a substitute for it.
 
-A launchd agent nudges him at **20:30 every night** and, on a click, opens Terminal with the
+A launchd agent nudges him at **20:30 every night** and, on a click, opens Ghostty with the
 deck already running — see `scripts/reminder/README.md`. It exists because the review habit is
 the part that actually decays, not the card supply.
 
@@ -69,6 +69,7 @@ removes deleted cards.
 | `flashcard.py` | Card model |
 | `spaced_repetition.py` | Session-based SRS, queue prioritization |
 | `storage.py` | JSON load/save, sync txt ↔ json on startup |
+| `progress.py` | Home-screen bars (new / learning / solid at 21+ days), day streak from `data/decks/history.json` |
 | `test_algorithm.py` | SRS logic tests |
 | `.claude/skills/spanish/` | The `/spanish` skill — bullets → cards |
 | `.claude/skills/english/` | The `/english` skill — words → definition-prompt cards |
