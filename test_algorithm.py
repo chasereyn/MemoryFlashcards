@@ -1,4 +1,5 @@
 """Test script for spaced repetition algorithm."""
+import os
 from flashcard import Flashcard
 from spaced_repetition import (
     update_card_after_review,
@@ -8,6 +9,7 @@ from spaced_repetition import (
     get_cards_for_review,
     get_today
 )
+from progress import breakdown, deck_bar, streak, BAR_SOLID, BAR_LEARNING, BAR_NEW
 
 
 def test_rating_1_keeps_in_session():
@@ -114,6 +116,41 @@ def test_multiple_ratings_before_4():
     print("PASSED\n")
 
 
+def test_progress_breakdown():
+    """Test new / learning / solid split, including cards left mid-session."""
+    print("Test 6: Progress breakdown")
+    cards = [
+        Flashcard(id="a", term="A", definition="a"),                                   # new
+        Flashcard(id="b", term="B", definition="b", first_rating=2),                   # mid-session
+        Flashcard(id="c", term="C", definition="c", next_review="2026-10-05", interval=3),
+        Flashcard(id="d", term="D", definition="d", next_review="2026-11-01", interval=30),
+    ]
+    assert breakdown(cards) == (1, 2, 1), f"Got {breakdown(cards)}"
+    print("PASSED\n")
+
+
+def test_deck_bar_shows_small_counts():
+    """Test that 1 learning card out of 400 still gets one bar character."""
+    print("Test 7: Deck bar keeps small counts visible")
+    os.environ["NO_COLOR"] = "1"  # measure characters, not color codes
+    bar = deck_bar(399, 1, 0, width=28)
+    assert len(bar) == 28, f"Bar should be 28 wide, got {len(bar)}"
+    assert bar.count(BAR_LEARNING) == 1, "One learning card should show one character"
+    assert deck_bar(0, 0, 10, width=28) == BAR_SOLID * 28, "All-solid deck should be a full bar"
+    print("PASSED\n")
+
+
+def test_streak():
+    """Test streak counting, including a day not yet reviewed."""
+    print("Test 8: Streak")
+    days = {"2026-09-29": 5, "2026-09-30": 3, "2026-10-01": 8}
+    assert streak("2026-10-01", days) == 3, "Three days in a row ending today"
+    assert streak("2026-10-02", days) == 3, "Unreviewed today should not break the streak yet"
+    assert streak("2026-10-03", days) == 0, "A missed day breaks the streak"
+    assert streak("2026-10-02", {}) == 0, "No history means no streak"
+    print("PASSED\n")
+
+
 if __name__ == "__main__":
     print("=" * 60)
     print("Testing Spaced Repetition Algorithm")
@@ -126,6 +163,9 @@ if __name__ == "__main__":
         test_rating_4_immediate_easy()
         test_priority_sorting()
         test_multiple_ratings_before_4()
+        test_progress_breakdown()
+        test_deck_bar_shows_small_counts()
+        test_streak()
         
         print("=" * 60)
         print("All tests passed!")
