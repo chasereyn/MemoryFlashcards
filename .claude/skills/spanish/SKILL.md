@@ -5,7 +5,7 @@ description: Grow the Spanish deck by translating a list of bullets into cards. 
 
 # spanish
 
-Append English→Spanish cards to the tail of `data/spanish.txt`, print what was added, stop.
+Add English→Spanish cards to the top of `data/spanish.txt`, print what was added, stop.
 
 This is a 30-second workflow. No preamble, no plan, no approval gate. Do the work.
 
@@ -46,7 +46,7 @@ If a bullet cannot become one card without guessing — a reference you can't re
 whose meaning depends on context you don't have — **do not write it and do not guess.**
 
 Write every clear bullet. Then ask about the unclear ones **in the main chat reply**, all in
-one batch. He answers in the thread and you append those next turn. Never ask one at a time.
+one batch. He answers in the thread and you add those next turn. Never ask one at a time.
 
 A merely *ambiguous translation* (two valid CDMX words for one thing) is not a skip — write
 your best pick and note the alternative in the output table.
@@ -55,12 +55,15 @@ your best pick and note the alternative in the output table.
 
 Only ever `data/spanish.txt`. The other decks in `data/` are not grown by this skill.
 
-Append directly. The rules:
+Add directly. The rules:
 
-1. **Append at the tail only.** Never insert mid-file, never reorder, never rewrite an
-   existing card unless he asks.
-2. **Always an even number of lines.** Blank line between cards, blank line before the first
-   appended card.
+1. **Insert at the top of the file only.** New cards are capped at 20 a day and arrive in
+   file order, so the top is the front of the line — his own phrases go first, ahead of the
+   ~3,500 frequency-list cards below. Keep the batch in the order he gave it. Never insert
+   mid-file, never reorder existing cards, never rewrite an existing card unless he asks
+   (changing a card's text resets its progress).
+2. **Always an even number of lines.** Blank line between cards, blank line after the last
+   inserted card.
 3. **CRLF line endings, UTF-8.** Match the existing file.
 4. **Never touch `data/decks/*.json`.** Auto-managed and gitignored.
 5. **Check for duplicates first** against the whole of `data/spanish.txt`, accent- and
@@ -73,7 +76,7 @@ whole deck.
 
 ## Output
 
-Print a compact table of what was appended — English, Spanish, and a short note only where
+Print a compact table of what was added — English, Spanish, and a short note only where
 one is genuinely useful (a register fix, a regional swap, a dropped duplicate). Then the
 batched questions, if any.
 
