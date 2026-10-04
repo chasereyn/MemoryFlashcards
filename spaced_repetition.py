@@ -13,6 +13,7 @@ EASE_FACTOR_DECREASE_EASY = 0.05
 EASE_FACTOR_DECREASE_MEDIUM = 0.15
 EASE_FACTOR_DECREASE_HARD = 0.25
 BACKOFF_BASE = 1.5  # Exponential backoff multiplier
+NEW_CARDS_PER_DAY = 20  # Never-seen cards that may enter review per deck per day
 
 
 def get_today() -> str:
@@ -59,6 +60,9 @@ def update_card_after_review(card: Flashcard, rating: int) -> None:
         raise ValueError(f"Invalid rating: {rating}. Must be 1, 2, 3, or 4.")
     
     today = get_today()
+    
+    if card.introduced is None:
+        card.introduced = today
     
     if rating in [1, 2, 3]:
         # Card stays in session - track first rating and increment attempts
@@ -217,7 +221,19 @@ def get_cards_for_review(cards: List[Flashcard], today: Optional[str] = None) ->
     # Exclude active cards from due cards to prevent duplicates
     due = [card for card in get_due_cards(cards, today) if card.id not in active_ids]
     
+    # Cap never-seen cards so a big deck trickles in instead of arriving all at once.
+    # New cards enter in deck-file order.
+    introduced_today = sum(1 for card in cards if card.introduced == today)
+    allowed_new = max(0, NEW_CARDS_PER_DAY - introduced_today)
+    new = [card for card in due if is_new_card(card)]
+    due = [card for card in due if not is_new_card(card)] + new[:allowed_new]
+    
     return prioritize_cards(active, due)
+
+
+def is_new_card(card: Flashcard) -> bool:
+    """A card that has never been rated."""
+    return card.next_review is None and card.introduced is None and card.first_rating is None
 
 
 def is_card_in_session(card: Flashcard) -> bool:

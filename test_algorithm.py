@@ -151,6 +151,30 @@ def test_streak():
     print("PASSED\n")
 
 
+def test_new_card_cap():
+    """Only NEW_CARDS_PER_DAY never-seen cards enter review per day, in deck order."""
+    print("Test: daily new-card cap")
+    from spaced_repetition import NEW_CARDS_PER_DAY
+    today = get_today()
+    cards = [Flashcard(id=f"n{i}", term=f"T{i}", definition="A") for i in range(NEW_CARDS_PER_DAY + 30)]
+    review = get_cards_for_review(cards, today)
+    assert len(review) == NEW_CARDS_PER_DAY, f"Expected {NEW_CARDS_PER_DAY} new cards, got {len(review)}"
+    assert [c.id for c in review] == [f"n{i}" for i in range(NEW_CARDS_PER_DAY)], "New cards should keep deck order"
+    
+    # Rating five of them uses up five slots for today
+    for card in cards[:5]:
+        update_card_after_review(card, 4)
+    assert all(c.introduced == today for c in cards[:5])
+    review = get_cards_for_review(cards, today)
+    new_left = [c for c in review if c.introduced is None]
+    assert len(new_left) == NEW_CARDS_PER_DAY - 5, f"Expected {NEW_CARDS_PER_DAY - 5} new left, got {len(new_left)}"
+    
+    # Due reviews are never capped
+    old = Flashcard(id="old", term="Old", definition="A", next_review=today)
+    assert old in get_cards_for_review(cards + [old], today), "Due review cards must not be capped"
+    print("PASSED\n")
+
+
 if __name__ == "__main__":
     print("=" * 60)
     print("Testing Spaced Repetition Algorithm")
@@ -166,6 +190,7 @@ if __name__ == "__main__":
         test_progress_breakdown()
         test_deck_bar_shows_small_counts()
         test_streak()
+        test_new_card_cap()
         
         print("=" * 60)
         print("All tests passed!")

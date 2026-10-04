@@ -103,17 +103,16 @@ def sync_deck_from_text(text_path: str, deck_name: str) -> Tuple[int, int, int]:
     preserved_count = 0
     added_count = 0
     
-    # Keep cards that exist in both (preserve metadata from JSON)
-    for card_id in text_ids:
-        if card_id in existing_dict:
+    # Keep cards that exist in both (preserve metadata from JSON), in text-file order
+    # so new cards are introduced in the order they appear in the deck file
+    for text_card in text_cards:
+        if text_card.id in existing_dict:
             # Card exists in both - preserve from JSON (has metadata)
-            synced_cards.append(existing_dict[card_id])
+            synced_cards.append(existing_dict[text_card.id])
             preserved_count += 1
         else:
             # New card from text file
-            # Find the card from text_cards list
-            new_card = next(c for c in text_cards if c.id == card_id)
-            synced_cards.append(new_card)
+            synced_cards.append(text_card)
             added_count += 1
     
     # Calculate removed count (cards in JSON but not in text file)

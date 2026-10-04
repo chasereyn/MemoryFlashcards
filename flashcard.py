@@ -17,7 +17,8 @@ class Flashcard:
         first_rating: Optional[int] = None,
         session_attempts: int = 0,
         consecutive_easy_sessions: int = 0,
-        latest_rating: Optional[int] = None
+        latest_rating: Optional[int] = None,
+        introduced: Optional[str] = None
     ):
         self.id = id
         self.term = term
@@ -31,6 +32,7 @@ class Flashcard:
         self.session_attempts = session_attempts
         self.consecutive_easy_sessions = consecutive_easy_sessions
         self.latest_rating = latest_rating
+        self.introduced = introduced  # date the card was first rated; drives the daily new-card cap
     
     def to_dict(self) -> dict:
         """Convert flashcard to dictionary for JSON serialization."""
@@ -46,7 +48,8 @@ class Flashcard:
             "first_rating": self.first_rating,
             "session_attempts": self.session_attempts,
             "consecutive_easy_sessions": self.consecutive_easy_sessions,
-            "latest_rating": self.latest_rating
+            "latest_rating": self.latest_rating,
+            "introduced": self.introduced
         }
     
     @classmethod
@@ -64,7 +67,8 @@ class Flashcard:
             first_rating=data.get("first_rating"),
             session_attempts=data.get("session_attempts", 0),
             consecutive_easy_sessions=data.get("consecutive_easy_sessions", 0),
-            latest_rating=data.get("latest_rating")
+            latest_rating=data.get("latest_rating"),
+            introduced=data.get("introduced")
         )
     
     def reset_session(self):

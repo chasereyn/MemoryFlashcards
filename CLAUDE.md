@@ -29,16 +29,16 @@ Three consequences that should drive every decision here:
 - **Small beats complete.** This is a tool, not a place to live. It should stay something he
   can read, edit, and finish in thirty minutes a day.
 
-There is deliberately no staging area, no parked-deck folder, and no bulk vocabulary archive
-to draw cards from. Lists like that are easy to find online and were the thing crowding out
-his review time — most of the words were ones he would never say. Do not build one, and do
-not bulk-import; see the warning under **Decks**.
+There is deliberately no staging area and no parked-deck folder. The one exception is
+`spanish-deck-reserve.txt` in the root: the 4,279 cards of the old 8,294-card bulk deck that did
+**not** make the cut on 2026-10-04. It is for browsing, one card per line (`English = Spanish`),
+and the app never reads it. Do not import from it in bulk; see **Decks**.
 
 ## The daily loop
 
 Chase keeps a running list of words and phrases in Google Keep during the day, then pastes it
-into Claude Code and runs `/spanish`. The skill translates each bullet and appends it to
-`data/spanish.txt`. Claude's whole job is that append. Review happens in the CLI, not here.
+into Claude Code and runs `/spanish`. The skill translates each bullet and adds it to the
+top of `data/spanish.txt`. Claude's whole job is that insert. Review happens in the CLI, not here.
 
 `/spanish` only ever works from a list. There is no mode that invents cards or pulls them
 from a source file — that mode existed, and removing it was the point.
@@ -81,8 +81,7 @@ All decks live flat in `data/`. There is no parking lot and no archive.
 
 | Deck | Cards | Direction | Grown by |
 |------|-------|-----------|----------|
-| `spanish.txt` | 67 | English prompt → Spanish answer | `/spanish` — his daily bullets. **The deck that matters.** |
-| `core.txt` | 400 | English prompt → Spanish answer | Fixed. The curated survivors of the old bulk archive. |
+| `spanish.txt` | 4,000 | English prompt → Spanish answer | `/spanish` adds his daily bullets at the top. Rebuilt 2026-10-04 from the old personal deck (67), `core.txt` (400, merged in and deleted), 81 new basics (colors, numbers, family, core verbs…), and the best of the old 8,294-card bulk deck by word frequency. Basics sit at the top so they arrive first. |
 | `mexican.txt` | 386 | English prompt → Spanish answer | Fixed. CDMX slang, flirting, and food/culture terms. |
 | `verbs.txt` | 370 | English prompt → Spanish answer | Hand-maintained. Grammar-construction sentences. |
 | `english.txt` | 102 | **Definition prompt → word answer** | `/english` — his word bullets. Vocabulary recall, unrelated to Spanish. |
@@ -98,10 +97,14 @@ originally written Spanish-on-top as a glossary and were **flipped** during the 
 English description is the prompt and the Spanish term is the answer — same production
 direction as every other Spanish deck.
 
-**Never bulk-add to a deck.** Every new card carries `next_review = None`, which means *due
-immediately*, and `get_cards_for_review` applies no daily cap — so dropping 500 cards into a
-deck produces a 500-card session that has to be cleared before the queue calms down. That is
-what killed the previous deck. Growth is ten or twenty cards a day off the Keep list.
+**New cards are capped at 20 per deck per day** (`NEW_CARDS_PER_DAY` in
+`spaced_repetition.py`, added 2026-10-04). A never-rated card waits until a slot opens; the
+first rating stamps `introduced` with the date, and that date is what the cap counts. New cards
+enter in deck-file order, so the top of a `.txt` file is what arrives next. Due reviews are
+never capped. Before the cap, every new card was due at once — dropping 500 cards into a deck
+made a 500-card session, and that is what killed the previous deck. `/spanish` inserts at the
+top so his own phrases jump the line. Moving a card within the file does not reset its
+progress — only editing its text does.
 
 ## Review algorithm
 
@@ -112,7 +115,7 @@ Ratings: 1=Hard, 2=Medium-Hard, 3=Medium, 4=Easy
 - Progress **1 → 2 → 3 → 4** within a session (can drop back to 1)
 - **First rating** drives long-term scheduling when you hit 4
 - Re-insertion: 1 → positions 2–5; 2 → 10–25 ahead; 3 → 20–40 ahead; 4 → done
-- All due cards appear in session (no daily cap)
+- All due review cards appear in session; never-seen cards are capped at 20 per deck per day
 
 ## Content philosophy
 
