@@ -446,7 +446,7 @@ March
 el marzo
 
 weekend
-el fin
+el fin de semana
 
 happy
 feliz
@@ -1318,17 +1318,14 @@ Ya valió, perdí mi pasaporte.
 That's disappointing
 Chale, cancelaron el concierto.
 
-Nothing you can do about it
-Perdimos el vuelo, ni modo.
+Oh well, nothing you can do
+Ni modo
 
-Really? No way!
-¿Neta? ¡Ganaste la lotería!
+Seriously? For real? (MX slang)
+¿Neta?
 
-Really? Are you serious?
-¿A poco? ¿Te vas a mudar a otro país?
-
-No way! That's unbelievable!
-¡No manches! ¿Te dieron el trabajo?
+Really? You're kidding! (disbelief)
+¿A poco?
 
 I'm swamped
 Estoy hasta el cuello de trabajo.
@@ -1408,9 +1405,6 @@ salir con
 okay / agreed
 de acuerdo
 
-maybe
-quizá
-
 to confide
 confiar
 
@@ -1425,9 +1419,6 @@ la relación
 
 text message
 el mensaje de texto
-
-Let me know
-Házmelo saber
 
 I love it / I really like it
 Me encanta
@@ -1648,9 +1639,6 @@ Is it correct to say...?
 it doesn't make any difference
 No cambia nada
 
-fucking asshole
-Hijo de puta
-
 I'm open to try it again
 Estoy abierto a intentarlo de nuevo
 
@@ -1737,9 +1725,6 @@ Celebrar
 
 Apartment
 El departamento
-
-To ask
-Pedir
 
 Barely
 Apenas
@@ -1861,9 +1846,6 @@ Lo último que quiero es que...
 You tempt me!
 ¡Me tientas!
 
-I don't feel well
-No me siento bien
-
 That explains everything!
 ¡Eso lo explica todo!
 
@@ -1942,7 +1924,7 @@ ando de malas hoy
 You're absolutely right!
 ¡tienes toda la razón!
 
-I don't care
+I don't mind / either way
 Me da igual
 
 We still need to...
@@ -1993,7 +1975,7 @@ lately
 joke
 la broma
 
-besides
+besides (+ something) / in addition to
 además de
 
 luck
@@ -2073,9 +2055,6 @@ la gasolina
 
 to park
 estacionar
-
-I don't feel like it
-No me apetece
 
 I can't help it
 No puedo evitarlo
@@ -2185,7 +2164,7 @@ Shut up!
 I still don't understand
 Sigo sin entenderlo
 
-It sucks
+It's crap / It's shit
 Es una mierda
 
 I'm not sure
@@ -2211,9 +2190,6 @@ de todos modos
 
 it's worth mentioning
 cabe mencionar
-
-Makes sense
-tiene sentido
 
 does it make you tired?
 ¿te da sueño?
@@ -2410,17 +2386,11 @@ más que yo
 That's life!
 ¡así es la vida!
 
-I got it!
-en eso estoy!
-
 but
 pero
 
 on (on top of)
 sobre
-
-I don't like it (MX vulgar)
-está de la verga
 
 Don't you think?
 ¿no te parece?
@@ -2442,9 +2412,6 @@ esta vez
 
 It's very good
 Esta muy bueno
-
-How was your day?
-Cómo te fue hoy?
 
 It's good
 está buena
@@ -2497,9 +2464,6 @@ muy bien
 It's because of you
 es por ti
 
-I'm doing it now!
-en eso estoy!
-
 And over time...
 Y con tiempo...
 
@@ -2527,14 +2491,8 @@ por más de que
 You really? (¿tú sí?)
 ¿tú sí?
 
-We still need to (aún nos falta)
-aún nos falta...
-
 I still need to (main verbs)
 aún me falta
-
-I mean (o sea)
-o sea
 
 at the most
 como mucho
@@ -2584,9 +2542,6 @@ en este momento
 I'm on my way
 voy en camino
 
-That's what we've got
-Es lo que hay
-
 What should I do?
 ¿qué debería hacer?
 
@@ -2623,9 +2578,6 @@ por primera vez
 it's to go (food)
 es para llevar
 
-The World (lotería)
-el mundo
-
 Where are you from?
 De dónde eres?
 
@@ -2635,9 +2587,6 @@ Where are you from? (tú)
 for a long time
 por mucho tiempo
 
-What are you up to these days?
-¿Qué es de tu vida?
-
 that's just how I am
 yo soy así
 
@@ -2646,9 +2595,6 @@ la hora
 
 that's for sure!
 eso está claro!
-
-you're welcome (no hay de qué)
-no hay de qué
 
 Here you go!
 ¡aquí tiene!
@@ -2734,9 +2680,6 @@ no hay de que
 that's the whole point!
 ¡ese es el punto!
 
-let me see...
-a ver...
-
 so far so good
 por ahora muy bien
 
@@ -2748,9 +2691,6 @@ You know what to do!
 
 That's what I said!
 ¡Es lo que dije!
-
-time (vez)
-la vez
 
 I'm here for business
 estoy aquí por razón de trabajo
@@ -2824,12 +2764,6 @@ el fin de semana
 Can you help me?
 Me puedes ayudar?
 
-I really like it
-me encanta
-
-to go out
-salir
-
 above all...
 sobre todo...
 
@@ -2869,9 +2803,6 @@ hace mucho tiempo
 well done (meat)
 bien hecho
 
-How do I say it?
-Cómo lo digo?
-
 that's not true!
 no es cierto
 
@@ -2905,9 +2836,6 @@ What happened? (adj)
 thank you
 gracias
 
-Now we're talking!
-Ahora si!
-
 I'm not sure about that
 no lo tengo claro
 
@@ -2919,9 +2847,6 @@ te ves muy bien
 
 Is it close?
 ¡está cerca?
-
-more or less (adj)
-más o menos
 
 we love each other
 nos queremos
@@ -2950,9 +2875,6 @@ What did she think?
 What does this mean?
 ¿Qué quiere decir esto? ¿Qué significa esto?
 
-that's for sure!
-¡por supuesto!
-
 Which one? (adj)
 ¿cuál?
 
@@ -2961,9 +2883,6 @@ los otros
 
 thanks to
 gracias a
-
-They know what's up (MX)
-saben lo qué hay
 
 to come to nothing (idiom)
 quedar en nada
@@ -2980,9 +2899,6 @@ allá
 What's the matter?
 ¿que pasa?
 
-What's wrong?
-¿qué pasa?
-
 I get your point
 entiendo tu punto
 
@@ -2998,12 +2914,6 @@ eso espero/ creo
 because of
 debido a
 
-I'm right
-estoy correcto
-
-How fun! (qué padre)
-¡Qué padre!
-
 in that case
 en ese caso
 
@@ -3013,17 +2923,8 @@ lo mismo, igual
 what happened? (MX: qué pedo)
 ¿qué pedo?
 
-what's the problem? (MX: qué pedo)
-¿qué pedo?
-
-oh ok
-está bien
-
 from now on
 de ahora en adelante
-
-because yes (porque sí)
-porque sí
 
 to open the way (idiom)
 abrir camino
@@ -3067,9 +2968,6 @@ mientras tanto
 in power
 en el poder
 
-in fact
-de hecho
-
 in fact...
 de hecho...
 
@@ -3081,9 +2979,6 @@ tomar
 
 here we go again...
 y aquí vamos de nuevo...
-
-let's... (hay que)
-hay que...
 
 I lost track of time
 se me fue el tiempo
@@ -3115,23 +3010,14 @@ todo el rato
 not bad at all
 nada mal
 
-For sure!
-Claro si!
-
 it's quite good
 es bastante bueno
 
 without
 sin
 
-to like
-caer bien
-
 to feel like doing something (idiom)
 tener ganas de
-
-How cool!
-Que padre!
 
 from one place to another
 de un lugar a otro
@@ -3160,9 +3046,6 @@ Que tenga un buen día
 thank god
 gracias a dios
 
-thank God (adj)
-gracias a Dios
-
 I would say that...
 diría que...
 
@@ -3181,14 +3064,8 @@ como dije
 Can I speak to...?
 ¿puedo hablar con...?
 
-Go this way
-adelante
-
 the last time
 la última vez
-
-first half
-la primera parte
 
 between
 entre
@@ -3196,17 +3073,11 @@ entre
 I have a lot to talk about
 Tengo mucho de qué hablar
 
-I'm not sure
-no sé exactamente/no estoy seguro
-
 I'm happy
 estoy feliz
 
 I'm leaving tomorrow
 me voy mañana
-
-What do you think?
-¿qué piensas?
 
 there's no book so bad it has nothing good (proverb)
 no hay libro tan malo que no tenga algo bueno
@@ -3216,9 +3087,6 @@ estar seguro
 
 you have my word
 tienes mi palabra
-
-what happens is...
-lo que pasa es que...
 
 I'm sorry
 lo siento
@@ -3249,9 +3117,6 @@ buen trabajo!
 
 everything will work out
 todo se va a dar
-
-Have a great day
-que tenga un buen día
 
 Can I get it to go please?
 Me lo puede poner para llevar por favor?
@@ -3307,9 +3172,6 @@ el mundo
 there is always a way!
 ¡siempre hay una manera!
 
-work
-el trabajo
-
 I'm here for 6 months
 voy a estar aquí 6 meses
 
@@ -3323,9 +3185,6 @@ then
 luego
 
 whatever else
-lo que sea
-
-whatever you want
 lo que sea
 
 to call attention (idiom)
@@ -3346,9 +3205,6 @@ Cómo se llama?
 What's that called?
 ¿Cómo se llama a esto?
 
-You're absolutely right!
-tienes toda la razón!
-
 It's not necessary to...
 No hace falta que...
 
@@ -3358,7 +3214,7 @@ How much later?
 before
 antes
 
-before
+before (doing something)
 antes de
 
 to be at war
@@ -3421,9 +3277,6 @@ estoy buscando a Juan
 What's the score? (match)
 ¿cómo van?
 
-Give a hand (idiom note)
-echar una mano
-
 here
 aquí
 
@@ -3432,9 +3285,6 @@ mejor
 
 To the right
 A la derecha
-
-Of course!
-Claro si!
 
 Everything ok at home?
 ¿todo bien en casa?
@@ -3454,9 +3304,6 @@ me gustaría
 according to
 según
 
-you've gone too far (in behavior)
-te has pasado
-
 Have you any others?
 ¿tienes otros?
 
@@ -3471,9 +3318,6 @@ volver a ___
 
 You're right, there's no reason
 Tienes razón, no hay razón
-
-I don't believe you
-No te creo. Me crees ¿verdad?
 
 our present
 nuestro ahora
@@ -3513,12 +3357,6 @@ te marco más tarde
 
 How much time did it take?
 ¿cuánto tiempo tomó?
-
-Come in!
-¡adelante!
-
-if only
-ojalá
 
 United States
 Estados Unidos
@@ -3598,9 +3436,6 @@ Te dejo libre!
 no idea
 ni idea
 
-The Hand (lotería)
-la mano
-
 say something
 di algo
 
@@ -3624,9 +3459,6 @@ allí
 
 How far away is it?
 ¿qué tan lejos está?
-
-to know someone
-conocer
 
 good morning (adj)
 buenos días
@@ -3694,9 +3526,6 @@ el lugar
 That's easy!
 está bien papa
 
-one thing at a time
-paso a paso
-
 What's your blood type?
 ¿Cuál es tu tipo de sangre?
 
@@ -3717,9 +3546,6 @@ no tardes mucho
 
 I knew it!
 Ya lo sabía
-
-It's the only option
-No queda de otra
 
 only
 único
@@ -3747,9 +3573,6 @@ la primera clase
 
 There's no room for...
 no hay sitio para
-
-second half
-la segunda parte
 
 I turned myself around
 me di la vuelta
@@ -3784,9 +3607,6 @@ You know what we should do?
 against
 contra
 
-never again
-nunca jamás
-
 you look fresh (MX)
 se ve fresco
 
@@ -3801,9 +3621,6 @@ estamos juntos en esto
 
 What a nice day!
 Qué lindo día
-
-I can take that
-yo me encargo de eso
 
 it's not ready
 no está listo
@@ -3826,17 +3643,11 @@ es necesario, hay que
 That's the least of my concerns
 es lo de menos
 
-I have been in this house for two years
-llevo dos años en esta casa
-
 last half
 la última parte
 
 It's my first time here
 es la primera vez que vengo aquí
-
-I came from work
-estoy llegando del trabajo
 
 Where is it located?
 ¿dónde queda...?
@@ -3877,17 +3688,11 @@ me pregunto yo...
 man
 el hombre
 
-It's hard enough already
-Ya es suficientemente difícil
-
 In addition to
 Fuera de, además
 
 what's it to you : (
 ¿A ti qué te importa?
-
-I get it (after a meme)
-ya caí / ahora sí entiendo
 
 It goes without saying that...
 ni que decir tiene que...
@@ -3970,9 +3775,6 @@ menos de 200 dólares
 In 10 minutes
 dentro de 10 minutos
 
-How interesting!
-Qué interesante!
-
 I don't mind
 no me molesta
 
@@ -3981,9 +3783,6 @@ debo llegar a la hora
 
 In case I didn't tell you enough
 por si no te lo había dicho mucho
-
-to get a job
-conseguir trabajo
 
 I'll let you know
 Te aviso
@@ -4159,9 +3958,6 @@ mitad y mitad
 this isn't just any...
 no es cualquiera...
 
-Where you at?
-¿dónde andas?
-
 whose is it?
 ¿de quién es?
 
@@ -4188,9 +3984,6 @@ voy al centro
 
 sorry I'm late
 siento llegar tarde
-
-What do you do?
-A qué te dedicas?
 
 better known as...
 mejor conocido como...
@@ -4246,9 +4039,6 @@ ni los viste
 I can't believe that happened!
 ¡no puedo creer que pasó eso!
 
-it's up to you
-tú eliges/ tú decides
-
 to the rest of...
 del resto de...
 
@@ -4302,9 +4092,6 @@ el dios
 
 the mind
 la mente
-
-be positive
-estar seguro
 
 every half hour
 cada media hora
@@ -4453,9 +4240,6 @@ el cuerpo humano
 I'm sad
 estoy triste
 
-what's up, chicken! (slang)
-¡qué rollo, pollo!
-
 a cut
 un corte
 
@@ -4576,7 +4360,7 @@ no tuve alternativa
 I wonder...
 me pregunto...
 
-to hold
+to keep / maintain
 mantener
 
 to taste like (saber a)
@@ -4588,9 +4372,6 @@ la lata
 living room
 la sala
 
-It's ON now!!
-ya se armó!!
-
 Who's idea was this?
 De quién fue este idea?
 
@@ -4600,14 +4381,8 @@ Who's who?
 And who's calling?
 ¿De parte de quién?
 
-I don't want to, period!
-¡no me da la gana y punto!
-
 be on the phone
 estar hablando por teléfono
-
-have just done something
-acabar de hacer algo
 
 I have a good knowledge of Spanish
 tengo una buena base de Español
@@ -4642,9 +4417,6 @@ desde la semana pasada
 It's nice to see you!
 ¡qué bueno verte!
 
-I'm hanging out with... (MX)
-ando con...
-
 To be sure that...
 asegurar que...
 
@@ -4677,9 +4449,6 @@ cuando se trate de...
 
 How's this?
 ¿qué tal este?
-
-account (bank)
-la cuenta
 
 Mind your own business (proverb)
 Zapatero a tus zapatos
@@ -4795,9 +4564,6 @@ espero que te guste
 to post a video
 subir un video
 
-oh shit!
-¡oh mierda!
-
 to pull someone's leg (idiom)
 tomar el pelo
 
@@ -4819,9 +4585,6 @@ hacer caso
 Is service included?
 Está incluido el servicio?
 
-That's so hard! (está cañón)
-Está cañón
-
 Is service included? (adj)
 ¿está incluido el servicio?
 
@@ -4834,17 +4597,11 @@ poner en marcha
 to take the easy way out
 tomar el camino fácil
 
-I can't stand him
-me cae bien gordo
-
 Is it a high cost of living?
 ¿es un costo de vida alto?
 
 What a great day you had!
 ¡qué día tan bueno tuviste!
-
-bill (restaurant)
-la cuenta
 
 last night
 anoche
@@ -4984,9 +4741,6 @@ la empresa
 free
 libre
 
-company (business)
-la empresa
-
 to wear
 llevar
 
@@ -5019,9 +4773,6 @@ ahorita vengo
 
 effective May 1...
 a partir del 1 de mayo...
-
-The Sun (lotería)
-el sol
 
 Take care (que estés bien)
 que estés bien
@@ -5056,9 +4807,6 @@ no tengas miedo
 A piece of advice...
 Un buen consejo...
 
-Do you follow me?
-¿me sigues?
-
 She's from the city and I'm from the country
 Ella es de la ciudad y yo del campo
 
@@ -5089,9 +4837,6 @@ Es mucha presión
 Next time will be better
 la próxima vez será mejor
 
-to carry out
-llevar a cabo
-
 service
 el servicio
 
@@ -5103,9 +4848,6 @@ Where are you going?
 
 Where are you from? (adj)
 ¿de dónde venís?
-
-death (alt)
-la muerte
 
 Talking not allowed
 No se permite hablar
@@ -5203,9 +4945,6 @@ estás chula / bonita
 the same thing happened to him
 le pasó lo mismo
 
-you're pretty (MX)
-estás chula
-
 Out of sight, out of mind (proverb)
 Ojos que no ven, corazón que no siente
 
@@ -5281,9 +5020,6 @@ Do you understand me?
 tell me (dime)
 dime
 
-to listen to
-escuchar
-
 to listen to music
 escuchar música
 
@@ -5307,9 +5043,6 @@ el apoyo
 
 to make the bed
 hacer la cama
-
-in short...
-en resumen...
 
 go to bed
 ir a la cama
@@ -5482,9 +5215,6 @@ Cuánto tiempo tarda?
 final boss
 el jefe final
 
-the brain
-la mente
-
 period
 el punto
 
@@ -5505,15 +5235,6 @@ la gestión de proyectos
 
 main character
 el personaje principal
-
-in the fresh air
-al aire libre
-
-it will be alright
-todo se va a dar
-
-How delicious!
-Qué rico!
 
 You ready to order?
 ¿deseas ordenar?
@@ -5554,7 +5275,7 @@ la práctica hace al maestro
 no one can take it from me
 nadie me lo quita
 
-to fight
+to fight / struggle (for something)
 luchar
 
 uh oh...
@@ -5604,12 +5325,6 @@ Qué corte es?
 
 We were talking about it
 estábamos hablando de eso
-
-You look really good today (no objects)
-estás guapa hoy
-
-okay
-de acuerdo
 
 Can I have a coffee?
 ¿me da un café?
@@ -5667,9 +5382,6 @@ tener miedo de
 
 What size is it?
 ¿qué talla está?
-
-I didn't do it on purpose...
-no lo hice a propósito
 
 center
 el centro
@@ -5749,9 +5461,6 @@ hijo de puta
 To fire someone (throw out of a job)
 Echar a alguien del trabajo
 
-it sucks (adj)
-es una mierda
-
 bottom left
 abajo a la izquierda
 
@@ -5772,12 +5481,6 @@ Vete!
 
 They're everywhere
 están en todas partes
-
-stock market
-el mercado de valores
-
-go away
-vete
 
 You don't realize you're doing it
 no te das cuenta de que lo estás haciendo
@@ -5817,9 +5520,6 @@ internet de alta velocidad
 
 to raise one's voice (idiom)
 levantar la voz
-
-good evening
-buenas noches
 
 the damage
 el daño
@@ -5935,9 +5635,6 @@ se me ha cortado la comunicación
 we were cut off
 se ha cortado
 
-I don't feel like it (reflexive)
-no me apetece
-
 Hi all!
 Hola a todos! Saludos a todos
 
@@ -5968,9 +5665,6 @@ ser parecido a
 I'm here on vacation
 estoy aquí de vacaciones
 
-oh Jesus! (exclamation)
-¡ay, hijo de su madre!
-
 love at first sight
 el amor a primera vista
 
@@ -5994,9 +5688,6 @@ How long does it last?
 
 What a pity!
 ¡qué pena!
-
-It's a pity that...
-Es una pena que...
 
 What about the march trip caught your attention the most?
 ¿qué fue lo que más le llamó la atención del viaje de marzo?
@@ -6025,14 +5716,8 @@ no lo volví a ver
 call
 la llamada
 
-road (camino)
-el camino
-
 to take photos
 sacar fotos
-
-Watch out! (adj)
-¡ten cuidado!
 
 in / out of network (insurance)
 dentro / fuera de la red
@@ -6067,16 +5752,13 @@ el señor
 position
 el puesto
 
-It's your fault!
-Es culpa tuya!
-
 I left a comment
 Dejé un comentario
 
 community
 la comunidad
 
-free
+free (no cost)
 gratis
 
 I respect Mexican food
@@ -6087,9 +5769,6 @@ la búsqueda
 
 to change (modify)
 modificar
-
-for real?
-neta?
 
 we're halfway
 estamos a mitad de camino
@@ -6175,9 +5854,6 @@ asegurarse de que
 in theory
 en teoría
 
-how's it going? (MX)
-¿cómo andan?
-
 to put down roots (idiom)
 echar raíces
 
@@ -6250,9 +5926,6 @@ What a cool moment!
 care
 el cuidado
 
-to send
-enviar
-
 strong
 fuerte
 
@@ -6289,9 +5962,6 @@ sigue
 To some extent
 en cierto modo
 
-business
-los negocios
-
 credit card
 la tarjeta de crédito
 
@@ -6300,9 +5970,6 @@ la educación física
 
 by mistake
 por error
-
-be my guest!
-¡adelante!
 
 to own
 poseer / ser dueño de
@@ -6319,14 +5986,8 @@ la mitad
 See you!
 ¡hasta la vista! ¡chao!
 
-turns out...
-resulta que...
-
 one quarter
 un cuarto
-
-market (financial)
-el mercado
 
 to improve
 mejorar
@@ -6439,9 +6100,6 @@ le pedí dinero
 king
 el rey
 
-Really? No way! (neta)
-¿Neta? ¡Ganaste la lotería!
-
 main course
 el plato principal
 
@@ -6457,14 +6115,8 @@ por muchos motivos
 I'm putting you to the test
 te estoy poniendo a prueba
 
-to be successful
-alcanzar el éxito
-
 for me alone (MX)
 pa' mi solito
-
-to treat (medical)
-tratar
 
 I'm tired
 estoy cansado
@@ -6610,9 +6262,6 @@ Get lost!
 Which whom I'm talking?
 ¿con quién hablo?
 
-I appreciate you
-te lo agradezco
-
 stock market
 la bolsa de valores
 
@@ -6654,9 +6303,6 @@ permitir
 
 subject
 el tema
-
-later
-despues / más tarde
 
 to send
 mandar
@@ -6718,26 +6364,17 @@ duro
 soccer game
 el partido de fútbol
 
-Don't worry!
-no te preocupes! todo saldrá bien
-
 work benefits
 los beneficios del trabajo
 
 winter break
 vacaciones de invierno
 
-venture / company
-la empresa
-
 to play soccer
 jugar al fútbol
 
 There's an error
 Hay un error
-
-The Rose (lotería)
-la rosa
 
 to thank
 agradecer
@@ -6880,14 +6517,8 @@ darse mucho taco
 I'm in the zone
 Estoy en la mia
 
-The Moon (lotería)
-la luna
-
 direct flight
 el vuelo directo
-
-to fight (verb)
-pelear
 
 spring break
 vacaciones de primavera
@@ -6913,12 +6544,6 @@ le pregunté dónde vivía
 evening
 la tarde-noche
 
-stock exchange
-la bolsa de valores
-
-to do the shopping
-hacer la compra
-
 church
 la iglesia
 
@@ -6938,9 +6563,6 @@ take someone's advice
 seguir el consejo de alguien
 
 pay in cash
-pagar en efectivo
-
-pay with cash
 pagar en efectivo
 
 it never ends
@@ -6966,9 +6588,6 @@ no estar acostumbrado a algo
 
 it doesn't work
 no funciona , esta roto/rota
-
-to leave with time / early
-irse con tiempo
 
 director
 el director
@@ -7012,9 +6631,6 @@ el interés
 board of directors
 el consejo de administración
 
-interest (finance)
-el interés
-
 energy
 la energía
 
@@ -7044,9 +6660,6 @@ I know you're going to love it!
 
 What does it involve?
 ¿En qué consiste?
-
-besides (adj)
-además de
 
 period (época)
 la época
@@ -7123,14 +6736,8 @@ Tienen eso en otra talla?
 Stop here please
 Pare aqui por favor
 
-maybe (adj)
-quizá
-
 Stop the music!
 ¡Pare la música!
-
-Don't be worried
-no te preocupes
 
 seriously ill
 grave
@@ -7156,9 +6763,6 @@ ahorita
 the american dream
 el sueño americano
 
-The Tree (lotería)
-el árbol
-
 quality (calidad)
 la calidad
 
@@ -7182,9 +6786,6 @@ la bolsa de papel
 
 whether it's this or that
 ya sea esto o aquello
-
-spend a bit of time
-pasar un rato
 
 That sounds really fun!
 ¡eso suena súper divertido!
@@ -7255,9 +6856,6 @@ be nice to your sister
 he is getting old
 está haciéndose mayor
 
-picture frame
-el marco de fotos
-
 It had become very common
 se había convertido muy común
 
@@ -7266,9 +6864,6 @@ seguimos al pendiente de las noticias
 
 Ice Age
 la Edad de Hielo
-
-to bring up (vomit)
-devolver
 
 capital (principal)
 el principal
@@ -7317,9 +6912,6 @@ Me pregunto qué pasará
 
 behind (adj)
 detrás
-
-practice makes perfect
-base de práctica se aprende
 
 often
 a menudo
@@ -7459,9 +7051,6 @@ el/la modelo
 to happen (verb)
 suceder
 
-army
-el ejército
-
 close by (MX)
 cerquita
 
@@ -7486,9 +7075,6 @@ cada oveja con su pareja
 We were doing good... what happened?
 íbamos bien... ¿qué pasó?
 
-Nothing you can do (ni modo)
-Perdimos el vuelo, ni modo.
-
 to stand
 soportar
 
@@ -7497,9 +7083,6 @@ escolar
 
 industry
 la industria
-
-to go to the movies
-ir al cine
 
 travel agent
 el/la agente de viajes
@@ -7515,9 +7098,6 @@ no soy tan fan de...
 
 management
 administración
-
-management
-la administración
 
 serious
 serio
@@ -7560,9 +7140,6 @@ conversar
 
 after passing the bridge
 después de pasar el puente
-
-date of birth
-fecha de nacimiento
 
 chapter of life
 etapa de la vida
@@ -7735,9 +7312,6 @@ gracias por tu amabilidad
 Listen to me!
 ¡escuche a me! ¡Escuche!
 
-when you recognize a lie (taco idiom)
-de lengua me como un taco
-
 phone case
 la funda del teléfono
 
@@ -7752,9 +7326,6 @@ Todos estuvieron de acuerdo
 
 critical thinking
 pensamiento crítico
-
-to use to
-soler
 
 10 minutes driving
 diez minutos en carro
@@ -7855,9 +7426,6 @@ Go to hell!
 I'm arriving late
 estoy llegando tarde
 
-to meet up
-reunirse
-
 to stand someone up (idiom)
 dar plantón
 
@@ -7927,9 +7495,6 @@ Me he caído
 to have an appointment
 tener una cita
 
-to board
-abordar
-
 you're kidding
 estás de broma
 
@@ -7957,17 +7522,11 @@ prestar atención
 to score a goal
 meter un gol
 
-pretty (adj)
-lindo
-
 to charge for
 cobrar
 
 The meal is great!
 ¿La comida es genial!
-
-pay attention
-prestar atención
 
 in spite of
 a pesar de
@@ -7984,17 +7543,11 @@ el estándar de oro
 a standard process
 un proceso estándar
 
-envelope (sobre only)
-el sobre
-
 Your face looked familiar (MX)
 su cara me sonaba
 
 meeting
 la reunión
-
-go to bed
-vete a dormir
 
 answer the questions
 contesta las preguntas
@@ -8077,17 +7630,11 @@ la fuerza
 crazy
 loco
 
-to miss
-faltar
-
 keep a secret
 guardar un secreto
 
 school spirit
 el espíritu escolar
-
-market (store)
-la tienda
 
 How awful!
 Qué horror
@@ -8113,14 +7660,8 @@ el español
 to select
 elegir
 
-theme
-el tema
-
 What are you trying to escape from?
 ¿De qué estás intentando escapar?
-
-to have one's birthday
-cumplir años
 
 author
 el autor
@@ -8239,9 +7780,6 @@ tirar
 my pleasure!
 es un placer!
 
-I'm locked in
-Estoy en la mia
-
 I'm sleepy
 Tengo mucho sueño
 
@@ -8253,9 +7791,6 @@ juzgar
 
 respect
 el respeto
-
-trade (comercio)
-el comercio
 
 I'm sleepy (adj)
 ¡qué sueño tengo ahora!
@@ -8275,17 +7810,8 @@ el comercio
 to direct
 dirigir
 
-get married
-casarse
-
-phone
-celular
-
 video game
 el videojuego
-
-path
-el camino
 
 content
 contenido
@@ -8305,9 +7831,6 @@ That's so expensive! (vuela o qué?)
 to mark
 marcar
 
-content (contenido)
-el contenido
-
 I had my hair cut
 me he cortado el pelo/dedo
 
@@ -8325,9 +7848,6 @@ el contenido
 
 neither
 tampoco
-
-thousand
-mil
 
 legal
 legal
@@ -8376,9 +7896,6 @@ el peso
 
 increase (aumento)
 el aumento
-
-weight (noun)
-el peso
 
 why invite me if you know how I get (MX)
 ¿para qué me invitan si ya saben cómo me pongo?
@@ -8515,12 +8032,6 @@ Francia
 Nice to meet you!
 ¡Tanto gusto! ¡Medio gusto conocerte!
 
-front yard
-el jardín
-
-The Fish (lotería)
-el pescado
-
 to provide
 proveer
 
@@ -8557,10 +8068,10 @@ por cierto cómo te llamas, a propósito
 that doesn't work for me
 no me cuadra
 
-meeting
+meeting (at work, MX)
 la junta
 
-key
+key (password / code)
 la clave
 
 It's always easy driving here
@@ -8650,9 +8161,6 @@ puesto ejecutivo en la agencia
 I'm joking (estoy jugando)
 estoy jugando / es broma
 
-hair (on head)
-el pelo
-
 French
 el francés
 
@@ -8727,9 +8235,6 @@ las ciencias
 
 famous
 conocido
-
-silver (metal)
-la plata
 
 fund
 el fondo
@@ -8827,17 +8332,11 @@ enorme
 contact
 el contacto
 
-car
-el coche / el carro
-
 road
 la carretera
 
 star
 la estrella
-
-to remove
-quitar
 
 to use up
 agotar
@@ -8847,9 +8346,6 @@ el estudio
 
 course (rumbo)
 el rumbo
-
-car (carro)
-el carro
 
 to introduce
 presentar
@@ -8880,9 +8376,6 @@ el idioma
 
 to choose
 escoger
-
-give me a minute
-ahorita regreso
 
 it broke
 se me rompió
@@ -8958,9 +8451,6 @@ la presión
 
 bastard / buddy (slang)
 cabrón
-
-give it your all (phone)
-échale
 
 background
 el fondo
@@ -9094,12 +8584,6 @@ How much do I owe you?
 be on strike
 estar en huelga
 
-it's tricky
-es complicado
-
-channel (YouTube)
-el canal
-
 don't mention it
 ni lo menciones
 
@@ -9196,9 +8680,6 @@ planear
 television (televisión)
 la televisión
 
-judge
-el juez
-
 contract
 el contrato
 
@@ -9274,9 +8755,6 @@ sigamos...
 to throw up
 devolver
 
-commercial
-comercial
-
 be careful
 ten cuidado
 
@@ -9316,9 +8794,6 @@ la lectura
 foreign
 extranjero
 
-What a mess!
-¡qué lío!
-
 That's convenient!
 Qué conveniente!
 
@@ -9340,9 +8815,6 @@ desastre total
 What is the opposite of...
 ¿Cuál es el opuesto de...?
 
-motion
-el movimiento
-
 soul
 el alma
 
@@ -9354,9 +8826,6 @@ la sanidad
 
 stage
 el escenario
-
-What do you do for a living?
-¿a qué te dedicas?
 
 We support you in any decision you want to make
 te apoyamos en cualquier decisión que quieras tomar
@@ -9378,9 +8847,6 @@ marrón claro
 
 index finger
 el dedo índice
-
-brother in law
-el cuñado
 
 this seat is taken
 esta plaza es ocupada
@@ -9433,9 +8899,6 @@ equivocado
 I'm focused
 Ando enfocado
 
-to sit
-sentarse
-
 operation
 la operación
 
@@ -9480,9 +8943,6 @@ sentir como nuevo
 
 my signature phrase
 mi frase de identidad
-
-gas (medical)
-el gas
 
 tell me
 háblame
@@ -9586,9 +9046,6 @@ trae tu propia botella
 low stakes
 bajo riesgo
 
-beautiful
-bella
-
 medium rare (meat)
 termino rojo
 
@@ -9691,9 +9148,6 @@ con dos camas
 take an exam
 hacer un examen
 
-to become (hacerse, ponerse, volverse...)
-hacerse / ponerse / volverse / quedarse / convertirse / transformarse / llegar a ser
-
 mission
 la misión
 
@@ -9720,9 +9174,6 @@ How was it moving away from home for you?
 
 When you get good enough it becomes fun!
 ¡cuando te vuelves lo suficientemente bueno se vuelve divertido!
-
-What's up, dude? (MX)
-¿qué tranza, valedor?
 
 Did they go kill the cow or what? (MX)
 ¿qué, fueron a matar la vaca o qué?
@@ -9757,9 +9208,6 @@ el entrenamiento
 sky
 el cielo
 
-to worry (reflexive)
-preocuparse
-
 to destroy
 destruir
 
@@ -9774,9 +9222,6 @@ mano verde
 
 Search and destroy
 buscar y destruir
-
-loss
-la caída
 
 watch out, dumbass (MX)
 ¡aguas, pendejo!
@@ -9825,9 +9270,6 @@ rápidamente
 
 court
 la cancha
-
-No way! (¡no)
-¡no manches!
 
 train
 el tren
@@ -9898,17 +9340,11 @@ el propósito
 I knew you would love it!
 Sabía que te iba a encantar!
 
-Go away (lárgate)
-Lárgate
-
 I have a lot of work today (chamba)
 Hoy tengo mucha chamba
 
 joint
 conjunto
-
-crisis
-la crisis
 
 to separate
 separar
@@ -9919,14 +9355,8 @@ corregir
 to steal
 robar
 
-with difficulty
-con dificultades
-
 he is in a meeting
 está reunido
-
-weird
-extraño
 
 a lifetime
 una vida entera
@@ -9979,12 +9409,6 @@ el helado
 to survive
 sobrevivir
 
-political party
-partido politico
-
-hair
-el cabello
-
 Don't talk back to me!
 ¡No me contestes mal!
 
@@ -10035,9 +9459,6 @@ atravesar
 
 to measure
 medir
-
-excuse me / with your permission
-con permiso
 
 Are you still awake?
 ¿sigues despierto?
@@ -10243,14 +9664,8 @@ el registro del vehículo
 French toast
 el pan francés
 
-income
-el ingreso
-
 to jump
 saltar
-
-He has a lot of talent
-Tiene mucho talento
 
 My head hurts
 Me duele la cabeza
@@ -10363,9 +9778,6 @@ no puedo confirmar ni negar
 Education is never wasted
 la educación nunca se pierde
 
-Russian
-ruso
-
 plastic bag
 la bolsa de plástico
 
@@ -10402,9 +9814,6 @@ el fútbol
 values
 los valores
 
-to overcome
-superar
-
 honor
 el honor
 
@@ -10426,9 +9835,6 @@ tradicional
 How much is the ticket?
 Cuánto cuesta el boleto
 
-Lock the door please
-Echa llave la puerta, por favor
-
 to risk
 arriesgar
 
@@ -10440,9 +9846,6 @@ interesar
 
 Can you open the door for me? (tú)
 ¿me abres la puerta?
-
-to hide
-ocultar
 
 wall mount
 el soporte de pared
@@ -10504,9 +9907,6 @@ inteligente
 weather
 el clima
 
-To make a fool of someone
-Tomar el pelo
-
 origin
 el origen
 
@@ -10546,9 +9946,6 @@ el estado civil
 best regards
 un abrazo
 
-Careful!
-Con cuidado!
-
 high expectations
 altas expectativas
 
@@ -10572,9 +9969,6 @@ la primavera
 
 to investigate
 investigar
-
-transportation
-el transporte
 
 to affect
 afectar
@@ -10630,9 +10024,6 @@ How elegant!
 beauty
 la belleza
 
-cash
-el efectivo
-
 To act the fool
 Hacer el tonto
 
@@ -10644,9 +10035,6 @@ le tengo mucho cariño
 
 Can you suggest a place to eat?
 ¿Puedes sugerir mi sitios para comer/visitar?
-
-cash (efectivo)
-efectivo
 
 I have to set my alarm early
 tengo que poner la alarma temprano
@@ -10738,9 +10126,6 @@ la única cosa más poderosa que el odio es el amor
 I'm so embarrassed
 me muero de la pena
 
-to collect
-recoger
-
 fly safe!
 vuela seguro!
 
@@ -10822,9 +10207,6 @@ la tapa de la botella
 It makes me nervous
 me pone nervioso
 
-death
-el fallecimiento
-
 clothing
 la ropa
 
@@ -10863,9 +10245,6 @@ la bolsa
 
 tree
 el árbol
-
-Check it out!
-Échale un vistazo
 
 dance
 el baile
@@ -10915,9 +10294,6 @@ la pelota de golf
 I'm impressed!
 ¡estoy impresionado!
 
-Really? Are you serious? (a poco)
-¿A poco? ¿Te vas a mudar a otro país?
-
 software
 el software
 
@@ -10925,9 +10301,6 @@ planet
 el planeta
 
 light (adj)
-ligero
-
-light (opposite of heavy)
 ligero
 
 while one is alive one must love as much as one can
@@ -11071,9 +10444,6 @@ cerrado
 a third wheel
 un mal tercio
 
-The Bird (lotería)
-el pájaro
-
 to deny
 negar
 
@@ -11115,9 +10485,6 @@ la señorita
 
 literature
 la literatura
-
-to plant
-plantar
 
 file
 el archivo
@@ -11377,7 +10744,7 @@ ancho
 to update
 actualizar
 
-trade
+a trade (skilled job)
 el oficio
 
 sports (adj)
@@ -11388,9 +10755,6 @@ la actitud
 
 report
 el reportaje
-
-to get along badly
-llevarse mal
 
 profit
 el beneficio
@@ -11415,9 +10779,6 @@ hierba mala nunca muere
 
 lake
 el lago
-
-I know you too well!
-Te conozco mosco!
 
 the motor had a failure
 el motor tenía un fallo
@@ -11452,9 +10813,6 @@ I wonder if you could help
 useful
 útil
 
-sister in law
-la cuñada
-
 learning
 el aprendizaje
 
@@ -11487,9 +10845,6 @@ Enjoy your meal!
 
 I found your lung!
 ¡encontré tu pulmón!
-
-to be full of yourself
-darse mucho taco
 
 to benefit
 beneficiar
@@ -11586,9 +10941,6 @@ Chile
 
 I'm moving to a new house
 voy a mudarme de casa
-
-I'm thirsty (adj)
-tengo sed
 
 emergency
 la emergencia
@@ -11731,15 +11083,6 @@ le di todos mis formularios de impuestos a mi papá
 to connect
 conectar
 
-license plate
-la matrícula
-
-challenge (noun)
-el reto
-
-hold (verb)
-sostener
-
 fat
 gordo
 
@@ -11751,9 +11094,6 @@ el concurso
 
 exit
 la salida
-
-illness
-la enfermedad
 
 newspaper
 el periódico
@@ -11830,17 +11170,11 @@ la publicidad
 review (noun)
 una reseña
 
-it's no use crying over spilled milk
-a lo hecho, pecho
-
 customer
 el cliente
 
 Permission
 Permiso
-
-extension cord
-cable de extensión
 
 my head is spinning
 me da vueltas la cabeza
@@ -11878,17 +11212,11 @@ la esquina
 I had my hair cut (reflexive)
 me corté el pelo
 
-Shut up!
-¡cállate la boca! ¡cállate!
-
 let's have lunch sometimes
 quedemos para comer un día de éstos
 
 guilty conscience
 la conciencia culpable
-
-shut up
-¡cállate!
 
 located
 situado
@@ -11986,14 +11314,9 @@ el fracaso
 argument
 el argumento
 
-wonderful
-maravilloso
-
 I don't deny it, I'm proud of being ...
 no lo niego, soy muy orgulloso de ser latino
 
 to tie up loose ends (idiom)
 atar cabos
 
-patient
-el enfermo

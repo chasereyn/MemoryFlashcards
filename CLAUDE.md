@@ -87,7 +87,7 @@ All decks live flat in `data/`. There is no parking lot and no archive.
 
 | Deck | Cards | Direction | Grown by |
 |------|-------|-----------|----------|
-| `spanish.txt` | 4,000 | English prompt → Spanish answer | `/spanish` adds his daily bullets at the top. Rebuilt 2026-10-04 from the old personal deck (67), `core.txt` (400, merged in and deleted), 81 new basics (colors, numbers, family, core verbs…), and the best of the old 8,294-card bulk deck by word frequency. Basics sit at the top so they arrive first. |
+| `spanish.txt` | 3,774 | English prompt → Spanish answer | `/spanish` adds his daily bullets at the top. Rebuilt 2026-10-04 from the old personal deck (67), `core.txt` (400, merged in and deleted), 81 new basics (colors, numbers, family, core verbs…), and the best of the old 8,294-card bulk deck by word frequency. Basics sit at the top so they arrive first. Deduplicated 2026-10-05: 226 twins removed, 14 ambiguous prompts rewritten. |
 | `mexican.txt` | 386 | English prompt → Spanish answer | Fixed. CDMX slang, flirting, and food/culture terms. |
 | `verbs.txt` | 370 | English prompt → Spanish answer | Hand-maintained. Grammar-construction sentences. |
 | `english.txt` | 102 | **Definition prompt → word answer** | `/english` — his word bullets. Vocabulary recall, unrelated to Spanish. |
