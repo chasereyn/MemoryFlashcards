@@ -52,9 +52,12 @@ counts as new and its progress restarts; that is expected.
 The loop only fills up if he is **attempting to speak**. The Keep list is downstream of the
 speaking habit, not a substitute for it.
 
-A launchd agent nudges him at **20:30 every night** and, on a click, opens Ghostty with the
-deck already running — see `scripts/reminder/README.md`. It exists because the review habit is
-the part that actually decays, not the card supply.
+The deck opens itself at **21:00 every night** in a tab of his main Ghostty, with no dialog.
+That launcher lives **outside this repo**: `~/.local/bin/flashcards-nightly`, called by the
+`local.day-clock` launch agent through `~/.local/bin/day-hook`, logging to
+`~/.local/state/flashcards/nightly.log`. It is documented in `~/Developer/Focuses/Mac/flows.md`;
+change it there, not here. **Hyper+E** opens the deck by hand. It exists because the review
+habit is the part that actually decays, not the card supply.
 
 ## Storage
 
@@ -79,7 +82,6 @@ removes deleted cards.
 | `test_algorithm.py` | SRS logic tests |
 | `.claude/skills/spanish/` | The `/spanish` skill — bullets → cards |
 | `.claude/skills/english/` | The `/english` skill — words → definition-prompt cards |
-| `scripts/reminder/` | launchd agent: 20:30 nightly nudge → opens the deck. See its README. |
 
 ## Decks
 
