@@ -9,6 +9,9 @@ from spaced_repetition import (
     get_cards_for_review,
     get_today
 )
+import tempfile
+from parser import parse_text_file
+from storage import remove_card_from_text
 from progress import breakdown, deck_bar, streak, BAR_SOLID, BAR_LEARNING, BAR_NEW
 
 
@@ -175,6 +178,30 @@ def test_new_card_cap():
     print("PASSED\n")
 
 
+def test_delete_card_keeps_other_cards():
+    """Test that deleting a card leaves every other card's ID intact."""
+    print("Test 9: Deleting a card keeps the rest of the deck")
+    text = (
+        "Hello\nHola\n\n"
+        "Really?\n¿A poco?\n\n"
+        "Bye\nAdiós\n\n"
+        "Hola\nHello\n"  # "Hola" is a term here and a definition above
+    )
+    with tempfile.NamedTemporaryFile("w", suffix=".txt", delete=False, encoding="utf-8") as f:
+        f.write(text)
+        path = f.name
+    before = {(c.term, c.definition): c.id for c in parse_text_file(path)}
+
+    assert remove_card_from_text(path, "Really?", "¿A poco?") == 1, "Should remove one card"
+    after = {(c.term, c.definition): c.id for c in parse_text_file(path)}
+    del before[("Really?", "¿A poco?")]
+    assert after == before, f"Other cards changed: {after}"
+
+    assert remove_card_from_text(path, "Hola", "Adiós") == 0, "Lines from two cards are not a card"
+    os.remove(path)
+    print("PASSED\n")
+
+
 if __name__ == "__main__":
     print("=" * 60)
     print("Testing Spaced Repetition Algorithm")
@@ -190,6 +217,7 @@ if __name__ == "__main__":
         test_progress_breakdown()
         test_deck_bar_shows_small_counts()
         test_streak()
+        test_delete_card_keeps_other_cards()
         test_new_card_cap()
         
         print("=" * 60)
