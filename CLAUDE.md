@@ -43,6 +43,12 @@ top of `data/spanish.txt`. Claude's whole job is that insert. Review happens in 
 `/spanish` only ever works from a list. There is no mode that invents cards or pulls them
 from a source file — that mode existed, and removing it was the point.
 
+During review, **`d`** deletes a bad card from its `.txt` file (after a y/n confirm) and **`f`**
+adds it to `flagged.txt` in the repo root (`deck | term = definition`, one per line). When he
+says "fix my flagged cards", rewrite each one **in place** — same two lines, same spot in its
+deck file, so no other card shifts — then clear its line from `flagged.txt`. A rewritten card
+counts as new and its progress restarts; that is expected.
+
 The loop only fills up if he is **attempting to speak**. The Keep list is downstream of the
 speaking habit, not a substitute for it.
 

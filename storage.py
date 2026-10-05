@@ -172,3 +172,64 @@ def get_last_session_date(filepath: str) -> Optional[str]:
         return data.get("last_session_date")
     except Exception:
         return None
+
+
+def text_path_for_deck(json_path: str) -> str:
+    """data/decks/spanish.json -> data/spanish.txt"""
+    deck_name = os.path.splitext(os.path.basename(json_path))[0]
+    return os.path.join("data", f"{deck_name}.txt")
+
+
+def remove_card_from_text(text_path: str, term: str, definition: str) -> int:
+    """Delete every term/definition pair matching this card from a deck file.
+
+    Walks the file with the same pairing rule as parser.py, so a line that
+    happens to match the term inside another card is never touched. Both lines
+    of the card go together, which keeps every card below it paired correctly.
+    Returns the number of pairs removed.
+    """
+    # newline='' keeps each line's ending exactly as it is on disk, so a delete only
+    # touches the card's own lines in the diff
+    with open(text_path, 'r', encoding='utf-8', newline='') as f:
+        lines = f.readlines()
+
+    drop = set()
+    i = 0
+    while i < len(lines):
+        if not lines[i].strip():
+            i += 1
+            continue
+        term_idx = i
+        i += 1
+        while i < len(lines) and not lines[i].strip():
+            i += 1
+        if i >= len(lines):
+            break
+        def_idx = i
+        if lines[term_idx].strip() == term and lines[def_idx].strip() == definition:
+            drop.update(range(term_idx, def_idx + 1))
+            # Take the blank separator after the card with it
+            if def_idx + 1 < len(lines) and not lines[def_idx + 1].strip():
+                drop.add(def_idx + 1)
+        i += 1
+
+    if drop:
+        with open(text_path, 'w', encoding='utf-8', newline='') as f:
+            f.writelines(line for idx, line in enumerate(lines) if idx not in drop)
+    return len([idx for idx in drop if lines[idx].strip()]) // 2
+
+
+# Lives in the repo root, not data/, so it is never picked up as a deck
+FLAGGED_PATH = "flagged.txt"
+
+
+def flag_card(deck_name: str, term: str, definition: str) -> bool:
+    """Add a card to flagged.txt for a later rewrite. Returns False if already flagged."""
+    entry = f"{deck_name} | {term} = {definition}\n"
+    if os.path.exists(FLAGGED_PATH):
+        with open(FLAGGED_PATH, 'r', encoding='utf-8') as f:
+            if entry in f.readlines():
+                return False
+    with open(FLAGGED_PATH, 'a', encoding='utf-8') as f:
+        f.write(entry)
+    return True
