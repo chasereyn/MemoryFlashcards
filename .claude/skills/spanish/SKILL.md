@@ -64,7 +64,7 @@ Add directly. The rules:
    (changing a card's text resets its progress).
 2. **Always an even number of lines.** Blank line between cards, blank line after the last
    inserted card.
-3. **CRLF line endings, UTF-8.** Match the existing file.
+3. **LF line endings, UTF-8.** Match the existing file (`.gitattributes` pins LF).
 4. **Never touch `data/decks/*.json`.** Auto-managed and gitignored.
 5. **Check for duplicates first** against the whole of `data/spanish.txt`, accent- and
    case-insensitively, on the Spanish side. Drop a bullet that's already a card and say so.

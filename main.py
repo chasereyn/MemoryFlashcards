@@ -127,7 +127,7 @@ def review_session(cards, filepath):
     print("  - Rate the card: 1=Hard/Repeat, 2=Medium-Hard, 3=Medium, 4=Easy")
     print("  - You can only advance ratings one step at a time (e.g., 1→2→3→4)")
     print("  - Cards rated 1-3 will be shown again until you rate them 4")
-    print("  - d deletes a bad card for good; f flags it to be rewritten later")
+    print("  - d deletes a bad card; f moves it to flagged.txt to be rewritten")
     print("  - Type 'quit' at any time to exit\n")
     
     initial_card_count = len(review_cards)
@@ -156,29 +156,20 @@ def review_session(cards, filepath):
         
         # Get rating
         rating = get_user_rating(current_card)
-        while rating == 'flag':
-            deck_name = os.path.splitext(os.path.basename(filepath))[0]
-            if flag_card(deck_name, current_card.term, current_card.definition):
-                print("Flagged for a rewrite — added to flagged.txt. Now rate it.")
-            else:
-                print("Already flagged. Now rate it.")
-            rating = get_user_rating(current_card)
-        if rating == 'delete':
-            confirm = input("Delete this card from the deck for good? (y/n): ").strip().lower()
-            if confirm != 'y':
-                print("Kept.\n")
-                continue
+        if rating in ('delete', 'flag'):
+            if rating == 'flag':
+                # Save it for a rewrite before it leaves the deck
+                deck_name = os.path.splitext(os.path.basename(filepath))[0]
+                flag_card(deck_name, current_card.term, current_card.definition)
             removed = remove_card_from_text(text_path_for_deck(filepath),
                                             current_card.term, current_card.definition)
             cards[:] = [c for c in cards if c.id != current_card.id]
             save_cards(cards, filepath)
             review_cards = [c for c in review_cards if c.id != current_card.id]
             initial_card_count -= 1
-            if removed:
-                print("Deleted.\n")
-            else:
-                print("Removed from this session, but it was not found in the .txt file — "
-                      "it will come back on the next start.\n")
+            if not removed:
+                print("Not found in the .txt file — it will come back on the next start.")
+            print("Flagged — moved to flagged.txt.\n" if rating == 'flag' else "Deleted.\n")
             continue
         if rating is None:
             break
