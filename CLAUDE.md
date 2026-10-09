@@ -29,10 +29,8 @@ Three consequences that should drive every decision here:
 - **Small beats complete.** This is a tool, not a place to live. It should stay something he
   can read, edit, and finish in thirty minutes a day.
 
-There is deliberately no staging area and no parked-deck folder. The one exception is
-`spanish-deck-reserve.txt` in the root: the 4,279 cards of the old 8,294-card bulk deck that did
-**not** make the cut on 2026-10-04. It is for browsing, one card per line (`English = Spanish`),
-and the app never reads it. Do not import from it in bulk; see **Decks**.
+There is deliberately no staging area, no parked-deck folder, and no reserve file. Every card
+lives in a deck under `data/`.
 
 ## The daily loop
 
@@ -43,16 +41,17 @@ top of `data/spanish.txt`. Claude's whole job is that insert. Review happens in 
 `/spanish` only ever works from a list. There is no mode that invents cards or pulls them
 from a source file — that mode existed, and removing it was the point.
 
-During review, **`d`** deletes a bad card from its `.txt` file (after a y/n confirm) and **`f`**
-adds it to `flagged.txt` in the repo root (`deck | term = definition`, one per line). When he
-says "fix my flagged cards", rewrite each one **in place** — same two lines, same spot in its
-deck file, so no other card shifts — then clear its line from `flagged.txt`. A rewritten card
-counts as new and its progress restarts; that is expected.
+During review, **`d`** deletes the card from its `.txt` file instantly — no confirm, he does
+not hit it by accident — and **`f`** moves it out of the deck into `flagged.txt` in the repo
+root (`deck | term = definition`, one per line) with no rating; the session just continues.
+When he says "fix my flagged cards", rewrite each one so the prompt asks for exactly one
+answer, add it back to the **top** of its deck file (the same way `/spanish` inserts), and
+remove its line from `flagged.txt`. A fixed card is a new card; its old progress is gone.
 
 The loop only fills up if he is **attempting to speak**. The Keep list is downstream of the
 speaking habit, not a substitute for it.
 
-The deck opens itself at **21:00 every night** in a tab of his main Ghostty, with no dialog.
+The deck opens itself at **20:30 every night** in a tab of his main Ghostty, with no dialog.
 That launcher lives **outside this repo**: `~/.local/bin/flashcards-nightly`, called by the
 `local.day-clock` launch agent through `~/.local/bin/day-hook`, logging to
 `~/.local/state/flashcards/nightly.log`. It is documented in `~/Developer/Focuses/Mac/flows.md`;
@@ -89,9 +88,8 @@ All decks live flat in `data/`. There is no parking lot and no archive.
 
 | Deck | Cards | Direction | Grown by |
 |------|-------|-----------|----------|
-| `spanish.txt` | 3,774 | English prompt → Spanish answer | `/spanish` adds his daily bullets at the top. Rebuilt 2026-10-04 from the old personal deck (67), `core.txt` (400, merged in and deleted), 81 new basics (colors, numbers, family, core verbs…), and the best of the old 8,294-card bulk deck by word frequency. Basics sit at the top so they arrive first. Deduplicated 2026-10-05: 226 twins removed, 14 ambiguous prompts rewritten. |
+| `spanish.txt` | 8,290 | English prompt → Spanish answer | `/spanish` adds his daily bullets at the top. Rebuilt 2026-10-04 from the old personal deck (67), `core.txt` (400, merged in and deleted), 81 new basics (colors, numbers, family, core verbs…), and the best of the old 8,294-card bulk deck by word frequency. Basics sit at the top so they arrive first. Deduplicated 2026-10-05: 226 twins removed, 14 ambiguous prompts rewritten. `verbs.txt` (367 grammar-construction sentences) folded in 2026-10-08, spread evenly through the unstarted cards — about one in every 12. The other half of the bulk deck (the old root `spanish-deck-reserve.txt`) folded in the same day: its first 1,000 cards spread one in every 5 through the unstarted cards, the remaining 3,163 appended at the bottom, 116 dropped because the prompt already existed. |
 | `mexican.txt` | 386 | English prompt → Spanish answer | Fixed. CDMX slang, flirting, and food/culture terms. |
-| `verbs.txt` | 370 | English prompt → Spanish answer | Hand-maintained. Grammar-construction sentences. |
 | `english.txt` | 102 | **Definition prompt → word answer** | `/english` — his word bullets. Vocabulary recall, unrelated to Spanish. |
 | `slang.txt` | 111 | **Definition prompt → word answer** | Fixed. Gen Z / teen slang from a WeAreTeachers list, one-time import. |
 
