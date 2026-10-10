@@ -81,6 +81,9 @@ removes deleted cards.
 | `test_algorithm.py` | SRS logic tests |
 | `.claude/skills/spanish/` | The `/spanish` skill — bullets → cards |
 | `.claude/skills/english/` | The `/english` skill — words → definition-prompt cards |
+| `.claude/skills/hablar/` | The `/hablar` skill — voice recording → whisper transcript → corrections → gap cards. Scaffold; being shaped by hand from 2026-10-09 |
+| `.claude/skills/speak/` | The `/speak` skill — English twin of `/hablar`: filler count, sharper words, tighter phrasing. Scaffold |
+| `SPEAKING.md` | The speaking plan — situation, the invariant, the daily recording loop, 4/3/2 |
 
 ## Decks
 
