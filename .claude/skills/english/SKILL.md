@@ -80,6 +80,5 @@ Print a compact table of what was appended — word and the prompt you wrote for
 short note only where one is genuinely useful (a dropped duplicate, a sense you had to pick
 between, two cards you had to pull apart). Say the old and new card counts in one line.
 
-Do not commit on your own. Offer it in one line at the end — and when he says yes,
-**commit and push to the remote in the same step.** A yes to "commit?" is a yes to pushing;
-never leave the commit sitting local.
+Do not commit, and do not offer to. He commits when he wants to. If he asks for a commit,
+**commit and push to the remote in the same step.**

@@ -59,7 +59,7 @@ Add directly. The rules:
 
 1. **Insert at the top of the file only.** New cards are capped at 20 a day and arrive in
    file order, so the top is the front of the line — his own phrases go first, ahead of the
-   ~3,500 frequency-list cards below. Keep the batch in the order he gave it. Never insert
+   conversational phrases below. Keep the batch in the order he gave it. Never insert
    mid-file, never reorder existing cards, never rewrite an existing card unless he asks
    (changing a card's text resets its progress).
 2. **Always an even number of lines.** Blank line between cards, blank line after the last
@@ -80,6 +80,5 @@ Print a compact table of what was added — English, Spanish, and a short note o
 one is genuinely useful (a register fix, a regional swap, a dropped duplicate). Then the
 batched questions, if any.
 
-Do not commit on your own. Offer it in one line at the end — and when he says yes,
-**commit and push to the remote in the same step.** A yes to "commit?" is a yes to pushing;
-never leave the commit sitting local.
+Do not commit, and do not offer to. He commits when he wants to. If he asks for a commit,
+**commit and push to the remote in the same step.**
