@@ -29,8 +29,9 @@ Three consequences that should drive every decision here:
 - **Small beats complete.** This is a tool, not a place to live. It should stay something he
   can read, edit, and finish in thirty minutes a day.
 
-There is one bank outside the drill: `spanish-bulk.txt` in the repo root (see Decks). The app
-only loads `data/*.txt`, so nothing in the bank is ever reviewed.
+There is deliberately no staging area, no parked-deck folder, and no reserve file. Every card
+lives in a deck under `data/`. The old 8,300-card bulk deck was deleted 2026-10-16 and purged
+from git history at his request — it is not recoverable and should not be rebuilt.
 
 ## The daily loop
 
@@ -87,12 +88,11 @@ removes deleted cards.
 
 ## Decks
 
-All drilled decks live flat in `data/`.
+All decks live flat in `data/`. There is no parking lot and no archive.
 
 | Deck | Cards | Direction | Grown by |
 |------|-------|-----------|----------|
-| `spanish.txt` | 468 | English prompt → Spanish answer | **The working deck**, rebuilt 2026-10-16: his 100 personal cards first, then 368 conversational formulas (greetings, goodbyes, thanks, reactions, table and hosting phrases, fillers) pulled out of the bulk deck. `/spanish` adds his daily bullets at the top. New cards should come from real conversation — his own, `/hablar`, and Mexican vlogs he mines by hand — not from lists. |
-| `../spanish-bulk.txt` | 7,847 | English prompt → Spanish answer | **Not drilled** — repo root, outside `data/`. Everything else the old 8,300-card deck held: frequency-list words and sentences, `core.txt`, 81 basics, `verbs.txt` grammar drills. 17 Spain-only cards were fixed or removed 2026-10-16. Pull from it only when he asks. |
+| `spanish.txt` | 468 | English prompt → Spanish answer | **The working deck**, rebuilt 2026-10-16: his 100 personal cards first, then 368 conversational formulas (greetings, goodbyes, thanks, reactions, table and hosting phrases, fillers) pulled out of the old bulk deck before it was deleted. `/spanish` adds his daily bullets at the top. New cards should come from real conversation — his own, `/hablar`, and Mexican vlogs he mines by hand — not from lists. |
 | `mexican.txt` | 386 | English prompt → Spanish answer | Fixed. CDMX slang, flirting, and food/culture terms. |
 | `english.txt` | 102 | **Definition prompt → word answer** | `/english` — his word bullets. Vocabulary recall, unrelated to Spanish. |
 | `slang.txt` | 111 | **Definition prompt → word answer** | Fixed. Gen Z / teen slang from a WeAreTeachers list, one-time import. |
@@ -151,4 +151,4 @@ Ratings: 1=Hard, 2=Medium-Hard, 3=Medium, 4=Easy
   card below it, changes every ID, and silently wipes review progress for the whole deck.
   Append at the tail, always in even line counts.
 - Bulk-rewrite register (tú/usted) on old cards without being asked
-- Bulk-import vocabulary lists, or pull cards from `spanish-bulk.txt` without being asked
+- Bulk-import vocabulary lists, or rebuild an archive to pull cards from
