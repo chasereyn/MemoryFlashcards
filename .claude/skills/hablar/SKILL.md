@@ -37,7 +37,7 @@ patch gaps someone already found. This skill is what finds them.
    If a word looks like a whisper mishearing rather than his mistake, ask; don't correct it.
    Whisper drops the pauses and question marks of him prompting himself — `que más hable con
    Sarah` was `¿Qué más? … Hablé con Sarah.` Read a stray `que más`/`y qué` as that first.
-4. **Gaps become cards.** Add them to the top of `data/spanish.txt` under the `/spanish`
+4. **Gaps become cards.** Add them to the bottom of `data/spanish.txt` under the `/spanish`
    rules (one gap = one card, even line count, dedupe first).
 5. **Hand back the redo.** Tell him to read the corrected story once, then retell it without
    looking in 4 minutes, then in 3. Tomorrow's recording starts by retelling this one.

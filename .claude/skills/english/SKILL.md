@@ -1,84 +1,94 @@
 ---
 name: english
-description: Grow the English vocabulary deck by writing a definition for each word he gives. Use when the user invokes /english, pastes a "VOCAB" list, or hands over English words he wants to remember.
+description: Grow the English speaking deck from his word bullets or his notes on a speaker he admires. Use when the user invokes /english, pastes a "VOCAB" list, or hands over English words or phrases he wants to be able to say.
 ---
 
 # english
 
-Append definition→word cards to the tail of `data/english.txt`, print what was added, stop.
+Draft cards from his list, wait for his approval, then append them to the bottom of
+`data/english.txt`.
 
-This is a 30-second workflow. No preamble, no plan, no approval gate. Do the work.
+Two turns, no ceremony: **draft → he approves or edits → write.** No preamble, no plan.
+
+## What this deck is for
+
+He is a native speaker. Nothing is missing — the words are there, they are just slow to
+arrive, so he pauses mid-sentence hunting for them. The goal is to **speak articulately**,
+the way Grant Sanderson does: the precise everyday word at the right moment, and framing
+moves that structure a thought and buy thinking time.
+
+Not SAT words. A word belongs here only if an articulate person actually says it out loud
+(`conflate`, `judicious`, `hand-wavy`) — not words you only meet in print (`pyrrhic`). The
+ladder in `CLAUDE.md` applies: the old level-1 word list was deleted 2026-10-17 and purged
+from git history. Never rebuild it.
 
 ## Input is always a list
 
-`/english` takes bullets — usually words he hit while reading, sometimes headed `VOCAB`.
-There is no other mode. If the message has no list, ask for one in a single line; do not
-invent cards, and do not go looking for a word list to pull from.
+`/english` takes bullets — words he reached for and couldn't find, or notes from a talk or
+video by someone who speaks well. There is no other mode. If the message has no list, ask
+for one in a single line; do not invent cards, and do not go looking for a word list.
 
-**One bullet = one card.** Never expand a word into several senses. Never merge two words.
+If a transcript is in `transcripts/`, read the line in context before writing the card —
+notes are often fragments.
 
-Sometimes a bullet carries a parenthetical that pins the sense he means —
-`pronounced (greater in intensity)`. **That gloss wins.** Define that sense and ignore the
-commoner one.
+**One bullet = one card.** Never expand a word into several senses. Never merge two.
+A parenthetical gloss in a bullet — `pronounced (greater in intensity)` — pins the sense he
+means. **That gloss wins.**
 
-## The deck runs backwards on purpose
+## Two card types
 
-Every Spanish deck here prompts in English and answers in Spanish. This one prompts with a
-**definition** and answers with the **word**, because the skill being trained is recall:
-he knows what he means, and the word will not come.
+The deck prompts with a cue and answers with what has to come out of his mouth.
 
-That inverts what a good definition looks like:
+**Word cards — definition → word.** For single words.
 
-- **The definition must cue exactly one word.** A dictionary entry describes a word. A card
-  prompt has to *summon* it. If three words would satisfy the prompt, the card trains nothing
-  — tighten it until only his word fits.
+- **The definition must cue exactly one word.** If three words would satisfy the prompt, the
+  card trains nothing — tighten it until only his word fits.
 - **Tag the part of speech, always** — `(n)`, `(v)`, `(adj)`, `(adv)`. It is half the cue.
-  Without it he answers `solemn` to a prompt whose answer is `solemnly` and marks himself
-  wrong.
-- **Adverbs cue on their shape.** Open an `-ly` prompt with "in a … way" so the grammatical
-  form is part of what's being asked for.
-- **Plain words, one clause, lowercase.** No sentence-final period. "struck with a sudden
-  helpless infatuation" beats "afflicted by an abrupt and overwhelming romantic attraction."
-  Never define a word using the word, or an obvious relative of it.
+- **Adverbs cue on their shape.** Open an `-ly` prompt with "in a … way".
+- **Plain words, one clause, lowercase.** No sentence-final period. Never define a word using
+  the word or an obvious relative of it.
 
-Check the new cards against each other before writing. Two words that land on near-identical
-prompts — `undisturbed` and `isolated` — will collide in review. Sharpen one until they
-separate, and say so in the output.
+**Move cards — situation → phrase.** For signposting moves and idioms.
+
+- The prompt is the **moment you'd say it**, not a definition: "you're about to admit a
+  real downside of your own idea before moving on" → "Let's be real, ..."
+- Tag it `(move)` or `(idiom)` so the shape of the answer is part of the cue.
+- The answer is the phrase as he'd say it, short, with `...` where his own words continue.
+
+Check the new cards against each other and the deck. Two prompts that would summon the same
+answer will collide in review — sharpen one until they separate, and say so.
+
+## Turn 1 — the draft
+
+**Check for duplicates first** against the whole of `data/english.txt`, case-insensitively,
+on the answer side. Drop a bullet that's already a card and say so.
+
+Print one numbered table — **# | Prompt | Answer | Note** — and stop. The note is for the
+exceptions only: a sense you had to pick, two cards you pulled apart, a word that's more
+written than spoken. **Write nothing to the file in this turn.**
+
+## Turn 2 — write what he approved
+
+Apply exactly what he said; where he defers, take the draft's own suggestions. Then write.
 
 ## Writing to the file
 
 Only ever `data/english.txt`. The other decks in `data/` are not grown by this skill.
 
-Append directly. The rules:
-
-1. **Append at the tail only.** Never insert mid-file, never reorder, never rewrite an
+1. **Append at the bottom only.** Never insert mid-file, never reorder, never rewrite an
    existing card unless he asks.
-2. **Definition on top, word below.** Always an even number of lines. Blank line between
-   cards, blank line before the first appended card.
-3. **CRLF line endings, UTF-8.** Match the existing file. A heredoc piped through
-   `awk '{printf "%s\r\n", $0}'` is the reliable way to get them on BSD userland.
+2. **Prompt on top, answer below.** Always an even number of lines. Blank line between
+   cards, blank line after the last card.
+3. **LF line endings, UTF-8** (`.gitattributes` pins LF).
 4. **Never touch `data/decks/*.json`.** Auto-managed and gitignored.
-5. **Check for duplicates first** against the whole of `data/english.txt`, case-insensitively,
-   on the word side. Drop a bullet that's already a card and say which prompt it already has.
 
 Rules 1 and 2 are not style — `parser.py` pairs consecutive non-empty lines from the top of
 the file and hashes `term|definition` for the card ID. An odd-line insertion mid-file
-re-pairs every card after it, changes every ID, and silently wipes review progress for the
-whole deck.
+re-pairs every card after it, changes every ID, and silently wipes review progress.
 
-## Verify before reporting
+After writing, run
+`python3 -c "from parser import parse_text_file; print(len(parse_text_file('data/english.txt')))"`
+and confirm the count rose by exactly the number of cards written. Update the `english.txt`
+row in `CLAUDE.md` to the new count. Then one line: how many were added, and the new count.
 
-Run `python3 -c "from parser import parse_text_file; print(len(parse_text_file('data/english.txt')))"`
-and confirm the count rose by exactly the number of cards you appended. A count that is off
-by one means the file has an odd line somewhere and every card below it has lost its history.
-
-Then update the `english.txt` row in `CLAUDE.md` to the new count.
-
-## Output
-
-Print a compact table of what was appended — word and the prompt you wrote for it — plus a
-short note only where one is genuinely useful (a dropped duplicate, a sense you had to pick
-between, two cards you had to pull apart). Say the old and new card counts in one line.
-
-Do not commit, and do not offer to. He commits when he wants to. If he asks for a commit,
-**commit and push to the remote in the same step.**
+Do not commit, and do not offer to. If he asks for a commit, commit and push in one step.

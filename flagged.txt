@@ -1,1 +1,4 @@
 spanish | I had to clean up the mess (casual) = Tuve que arreglar el desmadre
+spanish | We're almost there (any minute now) = Ya mero llegamos
+spanish | You can't be serious (literally "you're not talking seriously") = No estás hablando en serio
+mexican | ridiculous; over the top (Mexican) = jalada

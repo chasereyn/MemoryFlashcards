@@ -41,6 +41,9 @@ Lock it in from what `/hablar`'s first week taught. Don't add steps he didn't us
 
 ## Don't
 
+- Chase zero filler. The model speaker (Grant Sanderson — see "The same ladder, in English"
+  in `CLAUDE.md`) says "um" too. Where a long stall happened, suggest a signposting move
+  that would have carried the pause ("to be clear", "stepping back") — that is the upgrade.
 - Flag every "so" or "like". Mark the habit, not each instance.
 - Make him sound written. Spoken English uses short sentences and contractions; articulate
   is not formal.

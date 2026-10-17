@@ -1,7 +1,8 @@
 # Speaking
 
 The plan for turning understanding into speech — in Spanish first, English alongside.
-Written 2026-10-09, the night the recording loop first worked.
+Written 2026-10-09, the night the recording loop first worked. This is **level 3** of the
+ladder in [CLAUDE.md](CLAUDE.md#the-ladder): harvesting gaps from his own speech.
 
 ## Where things stand
 
@@ -47,12 +48,16 @@ About 30 minutes a day. Spanish ~20, English ~5–10.
 2. **Phone → Tailscale → `~/Downloads`.**
 3. **Run `/hablar` (Spanish) or `/speak` (English).** Transcribes locally with whisper,
    returns the gaps, a table of wrong forms, and the story said right.
-4. **Gaps become cards** — top of `spanish.txt`, or `english.txt` for English upgrades.
+4. **Gaps become cards** — bottom of `spanish.txt`, or `english.txt` for English upgrades.
 5. **The redo — 4/3/2.** Read the corrected story once. Then retell it *without looking*,
    faster each round: 4 minutes, 3, 2 (or proportionally shorter for a short story). The
    shrinking clock forces whole phrases instead of word-by-word translation. This is Paul
    Nation's 4/3/2 fluency technique.
 6. **Next day, start by retelling yesterday's story.** Spaced repetition for sentences.
+
+**Vlog days:** the story can be a vlog instead of his day. After mining a vlog, he retells it
+from his notes (step 1, same rules), and the rest of the loop runs unchanged. It practices
+saying what he just heard said well — the ladder's 2→3 step in [CLAUDE.md](CLAUDE.md#the-ladder).
 
 ## Rules for the recording
 
