@@ -1,0 +1,16 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Auto-generated review storage (synced from data/*.txt on startup)
+data/decks/*.json
+
+# Video transcripts: personal study copies, not redistributed in this public repo
+transcripts/
